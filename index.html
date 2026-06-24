@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCI Compass | 全球人机交互硕士项目库</title>
+    <meta name="description" content="面向中文申请者的全球 HCI、UX、Interaction Design 硕士项目数据库。筛选学校、项目、作品集要求、STEM、截止日期和申请策略。">
+    <meta property="og:title" content="HCI Compass | 全球人机交互硕士项目库">
+    <meta property="og:description" content="给 HCI / UX / Interaction Design 申请者使用的项目筛选与申请策略工具。">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="HCI Compass home">
+        <span class="mark">HC</span>
+        <span>
+          <strong>HCI COMPASS</strong>
+          <small>全球 HCI / UX 硕士项目库</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="active" href="#programs">Programs</a>
+        <a href="#guides">Guides</a>
+        <a href="#diagnosis">申请诊断</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">For HCI / UX / IxD Applicants</p>
+          <h1>用一张表，看清全球人机交互硕士项目。</h1>
+          <p class="subhead">筛选地区、项目类型、作品集要求、STEM、申请难度和适合人群，把选校从信息搜集变成申请决策。</p>
+          <div class="hero-actions">
+            <a class="primary" href="#programs">浏览项目库</a>
+            <a class="secondary" href="#diagnosis">获取选校诊断</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="program-shell" aria-labelledby="programs-title">
+        <div class="program-toolbar">
+          <div>
+            <p class="section-kicker">Program Database</p>
+            <h2 id="programs-title">HCI / UX 硕士项目</h2>
+          </div>
+          <label class="search">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="学校、项目、城市、关键词">
+          </label>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="项目地区">
+          <button class="tab active" data-region="US" type="button">U.S.</button>
+          <button class="tab" data-region="Non-US" type="button">Non U.S.</button>
+          <button class="tab" data-region="Online" type="button">Online</button>
+          <button class="tab" data-region="All" type="button">All</button>
+        </div>
+
+        <div class="filters" aria-label="筛选">
+          <button class="filter active" data-filter="all" type="button">全部</button>
+          <button class="filter" data-filter="portfolio" type="button">需要作品集</button>
+          <button class="filter" data-filter="stem" type="button">STEM / OPT 友好</button>
+          <button class="filter" data-filter="career" type="button">职业导向</button>
+          <button class="filter" data-filter="research" type="button">研究导向</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>School</th>
+                <th>Program</th>
+                <th>Length</th>
+                <th>Tuition</th>
+                <th>Location</th>
+                <th>Class</th>
+                <th>TOEFL</th>
+                <th>GRE</th>
+                <th>Portfolio</th>
+                <th>Deadline</th>
+              </tr>
+            </thead>
+            <tbody id="programRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="guides" class="content-band">
+        <div class="content-grid">
+          <article>
+            <p class="section-kicker">Guides</p>
+            <h2>下一步可以扩展成真正的资源库</h2>
+            <p>每个热门项目都可以增加中文申请解读、作品集建议、往届学生背景和选校策略，逐渐吃下搜索流量。</p>
+          </article>
+          <article>
+            <p class="section-kicker">Conversion</p>
+            <h2>把流量导向咨询</h2>
+            <p>详情面板和每个指南页都可以放免费选校诊断入口，把 DIY 申请人转化为咨询、作品集辅导或文书服务客户。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="diagnosis" class="diagnosis">
+        <div>
+          <p class="section-kicker">Free Diagnosis</p>
+          <h2>不确定哪些项目适合你？</h2>
+          <p>提交背景、目标地区和作品集状态，获取一份 HCI / UX 选校方向建议。</p>
+        </div>
+        <a class="primary" href="mailto:hello@example.com?subject=HCI选校诊断">预约申请诊断</a>
+      </section>
+    </main>
+
+    <aside id="detailPanel" class="detail-panel" aria-hidden="true" aria-label="项目详情">
+      <button id="closePanel" class="close" type="button" aria-label="关闭详情">×</button>
+      <div id="detailContent"></div>
+    </aside>
+    <div id="overlay" class="overlay" hidden></div>
+
+    <script src="programs.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
