@@ -300,7 +300,7 @@ h2 {
 
 table {
   width: 100%;
-  min-width: 1060px;
+  min-width: 1320px;
   border-collapse: collapse;
 }
 
@@ -335,7 +335,16 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 190px;
+  min-width: 230px;
+}
+
+.school-cell small {
+  display: block;
+  max-width: 230px;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .school-logo {
@@ -352,7 +361,7 @@ tbody tr:hover {
 }
 
 .program-name {
-  min-width: 220px;
+  min-width: 260px;
   font-weight: 700;
   line-height: 1.45;
 }
