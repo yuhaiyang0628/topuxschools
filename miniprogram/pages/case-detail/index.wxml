@@ -1,0 +1,33 @@
+<view wx:if="{{caseStudy}}" class="detail-page">
+  <view class="detail-hero">
+    <view class="eyebrow">录取案例 · {{caseStudy.year}}</view>
+    <view class="detail-title">{{caseStudy.result}}</view>
+    <view class="detail-school">{{caseStudy.schoolCn}}</view>
+    <view class="detail-school-en">{{caseStudy.school}} · {{caseStudy.program}}</view>
+    <view class="tag-row">
+      <text class="tag" wx:for="{{caseStudy.tags}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="detail-body">
+    <view class="section-label">申请背景</view>
+    <view class="fact-grid">
+      <view class="fact-item" wx:for="{{facts}}" wx:key="label">
+        <text class="fact-label">{{item.label}}</text>
+        <text class="fact-value">{{item.value}}</text>
+      </view>
+    </view>
+
+    <view class="section-label section-space">录取结果</view>
+    <view class="admit-list">
+      <text wx:for="{{caseStudy.admits}}" wx:key="*this">{{item}}</text>
+    </view>
+
+    <view class="section-label section-space">经验分享</view>
+    <view class="story-copy">
+      <text wx:for="{{caseStudy.story}}" wx:key="*this">{{item}}</text>
+    </view>
+
+    <button class="secondary-action" bindtap="goToContact">有类似问题，先聊聊</button>
+  </view>
+</view>

@@ -1,0 +1,121 @@
+.detail-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.detail-hero {
+  padding: 58rpx 30rpx 46rpx;
+  background: #e5f2f2;
+}
+
+.detail-school {
+  margin-top: 12rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.detail-school-en {
+  margin-top: 8rpx;
+  color: #5d6f75;
+  font-size: 25rpx;
+  line-height: 1.45;
+}
+
+.detail-title {
+  margin-top: 28rpx;
+  font-size: 32rpx;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin-top: 22rpx;
+}
+
+.tag {
+  padding: 5rpx 12rpx;
+  color: #084d60;
+  background: #ffffff;
+  border-radius: 999rpx;
+  font-size: 20rpx;
+}
+
+.detail-body {
+  padding: 42rpx 30rpx 64rpx;
+}
+
+.section-label {
+  color: #0b6276;
+  font-size: 23rpx;
+  font-weight: 700;
+  letter-spacing: 1.4rpx;
+}
+
+.section-space {
+  margin-top: 54rpx;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30rpx 34rpx;
+  margin-top: 28rpx;
+}
+
+.fact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9rpx;
+}
+
+.fact-label {
+  color: #718086;
+  font-size: 23rpx;
+}
+
+.fact-value {
+  color: #23353b;
+  font-size: 26rpx;
+  line-height: 1.55;
+}
+
+.note-box {
+  margin-top: 22rpx;
+  padding: 24rpx;
+  color: #344e54;
+  background: #f3f7f5;
+  border: 1rpx solid #d8e4e1;
+  border-radius: 8rpx;
+  font-size: 27rpx;
+  line-height: 1.7;
+}
+
+.detail-actions {
+  display: grid;
+  gap: 16rpx;
+  margin-top: 52rpx;
+}
+
+.primary-action, .secondary-action {
+  width: 100%;
+  height: 86rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  font-weight: 650;
+  line-height: 86rpx;
+}
+
+.primary-action {
+  color: #ffffff;
+  background: #0b6276;
+}
+
+.secondary-action {
+  color: #084d60;
+  background: #ffffff;
+  border: 1rpx solid #a6c9cf;
+}

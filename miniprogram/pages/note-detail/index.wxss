@@ -1,0 +1,41 @@
+.article-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.article-header {
+  padding: 64rpx 30rpx 46rpx;
+  background: #fff0eb;
+}
+
+.article-title {
+  margin-top: 10rpx;
+  font-size: 52rpx;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.article-excerpt {
+  margin-top: 28rpx;
+  color: #4e6066;
+  font-size: 30rpx;
+  line-height: 1.7;
+}
+
+.article-read-time {
+  margin-top: 26rpx;
+  color: #8d5c4c;
+  font-size: 23rpx;
+}
+
+.article-body {
+  display: grid;
+  gap: 28rpx;
+  padding: 48rpx 30rpx 80rpx;
+}
+
+.article-body text {
+  color: #304349;
+  font-size: 31rpx;
+  line-height: 1.9;
+}

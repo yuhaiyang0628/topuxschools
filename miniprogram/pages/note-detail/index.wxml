@@ -1,0 +1,11 @@
+<view wx:if="{{article}}" class="article-page">
+  <view class="article-header">
+    <view class="eyebrow">{{article.category}} · {{article.date}}</view>
+    <view class="article-title">{{article.title}}</view>
+    <view class="article-excerpt">{{article.excerpt}}</view>
+    <view class="article-read-time">预计阅读 {{article.readTime}}</view>
+  </view>
+  <view class="article-body">
+    <text wx:for="{{article.body}}" wx:key="*this">{{item}}</text>
+  </view>
+</view>

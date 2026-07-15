@@ -1,0 +1,29 @@
+<view wx:if="{{program}}" class="detail-page">
+  <view class="detail-hero">
+    <view class="eyebrow">{{program.region}} · {{program.country}}</view>
+    <view class="detail-school">{{program.schoolCn}}</view>
+    <view class="detail-school-en">{{program.school}}</view>
+    <view class="detail-title">{{program.program}}</view>
+    <view class="tag-row">
+      <text class="tag" wx:for="{{tagLabels}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="detail-body">
+    <view class="section-label">项目与申请要求</view>
+    <view class="fact-grid">
+      <view class="fact-item" wx:for="{{facts}}" wx:key="label">
+        <text class="fact-label">{{item.label}}</text>
+        <text class="fact-value">{{item.value}}</text>
+      </view>
+    </view>
+
+    <view class="section-label section-space">核验说明</view>
+    <view class="note-box">{{program.note}}</view>
+
+    <view class="detail-actions">
+      <button class="primary-action" bindtap="copyWebsite">复制官网链接</button>
+      <button class="secondary-action" bindtap="goToContact">有问题，先聊聊</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+.contact-page {
+  padding-top: 74rpx;
+}
+
+.contact-title {
+  max-width: 620rpx;
+  font-size: 54rpx;
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.contact-intro {
+  margin-top: 24rpx;
+  color: #5c6d73;
+  font-size: 29rpx;
+  line-height: 1.75;
+}
+
+.contact-panel {
+  margin-top: 58rpx;
+  padding: 30rpx 0 0;
+  border-top: 8rpx solid #e36546;
+}
+
+.contact-panel-secondary {
+  margin-top: 38rpx;
+  border-top-color: #0b6276;
+}
+
+.contact-label {
+  color: #718086;
+  font-size: 23rpx;
+}
+
+.contact-value {
+  margin-top: 12rpx;
+  color: #17252b;
+  font-size: 34rpx;
+  font-weight: 650;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.primary-action, .secondary-action {
+  width: 100%;
+  height: 86rpx;
+  margin-top: 30rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  font-weight: 650;
+  line-height: 86rpx;
+}
+
+.primary-action {
+  color: #ffffff;
+  background: #0b6276;
+}
+
+.secondary-action {
+  color: #084d60;
+  background: #ffffff;
+  border: 1rpx solid #a6c9cf;
+}
+
+.contact-hint {
+  margin-top: 48rpx;
+  color: #6c7a7f;
+  font-size: 25rpx;
+  line-height: 1.75;
+}

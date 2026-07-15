@@ -1,0 +1,151 @@
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  min-height: 82rpx;
+  margin-top: 28rpx;
+  padding: 0 22rpx;
+  background: #ffffff;
+  border: 1rpx solid #d5e2df;
+  border-radius: 8rpx;
+}
+
+.search-box input {
+  flex: 1;
+  color: #17252b;
+  font-size: 27rpx;
+}
+
+.search-clear {
+  color: #0b6276;
+  font-size: 24rpx;
+}
+
+.region-scroll {
+  margin: 22rpx -28rpx 0;
+  white-space: nowrap;
+}
+
+.region-row {
+  display: inline-flex;
+  gap: 12rpx;
+  padding: 0 28rpx;
+}
+
+.region-chip {
+  height: 60rpx;
+  min-width: 88rpx;
+  padding: 0 20rpx;
+  color: #43545a;
+  background: #ffffff;
+  border: 1rpx solid #cddbd7;
+  border-radius: 999rpx;
+  font-size: 24rpx;
+  font-weight: 650;
+  line-height: 60rpx;
+}
+
+.region-chip.active {
+  color: #ffffff;
+  background: #17252b;
+  border-color: #17252b;
+}
+
+.result-note, .loading-note {
+  margin-top: 26rpx;
+  color: #68777c;
+  font-size: 24rpx;
+}
+
+.case-list {
+  display: grid;
+  gap: 16rpx;
+  margin-top: 16rpx;
+}
+
+.case-card {
+  display: block;
+  width: 100%;
+  padding: 28rpx;
+  color: #17252b;
+  text-align: left;
+  background: #ffffff;
+  border: 1rpx solid #d5e2df;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  color: #68777c;
+  font-size: 22rpx;
+}
+
+.card-topline text:last-child {
+  color: #0b6276;
+}
+
+.case-result {
+  margin-top: 18rpx;
+  font-size: 35rpx;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.case-program {
+  margin-top: 9rpx;
+  color: #607178;
+  font-size: 24rpx;
+  line-height: 1.55;
+}
+
+.case-facts {
+  display: grid;
+  gap: 14rpx;
+  margin-top: 22rpx;
+  padding: 22rpx 0;
+  border-top: 1rpx solid #e0e9e6;
+  border-bottom: 1rpx solid #e0e9e6;
+}
+
+.case-facts view {
+  display: grid;
+  grid-template-columns: 126rpx 1fr;
+  gap: 18rpx;
+  color: #26383e;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+
+.case-facts text:first-child {
+  color: #748287;
+}
+
+.case-summary {
+  margin-top: 20rpx;
+  color: #516269;
+  font-size: 25rpx;
+  line-height: 1.65;
+}
+
+.read-link {
+  margin-top: 22rpx;
+  color: #e36546;
+  font-size: 24rpx;
+  font-weight: 650;
+}
+
+.load-more {
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  margin-top: 24rpx;
+  color: #0b6276;
+  background: #ffffff;
+  border: 1rpx solid #aacbd0;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  font-weight: 650;
+  line-height: 80rpx;
+}

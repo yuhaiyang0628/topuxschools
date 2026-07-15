@@ -1,0 +1,19 @@
+<view class="page-shell contact-page">
+  <view class="eyebrow">Questions &amp; conversation</view>
+  <view class="contact-title">有问题，先聊聊再决定。</view>
+  <view class="contact-intro">{{contactNote}} 这里也欢迎案例投稿、合作提议和对网站的建议。</view>
+
+  <view class="contact-panel">
+    <view class="contact-label">邮箱</view>
+    <view class="contact-value">{{contactEmail}}</view>
+    <button class="primary-action" bindtap="copyEmail">复制邮箱，随意聊聊</button>
+  </view>
+
+  <view wx:if="{{contactWechat}}" class="contact-panel contact-panel-secondary">
+    <view class="contact-label">微信</view>
+    <view class="contact-value">{{contactWechat}}</view>
+    <button class="secondary-action" bindtap="copyWechat">复制微信号</button>
+  </view>
+
+  <view wx:else class="contact-hint">微信联系入口会在公开版本补充。现在不需要准备完整背景，想到什么都可以先发邮件。</view>
+</view>

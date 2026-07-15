@@ -1,11 +1,52 @@
 # Top UX Schools
 
-Top UX Schools 是一个静态网站 MVP，用来整理、筛选和展示 HCI / UX / Human-Computer Interaction 相关项目。
+Top UX Schools 是一个面向中文申请者的 UX / HCI 申请资源库，包含学校列表、录取案例、干货笔记和交流入口。当前采用一个仓库管理 Web 与微信小程序两端。
 
 - `index.html`: 页面结构
 - `styles.css`: 视觉样式
-- `programs.js`: 项目数据
-- `app.js`: 筛选、搜索、详情面板交互
+- `content/`: Web 与小程序共用的内容源
+- `content/programs.js`: 项目数据
+- `content/case-studies.js`: 录取案例数据
+- `content/articles.js`: 干货笔记数据
+- `notes.html`: 全部干货笔记页面
+- `notes-page.js`: 干货笔记页面渲染
+- `app.js`: 筛选、搜索、分页、卡片和详情面板交互
+- `miniprogram/`: 微信小程序工程，复用现有内容字段
+- `scripts/build-miniprogram-content.mjs`: 将网页数据同步为小程序本地数据和云数据库种子数据
+
+## 目录结构
+
+```text
+topuxschools/
+├── index.html / styles.css / app.js / notes.html  # Web 静态入口
+├── content/                                      # 两端共用的内容源
+├── miniprogram/                                  # 微信小程序工程
+├── scripts/                                      # 内容同步与构建脚本
+└── docs/                                         # 字段、审核与交接文档
+```
+
+当前 Web 文件继续放在仓库根目录，是为了兼容已经运行的 Netlify 根目录发布配置；后续引入正式构建流程后，再将 Web 源码迁移到 `web/`。
+
+## 内容维护
+
+学校项目继续维护在 `content/programs.js`。新增内容时只需要在对应数据文件末尾复制一条对象，再填写字段：
+
+- 新增录取案例：编辑 `content/case-studies.js`，填写学校、项目、背景、成绩、经历、录取结果、标签与经验分享。
+- 新增笔记：编辑 `content/articles.js`，填写分类、标题、摘要、日期与正文段落。
+
+首页案例默认显示全部区域，点击同一个区域标签可以取消筛选；案例页每页显示 6 条。首页干货笔记右侧的 `Read more` 会进入 `notes.html`，集中展示全部笔记。
+
+这些文件采用“共享内容数据 + 两端页面渲染”分离的结构。网页直接读取 `content/`，小程序通过同步脚本生成本地数据或云数据库种子，不要直接编辑生成文件。
+
+## 微信小程序
+
+小程序工程已准备在 `miniprogram/`。在没有 AppID 和云开发环境时，可以使用本地内容预览；接入后可切换到云函数和云数据库，方便持续更新案例和笔记。
+
+```bash
+node scripts/build-miniprogram-content.mjs
+```
+
+详细交接见 [docs/MINIPROGRAM_HANDOFF.md](docs/MINIPROGRAM_HANDOFF.md)，字段约定见 [docs/CONTENT_SCHEMA.md](docs/CONTENT_SCHEMA.md)。
 
 ## 本地预览
 
@@ -67,7 +108,6 @@ git push origin feature/short-task-name
 
 ## 上线前检查
 
-- `mailto:hello@example.com` 改成你的咨询邮箱或表单链接。
-- `programs.js` 中的项目数据需要逐条按官网校验。
-- 首页品牌名如仍为 `HCI COMPASS`，需要替换成最终站名。
-- 检查移动端导航、筛选、搜索和详情面板是否正常。
+- `hello@topuxschools.com` 改成你实际使用的咨询邮箱、表单链接或微信联系入口。
+- `content/programs.js` 中的项目数据需要逐条按官网校验。
+- 检查移动端导航、项目筛选、案例搜索和详情面板是否正常。

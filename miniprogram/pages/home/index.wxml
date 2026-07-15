@@ -1,0 +1,86 @@
+<view class="page-shell home-page">
+  <view class="home-header">
+    <view class="eyebrow">Top UX Schools</view>
+    <view class="home-title">查得越清楚，<text>下一步越笃定。</text></view>
+    <view class="home-intro">经核实的项目、真实录取案例和长期申请笔记，帮你把分散的信息整理成判断。</view>
+  </view>
+
+  <view class="stat-grid">
+    <view class="stat-item">
+      <text class="stat-number">{{programCount}}</text>
+      <text class="stat-label">已核实项目</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{caseCount}}</text>
+      <text class="stat-label">录取案例</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{articleCount}}</text>
+      <text class="stat-label">申请笔记</text>
+    </view>
+  </view>
+
+  <view class="quick-grid">
+    <button class="quick-item quick-programs" bindtap="goToPrograms">
+      <text class="quick-number">01</text>
+      <text class="quick-title">学校列表</text>
+      <text class="quick-copy">经核实项目</text>
+    </button>
+    <button class="quick-item quick-cases" bindtap="goToCases">
+      <text class="quick-number">02</text>
+      <text class="quick-title">案例分享</text>
+      <text class="quick-copy">真实背景与经验</text>
+    </button>
+    <button class="quick-item quick-notes" bindtap="goToNotes">
+      <text class="quick-number">03</text>
+      <text class="quick-title">干货笔记</text>
+      <text class="quick-copy">申请方法与工具</text>
+    </button>
+    <button class="quick-item quick-contact" bindtap="goToContact">
+      <text class="quick-number">04</text>
+      <text class="quick-title">答疑解惑</text>
+      <text class="quick-copy">咨询合作与随意聊聊</text>
+    </button>
+  </view>
+
+  <view class="section-row">
+    <text class="section-title">先从热门项目开始</text>
+    <text class="section-link" bindtap="goToPrograms">全部项目 →</text>
+  </view>
+  <view class="program-list">
+    <button class="program-card" wx:for="{{featuredPrograms}}" wx:key="id" data-id="{{item.id}}" bindtap="openProgram">
+      <view class="card-topline"><text>{{item.region}}</text><text>{{item.location}}</text></view>
+      <view class="program-name">{{item.schoolCn}}</view>
+      <view class="program-school">{{item.school}}</view>
+      <view class="program-degree">{{item.program}}</view>
+      <view class="tag-row">
+        <text class="tag" wx:for="{{item.tagLabels}}" wx:key="*this">{{item}}</text>
+      </view>
+    </button>
+  </view>
+
+  <view class="section-row section-space">
+    <text class="section-title">刚更新的案例</text>
+    <text class="section-link" bindtap="goToCases">全部案例 →</text>
+  </view>
+  <view class="case-list">
+    <button class="case-card" wx:for="{{featuredCases}}" wx:key="id" data-id="{{item.id}}" bindtap="openCase">
+      <view class="card-topline"><text>{{item.year}}</text><text>{{item.region}}</text></view>
+      <view class="case-result">{{item.result}}</view>
+      <view class="case-program">{{item.schoolCn}} · {{item.program}}</view>
+      <view class="case-summary">{{item.summary}}</view>
+    </button>
+  </view>
+
+  <view class="section-row section-space">
+    <text class="section-title">干货笔记</text>
+    <text class="section-link" bindtap="goToNotes">全部笔记 →</text>
+  </view>
+  <view class="article-list">
+    <button class="article-card" wx:for="{{featuredArticles}}" wx:key="id" data-id="{{item.id}}" bindtap="openArticle">
+      <view class="article-meta"><text>{{item.category}}</text><text>{{item.readTime}}</text></view>
+      <view class="article-title">{{item.title}}</view>
+      <view class="article-excerpt">{{item.excerpt}}</view>
+    </button>
+  </view>
+</view>

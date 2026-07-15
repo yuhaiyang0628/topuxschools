@@ -1,0 +1,14 @@
+<view class="page-shell notes-page">
+  <view class="eyebrow">Field notes</view>
+  <view class="page-title">干货笔记</view>
+  <view class="page-intro">关于文书、作品集、选校和常用工具的长期记录。不是标准答案，是帮助你形成判断的材料。</view>
+
+  <view class="article-feed">
+    <button class="article-entry" wx:for="{{articles}}" wx:key="id" data-id="{{item.id}}" bindtap="openArticle">
+      <view class="entry-meta"><text>{{item.category}}</text><text>{{item.date}} · {{item.readTime}}</text></view>
+      <view class="entry-title">{{item.title}}</view>
+      <view class="entry-excerpt">{{item.excerpt}}</view>
+      <view class="entry-link">阅读笔记 →</view>
+    </button>
+  </view>
+</view>

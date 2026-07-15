@@ -1,0 +1,39 @@
+<view class="page-shell">
+  <view class="eyebrow">School directory</view>
+  <view class="page-title">学校列表</view>
+  <view class="page-intro">{{total}} 个已验证的 UX / HCI 硕士项目。移动端以信息卡呈现，查找和比较更轻松。</view>
+
+  <view class="region-scroll">
+    <view class="region-tabs">
+      <button class="region-tab {{activeRegion === item.value ? 'active' : ''}}" wx:for="{{regions}}" wx:key="value" data-region="{{item.value}}" bindtap="onRegionTap">{{item.label}}</button>
+    </view>
+  </view>
+
+  <view class="search-box">
+    <input value="{{query}}" placeholder="搜索学校、项目、城市或关键词" confirm-type="search" bindinput="onSearchInput" bindconfirm="onSearchConfirm" />
+    <text wx:if="{{query}}" class="search-clear" bindtap="onSearchClear">清除</text>
+  </view>
+
+  <scroll-view class="filter-scroll" scroll-x="true" show-scrollbar="false">
+    <view class="filter-row">
+      <button class="filter-chip {{activeFilter === item.value ? 'active' : ''}}" wx:for="{{filters}}" wx:key="value" data-filter="{{item.value}}" bindtap="onFilterTap">{{item.label}}</button>
+    </view>
+  </scroll-view>
+
+  <view class="result-note">已显示 {{programs.length}} / {{total}} 个项目</view>
+  <view class="program-list">
+    <button class="program-card" wx:for="{{programs}}" wx:key="id" data-id="{{item.id}}" bindtap="openProgram">
+      <view class="card-topline"><text>{{item.region}} · {{item.country}}</text><text>{{item.location}}</text></view>
+      <view class="program-name">{{item.schoolCn}}</view>
+      <view class="program-school">{{item.school}}</view>
+      <view class="program-degree">{{item.program}}</view>
+      <view class="program-facts"><text>{{item.length}}</text><text>{{item.tuitionLabel}}</text><text>{{item.deadlineLabel}}</text></view>
+      <view class="tag-row">
+        <text class="tag" wx:for="{{item.tagLabels}}" wx:key="*this">{{item}}</text>
+      </view>
+    </button>
+  </view>
+  <view wx:if="{{!programs.length && !loading}}" class="empty-state">没有匹配的项目。换一个地区、筛选条件或关键词试试。</view>
+  <button wx:if="{{hasMore}}" class="load-more" bindtap="loadMore">加载更多项目</button>
+  <view wx:if="{{loading}}" class="loading-note">正在更新列表…</view>
+</view>

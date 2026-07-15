@@ -1,0 +1,50 @@
+.notes-page {
+  padding-top: 44rpx;
+}
+
+.article-feed {
+  margin-top: 40rpx;
+}
+
+.article-entry {
+  display: block;
+  width: 100%;
+  padding: 38rpx 0 42rpx;
+  color: #17252b;
+  text-align: left;
+  background: transparent;
+  border-bottom: 1rpx solid #d8e2df;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rpx;
+  color: #67777c;
+  font-size: 22rpx;
+}
+
+.entry-meta text:first-child {
+  color: #e36546;
+}
+
+.entry-title {
+  margin-top: 18rpx;
+  font-size: 39rpx;
+  font-weight: 700;
+  line-height: 1.27;
+}
+
+.entry-excerpt {
+  margin-top: 18rpx;
+  color: #55656b;
+  font-size: 27rpx;
+  line-height: 1.72;
+}
+
+.entry-link {
+  margin-top: 24rpx;
+  color: #0b6276;
+  font-size: 24rpx;
+  font-weight: 650;
+}

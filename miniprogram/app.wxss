@@ -1,0 +1,65 @@
+page {
+  min-height: 100%;
+  color: #17252b;
+  background: #f7faf9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+button::after {
+  border: 0;
+}
+
+.page-shell {
+  padding: 32rpx 28rpx 56rpx;
+}
+
+.eyebrow {
+  margin-bottom: 12rpx;
+  color: #0b6276;
+  font-size: 22rpx;
+  font-weight: 700;
+  letter-spacing: 1.8rpx;
+  text-transform: uppercase;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 48rpx;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.page-intro {
+  margin-top: 16rpx;
+  color: #607178;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+
+.section-title {
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.section-link {
+  color: #0b6276;
+  font-size: 26rpx;
+  font-weight: 650;
+}
+
+.empty-state {
+  padding: 60rpx 26rpx;
+  color: #6b797e;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
