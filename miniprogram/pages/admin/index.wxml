@@ -1,0 +1,122 @@
+<view class="page-shell admin-page">
+  <view wx:if="{{authorized === false}}" class="admin-denied">
+    <view class="eyebrow">Content admin</view>
+    <view class="admin-title">此账号没有运营权限。</view>
+    <view class="admin-copy">请使用已加入管理员白名单的微信账号打开小程序。</view>
+  </view>
+
+  <block wx:elif="{{authorized}}">
+    <view class="eyebrow">Content admin</view>
+    <view class="admin-title">内容后台</view>
+    <view class="admin-copy">保存后直接写入云数据库。网页同步配置完成后，会同时提交更新。</view>
+
+    <scroll-view scroll-x class="collection-tabs">
+      <view class="tab-track">
+        <button wx:for="{{collections}}" wx:key="value" class="collection-tab {{activeCollection === item.value ? 'active' : ''}}" data-collection="{{item.value}}" bindtap="switchCollection">{{item.label}}</button>
+      </view>
+    </scroll-view>
+
+    <button class="primary-action" bindtap="startNew">新增{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
+
+    <view wx:if="{{loading}}" class="admin-copy">正在读取内容…</view>
+    <view wx:else class="record-list">
+      <view wx:for="{{records}}" wx:key="_id" class="record-row">
+        <view class="record-body">
+          <view class="record-title">{{item.displayTitle}}</view>
+          <view class="record-meta">{{item.status || 'published'}} · {{item.id}}</view>
+        </view>
+        <view class="record-actions">
+          <button class="icon-action" data-id="{{item._id}}" bindtap="editRecord">编辑</button>
+          <button wx:if="{{item.status !== 'archived'}}" class="icon-action muted" data-id="{{item._id}}" bindtap="archiveRecord">下架</button>
+        </view>
+      </view>
+      <view wx:if="{{!records.length}}" class="admin-copy">这里还没有内容。</view>
+    </view>
+
+    <view wx:if="{{editing}}" class="editor-mask">
+      <scroll-view scroll-y class="editor-sheet">
+        <view class="editor-header">
+          <view>
+            <view class="eyebrow">{{form._id ? 'Edit record' : 'New record'}}</view>
+            <view class="editor-title">{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}信息</view>
+          </view>
+          <button class="close-editor" bindtap="closeEditor">关闭</button>
+        </view>
+
+        <view class="form-field">
+          <view class="field-label">公开状态</view>
+          <picker range="{{statuses}}" value="{{statusIndex}}" bindchange="onStatusChange"><view class="picker-value">{{form.status}}</view></picker>
+        </view>
+
+        <block wx:if="{{activeCollection === 'programs'}}">
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">地区 *</view><picker range="{{regions}}" value="{{regionIndex}}" bindchange="onRegionChange"><view class="picker-value">{{form.region}}</view></picker></view>
+            <view class="form-field"><view class="field-label">排序</view><input value="{{form.rank}}" data-field="rank" bindinput="onFieldInput" placeholder="例如 1" type="number" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">学校英文名 *</view><input value="{{form.school}}" data-field="school" bindinput="onFieldInput" placeholder="University name" /></view>
+          <view class="form-field"><view class="field-label">学校中文名</view><input value="{{form.schoolCn}}" data-field="schoolCn" bindinput="onFieldInput" placeholder="中文名称" /></view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">国家</view><input value="{{form.country}}" data-field="country" bindinput="onFieldInput" placeholder="United States" /></view>
+            <view class="form-field"><view class="field-label">城市</view><input value="{{form.location}}" data-field="location" bindinput="onFieldInput" placeholder="Seattle, WA" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">项目全称 *</view><input value="{{form.program}}" data-field="program" bindinput="onFieldInput" placeholder="Program name" /></view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">学校 / 项目简称</view><input value="{{form.short}}" data-field="short" bindinput="onFieldInput" placeholder="MHCI" /></view>
+            <view class="form-field"><view class="field-label">项目短名</view><input value="{{form.programShort}}" data-field="programShort" bindinput="onFieldInput" placeholder="MHCI" /></view>
+          </view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">学制</view><input value="{{form.length}}" data-field="length" bindinput="onFieldInput" placeholder="2年" /></view>
+            <view class="form-field"><view class="field-label">学费</view><input value="{{form.tuition}}" data-field="tuition" bindinput="onFieldInput" placeholder="费用说明" /></view>
+          </view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">IELTS</view><input value="{{form.ielts}}" data-field="ielts" bindinput="onFieldInput" /></view>
+            <view class="form-field"><view class="field-label">TOEFL</view><input value="{{form.toefl}}" data-field="toefl" bindinput="onFieldInput" /></view>
+          </view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">GRE</view><input value="{{form.gre}}" data-field="gre" bindinput="onFieldInput" /></view>
+            <view class="form-field"><view class="field-label">作品集要求</view><input value="{{form.portfolio}}" data-field="portfolio" bindinput="onFieldInput" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">截止日期</view><input value="{{form.deadline}}" data-field="deadline" bindinput="onFieldInput" /></view>
+          <view class="form-field"><view class="field-label">官网</view><input value="{{form.website}}" data-field="website" bindinput="onFieldInput" placeholder="https://" /></view>
+          <view class="form-field"><view class="field-label">标签（逗号分隔）</view><input value="{{form.tags}}" data-field="tags" bindinput="onFieldInput" placeholder="portfolio, stem, no-gre" /></view>
+          <view class="form-field switch-field"><view><view class="field-label">STEM</view><view class="field-hint">开启后展示 STEM 标签</view></view><switch checked="{{form.stem}}" bindchange="onStemChange" color="#0b6276" /></view>
+          <view class="form-field"><view class="field-label">STEM 说明</view><input value="{{form.stemNote}}" data-field="stemNote" bindinput="onFieldInput" /></view>
+          <view class="form-field"><view class="field-label">学术要求</view><input value="{{form.academic}}" data-field="academic" bindinput="onFieldInput" /></view>
+          <view class="form-field"><view class="field-label">最后核验日期</view><input value="{{form.lastVerified}}" data-field="lastVerified" bindinput="onFieldInput" placeholder="2026-07-16" /></view>
+          <view class="form-field"><view class="field-label">备注</view><textarea value="{{form.note}}" data-field="note" bindinput="onFieldInput" auto-height placeholder="仅展示给公开页面的核验说明" /></view>
+        </block>
+
+        <block wx:elif="{{activeCollection === 'articles'}}">
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">分类 *</view><input value="{{form.category}}" data-field="category" bindinput="onFieldInput" placeholder="作品集 / 文书" /></view>
+            <view class="form-field"><view class="field-label">阅读时间</view><input value="{{form.readTime}}" data-field="readTime" bindinput="onFieldInput" placeholder="6 min" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">标题 *</view><input value="{{form.title}}" data-field="title" bindinput="onFieldInput" /></view>
+          <view class="form-field"><view class="field-label">日期</view><input value="{{form.date}}" data-field="date" bindinput="onFieldInput" placeholder="2026.07" /></view>
+          <view class="form-field"><view class="field-label">摘要</view><textarea value="{{form.excerpt}}" data-field="excerpt" bindinput="onFieldInput" auto-height /></view>
+          <view class="form-field"><view class="field-label">正文</view><textarea value="{{form.body}}" data-field="body" bindinput="onFieldInput" auto-height placeholder="段落之间空一行" /></view>
+        </block>
+
+        <block wx:else>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">申请季</view><input value="{{form.year}}" data-field="year" bindinput="onFieldInput" placeholder="2026 Fall" /></view>
+            <view class="form-field"><view class="field-label">GPA</view><input value="{{form.gpa}}" data-field="gpa" bindinput="onFieldInput" placeholder="3.6 / 4.0" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">背景</view><textarea value="{{form.background}}" data-field="background" bindinput="onFieldInput" auto-height placeholder="例如：陆本 211 工业设计，1 年工作经验" /></view>
+          <view class="form-field"><view class="field-label">语言成绩</view><input value="{{form.language}}" data-field="language" bindinput="onFieldInput" placeholder="IELTS 7.0" /></view>
+          <view class="form-field"><view class="field-label">最终选择学校 *</view><input value="{{form.selectedSchool}}" data-field="selectedSchool" bindinput="onFieldInput" placeholder="CMU、UW 或学校全称" /></view>
+          <view class="form-grid">
+            <view class="form-field"><view class="field-label">最终选择项目简称 *</view><input value="{{form.selectedProgram}}" data-field="selectedProgram" bindinput="onFieldInput" placeholder="MIIPS" /></view>
+            <view class="form-field"><view class="field-label">项目全称</view><input value="{{form.selectedProgramFull}}" data-field="selectedProgramFull" bindinput="onFieldInput" placeholder="可选，但建议填写" /></view>
+          </view>
+          <view class="form-field"><view class="field-label">拿到 Offer 的学校</view><textarea value="{{form.offerSchools}}" data-field="offerSchools" bindinput="onFieldInput" auto-height placeholder="CMU, UW, UCL。最终选择会自动加入 Offer。" /></view>
+          <view class="form-field"><view class="field-label">拒信学校</view><textarea value="{{form.rejectedSchools}}" data-field="rejectedSchools" bindinput="onFieldInput" auto-height placeholder="用逗号分隔" /></view>
+          <view class="form-field"><view class="field-label">申请方式</view><checkbox-group bindchange="onMethodsChange"><label wx:for="{{methodOptions}}" wx:key="value" class="method-option"><checkbox value="{{item.value}}" checked="{{item.checked}}" color="#0b6276" />{{item.value}}</label></checkbox-group></view>
+          <view class="form-field"><view class="field-label">其他服务</view><input value="{{form.supportServices}}" data-field="supportServices" bindinput="onFieldInput" placeholder="例如：选校服务" /></view>
+        </block>
+
+        <button class="primary-action save-button" loading="{{saving}}" bindtap="saveRecord">保存内容</button>
+      </scroll-view>
+    </view>
+  </block>
+</view>

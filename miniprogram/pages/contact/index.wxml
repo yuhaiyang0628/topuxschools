@@ -16,4 +16,6 @@
   </view>
 
   <view wx:else class="contact-hint">微信联系入口会在公开版本补充。现在不需要准备完整背景，想到什么都可以先发邮件。</view>
+
+  <button wx:if="{{isAdmin}}" class="admin-entry" bindtap="openAdmin">运营后台</button>
 </view>

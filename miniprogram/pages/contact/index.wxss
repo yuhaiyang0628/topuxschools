@@ -68,3 +68,10 @@
   font-size: 25rpx;
   line-height: 1.75;
 }
+
+.admin-entry {
+  margin-top: 72rpx;
+  color: #5c6d73;
+  background: transparent;
+  font-size: 24rpx;
+}

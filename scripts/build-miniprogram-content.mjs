@@ -18,8 +18,47 @@ async function loadContent() {
     programs: context.window.PROGRAMS,
     caseStudies: context.window.CASE_STUDIES,
     articles: context.window.ARTICLES,
-    caseTagCatalog: context.window.CASE_TAG_CATALOG
+    caseTagCatalog: context.window.CASE_TAG_CATALOG || buildCaseTagCatalog(context.window.PROGRAMS, context.window.CASE_STUDIES)
   };
+}
+
+function buildCaseTagCatalog(programs, caseStudies) {
+  const schools = new Map();
+  const catalogPrograms = new Map();
+  const addSchool = (item) => {
+    if (!item || !item.school) return;
+    if (!schools.has(item.school)) {
+      schools.set(item.school, {
+        id: item.school,
+        label: item.label || item.school,
+        school: item.school,
+        schoolCn: item.schoolCn || "",
+        aliases: [...new Set([item.label, item.school, item.schoolCn, ...(item.aliases || [])].filter(Boolean))]
+      });
+    }
+  };
+  programs.forEach((program) => {
+    addSchool(program);
+    catalogPrograms.set(program.id, {
+      id: program.id,
+      label: program.programShort || program.short || program.program,
+      program: program.program,
+      aliases: [...new Set([program.short, program.programShort, program.program].filter(Boolean))]
+    });
+  });
+  caseStudies.forEach((caseStudy) => {
+    (caseStudy.outcomes || []).forEach(addSchool);
+    const selected = caseStudy.selected || {};
+    if (selected.program && selected.program.label) {
+      catalogPrograms.set(`case-${caseStudy.id}`, {
+        id: `case-${caseStudy.id}`,
+        label: selected.program.label,
+        program: selected.program.program || selected.program.label,
+        aliases: [...new Set([selected.program.label, selected.program.program, ...(selected.program.aliases || [])].filter(Boolean))]
+      });
+    }
+  });
+  return { schools: [...schools.values()], programs: [...catalogPrograms.values()] };
 }
 
 async function writeJsonLines(filePath, records) {

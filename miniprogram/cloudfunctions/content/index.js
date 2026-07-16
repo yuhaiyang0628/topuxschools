@@ -1,7 +1,9 @@
 const cloud = require("wx-server-sdk");
+const { createAdminApi, isPublic, stripSystemFields } = require("./admin");
 
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV });
-const db = cloud.database();
+// Use the server-side database client so administrator writes do not depend on document creator permissions.
+const db = cloud.database({ env: cloud.DYNAMIC_CURRENT_ENV });
 const MAX_LIMIT = 100;
 
 function normalize(value) {
@@ -9,7 +11,7 @@ function normalize(value) {
 }
 
 function isPublished(item) {
-  return !item.status || item.status === "published";
+  return isPublic(item);
 }
 
 function matchesText(item, query, keys) {
@@ -52,7 +54,7 @@ async function getAll(collectionName) {
 
 async function getOne(collectionName, id) {
   const result = await db.collection(collectionName).where({ id }).limit(1).get();
-  return result.data[0] || null;
+  return result.data[0] ? stripSystemFields(result.data[0]) : null;
 }
 
 async function queryPrograms(options) {
@@ -63,7 +65,7 @@ async function queryPrograms(options) {
     .filter((program) => !region || program.region === region)
     .filter((program) => programMatchesFilter(program, filter))
     .filter((program) => matchesText(program, query, ["school", "schoolCn", "program", "programShort", "location", "country", "region"]));
-  return paginate(filtered, page, pageSize);
+  return paginate(filtered.map(stripSystemFields), page, pageSize);
 }
 
 async function queryCases(options) {
@@ -73,7 +75,7 @@ async function queryCases(options) {
     .filter(isPublished)
     .filter((caseStudy) => !region || (caseStudy.regions || []).includes(region))
     .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)));
-  return paginate(filtered, page, pageSize);
+  return paginate(filtered.map(stripSystemFields), page, pageSize);
 }
 
 async function getHomeContent() {
@@ -89,9 +91,9 @@ async function getHomeContent() {
     programCount: publishedPrograms.length,
     caseCount: publishedCases.length,
     articleCount: publishedArticles.length,
-    featuredPrograms: publishedPrograms.sort((left, right) => (left.rank || 0) - (right.rank || 0)).slice(0, 3),
-    featuredCases: publishedCases.slice(0, 3),
-    featuredArticles: publishedArticles.slice(0, 3)
+    featuredPrograms: publishedPrograms.sort((left, right) => (left.rank || 0) - (right.rank || 0)).slice(0, 3).map(stripSystemFields),
+    featuredCases: publishedCases.slice(0, 3).map(stripSystemFields),
+    featuredArticles: publishedArticles.slice(0, 3).map(stripSystemFields)
   };
 }
 
@@ -99,6 +101,8 @@ async function getPublishedOne(collectionName, id) {
   const item = await getOne(collectionName, id);
   return item && isPublished(item) ? item : null;
 }
+
+const admin = createAdminApi({ cloud, db, getAll });
 
 exports.main = async (event) => {
   const payload = event.payload || {};
@@ -114,9 +118,17 @@ exports.main = async (event) => {
     case "getArticle":
       return getPublishedOne("articles", payload.id);
     case "getArticles":
-      return (await getAll("articles")).filter(isPublished);
+      return (await getAll("articles")).filter(isPublished).map(stripSystemFields);
     case "getHomeContent":
       return getHomeContent();
+    case "adminGetStatus":
+      return admin.getStatus();
+    case "adminListContent":
+      return admin.list(payload.collection);
+    case "adminSaveContent":
+      return admin.save(payload.collection, payload.record);
+    case "adminArchiveContent":
+      return admin.archive(payload.collection, payload.id);
     default:
       throw new Error("Unsupported content action");
   }

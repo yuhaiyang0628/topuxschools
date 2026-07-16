@@ -62,6 +62,7 @@ node scripts/build-all.mjs
 
 详细交接见 [docs/MINIPROGRAM_HANDOFF.md](docs/MINIPROGRAM_HANDOFF.md)，字段约定见 [docs/CONTENT_SCHEMA.md](docs/CONTENT_SCHEMA.md)。
 日常新增、修改、下架的操作步骤见 [docs/CONTENT_OPERATIONS.md](docs/CONTENT_OPERATIONS.md)。
+管理员直接在小程序中维护三类内容的接入说明见 [docs/ADMIN_CONTENT_BACKEND.md](docs/ADMIN_CONTENT_BACKEND.md)。
 
 ## 本地预览
 

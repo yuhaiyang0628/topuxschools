@@ -1,10 +1,22 @@
 const config = require("../../data/config");
+const { getAdminStatus } = require("../../services/admin");
 
 Page({
   data: {
     contactEmail: config.contactEmail,
     contactWechat: config.contactWechat,
-    contactNote: config.contactNote
+    contactNote: config.contactNote,
+    isAdmin: false
+  },
+
+  async onLoad() {
+    try {
+      const status = await getAdminStatus();
+      this.setData({ isAdmin: Boolean(status.isAdmin) });
+      console.info("[Top UX Schools] Current admin identity.", status);
+    } catch (error) {
+      console.info("[Top UX Schools] Admin entry is unavailable.", error);
+    }
   },
 
   copyEmail() {
@@ -20,6 +32,10 @@ Page({
       data: this.data.contactWechat,
       success: () => wx.showToast({ title: "微信号已复制", icon: "success" })
     });
+  },
+
+  openAdmin() {
+    wx.navigateTo({ url: "/pages/admin/index" });
   },
 
   onShareAppMessage() {
