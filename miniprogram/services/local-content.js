@@ -4,6 +4,10 @@ function normalize(value) {
   return String(value || "").trim().toLowerCase();
 }
 
+function isPublished(item) {
+  return !item.status || item.status === "published";
+}
+
 function matchesText(item, query, keys) {
   const keyword = normalize(query);
   if (!keyword) return true;
@@ -34,6 +38,7 @@ function programMatchesFilter(program, filter) {
 
 function queryPrograms({ region = "US", filter = "all", query = "", page = 1, pageSize = 20 } = {}) {
   const filtered = programs
+    .filter(isPublished)
     .filter((program) => !region || program.region === region)
     .filter((program) => programMatchesFilter(program, filter))
     .filter((program) => matchesText(program, query, ["school", "schoolCn", "program", "programShort", "location", "country", "region"]));
@@ -42,35 +47,39 @@ function queryPrograms({ region = "US", filter = "all", query = "", page = 1, pa
 
 function queryCases({ region = "", query = "", page = 1, pageSize = 6 } = {}) {
   const filtered = caseStudies
-    .filter((caseStudy) => !region || caseStudy.region === region)
-    .filter((caseStudy) => matchesText(caseStudy, query, ["school", "schoolCn", "program", "background", "region", "result"]));
+    .filter(isPublished)
+    .filter((caseStudy) => !region || (caseStudy.regions || []).includes(region))
+    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)));
   return paginate(filtered, page, pageSize);
 }
 
 function getProgram(id) {
-  return programs.find((program) => program.id === id);
+  return programs.find((program) => program.id === id && isPublished(program));
 }
 
 function getCaseStudy(id) {
-  return caseStudies.find((caseStudy) => caseStudy.id === id);
+  return caseStudies.find((caseStudy) => caseStudy.id === id && isPublished(caseStudy));
 }
 
 function getArticle(id) {
-  return articles.find((article) => article.id === id);
+  return articles.find((article) => article.id === id && isPublished(article));
 }
 
 function getArticles() {
-  return articles;
+  return articles.filter(isPublished);
 }
 
 function getHomeContent() {
+  const publishedPrograms = programs.filter(isPublished);
+  const publishedCases = caseStudies.filter(isPublished);
+  const publishedArticles = articles.filter(isPublished);
   return {
-    programCount: programs.length,
-    caseCount: caseStudies.length,
-    articleCount: articles.length,
-    featuredPrograms: programs.slice(0, 3),
-    featuredCases: caseStudies.slice(0, 3),
-    featuredArticles: articles.slice(0, 3)
+    programCount: publishedPrograms.length,
+    caseCount: publishedCases.length,
+    articleCount: publishedArticles.length,
+    featuredPrograms: publishedPrograms.slice(0, 3),
+    featuredCases: publishedCases.slice(0, 3),
+    featuredArticles: publishedArticles.slice(0, 3)
   };
 }
 

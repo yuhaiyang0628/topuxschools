@@ -40,6 +40,10 @@ function safeUrl(value) {
   return /^https?:\/\//i.test(url) ? url : "#";
 }
 
+function isPublished(item) {
+  return !item.status || item.status === "published";
+}
+
 function matchesFilter(program) {
   if (activeFilter === "all") return true;
   if (activeFilter === "portfolio") return program.tags.includes("portfolio");
@@ -70,6 +74,7 @@ function matchesSearch(program) {
 
 function renderRows() {
   const programs = window.PROGRAMS
+    .filter(isPublished)
     .filter(matchesRegion)
     .filter(matchesFilter)
     .filter(matchesSearch);
@@ -180,23 +185,33 @@ function renderProgramPanel(program) {
 function caseMatchesSearch(caseStudy) {
   const query = caseSearchInput.value.trim().toLowerCase();
   if (!query) return true;
-  return [
-    caseStudy.school,
-    caseStudy.schoolCn,
-    caseStudy.program,
-    caseStudy.background,
-    caseStudy.region,
-    caseStudy.result,
-    caseStudy.tags.join(" ")
-  ].join(" ").toLowerCase().includes(query);
+  return (caseStudy.searchTerms || []).join(" ").toLowerCase().includes(query);
 }
 
 function caseMatchesRegion(caseStudy) {
-  return !activeCaseRegion || caseStudy.region === activeCaseRegion;
+  return !activeCaseRegion || (caseStudy.regions || []).includes(activeCaseRegion);
+}
+
+function outcomeStatusLabel(status) {
+  if (status === "selected") return "最终选择";
+  if (status === "offer") return "Offer";
+  if (status === "rejected") return "拒信";
+  return "等待结果";
+}
+
+function renderOutcomeTags(outcomes) {
+  return outcomes.map((item) => `
+    <span class="outcome-tag ${escapeHtml(item.status)}" aria-label="${escapeHtml(outcomeStatusLabel(item.status))}：${escapeHtml(item.label)}">${escapeHtml(item.label)}</span>
+  `).join("");
+}
+
+function renderMethodTags(methods) {
+  return methods.map((method) => `<span class="method-tag">${escapeHtml(method)}</span>`).join("");
 }
 
 function renderCases() {
   const caseStudies = window.CASE_STUDIES
+    .filter(isPublished)
     .filter(caseMatchesRegion)
     .filter(caseMatchesSearch);
   const totalPages = Math.max(1, Math.ceil(caseStudies.length / CASES_PER_PAGE));
@@ -207,18 +222,16 @@ function renderCases() {
   caseResults.textContent = `${regionLabel} · 找到 ${caseStudies.length} 个案例`;
   caseGrid.innerHTML = pageCases.map((caseStudy) => `
     <article class="case-card">
-      <button class="content-card-button" type="button" data-case-id="${escapeHtml(caseStudy.id)}" aria-label="查看 ${escapeHtml(caseStudy.school)} 案例详情">
-        <div class="case-card-topline"><span>${escapeHtml(caseStudy.year)}</span><span>${escapeHtml(caseStudy.region)}</span></div>
-        <h3>${escapeHtml(caseStudy.result)}</h3>
-        <p class="case-program">${escapeHtml(caseStudy.schoolCn)} · ${escapeHtml(caseStudy.program)}</p>
+      <button class="content-card-button" type="button" data-case-id="${escapeHtml(caseStudy.id)}" aria-label="查看 ${escapeHtml(caseStudy.title)} 案例详情">
+        <div class="case-card-topline"><span>${escapeHtml(caseStudy.year)}</span><span>${escapeHtml(caseStudy.regions.join(" · "))}</span></div>
+        <h3>${escapeHtml(caseStudy.title)}</h3>
+        <div class="outcome-tags">${renderOutcomeTags(caseStudy.outcomes)}</div>
         <dl class="case-facts">
           <div><dt>背景</dt><dd>${escapeHtml(caseStudy.background)}</dd></div>
-          <div><dt>申请方式</dt><dd>${caseStudy.diy ? "DIY" : "协助申请"}</dd></div>
+          <div><dt>申请方式</dt><dd class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</dd></div>
           <div><dt>成绩</dt><dd>${escapeHtml(caseStudy.gpa)} · ${escapeHtml(caseStudy.language)}</dd></div>
         </dl>
-        <p class="card-summary">${escapeHtml(caseStudy.summary)}</p>
-        <div class="tag-list">${caseStudy.tags.slice(0, 3).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-        <span class="card-link">查看完整复盘 <span aria-hidden="true">→</span></span>
+        <span class="card-link">查看案例详情 <span aria-hidden="true">→</span></span>
       </button>
     </article>
   `).join("");
@@ -257,35 +270,32 @@ function renderCasePanel(caseStudy) {
     <article class="content-detail case-detail">
       <div class="panel-head">
         <p class="panel-kicker">录取案例 · ${escapeHtml(caseStudy.year)}</p>
-        <h2 class="panel-title">${escapeHtml(caseStudy.result)}</h2>
-        <p class="detail-lead">${escapeHtml(caseStudy.school)} · ${escapeHtml(caseStudy.program)}</p>
-        <div class="tag-list">${caseStudy.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+        <h2 class="panel-title">${escapeHtml(caseStudy.title)}</h2>
+        <p class="detail-lead">${escapeHtml(caseStudy.selected.school.school)} · ${escapeHtml(caseStudy.selected.program.program)}</p>
+        <div class="outcome-tags">${renderOutcomeTags(caseStudy.outcomes)}</div>
       </div>
       <section class="panel-section">
         <div class="rule-title">申请背景</div>
         <div class="fact-grid">
           <div class="fact"><span>学校背景</span><strong>${escapeHtml(caseStudy.background)}</strong></div>
-          <div class="fact"><span>申请方式</span><strong>${caseStudy.diy ? "DIY" : "协助申请"}</strong></div>
           <div class="fact"><span>GPA</span><strong>${escapeHtml(caseStudy.gpa)}</strong></div>
           <div class="fact"><span>语言成绩</span><strong>${escapeHtml(caseStudy.language)}</strong></div>
-          <div class="fact"><span>工作经历</span><strong>${escapeHtml(caseStudy.work)}</strong></div>
-          <div class="fact"><span>实习经历</span><strong>${escapeHtml(caseStudy.internships)}</strong></div>
         </div>
       </section>
       <section class="panel-section">
-        <div class="rule-title">录取结果</div>
-        <div class="admit-list">${caseStudy.admits.map((admit) => `<span>${escapeHtml(admit)}</span>`).join("")}</div>
+        <div class="rule-title">申请方式</div>
+        <div class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</div>
       </section>
       <section class="panel-section">
-        <div class="rule-title">经验分享</div>
-        <div class="reading-copy">${caseStudy.story.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>
+        <div class="rule-title">申请结果</div>
+        <div class="outcome-tags">${renderOutcomeTags(caseStudy.outcomes)}</div>
       </section>
     </article>
   `;
 }
 
 function renderArticles() {
-  articleGrid.innerHTML = window.ARTICLES.map((article, index) => `
+  articleGrid.innerHTML = window.ARTICLES.filter(isPublished).map((article, index) => `
     <article class="article-card ${index === 0 ? "article-featured" : ""}">
       <button class="content-card-button" type="button" data-article-id="${escapeHtml(article.id)}" aria-label="阅读文章：${escapeHtml(article.title)}">
         <div class="article-meta"><span>${escapeHtml(article.category)}</span><span>${escapeHtml(article.readTime)}</span></div>
@@ -320,21 +330,21 @@ function showPanel() {
 }
 
 function openProgram(id) {
-  const program = window.PROGRAMS.find((item) => item.id === id);
+  const program = window.PROGRAMS.find((item) => item.id === id && isPublished(item));
   if (!program) return;
   renderProgramPanel(program);
   showPanel();
 }
 
 function openCase(id) {
-  const caseStudy = window.CASE_STUDIES.find((item) => item.id === id);
+  const caseStudy = window.CASE_STUDIES.find((item) => item.id === id && isPublished(item));
   if (!caseStudy) return;
   renderCasePanel(caseStudy);
   showPanel();
 }
 
 function openArticle(id) {
-  const article = window.ARTICLES.find((item) => item.id === id);
+  const article = window.ARTICLES.find((item) => item.id === id && isPublished(item));
   if (!article) return;
   renderArticlePanel(article);
   showPanel();

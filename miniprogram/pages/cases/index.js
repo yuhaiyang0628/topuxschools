@@ -33,8 +33,12 @@ Page({
       page,
       pageSize: 6
     });
+    const cases = result.list.map((caseStudy) => ({
+      ...caseStudy,
+      regionLabel: (caseStudy.regions || []).join(" · ")
+    }));
     this.setData({
-      cases: reset ? result.list : this.data.cases.concat(result.list),
+      cases: reset ? cases : this.data.cases.concat(cases),
       total: result.total,
       page: result.page,
       hasMore: result.hasMore,

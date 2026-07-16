@@ -1,11 +1,11 @@
 <view wx:if="{{caseStudy}}" class="detail-page">
   <view class="detail-hero">
     <view class="eyebrow">录取案例 · {{caseStudy.year}}</view>
-    <view class="detail-title">{{caseStudy.result}}</view>
-    <view class="detail-school">{{caseStudy.schoolCn}}</view>
-    <view class="detail-school-en">{{caseStudy.school}} · {{caseStudy.program}}</view>
-    <view class="tag-row">
-      <text class="tag" wx:for="{{caseStudy.tags}}" wx:key="*this">{{item}}</text>
+    <view class="detail-title">{{caseStudy.title}}</view>
+    <view class="detail-school">{{caseStudy.selected.school.schoolCn}}</view>
+    <view class="detail-school-en">{{caseStudy.selected.school.school}} · {{caseStudy.selected.program.program}}</view>
+    <view class="outcome-tags">
+      <text class="outcome-tag {{item.status}}" wx:for="{{caseStudy.outcomes}}" wx:key="label">{{item.label}}</text>
     </view>
   </view>
 
@@ -18,14 +18,14 @@
       </view>
     </view>
 
-    <view class="section-label section-space">录取结果</view>
-    <view class="admit-list">
-      <text wx:for="{{caseStudy.admits}}" wx:key="*this">{{item}}</text>
+    <view class="section-label section-space">申请方式</view>
+    <view class="method-tags detail-method-tags">
+      <text class="method-tag" wx:for="{{caseStudy.applicationMethods}}" wx:key="*this">{{item}}</text>
     </view>
 
-    <view class="section-label section-space">经验分享</view>
-    <view class="story-copy">
-      <text wx:for="{{caseStudy.story}}" wx:key="*this">{{item}}</text>
+    <view class="section-label section-space">申请结果</view>
+    <view class="outcome-tags detail-outcome-tags">
+      <text class="outcome-tag {{item.status}}" wx:for="{{caseStudy.outcomes}}" wx:key="label">{{item.label}}</text>
     </view>
 
     <button class="secondary-action" bindtap="goToContact">有类似问题，先聊聊</button>

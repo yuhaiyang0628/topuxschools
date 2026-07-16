@@ -8,6 +8,10 @@ function normalize(value) {
   return String(value || "").trim().toLowerCase();
 }
 
+function isPublished(item) {
+  return !item.status || item.status === "published";
+}
+
 function matchesText(item, query, keys) {
   const keyword = normalize(query);
   if (!keyword) return true;
@@ -55,6 +59,7 @@ async function queryPrograms(options) {
   const { region = "US", filter = "all", query = "", page = 1, pageSize = 20 } = options;
   const programs = (await getAll("programs")).sort((left, right) => (left.rank || 0) - (right.rank || 0));
   const filtered = programs
+    .filter(isPublished)
     .filter((program) => !region || program.region === region)
     .filter((program) => programMatchesFilter(program, filter))
     .filter((program) => matchesText(program, query, ["school", "schoolCn", "program", "programShort", "location", "country", "region"]));
@@ -65,8 +70,9 @@ async function queryCases(options) {
   const { region = "", query = "", page = 1, pageSize = 6 } = options;
   const caseStudies = await getAll("caseStudies");
   const filtered = caseStudies
-    .filter((caseStudy) => !region || caseStudy.region === region)
-    .filter((caseStudy) => matchesText(caseStudy, query, ["school", "schoolCn", "program", "background", "region", "result"]));
+    .filter(isPublished)
+    .filter((caseStudy) => !region || (caseStudy.regions || []).includes(region))
+    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)));
   return paginate(filtered, page, pageSize);
 }
 
@@ -76,14 +82,22 @@ async function getHomeContent() {
     getAll("caseStudies"),
     getAll("articles")
   ]);
+  const publishedPrograms = programs.filter(isPublished);
+  const publishedCases = caseStudies.filter(isPublished);
+  const publishedArticles = articles.filter(isPublished);
   return {
-    programCount: programs.length,
-    caseCount: caseStudies.length,
-    articleCount: articles.length,
-    featuredPrograms: programs.sort((left, right) => (left.rank || 0) - (right.rank || 0)).slice(0, 3),
-    featuredCases: caseStudies.slice(0, 3),
-    featuredArticles: articles.slice(0, 3)
+    programCount: publishedPrograms.length,
+    caseCount: publishedCases.length,
+    articleCount: publishedArticles.length,
+    featuredPrograms: publishedPrograms.sort((left, right) => (left.rank || 0) - (right.rank || 0)).slice(0, 3),
+    featuredCases: publishedCases.slice(0, 3),
+    featuredArticles: publishedArticles.slice(0, 3)
   };
+}
+
+async function getPublishedOne(collectionName, id) {
+  const item = await getOne(collectionName, id);
+  return item && isPublished(item) ? item : null;
 }
 
 exports.main = async (event) => {
@@ -94,13 +108,13 @@ exports.main = async (event) => {
     case "queryCases":
       return queryCases(payload);
     case "getProgram":
-      return getOne("programs", payload.id);
+      return getPublishedOne("programs", payload.id);
     case "getCaseStudy":
-      return getOne("caseStudies", payload.id);
+      return getPublishedOne("caseStudies", payload.id);
     case "getArticle":
-      return getOne("articles", payload.id);
+      return getPublishedOne("articles", payload.id);
     case "getArticles":
-      return getAll("articles");
+      return (await getAll("articles")).filter(isPublished);
     case "getHomeContent":
       return getHomeContent();
     default:

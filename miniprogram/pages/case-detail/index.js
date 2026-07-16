@@ -3,11 +3,8 @@ const { getCaseStudy } = require("../../services/content");
 function buildFacts(caseStudy) {
   return [
     { label: "学校背景", value: caseStudy.background },
-    { label: "申请方式", value: caseStudy.diy ? "DIY" : "协助申请" },
     { label: "GPA", value: caseStudy.gpa },
-    { label: "语言成绩", value: caseStudy.language },
-    { label: "工作经历", value: caseStudy.work },
-    { label: "实习经历", value: caseStudy.internships }
+    { label: "语言成绩", value: caseStudy.language }
   ];
 }
 
@@ -23,7 +20,7 @@ Page({
       wx.showToast({ title: "未找到这个案例", icon: "none" });
       return;
     }
-    wx.setNavigationBarTitle({ title: caseStudy.result });
+    wx.setNavigationBarTitle({ title: caseStudy.title });
     this.setData({ caseStudy, facts: buildFacts(caseStudy) });
   },
 

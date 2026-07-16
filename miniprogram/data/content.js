@@ -28,7 +28,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-001-massachusetts-institute-of-technology-mit-media-arts-and-sci",
+      "status": "published"
     },
     {
       "id": "us-002-stanford-university-m-s-in-design-design-impact",
@@ -58,7 +60,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-002-stanford-university-m-s-in-design-design-impact",
+      "status": "published"
     },
     {
       "id": "us-003-harvard-university-mdes-in-design-studies-mediums",
@@ -87,7 +91,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "stem"
-      ]
+      ],
+      "_id": "program-us-003-harvard-university-mdes-in-design-studies-mediums",
+      "status": "published"
     },
     {
       "id": "us-004-carnegie-mellon-university-cmu-master-of-human-computer-inte",
@@ -115,7 +121,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "stem"
-      ]
+      ],
+      "_id": "program-us-004-carnegie-mellon-university-cmu-master-of-human-computer-inte",
+      "status": "published"
     },
     {
       "id": "us-005-carnegie-mellon-university-cmu-mdes-in-design-for-interactio",
@@ -144,7 +152,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-005-carnegie-mellon-university-cmu-mdes-in-design-for-interactio",
+      "status": "published"
     },
     {
       "id": "us-006-carnegie-mellon-university-cmu-master-of-integrated-innovati",
@@ -172,7 +182,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-us-006-carnegie-mellon-university-cmu-master-of-integrated-innovati",
+      "status": "published"
     },
     {
       "id": "us-007-carnegie-mellon-university-cmu-master-of-educational-technol",
@@ -200,7 +212,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "stem"
-      ]
+      ],
+      "_id": "program-us-007-carnegie-mellon-university-cmu-master-of-educational-technol",
+      "status": "published"
     },
     {
       "id": "us-008-carnegie-mellon-university-cmu-master-of-entertainment-techn",
@@ -228,7 +242,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-us-008-carnegie-mellon-university-cmu-master-of-entertainment-techn",
+      "status": "published"
     },
     {
       "id": "us-009-university-of-washington-uw-master-of-human-computer-interac",
@@ -257,7 +273,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-009-university-of-washington-uw-master-of-human-computer-interac",
+      "status": "published"
     },
     {
       "id": "us-010-university-of-washington-uw-ms-in-human-centered-design-engi",
@@ -286,7 +304,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-010-university-of-washington-uw-ms-in-human-centered-design-engi",
+      "status": "published"
     },
     {
       "id": "us-011-university-of-washington-uw-ms-in-technology-innovation",
@@ -315,7 +335,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-011-university-of-washington-uw-ms-in-technology-innovation",
+      "status": "published"
     },
     {
       "id": "us-012-university-of-washington-uw-mdes-interaction-design",
@@ -344,7 +366,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-012-university-of-washington-uw-mdes-interaction-design",
+      "status": "published"
     },
     {
       "id": "us-013-university-of-washington-uw-ms-in-information-management",
@@ -373,7 +397,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-013-university-of-washington-uw-ms-in-information-management",
+      "status": "published"
     },
     {
       "id": "us-014-georgia-institute-of-technology-master-of-human-computer-int",
@@ -402,7 +428,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-014-georgia-institute-of-technology-master-of-human-computer-int",
+      "status": "published"
     },
     {
       "id": "us-015-georgia-institute-of-technology-ms-in-digital-media",
@@ -432,7 +460,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-015-georgia-institute-of-technology-ms-in-digital-media",
+      "status": "published"
     },
     {
       "id": "us-016-university-of-pennsylvania-master-of-integrated-product-desi",
@@ -461,7 +491,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-016-university-of-pennsylvania-master-of-integrated-product-desi",
+      "status": "published"
     },
     {
       "id": "us-017-cornell-university-information-science-mps",
@@ -490,7 +522,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-017-cornell-university-information-science-mps",
+      "status": "published"
     },
     {
       "id": "us-018-cornell-university-ms-design-technology",
@@ -520,7 +554,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-018-cornell-university-ms-design-technology",
+      "status": "published"
     },
     {
       "id": "us-019-cornell-university-ms-connective-media-dual-is-cs",
@@ -550,7 +586,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-019-cornell-university-ms-connective-media-dual-is-cs",
+      "status": "published"
     },
     {
       "id": "us-020-uc-berkeley-master-of-information-management-and-systems",
@@ -579,7 +617,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-020-uc-berkeley-master-of-information-management-and-systems",
+      "status": "published"
     },
     {
       "id": "us-021-uc-berkeley-master-of-design",
@@ -609,7 +649,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-021-uc-berkeley-master-of-design",
+      "status": "published"
     },
     {
       "id": "us-022-new-york-university-nyu-interactive-telecommunications-progr",
@@ -639,7 +681,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-022-new-york-university-nyu-interactive-telecommunications-progr",
+      "status": "published"
     },
     {
       "id": "us-023-new-york-university-nyu-interactive-media-arts-ma-low-res",
@@ -670,7 +714,9 @@ module.exports = {
         "stem",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-023-new-york-university-nyu-interactive-media-arts-ma-low-res",
+      "status": "published"
     },
     {
       "id": "us-024-new-york-university-nyu-integrated-digital-media-ms",
@@ -700,7 +746,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-024-new-york-university-nyu-integrated-digital-media-ms",
+      "status": "published"
     },
     {
       "id": "us-025-northwestern-university-m-s-in-engineering-design-innovation",
@@ -730,7 +778,9 @@ module.exports = {
         "portfolio",
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-025-northwestern-university-m-s-in-engineering-design-innovation",
+      "status": "published"
     },
     {
       "id": "us-026-university-of-michigan-m-s-in-information",
@@ -759,7 +809,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-026-university-of-michigan-m-s-in-information",
+      "status": "published"
     },
     {
       "id": "us-027-university-of-texas-at-austin-m-s-in-information-studies-ux-",
@@ -788,7 +840,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-027-university-of-texas-at-austin-m-s-in-information-studies-ux-",
+      "status": "published"
     },
     {
       "id": "us-028-indiana-university-bloomington-m-s-in-human-computer-interac",
@@ -816,7 +870,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-us-028-indiana-university-bloomington-m-s-in-human-computer-interac",
+      "status": "published"
     },
     {
       "id": "us-029-purdue-university-m-s-in-computer-graphics-technology-hcdd",
@@ -844,7 +900,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-us-029-purdue-university-m-s-in-computer-graphics-technology-hcdd",
+      "status": "published"
     },
     {
       "id": "us-030-university-of-maryland-m-s-in-human-computer-interaction",
@@ -872,7 +930,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-us-030-university-of-maryland-m-s-in-human-computer-interaction",
+      "status": "published"
     },
     {
       "id": "us-031-rochester-institute-of-technology-rit-m-s-in-human-computer-",
@@ -900,7 +960,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "stem"
-      ]
+      ],
+      "_id": "program-us-031-rochester-institute-of-technology-rit-m-s-in-human-computer-",
+      "status": "published"
     },
     {
       "id": "us-032-arizona-state-university-asu-m-s-in-user-experience",
@@ -930,7 +992,9 @@ module.exports = {
         "portfolio",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-032-arizona-state-university-asu-m-s-in-user-experience",
+      "status": "published"
     },
     {
       "id": "us-033-university-of-wisconsin-madison-m-s-in-design-innovation",
@@ -958,7 +1022,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-033-university-of-wisconsin-madison-m-s-in-design-innovation",
+      "status": "published"
     },
     {
       "id": "us-034-illinois-institute-of-technology-iit-master-of-design",
@@ -987,7 +1053,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-034-illinois-institute-of-technology-iit-master-of-design",
+      "status": "published"
     },
     {
       "id": "us-035-northeastern-university-m-s-in-experience-design",
@@ -1016,7 +1084,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-us-035-northeastern-university-m-s-in-experience-design",
+      "status": "published"
     },
     {
       "id": "us-036-university-of-colorado-boulder-ms-technology-media-society-c",
@@ -1044,7 +1114,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-036-university-of-colorado-boulder-ms-technology-media-society-c",
+      "status": "published"
     },
     {
       "id": "us-037-pennsylvania-state-university-m-s-in-informatics-hci-concent",
@@ -1072,7 +1144,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-037-pennsylvania-state-university-m-s-in-informatics-hci-concent",
+      "status": "published"
     },
     {
       "id": "us-038-michigan-state-university-ma-in-media-and-information-hci-fo",
@@ -1100,7 +1174,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-038-michigan-state-university-ma-in-media-and-information-hci-fo",
+      "status": "published"
     },
     {
       "id": "us-039-california-state-university-long-beach-m-a-in-human-experien",
@@ -1129,7 +1205,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-039-california-state-university-long-beach-m-a-in-human-experien",
+      "status": "published"
     },
     {
       "id": "us-040-california-state-university-east-bay-ma-in-interaction-desig",
@@ -1158,7 +1236,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-040-california-state-university-east-bay-ma-in-interaction-desig",
+      "status": "published"
     },
     {
       "id": "us-041-iowa-state-university-m-s-in-human-computer-interaction",
@@ -1187,7 +1267,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-041-iowa-state-university-m-s-in-human-computer-interaction",
+      "status": "published"
     },
     {
       "id": "us-042-parsons-school-of-design-the-new-school-m-f-a-in-design-and-",
@@ -1216,7 +1298,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-042-parsons-school-of-design-the-new-school-m-f-a-in-design-and-",
+      "status": "published"
     },
     {
       "id": "us-043-pratt-institute-m-s-in-information-experience-design",
@@ -1245,7 +1329,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-043-pratt-institute-m-s-in-information-experience-design",
+      "status": "published"
     },
     {
       "id": "us-044-california-college-of-the-arts-cca-mdes-in-interaction-desig",
@@ -1275,7 +1361,9 @@ module.exports = {
         "portfolio",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-044-california-college-of-the-arts-cca-mdes-in-interaction-desig",
+      "status": "published"
     },
     {
       "id": "us-045-school-of-visual-arts-sva-m-f-a-in-interaction-design",
@@ -1304,7 +1392,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-045-school-of-visual-arts-sva-m-f-a-in-interaction-design",
+      "status": "published"
     },
     {
       "id": "us-046-savannah-college-of-art-and-design-scad-mfa-in-interactive-d",
@@ -1334,7 +1424,9 @@ module.exports = {
         "portfolio",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-046-savannah-college-of-art-and-design-scad-mfa-in-interactive-d",
+      "status": "published"
     },
     {
       "id": "us-047-savannah-college-of-art-and-design-scad-ma-in-interactive-de",
@@ -1364,7 +1456,9 @@ module.exports = {
         "portfolio",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-047-savannah-college-of-art-and-design-scad-ma-in-interactive-de",
+      "status": "published"
     },
     {
       "id": "us-048-art-center-college-of-design-media-design-practices-mfa",
@@ -1393,7 +1487,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-048-art-center-college-of-design-media-design-practices-mfa",
+      "status": "published"
     },
     {
       "id": "us-049-uc-irvine-master-of-human-computer-interaction-and-design",
@@ -1422,7 +1518,9 @@ module.exports = {
       "tags": [
         "stem",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-049-uc-irvine-master-of-human-computer-interaction-and-design",
+      "status": "published"
     },
     {
       "id": "us-050-depaul-university-ms-in-human-computer-interaction",
@@ -1452,7 +1550,9 @@ module.exports = {
         "stem",
         "rolling",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-050-depaul-university-ms-in-human-computer-interaction",
+      "status": "published"
     },
     {
       "id": "us-051-san-jose-state-university-mdes-experience-design",
@@ -1481,7 +1581,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "no-gre"
-      ]
+      ],
+      "_id": "program-us-051-san-jose-state-university-mdes-experience-design",
+      "status": "published"
     },
     {
       "id": "can-001-centre-for-digital-media-ubc-sfu-ecuad-bcit-master-of-digita",
@@ -1510,7 +1612,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-can-001-centre-for-digital-media-ubc-sfu-ecuad-bcit-master-of-digita",
+      "status": "published"
     },
     {
       "id": "can-002-simon-fraser-university-sfu-ma-msc-interactive-arts-and-tech",
@@ -1536,7 +1640,9 @@ module.exports = {
       "website": "https://www.sfu.ca/siat/programs/graduate/",
       "note": "【新增所有详情】；论文制和项目制两种完成方式",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-002-simon-fraser-university-sfu-ma-msc-interactive-arts-and-tech",
+      "status": "published"
     },
     {
       "id": "can-003-university-of-toronto-master-of-information-ux-design",
@@ -1562,7 +1668,9 @@ module.exports = {
       "website": "https://ischool.utoronto.ca/master-of-information/",
       "note": "【新增所有详情】；UX Design为8个concentration之一；含co-op选项",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-003-university-of-toronto-master-of-information-ux-design",
+      "status": "published"
     },
     {
       "id": "can-004-mcgill-university-master-of-information-studies-mist",
@@ -1588,7 +1696,9 @@ module.exports = {
       "website": "https://www.mcgill.ca/sis/programs/mist",
       "note": "【新增所有详情】；ALA认证；Course Work或Project两种选项",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-004-mcgill-university-master-of-information-studies-mist",
+      "status": "published"
     },
     {
       "id": "can-005-university-of-waterloo-master-of-digital-experience-innovati",
@@ -1614,7 +1724,9 @@ module.exports = {
       "website": "https://stratfordcampus.uwaterloo.ca/",
       "note": "【学制更正】1年→8个月全日制；【新增所有详情】；Stratford校区",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-005-university-of-waterloo-master-of-digital-experience-innovati",
+      "status": "published"
     },
     {
       "id": "can-006-university-of-ottawa-master-of-digital-transformation-and-in",
@@ -1640,7 +1752,9 @@ module.exports = {
       "website": "https://catalogue.uottawa.ca/en/graduate/master-digital-transformation-innovation/",
       "note": "【学制更正】1年→2年；【新增所有详情】；多学院合作；含UX Design concentration",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-006-university-of-ottawa-master-of-digital-transformation-and-in",
+      "status": "published"
     },
     {
       "id": "can-007-queen-s-university-master-of-digital-product-management",
@@ -1668,7 +1782,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-can-007-queen-s-university-master-of-digital-product-management",
+      "status": "published"
     },
     {
       "id": "can-008-carleton-university-master-of-human-computer-interaction",
@@ -1694,7 +1810,9 @@ module.exports = {
       "website": "https://graduate.carleton.ca/program/human-computer-interaction-masters/",
       "note": "【新增所有详情】；加拿大唯一的HCI专属硕士；三种完成路径：课程/研究项目/论文",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-008-carleton-university-master-of-human-computer-interaction",
+      "status": "published"
     },
     {
       "id": "can-009-york-university-ma-msc-digital-media",
@@ -1722,7 +1840,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-009-york-university-ma-msc-digital-media",
+      "status": "published"
     },
     {
       "id": "can-010-toronto-metropolitan-university-ryerson-master-of-digital-me",
@@ -1750,7 +1870,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-010-toronto-metropolitan-university-ryerson-master-of-digital-me",
+      "status": "published"
     },
     {
       "id": "can-011-mcmaster-university-ma-communication-and-new-media",
@@ -1776,7 +1898,9 @@ module.exports = {
       "website": "https://www.humanities.mcmaster.ca/communication-studies/",
       "note": "【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-011-mcmaster-university-ma-communication-and-new-media",
+      "status": "published"
     },
     {
       "id": "can-012-emily-carr-university-of-art-design-ecuad-master-of-design-i",
@@ -1804,7 +1928,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-012-emily-carr-university-of-art-design-ecuad-master-of-design-i",
+      "status": "published"
     },
     {
       "id": "can-013-ocad-university-digital-futures-ma-mdes-mfa",
@@ -1832,7 +1958,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-013-ocad-university-digital-futures-ma-mdes-mfa",
+      "status": "published"
     },
     {
       "id": "can-014-ocad-university-interdisciplinary-ma-mdes-mfa-in-art-media-a",
@@ -1860,7 +1988,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-014-ocad-university-interdisciplinary-ma-mdes-mfa-in-art-media-a",
+      "status": "published"
     },
     {
       "id": "can-015-ocad-university-mdes-inclusive-design",
@@ -1888,7 +2018,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-can-015-ocad-university-mdes-inclusive-design",
+      "status": "published"
     },
     {
       "id": "can-016-university-of-toronto-mi-concentration-human-centred-data-sc",
@@ -1914,7 +2046,9 @@ module.exports = {
       "website": "https://ischool.utoronto.ca/master-of-information/",
       "note": "【新增项目】MI项目新concentration，聚焦以人为中心的数据科学",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-can-016-university-of-toronto-mi-concentration-human-centred-data-sc",
+      "status": "published"
     },
     {
       "id": "uk-001-royal-college-of-art-rca-service-design-ma",
@@ -1942,7 +2076,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-001-royal-college-of-art-rca-service-design-ma",
+      "status": "published"
     },
     {
       "id": "uk-002-royal-college-of-art-rca-innovation-design-engineering-ma-ms",
@@ -1970,7 +2106,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-002-royal-college-of-art-rca-innovation-design-engineering-ma-ms",
+      "status": "published"
     },
     {
       "id": "uk-003-ual-london-college-of-communication-lcc-ma-service-design",
@@ -1998,7 +2136,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-003-ual-london-college-of-communication-lcc-ma-service-design",
+      "status": "published"
     },
     {
       "id": "uk-004-ual-london-college-of-communication-lcc-ma-interaction-desig",
@@ -2026,7 +2166,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-004-ual-london-college-of-communication-lcc-ma-interaction-desig",
+      "status": "published"
     },
     {
       "id": "uk-005-ual-london-college-of-communication-lcc-ma-user-experience-d",
@@ -2054,7 +2196,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-005-ual-london-college-of-communication-lcc-ma-user-experience-d",
+      "status": "published"
     },
     {
       "id": "uk-006-the-glasgow-school-of-art-gsa-mdes-design-innovation-service",
@@ -2083,7 +2227,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-uk-006-the-glasgow-school-of-art-gsa-mdes-design-innovation-service",
+      "status": "published"
     },
     {
       "id": "uk-007-the-glasgow-school-of-art-gsa-mdes-design-innovation-interac",
@@ -2112,7 +2258,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-uk-007-the-glasgow-school-of-art-gsa-mdes-design-innovation-interac",
+      "status": "published"
     },
     {
       "id": "uk-008-university-of-edinburgh-design-informatics-ma",
@@ -2138,7 +2286,9 @@ module.exports = {
       "website": "https://study.ed.ac.uk/programmes/postgraduate-taught/821-design-informatics",
       "note": "【学费更新】£35,900→£45,410（+26%）；【截止时间更新】2021/22→2026/27；【链接更新】；【新增材料说明】无申请费/押金；【注意】为爱丁堡艺术学院与信息学院合办项目",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-008-university-of-edinburgh-design-informatics-ma",
+      "status": "published"
     },
     {
       "id": "uk-009-goldsmiths-university-of-london-ma-design-expanded-practice",
@@ -2164,7 +2314,9 @@ module.exports = {
       "website": "https://www.gold.ac.uk/pg/ma-design-expanded-practice/",
       "note": "【学费更新】原「To be confirmed」→£29,500；【截止时间更新】→具体轮次日期；【新增作品集详情】含设计/非设计背景不同要求；【新增面试要求】；注意：个人陈述需注明第一和第二志愿Studio方向",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-009-goldsmiths-university-of-london-ma-design-expanded-practice",
+      "status": "published"
     },
     {
       "id": "uk-010-loughborough-university-ma-user-experience-and-service-desig",
@@ -2192,7 +2344,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-010-loughborough-university-ma-user-experience-and-service-desig",
+      "status": "published"
     },
     {
       "id": "uk-011-loughborough-university-user-experience-design-msc",
@@ -2220,7 +2374,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-011-loughborough-university-user-experience-design-msc",
+      "status": "published"
     },
     {
       "id": "uk-012-loughborough-university-london-msc-user-experience-and-servi",
@@ -2246,7 +2402,9 @@ module.exports = {
       "website": "https://www.lboro.ac.uk/study/postgraduate/masters-degrees/a-z/user-experience-service-design-london/",
       "note": "【重大变更】原「Service Design Innovation MSc」已更名/替换为「MSc User Experience and Service Design」（伦敦校区）；【学费更新】£26,500→£26,900（含奖学金）；【学术要求保留】2:2+55%非设计背景条件；【链接更新】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-012-loughborough-university-london-msc-user-experience-and-servi",
+      "status": "published"
     },
     {
       "id": "uk-013-university-of-brighton-user-experience-design-msc",
@@ -2272,7 +2430,9 @@ module.exports = {
       "website": "https://www.brighton.ac.uk/courses/study/user-experience-design-msc-pgcert-pgdip.aspx",
       "note": "【学费更新】£15,462→£18,792（+21%）；【学术要求更新】原「四年制本科学士或硕士60-70%」→2:2荣誉学位；【截止时间更新】；【新增学制选项】含实习/研究年",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-013-university-of-brighton-user-experience-design-msc",
+      "status": "published"
     },
     {
       "id": "uk-014-kingston-university-user-experience-design-msc",
@@ -2298,7 +2458,9 @@ module.exports = {
       "website": "https://www.kingston.ac.uk/study/postgraduate/user-experience-design-msc/",
       "note": "【学费更新】£15,400→£20,000（2026/27，+30%）；【学术要求更新】2:1→2:2或以上；【链接更新】；【截止时间更新】具体日期",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-014-kingston-university-user-experience-design-msc",
+      "status": "published"
     },
     {
       "id": "uk-015-university-of-westminster-interactive-media-practice-ma",
@@ -2327,7 +2489,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-uk-015-university-of-westminster-interactive-media-practice-ma",
+      "status": "published"
     },
     {
       "id": "uk-016-university-for-the-creative-arts-uca-ma-user-experience-desi",
@@ -2355,7 +2519,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-016-university-for-the-creative-arts-uca-ma-user-experience-desi",
+      "status": "published"
     },
     {
       "id": "uk-017-birmingham-city-university-bcu-user-experience-design-msc",
@@ -2383,7 +2549,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-017-birmingham-city-university-bcu-user-experience-design-msc",
+      "status": "published"
     },
     {
       "id": "uk-018-sheffield-hallam-university-shu-design-interaction-ma",
@@ -2412,7 +2580,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-uk-018-sheffield-hallam-university-shu-design-interaction-ma",
+      "status": "published"
     },
     {
       "id": "uk-019-university-of-lancashire-uclan-user-experience-ux-design-msc",
@@ -2438,7 +2608,9 @@ module.exports = {
       "website": "https://www.lancashire.ac.uk/postgraduate/courses/user-experience-ux-design-msc",
       "note": "【大学更名】UCLan→University of Lancashire，域名uclan.ac.uk→lancashire.ac.uk；【语言更新】6.5(6.0)→6.0(5.5)；【学费更新】£14,500→£19,250（+33%）；【城市更新】兰开夏郡→普雷斯顿",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-019-university-of-lancashire-uclan-user-experience-ux-design-msc",
+      "status": "published"
     },
     {
       "id": "uk-020-city-st-george-s-university-of-london-human-computer-interac",
@@ -2466,7 +2638,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-uk-020-city-st-george-s-university-of-london-human-computer-interac",
+      "status": "published"
     },
     {
       "id": "uk-021-edinburgh-napier-university-ma-design-for-interactive-experi",
@@ -2492,7 +2666,9 @@ module.exports = {
       "website": "https://www.napier.ac.uk/courses/ma-design-for-interactive-experience-postgraduate-full-time",
       "note": "【专业更名】「MA Design for Interactive Art & Experiences」→「MA Design for Interactive Experience」；【学费更新】£15,620→£20,540（+31%）；【学术更新】限艺术/设计→任何学科；【链接更新】原链接已失效",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-uk-021-edinburgh-napier-university-ma-design-for-interactive-experi",
+      "status": "published"
     },
     {
       "id": "uk-022-university-of-winchester-ma-digital-media-practice-interacti",
@@ -2520,7 +2696,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-022-university-of-winchester-ma-digital-media-practice-interacti",
+      "status": "published"
     },
     {
       "id": "uk-023-university-of-st-andrews-human-computer-interaction-msc",
@@ -2548,7 +2726,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-023-university-of-st-andrews-human-computer-interaction-msc",
+      "status": "published"
     },
     {
       "id": "uk-024-university-of-nottingham-human-computer-interaction-msc",
@@ -2576,7 +2756,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-uk-024-university-of-nottingham-human-computer-interaction-msc",
+      "status": "published"
     },
     {
       "id": "aus-001-university-of-sydney-master-of-interaction-design-and-electr",
@@ -2602,7 +2784,9 @@ module.exports = {
       "website": "https://www.sydney.edu.au/courses/courses/pc/master-of-interaction-design-and-electronic-arts.html",
       "note": "【学费更新】A$43,500→A$48,100/年；【学制更正】1.5-2年→仅1.5年；【IELTS更新】7.0(6.0)较高",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-aus-001-university-of-sydney-master-of-interaction-design-and-electr",
+      "status": "published"
     },
     {
       "id": "aus-002-university-of-new-south-wales-unsw-master-of-design-interact",
@@ -2630,7 +2814,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-002-university-of-new-south-wales-unsw-master-of-design-interact",
+      "status": "published"
     },
     {
       "id": "aus-003-monash-university-master-of-design-interaction-design",
@@ -2658,7 +2844,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-003-monash-university-master-of-design-interaction-design",
+      "status": "published"
     },
     {
       "id": "aus-004-university-of-queensland-uq-master-of-interaction-design",
@@ -2684,7 +2872,9 @@ module.exports = {
       "website": "https://study.uq.edu.au/study-options/programs/master-interaction-design-5590",
       "note": "【学费暴增】A$23,000→A$58,056/年（+152%）；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-aus-004-university-of-queensland-uq-master-of-interaction-design",
+      "status": "published"
     },
     {
       "id": "aus-005-university-of-technology-sydney-uts-master-of-interaction-de",
@@ -2712,7 +2902,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-005-university-of-technology-sydney-uts-master-of-interaction-de",
+      "status": "published"
     },
     {
       "id": "aus-006-rmit-university-master-of-animation-games-and-interactivity",
@@ -2740,7 +2932,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-006-rmit-university-master-of-animation-games-and-interactivity",
+      "status": "published"
     },
     {
       "id": "aus-007-rmit-university-master-of-communication-design",
@@ -2768,7 +2962,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-007-rmit-university-master-of-communication-design",
+      "status": "published"
     },
     {
       "id": "aus-008-adelaide-university-unisa-master-of-design-graphic-communica",
@@ -2796,7 +2992,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-008-adelaide-university-unisa-master-of-design-graphic-communica",
+      "status": "published"
     },
     {
       "id": "aus-009-deakin-university-master-of-creative-arts",
@@ -2822,7 +3020,9 @@ module.exports = {
       "website": "https://www.deakin.edu.au/courses/master-of-creative-arts",
       "note": "【新增所有详情】；注意：偏创意艺术非交互设计核心",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-aus-009-deakin-university-master-of-creative-arts",
+      "status": "published"
     },
     {
       "id": "aus-010-griffith-university-master-of-design",
@@ -2850,7 +3050,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-aus-010-griffith-university-master-of-design",
+      "status": "published"
     },
     {
       "id": "eu-001-university-college-dublin-ucd-msc-in-digital-innovation",
@@ -2878,7 +3080,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-eu-001-university-college-dublin-ucd-msc-in-digital-innovation",
+      "status": "published"
     },
     {
       "id": "eu-002-university-college-dublin-ucd-msc-human-computer-interaction",
@@ -2906,7 +3110,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-eu-002-university-college-dublin-ucd-msc-human-computer-interaction",
+      "status": "published"
     },
     {
       "id": "eu-003-trinity-college-dublin-tcd-msc-interactive-digital-media",
@@ -2934,7 +3140,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-003-trinity-college-dublin-tcd-msc-interactive-digital-media",
+      "status": "published"
     },
     {
       "id": "eu-004-south-east-technological-university-setu-ma-in-interaction-d",
@@ -2962,7 +3170,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-004-south-east-technological-university-setu-ma-in-interaction-d",
+      "status": "published"
     },
     {
       "id": "eu-005-university-of-limerick-ul-ma-msc-interaction-and-experience-",
@@ -2991,7 +3201,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-eu-005-university-of-limerick-ul-ma-msc-interaction-and-experience-",
+      "status": "published"
     },
     {
       "id": "eu-006-maynooth-university-msc-design-for-user-experience-interacti",
@@ -3019,7 +3231,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-eu-006-maynooth-university-msc-design-for-user-experience-interacti",
+      "status": "published"
     },
     {
       "id": "eu-007-delft-university-of-technology-tu-delft-msc-design-for-inter",
@@ -3047,7 +3261,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-007-delft-university-of-technology-tu-delft-msc-design-for-inter",
+      "status": "published"
     },
     {
       "id": "eu-008-eindhoven-university-of-technology-tu-e-msc-human-technology",
@@ -3073,7 +3289,9 @@ module.exports = {
       "website": "https://www.tue.nl/en/education/graduate-school/master-human-technology-interaction",
       "note": "【学费更新】€32.4k→€43.4k总计；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-008-eindhoven-university-of-technology-tu-e-msc-human-technology",
+      "status": "published"
     },
     {
       "id": "eu-009-university-of-twente-msc-interaction-technology",
@@ -3099,7 +3317,9 @@ module.exports = {
       "website": "https://www.utwente.nl/en/education/master/programmes/interaction-technology/",
       "note": "【新增所有详情】；高费率项目；双学位选项EIT Digital HCID/XR；申请费€100",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-009-university-of-twente-msc-interaction-technology",
+      "status": "published"
     },
     {
       "id": "eu-010-politecnico-di-milano-polimi-digital-and-interaction-design-",
@@ -3127,7 +3347,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-010-politecnico-di-milano-polimi-digital-and-interaction-design-",
+      "status": "published"
     },
     {
       "id": "eu-011-politecnico-di-milano-polimi-product-service-system-design-m",
@@ -3155,7 +3377,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-011-politecnico-di-milano-polimi-product-service-system-design-m",
+      "status": "published"
     },
     {
       "id": "eu-012-politecnico-di-milano-polimi-design-engineering-msc",
@@ -3183,7 +3407,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-012-politecnico-di-milano-polimi-design-engineering-msc",
+      "status": "published"
     },
     {
       "id": "eu-013-politecnico-di-milano-polimi-integrated-product-design-msc",
@@ -3211,7 +3437,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-013-politecnico-di-milano-polimi-integrated-product-design-msc",
+      "status": "published"
     },
     {
       "id": "eu-014-aalto-university-msc-human-computer-interaction-and-design-e",
@@ -3237,7 +3465,9 @@ module.exports = {
       "website": "https://www.aalto.fi/en/study-options/human-computer-interaction-and-design-ict-innovation-eit-digital-master-school-master-of-science",
       "note": "【重大变更】HCID现为EIT Digital双学位项目（非独立项目）；2国2大学；新增HCID/XR变体",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-014-aalto-university-msc-human-computer-interaction-and-design-e",
+      "status": "published"
     },
     {
       "id": "eu-015-aalto-university-collaborative-and-industrial-design-ma",
@@ -3265,7 +3495,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-015-aalto-university-collaborative-and-industrial-design-ma",
+      "status": "published"
     },
     {
       "id": "eu-016-aalto-university-creative-sustainability-ma-msc",
@@ -3293,7 +3525,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-016-aalto-university-creative-sustainability-ma-msc",
+      "status": "published"
     },
     {
       "id": "eu-017-university-of-lapland-master-in-sustainable-art-and-design-a",
@@ -3321,7 +3555,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-017-university-of-lapland-master-in-sustainable-art-and-design-a",
+      "status": "published"
     },
     {
       "id": "eu-018-chalmers-university-of-technology-msc-interaction-design-and",
@@ -3347,7 +3583,9 @@ module.exports = {
       "website": "https://www.chalmers.se/en/education/find-masters-programme/interaction-design-and-technologies-msc/",
       "note": "【学费更新】约SEK 140k→160k/年；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-018-chalmers-university-of-technology-msc-interaction-design-and",
+      "status": "published"
     },
     {
       "id": "eu-019-kth-royal-institute-of-technology-msc-integrated-product-des",
@@ -3375,7 +3613,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-019-kth-royal-institute-of-technology-msc-integrated-product-des",
+      "status": "published"
     },
     {
       "id": "eu-020-kth-royal-institute-of-technology-msc-interactive-media-tech",
@@ -3401,7 +3641,9 @@ module.exports = {
       "website": "https://www.kth.se/en/studies/master/interactive-media-technology",
       "note": "【学费更新】SEK 310k→360k总计；录取率32%；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-020-kth-royal-institute-of-technology-msc-interactive-media-tech",
+      "status": "published"
     },
     {
       "id": "eu-021-ume-university-uid-mfa-interaction-design-uid",
@@ -3429,7 +3671,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-021-ume-university-uid-mfa-interaction-design-uid",
+      "status": "published"
     },
     {
       "id": "eu-022-ume-university-msc-human-computer-interaction-and-user-exper",
@@ -3455,7 +3699,9 @@ module.exports = {
       "website": "https://www.umu.se/en/education/programmes/masters-programme-in-human-computer-interaction-and-user-experience/",
       "note": "【项目更名】HCISM→HCI and User Experience；【新增所有详情】；属信息学院非UID；MSc学位；比UID便宜很多",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-022-ume-university-msc-human-computer-interaction-and-user-exper",
+      "status": "published"
     },
     {
       "id": "eu-023-ume-university-uid-mfa-advanced-product-design-uid",
@@ -3483,7 +3729,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-023-ume-university-uid-mfa-advanced-product-design-uid",
+      "status": "published"
     },
     {
       "id": "eu-024-j-nk-ping-university-msc-user-experience-design",
@@ -3509,7 +3757,9 @@ module.exports = {
       "website": "https://ju.se/en/study-at-ju/our-programmes/master-programmes/user-experience-design-one-year-master-autumn-2026-mu125.html",
       "note": "【重大变更】学制2年→1年；【项目停办】原MSc Design(3方向)已取消；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-024-j-nk-ping-university-msc-user-experience-design",
+      "status": "published"
     },
     {
       "id": "eu-025-oslo-school-of-architecture-and-design-aho-master-of-design-",
@@ -3537,7 +3787,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-025-oslo-school-of-architecture-and-design-aho-master-of-design-",
+      "status": "published"
     },
     {
       "id": "eu-026-university-of-oslo-uio-msc-informatics-design-use-interactio",
@@ -3563,7 +3815,9 @@ module.exports = {
       "website": "https://www.uio.no/english/studies/programmes/inf-design-master/",
       "note": "【项目名称更正】原列Design in Interaction Design→实际为Informatics: Design, Use, Interaction",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-026-university-of-oslo-uio-msc-informatics-design-use-interactio",
+      "status": "published"
     },
     {
       "id": "eu-027-ntnu-msc-interaction-design",
@@ -3589,7 +3843,9 @@ module.exports = {
       "website": "https://www.ntnu.edu/studies/mixd/admission",
       "note": "【重要】该项目不对非欧盟学生开放！仅EU/EEA/北欧公民可申请",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-027-ntnu-msc-interaction-design",
+      "status": "published"
     },
     {
       "id": "eu-028-ntnu-msc-product-and-system-engineering-product-and-system-d",
@@ -3615,7 +3871,9 @@ module.exports = {
       "website": "https://www.ntnu.edu/studies/840md/admission",
       "note": "【项目更名】Product and System Design→Product and System Engineering；【学费新增】；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-028-ntnu-msc-product-and-system-engineering-product-and-system-d",
+      "status": "published"
     },
     {
       "id": "eu-029-technical-university-of-denmark-dtu-msc-design-and-innovatio",
@@ -3641,7 +3899,9 @@ module.exports = {
       "website": "https://www.dtu.dk/english/education/graduate/msc-programmes/design-and-innovation",
       "note": "【学费更新】新增；【新增所有详情】；3个专业方向",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-029-technical-university-of-denmark-dtu-msc-design-and-innovatio",
+      "status": "published"
     },
     {
       "id": "eu-030-aalborg-university-msc-service-systems-design",
@@ -3669,7 +3929,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-eu-030-aalborg-university-msc-service-systems-design",
+      "status": "published"
     },
     {
       "id": "eu-031-aalborg-university-msc-sustainable-design",
@@ -3695,7 +3957,9 @@ module.exports = {
       "website": "https://www.en.aau.dk/education/master/sustainable-design-msc-in-engineering",
       "note": "【新增所有详情】；MSc in Engineering学位",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-eu-031-aalborg-university-msc-sustainable-design",
+      "status": "published"
     },
     {
       "id": "asia-001-hong-kong-polytechnic-university-polyu-msc-innovative-multim",
@@ -3723,7 +3987,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-001-hong-kong-polytechnic-university-polyu-msc-innovative-multim",
+      "status": "published"
     },
     {
       "id": "asia-002-hong-kong-polytechnic-university-polyu-mdes-intelligent-syst",
@@ -3751,7 +4017,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-002-hong-kong-polytechnic-university-polyu-mdes-intelligent-syst",
+      "status": "published"
     },
     {
       "id": "asia-003-hong-kong-polytechnic-university-polyu-mdes-smart-service-de",
@@ -3779,7 +4047,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-003-hong-kong-polytechnic-university-polyu-mdes-smart-service-de",
+      "status": "published"
     },
     {
       "id": "asia-004-hong-kong-polytechnic-university-polyu-mdes-transitional-env",
@@ -3807,7 +4077,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-004-hong-kong-polytechnic-university-polyu-mdes-transitional-env",
+      "status": "published"
     },
     {
       "id": "asia-005-hong-kong-polytechnic-university-polyu-mdes-innovative-busin",
@@ -3835,7 +4107,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-005-hong-kong-polytechnic-university-polyu-mdes-innovative-busin",
+      "status": "published"
     },
     {
       "id": "asia-006-hong-kong-polytechnic-university-polyu-master-of-design-in-i",
@@ -3861,7 +4135,9 @@ module.exports = {
       "website": "—",
       "note": "【已停办】该项目已不再招生，请参考ISD/SSD/TED/IBD等MDes项目",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-006-hong-kong-polytechnic-university-polyu-master-of-design-in-i",
+      "status": "published"
     },
     {
       "id": "asia-007-university-of-hong-kong-hku-msc-in-innovative-design-and-tec",
@@ -3887,7 +4163,9 @@ module.exports = {
       "website": "https://admissions.hku.hk/tpg/programme/master-of-science-in-innovative-design-and-technology/",
       "note": "【项目名称更正】原MSE→MSc IDT；【学费更新】新增；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-007-university-of-hong-kong-hku-msc-in-innovative-design-and-tec",
+      "status": "published"
     },
     {
       "id": "asia-008-city-university-of-hong-kong-cityu-mfa-creative-media-intera",
@@ -3915,7 +4193,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-008-city-university-of-hong-kong-cityu-mfa-creative-media-intera",
+      "status": "published"
     },
     {
       "id": "asia-009-hkust-msc-technology-leadership-and-entrepreneurship",
@@ -3941,7 +4221,9 @@ module.exports = {
       "website": "https://prog-crs.ust.hk/pgprog/2024-25/msc-tle",
       "note": "【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-009-hkust-msc-technology-leadership-and-entrepreneurship",
+      "status": "published"
     },
     {
       "id": "asia-010-hkust-mphil-computational-media-and-arts-hkust-gz",
@@ -3970,7 +4252,9 @@ module.exports = {
       "tags": [
         "portfolio",
         "rolling"
-      ]
+      ],
+      "_id": "program-asia-010-hkust-mphil-computational-media-and-arts-hkust-gz",
+      "status": "published"
     },
     {
       "id": "asia-011-hong-kong-baptist-university-hkbu-msc-in-ai-and-digital-medi",
@@ -3998,7 +4282,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-011-hong-kong-baptist-university-hkbu-msc-in-ai-and-digital-medi",
+      "status": "published"
     },
     {
       "id": "asia-012-lingnan-university-ma-creative-and-media-industries",
@@ -4024,7 +4310,9 @@ module.exports = {
       "website": "https://www.ln.edu.hk/sgs/taught-postgraduate-programmes/macmi",
       "note": "【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-012-lingnan-university-ma-creative-and-media-industries",
+      "status": "published"
     },
     {
       "id": "asia-013-national-university-of-singapore-nus-master-of-design-in-int",
@@ -4052,7 +4340,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-013-national-university-of-singapore-nus-master-of-design-in-int",
+      "status": "published"
     },
     {
       "id": "asia-014-national-university-of-singapore-nus-msc-engineering-design-",
@@ -4080,7 +4370,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-014-national-university-of-singapore-nus-msc-engineering-design-",
+      "status": "published"
     },
     {
       "id": "asia-015-singapore-management-university-smu-master-of-it-in-business",
@@ -4106,7 +4398,9 @@ module.exports = {
       "website": "https://scis.smu.edu.sg/master-it-business-mitb",
       "note": "【学费更新】S$49k→S$56,680",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-015-singapore-management-university-smu-master-of-it-in-business",
+      "status": "published"
     },
     {
       "id": "asia-016-nanyang-technological-university-ntu-msc-information-systems",
@@ -4132,7 +4426,9 @@ module.exports = {
       "website": "https://www.ntu.edu.sg/education/graduate-programmes/master-of-science-in-information-systems-msis",
       "note": "【学费更新】新增；【新增所有详情】",
       "lastVerified": "2026-06-23",
-      "tags": []
+      "tags": [],
+      "_id": "program-asia-016-nanyang-technological-university-ntu-msc-information-systems",
+      "status": "published"
     },
     {
       "id": "asia-017-lasalle-college-of-the-arts-ma-design",
@@ -4160,7 +4456,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-017-lasalle-college-of-the-arts-ma-design",
+      "status": "published"
     },
     {
       "id": "asia-018-singapore-university-of-technology-and-design-sutd-msc-techn",
@@ -4188,7 +4486,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "rolling"
-      ]
+      ],
+      "_id": "program-asia-018-singapore-university-of-technology-and-design-sutd-msc-techn",
+      "status": "published"
     },
     {
       "id": "asia-019-university-of-macau-master-of-design-in-visual-communication",
@@ -4216,7 +4516,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-019-university-of-macau-master-of-design-in-visual-communication",
+      "status": "published"
     },
     {
       "id": "asia-020-macau-university-of-science-and-technology-must-mfa-in-digit",
@@ -4244,7 +4546,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-020-macau-university-of-science-and-technology-must-mfa-in-digit",
+      "status": "published"
     },
     {
       "id": "asia-021-city-university-of-macau-master-of-design-innovation-design",
@@ -4272,7 +4576,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-021-city-university-of-macau-master-of-design-innovation-design",
+      "status": "published"
     },
     {
       "id": "asia-022-macao-polytechnic-university-mpu-mfa-interdisciplinary-media",
@@ -4300,7 +4606,9 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-022-macao-polytechnic-university-mpu-mfa-interdisciplinary-media",
+      "status": "published"
     },
     {
       "id": "asia-023-university-of-saint-joseph-usj-master-of-design",
@@ -4328,194 +4636,1528 @@ module.exports = {
       "lastVerified": "2026-06-23",
       "tags": [
         "portfolio"
-      ]
+      ],
+      "_id": "program-asia-023-university-of-saint-joseph-usj-master-of-design",
+      "status": "published"
     }
   ],
   "caseStudies": [
     {
-      "id": "case-cmu-mhci-diy",
-      "school": "Carnegie Mellon University",
-      "schoolCn": "卡内基梅隆大学",
-      "program": "Master of Human-Computer Interaction",
-      "region": "US",
-      "background": "设计本科 / 跨学科项目经历",
-      "diy": true,
-      "gpa": "3.6 / 4.0",
-      "language": "TOEFL 108",
-      "work": "无全职工作",
-      "internships": "2 段用户体验相关实习",
-      "admits": [
-        "CMU MHCI",
-        "UW HCDE"
+      "id": "2024-fall-c",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "CMU MIIPS",
+      "selected": {
+        "school": {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MIIPS",
+          "program": "Master of Integrated Innovation for Products & Services",
+          "aliases": [
+            "MIIPS",
+            "Master of Integrated Innovation for Products & Services",
+            "Integrated Innovation"
+          ]
+        }
+      },
+      "regions": [
+        "US",
+        "CAN"
       ],
-      "result": "CMU MHCI 录取",
-      "year": "2025 Fall",
-      "tags": [
+      "background": "美本 Graphic Design，2 年工作经验",
+      "gpa": "3.8 / 4.0",
+      "language": "Waive",
+      "applicationMethods": [
+        "作品集辅导",
+        "作品集DIY",
+        "作品集半DIY",
+        "文书辅导",
+        "文书DIY"
+      ],
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "UofT",
+          "school": "University of Toronto",
+          "schoolCn": "多伦多大学",
+          "region": "CAN",
+          "country": "Canada",
+          "countryCn": "加拿大",
+          "aliases": [
+            "UofT",
+            "University of Toronto",
+            "多伦多大学",
+            "Canada",
+            "加拿大"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "SFU",
+          "school": "Simon Fraser University",
+          "schoolCn": "西蒙菲莎大学",
+          "region": "CAN",
+          "country": "Canada",
+          "countryCn": "加拿大",
+          "aliases": [
+            "SFU",
+            "Simon Fraser University",
+            "西蒙菲莎大学",
+            "Canada",
+            "加拿大"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "UBC",
+          "school": "University of British Columbia",
+          "schoolCn": "英属哥伦比亚大学",
+          "region": "CAN",
+          "country": "Canada",
+          "countryCn": "加拿大",
+          "aliases": [
+            "UBC",
+            "University of British Columbia",
+            "英属哥伦比亚大学",
+            "Canada",
+            "加拿大"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "GaTech",
+          "school": "Georgia Institute of Technology",
+          "schoolCn": "佐治亚理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GaTech",
+            "Georgia Tech",
+            "Georgia Institute of Technology",
+            "佐治亚理工学院",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-c",
+        "美本 Graphic Design，2 年工作经验",
+        "Waive",
+        "3.8 / 4.0",
+        "作品集辅导",
+        "作品集DIY",
+        "作品集半DIY",
+        "文书辅导",
+        "文书DIY",
+        "选校服务",
         "CMU",
-        "DIY",
-        "设计背景",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "MIIPS",
+        "Master of Integrated Innovation for Products & Services",
+        "MIIPS",
+        "Master of Integrated Innovation for Products & Services",
+        "Integrated Innovation",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "UofT",
+        "University of Toronto",
+        "多伦多大学",
+        "UofT",
+        "University of Toronto",
+        "多伦多大学",
+        "Canada",
+        "加拿大",
+        "SFU",
+        "Simon Fraser University",
+        "西蒙菲莎大学",
+        "SFU",
+        "Simon Fraser University",
+        "西蒙菲莎大学",
+        "Canada",
+        "加拿大",
+        "UBC",
+        "University of British Columbia",
+        "英属哥伦比亚大学",
+        "UBC",
+        "University of British Columbia",
+        "英属哥伦比亚大学",
+        "Canada",
+        "加拿大",
+        "Umich",
+        "University of Michigan",
+        "密歇根大学",
+        "Umich",
+        "UMich",
+        "University of Michigan",
+        "密歇根大学",
         "美国"
       ],
-      "summary": "从交互设计作品集出发，把研究问题、迭代过程和跨团队协作讲成一条连续的叙事。",
-      "story": [
-        "我一开始把作品集理解成项目数量竞赛，后来删掉了两个完成度不够高的项目，集中打磨三个能说明思考过程的案例。",
-        "文书里没有重复作品集内容，而是解释我为什么想从视觉与交互执行，进一步走向用户研究和产品策略。",
-        "回头看最有效的一步，是在提交前请不同背景的朋友分别阅读，让他们告诉我到底看到了怎样的申请者。"
-      ]
+      "_id": "case-2024-fall-c"
     },
     {
-      "id": "case-rca-service-design",
-      "school": "Royal College of Art",
-      "schoolCn": "皇家艺术学院",
-      "program": "MA Service Design",
-      "region": "UK",
-      "background": "工业设计本科 / 2 年工作经验",
-      "diy": false,
-      "gpa": "82 / 100",
-      "language": "IELTS 7.5",
-      "work": "2 年消费产品设计",
-      "internships": "1 段品牌设计实习",
-      "admits": [
-        "RCA Service Design",
-        "UAL Design Management"
+      "id": "2024-fall-t",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "UW MCDM",
+      "selected": {
+        "school": {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MCDM",
+          "program": "Master of Communication in Digital Media",
+          "aliases": [
+            "MCDM",
+            "Master of Communication in Digital Media",
+            "Digital Media"
+          ]
+        }
+      },
+      "regions": [
+        "US"
       ],
-      "result": "RCA Service Design 录取",
-      "year": "2025 Fall",
-      "tags": [
-        "RCA",
-        "工作经验",
-        "服务设计",
-        "英国"
-      ],
-      "summary": "以工作中的真实限制为切入点，展示从单点产品交付转向系统性服务设计的动机。",
-      "story": [
-        "我没有刻意把工作项目包装成学校作业，而是保留了真实的业务约束，这反而让方法和结果更可信。",
-        "作品集的重点不是视觉风格，而是我如何定义服务中的关键触点、组织调研和推动内部协作。",
-        "准备面试时，我给每个项目都写了一句最想被记住的判断，避免讲述变成项目流程的流水账。"
-      ]
-    },
-    {
-      "id": "case-ucl-hci-career-switch",
-      "school": "University College London",
-      "schoolCn": "伦敦大学学院",
-      "program": "MSc Human-Computer Interaction",
-      "region": "UK",
-      "background": "心理学本科 / 转 UX",
-      "diy": true,
-      "gpa": "3.4 / 4.0",
-      "language": "IELTS 7.0",
-      "work": "无全职工作",
-      "internships": "1 段用户研究实习",
-      "admits": [
-        "UCL HCI",
-        "University of Edinburgh Design Informatics"
-      ],
-      "result": "UCL HCI 录取",
-      "year": "2025 Fall",
-      "tags": [
-        "UCL",
-        "转专业",
-        "DIY",
-        "英国"
-      ],
-      "summary": "用心理学研究训练建立转专业的可信起点，再通过小而完整的研究型项目补足 UX 实践。",
-      "story": [
-        "我的策略不是假装自己已经是设计师，而是坦诚解释心理学训练怎样让我更会提出问题、设计研究和理解行为。",
-        "作品集里最重要的项目来自一次独立访谈研究。它规模不大，但研究问题、样本选择、分析和设计建议完整闭环。",
-        "选校时我把偏研究和偏就业的项目分开看，最后的申请名单因此更有层次。"
-      ]
-    },
-    {
-      "id": "case-uw-mhci-career",
-      "school": "University of Washington",
-      "schoolCn": "华盛顿大学",
-      "program": "MS Human Centered Design & Engineering",
-      "region": "US",
-      "background": "计算机本科 / 产品实习",
-      "diy": true,
-      "gpa": "3.7 / 4.0",
-      "language": "TOEFL 104",
-      "work": "1 年产品经理",
-      "internships": "2 段互联网产品实习",
-      "admits": [
-        "UW HCDE",
-        "IIT Institute of Design"
-      ],
-      "result": "UW HCDE 录取",
-      "year": "2025 Fall",
-      "tags": [
-        "UW",
-        "产品经理",
-        "跨学科",
-        "美国"
-      ],
-      "summary": "将技术背景和产品经验落到用户需求与产品取舍上，避免把申请材料写成技术履历。",
-      "story": [
-        "我重新组织了实习项目：从功能清单改成用户问题、关键决策和结果复盘，因此更像 UX 申请者的作品。",
-        "推荐信分别强调了我在用户洞察和跨团队执行上的表现，和文书里的职业目标形成互证。",
-        "这份申请里最难的部分是取舍。不是把做过的事都放进去，而是只留下能支持转向 HCI 的经历。"
-      ]
-    },
-    {
-      "id": "case-sutd-design-technology",
-      "school": "Singapore University of Technology and Design",
-      "schoolCn": "新加坡科技设计大学",
-      "program": "Master of Science in Design and Artificial Intelligence",
-      "region": "Asia",
-      "background": "传播学本科 / 数字媒体项目",
-      "diy": false,
+      "background": "陆本 211 建筑，无工作实习",
       "gpa": "3.5 / 4.0",
       "language": "IELTS 7.0",
-      "work": "1 年内容策略",
-      "internships": "2 段数字媒体实习",
-      "admits": [
-        "SUTD Design and AI"
+      "applicationMethods": [
+        "作品集辅导",
+        "文书DIY"
       ],
-      "result": "SUTD Design and AI 录取",
-      "year": "2025 Fall",
-      "tags": [
-        "新加坡",
-        "转专业",
-        "AI",
-        "作品集"
+      "supportServices": [
+        "选校服务"
       ],
-      "summary": "把数字内容经验转写为对人机协作和智能产品体验的长期兴趣，建立清晰的项目匹配度。",
-      "story": [
-        "我没有把 AI 当作一个热门标签，而是从内容生产工作里的具体问题出发，说明自己想研究什么。",
-        "作品集包含了服务流程和数字原型，重点呈现我是如何在不确定条件下做选择的。",
-        "最终让我安心的是，申请材料中的每一部分都在回答同一个问题：我为什么要在这个阶段转向设计与技术。"
-      ]
+      "outcomes": [
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "IUB",
+          "school": "Indiana University Bloomington",
+          "schoolCn": "印第安纳大学布鲁明顿分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "IUB",
+            "Indiana University Bloomington",
+            "印第安纳大学布鲁明顿分校",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "GaTech",
+          "school": "Georgia Institute of Technology",
+          "schoolCn": "佐治亚理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GaTech",
+            "Georgia Tech",
+            "Georgia Institute of Technology",
+            "佐治亚理工学院",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "UMD",
+          "school": "University of Maryland",
+          "schoolCn": "马里兰大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UMD",
+            "University of Maryland",
+            "马里兰大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "UCB",
+          "school": "University of California, Berkeley",
+          "schoolCn": "加州大学伯克利分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UCB",
+            "UC Berkeley",
+            "University of California, Berkeley",
+            "加州大学伯克利分校",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-t",
+        "陆本 211 建筑，无工作实习",
+        "IELTS 7.0",
+        "3.5 / 4.0",
+        "作品集辅导",
+        "选校服务",
+        "文书DIY",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "MCDM",
+        "Master of Communication in Digital Media",
+        "MCDM",
+        "Master of Communication in Digital Media",
+        "Digital Media",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "Umich",
+        "University of Michigan",
+        "密歇根大学",
+        "Umich",
+        "UMich",
+        "University of Michigan",
+        "密歇根大学",
+        "美国",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "美国",
+        "GaTech",
+        "Georgia Institute of Technology",
+        "佐治亚理工学院",
+        "GaTech",
+        "Georgia Tech",
+        "Georgia Institute of Technology",
+        "佐治亚理工学院",
+        "美国"
+      ],
+      "_id": "case-2024-fall-t"
     },
     {
-      "id": "case-aalto-new-media",
-      "school": "Aalto University",
-      "schoolCn": "阿尔托大学",
-      "program": "MA New Media",
-      "region": "EU",
-      "background": "建筑本科 / 视觉与空间实验",
-      "diy": true,
-      "gpa": "85 / 100",
-      "language": "IELTS 7.0",
-      "work": "无全职工作",
-      "internships": "1 段空间设计实习",
-      "admits": [
-        "Aalto New Media",
-        "Politecnico di Milano Communication Design"
+      "id": "2024-fall-l",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "Umich MSI",
+      "selected": {
+        "school": {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MSI",
+          "program": "M.S. in Information",
+          "aliases": [
+            "MSI",
+            "M.S. in Information",
+            "MS in Information",
+            "Information"
+          ]
+        }
+      },
+      "regions": [
+        "US"
       ],
-      "result": "Aalto New Media 录取",
-      "year": "2025 Fall",
-      "tags": [
-        "欧洲",
-        "跨专业",
-        "新媒体",
-        "DIY"
+      "background": "陆本 985 工业设计，无工作实习",
+      "gpa": "3.4 / 4.0",
+      "language": "TOEFL 102",
+      "applicationMethods": [
+        "作品集辅导",
+        "文书DIY"
       ],
-      "summary": "从空间体验转向交互媒介，用实验性项目呈现独立研究兴趣与跨学科潜力。",
-      "story": [
-        "我的作品集保留了建筑训练带来的空间感，但每个项目都重新解释为人与媒介如何互动。",
-        "我开始得比较早，前期主要用来做研究和试错，而不是急着排版。后期的表达反而顺畅很多。",
-        "申请欧洲项目时，动机信和作品集必须是同一个人的语言，不能一边很学术一边只讲视觉。"
-      ]
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "NYU",
+          "school": "New York University",
+          "schoolCn": "纽约大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NYU",
+            "New York University",
+            "纽约大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "IUB",
+          "school": "Indiana University Bloomington",
+          "schoolCn": "印第安纳大学布鲁明顿分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "IUB",
+            "Indiana University Bloomington",
+            "印第安纳大学布鲁明顿分校",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "GaTech",
+          "school": "Georgia Institute of Technology",
+          "schoolCn": "佐治亚理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GaTech",
+            "Georgia Tech",
+            "Georgia Institute of Technology",
+            "佐治亚理工学院",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "NWU",
+          "school": "Northwestern University",
+          "schoolCn": "西北大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NWU",
+            "Northwestern University",
+            "西北大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-l",
+        "陆本 985 工业设计，无工作实习",
+        "TOEFL 102",
+        "3.4 / 4.0",
+        "作品集辅导",
+        "选校服务",
+        "文书DIY",
+        "Umich",
+        "University of Michigan",
+        "密歇根大学",
+        "Umich",
+        "UMich",
+        "University of Michigan",
+        "密歇根大学",
+        "美国",
+        "MSI",
+        "M.S. in Information",
+        "MSI",
+        "M.S. in Information",
+        "MS in Information",
+        "Information",
+        "Umich",
+        "University of Michigan",
+        "密歇根大学",
+        "Umich",
+        "UMich",
+        "University of Michigan",
+        "密歇根大学",
+        "美国",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "美国",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "美国"
+      ],
+      "_id": "case-2024-fall-l"
+    },
+    {
+      "id": "2024-fall-p",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "UW MSIM",
+      "selected": {
+        "school": {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MSIM",
+          "program": "MS in Information Management",
+          "aliases": [
+            "MSIM",
+            "MS in Information Management",
+            "Information Management"
+          ]
+        }
+      },
+      "regions": [
+        "US"
+      ],
+      "background": "陆本双非景观设计，一段设计院实习",
+      "gpa": "3.6 / 4.0",
+      "language": "TOEFL 102",
+      "applicationMethods": [
+        "作品集辅导",
+        "文书辅导"
+      ],
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "NYU",
+          "school": "New York University",
+          "schoolCn": "纽约大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NYU",
+            "New York University",
+            "纽约大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "IUB",
+          "school": "Indiana University Bloomington",
+          "schoolCn": "印第安纳大学布鲁明顿分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "IUB",
+            "Indiana University Bloomington",
+            "印第安纳大学布鲁明顿分校",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "GSD",
+          "school": "Harvard Graduate School of Design",
+          "schoolCn": "哈佛大学设计学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GSD",
+            "Harvard",
+            "Harvard Graduate School of Design",
+            "哈佛大学",
+            "哈佛大学设计学院",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "MIT",
+          "school": "Massachusetts Institute of Technology",
+          "schoolCn": "麻省理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "MIT",
+            "Massachusetts Institute of Technology",
+            "麻省理工学院",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-p",
+        "陆本双非景观设计，一段设计院实习",
+        "TOEFL 102",
+        "3.6 / 4.0",
+        "作品集辅导",
+        "选校服务",
+        "文书辅导",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "MSIM",
+        "MS in Information Management",
+        "MSIM",
+        "MS in Information Management",
+        "Information Management",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "Umich",
+        "University of Michigan",
+        "密歇根大学",
+        "Umich",
+        "UMich",
+        "University of Michigan",
+        "密歇根大学",
+        "美国",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "美国",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "美国"
+      ],
+      "_id": "case-2024-fall-p"
+    },
+    {
+      "id": "2024-fall-j",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "CMU MIIPS",
+      "selected": {
+        "school": {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MIIPS",
+          "program": "Master of Integrated Innovation for Products & Services",
+          "aliases": [
+            "MIIPS",
+            "Master of Integrated Innovation for Products & Services",
+            "Integrated Innovation"
+          ]
+        }
+      },
+      "regions": [
+        "US"
+      ],
+      "background": "美本室内设计，1 年创业与工作经验",
+      "gpa": "3.6 / 4.0",
+      "language": "Waive",
+      "applicationMethods": [
+        "文书辅导",
+        "作品集辅导"
+      ],
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "NYU",
+          "school": "New York University",
+          "schoolCn": "纽约大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NYU",
+            "New York University",
+            "纽约大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "GaTech",
+          "school": "Georgia Institute of Technology",
+          "schoolCn": "佐治亚理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GaTech",
+            "Georgia Tech",
+            "Georgia Institute of Technology",
+            "佐治亚理工学院",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "NWU",
+          "school": "Northwestern University",
+          "schoolCn": "西北大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NWU",
+            "Northwestern University",
+            "西北大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "UCB",
+          "school": "University of California, Berkeley",
+          "schoolCn": "加州大学伯克利分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UCB",
+            "UC Berkeley",
+            "University of California, Berkeley",
+            "加州大学伯克利分校",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-j",
+        "美本室内设计，1 年创业与工作经验",
+        "Waive",
+        "3.6 / 4.0",
+        "文书辅导",
+        "作品集辅导",
+        "选校服务",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "MIIPS",
+        "Master of Integrated Innovation for Products & Services",
+        "MIIPS",
+        "Master of Integrated Innovation for Products & Services",
+        "Integrated Innovation",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "NYU",
+        "New York University",
+        "纽约大学",
+        "美国",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "GaTech",
+        "Georgia Institute of Technology",
+        "佐治亚理工学院",
+        "GaTech",
+        "Georgia Tech",
+        "Georgia Institute of Technology",
+        "佐治亚理工学院",
+        "美国"
+      ],
+      "_id": "case-2024-fall-j"
+    },
+    {
+      "id": "2024-fall-k",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "UW MSTI",
+      "selected": {
+        "school": {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MSTI",
+          "program": "MS in Technology Innovation",
+          "aliases": [
+            "MSTI",
+            "MS in Technology Innovation",
+            "Technology Innovation",
+            "Innovation"
+          ]
+        }
+      },
+      "regions": [
+        "US"
+      ],
+      "background": "陆本 211 景观设计，无工作实习经验",
+      "gpa": "3.5 / 4.0",
+      "language": "TOEFL 100",
+      "applicationMethods": [
+        "作品集辅导",
+        "文书DIY"
+      ],
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "IUB",
+          "school": "Indiana University Bloomington",
+          "schoolCn": "印第安纳大学布鲁明顿分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "IUB",
+            "Indiana University Bloomington",
+            "印第安纳大学布鲁明顿分校",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "UMD",
+          "school": "University of Maryland",
+          "schoolCn": "马里兰大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UMD",
+            "University of Maryland",
+            "马里兰大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "Austin",
+          "school": "University of Texas at Austin",
+          "schoolCn": "德州大学奥斯汀分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Austin",
+            "UT Austin",
+            "University of Texas at Austin",
+            "德州大学奥斯汀分校",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Umich",
+          "school": "University of Michigan",
+          "schoolCn": "密歇根大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Umich",
+            "UMich",
+            "University of Michigan",
+            "密歇根大学",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "GaTech",
+          "school": "Georgia Institute of Technology",
+          "schoolCn": "佐治亚理工学院",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "GaTech",
+            "Georgia Tech",
+            "Georgia Institute of Technology",
+            "佐治亚理工学院",
+            "美国"
+          ],
+          "status": "rejected"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-k",
+        "陆本 211 景观设计，无工作实习经验",
+        "TOEFL 100",
+        "3.5 / 4.0",
+        "作品集辅导",
+        "选校服务",
+        "文书DIY",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "MSTI",
+        "MS in Technology Innovation",
+        "MSTI",
+        "MS in Technology Innovation",
+        "Technology Innovation",
+        "Innovation",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "IUB",
+        "Indiana University Bloomington",
+        "印第安纳大学布鲁明顿分校",
+        "美国",
+        "UMD",
+        "University of Maryland",
+        "马里兰大学",
+        "UMD",
+        "University of Maryland",
+        "马里兰大学",
+        "美国",
+        "Austin",
+        "University of Texas at Austin",
+        "德州大学奥斯汀分校",
+        "Austin",
+        "UT Austin",
+        "University of Texas at Austin",
+        "德州大学奥斯汀分校",
+        "美国"
+      ],
+      "_id": "case-2024-fall-k"
+    },
+    {
+      "id": "2024-fall-small-l",
+      "status": "published",
+      "year": "2024 Fall",
+      "title": "UCB MDes",
+      "selected": {
+        "school": {
+          "label": "UCB",
+          "school": "University of California, Berkeley",
+          "schoolCn": "加州大学伯克利分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UCB",
+            "UC Berkeley",
+            "University of California, Berkeley",
+            "加州大学伯克利分校",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        "program": {
+          "label": "MDes",
+          "program": "Master of Design",
+          "aliases": [
+            "MDes",
+            "Master of Design"
+          ]
+        }
+      },
+      "regions": [
+        "US"
+      ],
+      "background": "美本 CS + Engineering，无工作实习经验",
+      "gpa": "3.9 / 4.0",
+      "language": "Waive",
+      "applicationMethods": [
+        "文书辅导",
+        "作品集辅导"
+      ],
+      "supportServices": [
+        "选校服务"
+      ],
+      "outcomes": [
+        {
+          "label": "UCB",
+          "school": "University of California, Berkeley",
+          "schoolCn": "加州大学伯克利分校",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UCB",
+            "UC Berkeley",
+            "University of California, Berkeley",
+            "加州大学伯克利分校",
+            "美国"
+          ],
+          "status": "selected"
+        },
+        {
+          "label": "UW",
+          "school": "University of Washington",
+          "schoolCn": "华盛顿大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "UW",
+            "University of Washington",
+            "华盛顿大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "CMU",
+          "school": "Carnegie Mellon University",
+          "schoolCn": "卡内基梅隆大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "CMU",
+            "Carnegie Mellon University",
+            "卡内基梅隆大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "Upenn",
+          "school": "University of Pennsylvania",
+          "schoolCn": "宾夕法尼亚大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "Upenn",
+            "UPenn",
+            "Penn",
+            "University of Pennsylvania",
+            "宾夕法尼亚大学",
+            "美国"
+          ],
+          "status": "offer"
+        },
+        {
+          "label": "NWU",
+          "school": "Northwestern University",
+          "schoolCn": "西北大学",
+          "region": "US",
+          "country": "United States",
+          "countryCn": "美国",
+          "aliases": [
+            "NWU",
+            "Northwestern University",
+            "西北大学",
+            "美国"
+          ],
+          "status": "rejected"
+        }
+      ],
+      "searchTerms": [
+        "2024-fall-small-l",
+        "美本 CS + Engineering，无工作实习经验",
+        "Waive",
+        "3.9 / 4.0",
+        "文书辅导",
+        "作品集辅导",
+        "选校服务",
+        "UCB",
+        "University of California, Berkeley",
+        "加州大学伯克利分校",
+        "UCB",
+        "UC Berkeley",
+        "University of California, Berkeley",
+        "加州大学伯克利分校",
+        "美国",
+        "MDes",
+        "Master of Design",
+        "MDes",
+        "Master of Design",
+        "UCB",
+        "University of California, Berkeley",
+        "加州大学伯克利分校",
+        "UCB",
+        "UC Berkeley",
+        "University of California, Berkeley",
+        "加州大学伯克利分校",
+        "美国",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "UW",
+        "University of Washington",
+        "华盛顿大学",
+        "美国",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "CMU",
+        "Carnegie Mellon University",
+        "卡内基梅隆大学",
+        "美国",
+        "Upenn",
+        "University of Pennsylvania",
+        "宾夕法尼亚大学",
+        "Upenn",
+        "UPenn",
+        "Penn",
+        "University of Pennsylvania",
+        "宾夕法尼亚大学",
+        "美国"
+      ],
+      "_id": "case-2024-fall-small-l"
     }
   ],
   "articles": [
@@ -4530,7 +6172,9 @@ module.exports = {
         "一个好的作品集项目，应该让人看见你如何工作，而不是只看见最后一张漂亮的图。",
         "选题时先问三个问题：我接近这个问题吗？我能得到真实反馈吗？我能在有限时间内完成一次可信的迭代吗？",
         "如果答案是肯定的，小题目也可以做出很强的项目。把范围收窄，给研究、原型和复盘留下空间。"
-      ]
+      ],
+      "_id": "article-portfolio-topic",
+      "status": "published"
     },
     {
       "id": "sop-writing",
@@ -4543,7 +6187,9 @@ module.exports = {
         "文书最常见的问题不是写得不够多，而是每一段都在重复简历。",
         "先用一句话写出你的申请主线，再选择能够支撑它的经历。经历的作用不是证明你做过很多事，而是说明你的判断如何逐渐形成。",
         "写到学校匹配时，避免堆课程名称。解释课程、实验室或项目方式如何解决你正在面对的具体问题。"
-      ]
+      ],
+      "_id": "article-sop-writing",
+      "status": "published"
     },
     {
       "id": "school-list-method",
@@ -4556,7 +6202,9 @@ module.exports = {
         "把项目分成冲刺、匹配和保底并不够。你还需要知道每一所学校究竟在寻找怎样的申请者。",
         "建议为每个项目保留四个判断：项目更偏研究还是实践、你最匹配的经历是什么、最大的风险是什么、下一步需要验证什么。",
         "当一份名单能回答这四个问题，它才真正开始帮助你做决定。"
-      ]
+      ],
+      "_id": "article-school-list-method",
+      "status": "published"
     },
     {
       "id": "ux-tools",
@@ -4569,7 +6217,2765 @@ module.exports = {
         "申请是一个持续数月的信息工程，但并不需要复杂的系统。",
         "用表格管理截止日期和要求，用一个文档保存研究与写作素材，用日历固定每周的深度工作时间。工具的目标是让你不再反复找信息。",
         "当你开始觉得工具本身比申请材料更重要时，就该删掉一些了。"
-      ]
+      ],
+      "_id": "article-ux-tools",
+      "status": "published"
     }
-  ]
+  ],
+  "caseTagCatalog": {
+    "schools": [
+      {
+        "id": "Massachusetts Institute of Technology (MIT)",
+        "label": "Massachusetts Institute of Technology (MIT)",
+        "school": "Massachusetts Institute of Technology (MIT)",
+        "schoolCn": "麻省理工学院",
+        "aliases": [
+          "Massachusetts Institute of Technology (MIT)",
+          "麻省理工学院"
+        ]
+      },
+      {
+        "id": "Stanford University",
+        "label": "Stanford University",
+        "school": "Stanford University",
+        "schoolCn": "斯坦福大学",
+        "aliases": [
+          "Stanford University",
+          "斯坦福大学"
+        ]
+      },
+      {
+        "id": "Harvard University",
+        "label": "Harvard University",
+        "school": "Harvard University",
+        "schoolCn": "哈佛大学",
+        "aliases": [
+          "Harvard University",
+          "哈佛大学"
+        ]
+      },
+      {
+        "id": "Carnegie Mellon University (CMU)",
+        "label": "Carnegie Mellon University (CMU)",
+        "school": "Carnegie Mellon University (CMU)",
+        "schoolCn": "卡耐基梅隆大学",
+        "aliases": [
+          "Carnegie Mellon University (CMU)",
+          "卡耐基梅隆大学"
+        ]
+      },
+      {
+        "id": "University of Washington (UW)",
+        "label": "University of Washington (UW)",
+        "school": "University of Washington (UW)",
+        "schoolCn": "华盛顿大学",
+        "aliases": [
+          "University of Washington (UW)",
+          "华盛顿大学"
+        ]
+      },
+      {
+        "id": "Georgia Institute of Technology",
+        "label": "Georgia Institute of Technology",
+        "school": "Georgia Institute of Technology",
+        "schoolCn": "佐治亚理工学院",
+        "aliases": [
+          "Georgia Institute of Technology",
+          "佐治亚理工学院"
+        ]
+      },
+      {
+        "id": "University of Pennsylvania",
+        "label": "University of Pennsylvania",
+        "school": "University of Pennsylvania",
+        "schoolCn": "宾夕法尼亚大学",
+        "aliases": [
+          "University of Pennsylvania",
+          "宾夕法尼亚大学"
+        ]
+      },
+      {
+        "id": "Cornell University",
+        "label": "Cornell University",
+        "school": "Cornell University",
+        "schoolCn": "康奈尔大学",
+        "aliases": [
+          "Cornell University",
+          "康奈尔大学"
+        ]
+      },
+      {
+        "id": "UC Berkeley",
+        "label": "UC Berkeley",
+        "school": "UC Berkeley",
+        "schoolCn": "加州大学伯克利分校",
+        "aliases": [
+          "UC Berkeley",
+          "加州大学伯克利分校"
+        ]
+      },
+      {
+        "id": "New York University (NYU)",
+        "label": "New York University (NYU)",
+        "school": "New York University (NYU)",
+        "schoolCn": "纽约大学",
+        "aliases": [
+          "New York University (NYU)",
+          "纽约大学"
+        ]
+      },
+      {
+        "id": "Northwestern University",
+        "label": "Northwestern University",
+        "school": "Northwestern University",
+        "schoolCn": "西北大学",
+        "aliases": [
+          "Northwestern University",
+          "西北大学"
+        ]
+      },
+      {
+        "id": "University of Michigan",
+        "label": "University of Michigan",
+        "school": "University of Michigan",
+        "schoolCn": "密歇根大学",
+        "aliases": [
+          "University of Michigan",
+          "密歇根大学"
+        ]
+      },
+      {
+        "id": "University of Texas at Austin",
+        "label": "University of Texas at Austin",
+        "school": "University of Texas at Austin",
+        "schoolCn": "德州大学奥斯汀分校",
+        "aliases": [
+          "University of Texas at Austin",
+          "德州大学奥斯汀分校"
+        ]
+      },
+      {
+        "id": "Indiana University Bloomington",
+        "label": "Indiana University Bloomington",
+        "school": "Indiana University Bloomington",
+        "schoolCn": "印第安纳大学布鲁明顿分校",
+        "aliases": [
+          "Indiana University Bloomington",
+          "印第安纳大学布鲁明顿分校"
+        ]
+      },
+      {
+        "id": "Purdue University",
+        "label": "Purdue University",
+        "school": "Purdue University",
+        "schoolCn": "普渡大学",
+        "aliases": [
+          "Purdue University",
+          "普渡大学"
+        ]
+      },
+      {
+        "id": "University of Maryland",
+        "label": "University of Maryland",
+        "school": "University of Maryland",
+        "schoolCn": "马里兰大学",
+        "aliases": [
+          "University of Maryland",
+          "马里兰大学"
+        ]
+      },
+      {
+        "id": "Rochester Institute of Technology (RIT)",
+        "label": "Rochester Institute of Technology (RIT)",
+        "school": "Rochester Institute of Technology (RIT)",
+        "schoolCn": "罗切斯特理工学院",
+        "aliases": [
+          "Rochester Institute of Technology (RIT)",
+          "罗切斯特理工学院"
+        ]
+      },
+      {
+        "id": "Arizona State University (ASU)",
+        "label": "Arizona State University (ASU)",
+        "school": "Arizona State University (ASU)",
+        "schoolCn": "亚利桑那州立大学",
+        "aliases": [
+          "Arizona State University (ASU)",
+          "亚利桑那州立大学"
+        ]
+      },
+      {
+        "id": "University of Wisconsin-Madison",
+        "label": "University of Wisconsin-Madison",
+        "school": "University of Wisconsin-Madison",
+        "schoolCn": "威斯康星大学麦迪逊分校",
+        "aliases": [
+          "University of Wisconsin-Madison",
+          "威斯康星大学麦迪逊分校"
+        ]
+      },
+      {
+        "id": "Illinois Institute of Technology (IIT)",
+        "label": "Illinois Institute of Technology (IIT)",
+        "school": "Illinois Institute of Technology (IIT)",
+        "schoolCn": "伊利诺伊理工学院",
+        "aliases": [
+          "Illinois Institute of Technology (IIT)",
+          "伊利诺伊理工学院"
+        ]
+      },
+      {
+        "id": "Northeastern University",
+        "label": "Northeastern University",
+        "school": "Northeastern University",
+        "schoolCn": "东北大学",
+        "aliases": [
+          "Northeastern University",
+          "东北大学"
+        ]
+      },
+      {
+        "id": "University of Colorado Boulder",
+        "label": "University of Colorado Boulder",
+        "school": "University of Colorado Boulder",
+        "schoolCn": "科罗拉多大学博尔德分校",
+        "aliases": [
+          "University of Colorado Boulder",
+          "科罗拉多大学博尔德分校"
+        ]
+      },
+      {
+        "id": "Pennsylvania State University",
+        "label": "Pennsylvania State University",
+        "school": "Pennsylvania State University",
+        "schoolCn": "宾州州立大学",
+        "aliases": [
+          "Pennsylvania State University",
+          "宾州州立大学"
+        ]
+      },
+      {
+        "id": "Michigan State University",
+        "label": "Michigan State University",
+        "school": "Michigan State University",
+        "schoolCn": "密歇根州立大学",
+        "aliases": [
+          "Michigan State University",
+          "密歇根州立大学"
+        ]
+      },
+      {
+        "id": "California State University, Long Beach",
+        "label": "California State University, Long Beach",
+        "school": "California State University, Long Beach",
+        "schoolCn": "加州州立大学长滩分校",
+        "aliases": [
+          "California State University, Long Beach",
+          "加州州立大学长滩分校"
+        ]
+      },
+      {
+        "id": "California State University, East Bay",
+        "label": "California State University, East Bay",
+        "school": "California State University, East Bay",
+        "schoolCn": "加州州立大学东湾分校",
+        "aliases": [
+          "California State University, East Bay",
+          "加州州立大学东湾分校"
+        ]
+      },
+      {
+        "id": "Iowa State University",
+        "label": "Iowa State University",
+        "school": "Iowa State University",
+        "schoolCn": "爱荷华州立大学",
+        "aliases": [
+          "Iowa State University",
+          "爱荷华州立大学"
+        ]
+      },
+      {
+        "id": "Parsons School of Design (The New School)",
+        "label": "Parsons School of Design (The New School)",
+        "school": "Parsons School of Design (The New School)",
+        "schoolCn": "帕森斯设计学院",
+        "aliases": [
+          "Parsons School of Design (The New School)",
+          "帕森斯设计学院"
+        ]
+      },
+      {
+        "id": "Pratt Institute",
+        "label": "Pratt Institute",
+        "school": "Pratt Institute",
+        "schoolCn": "普瑞特艺术学院",
+        "aliases": [
+          "Pratt Institute",
+          "普瑞特艺术学院"
+        ]
+      },
+      {
+        "id": "California College of the Arts (CCA)",
+        "label": "California College of the Arts (CCA)",
+        "school": "California College of the Arts (CCA)",
+        "schoolCn": "加州艺术学院",
+        "aliases": [
+          "California College of the Arts (CCA)",
+          "加州艺术学院"
+        ]
+      },
+      {
+        "id": "School of Visual Arts (SVA)",
+        "label": "School of Visual Arts (SVA)",
+        "school": "School of Visual Arts (SVA)",
+        "schoolCn": "视觉艺术学院",
+        "aliases": [
+          "School of Visual Arts (SVA)",
+          "视觉艺术学院"
+        ]
+      },
+      {
+        "id": "Savannah College of Art and Design (SCAD)",
+        "label": "Savannah College of Art and Design (SCAD)",
+        "school": "Savannah College of Art and Design (SCAD)",
+        "schoolCn": "萨凡纳艺术与设计学院",
+        "aliases": [
+          "Savannah College of Art and Design (SCAD)",
+          "萨凡纳艺术与设计学院"
+        ]
+      },
+      {
+        "id": "Art Center College of Design",
+        "label": "Art Center College of Design",
+        "school": "Art Center College of Design",
+        "schoolCn": "艺术中心设计学院",
+        "aliases": [
+          "Art Center College of Design",
+          "艺术中心设计学院"
+        ]
+      },
+      {
+        "id": "UC Irvine",
+        "label": "UC Irvine",
+        "school": "UC Irvine",
+        "schoolCn": "加州大学欧文分校",
+        "aliases": [
+          "UC Irvine",
+          "加州大学欧文分校"
+        ]
+      },
+      {
+        "id": "DePaul University",
+        "label": "DePaul University",
+        "school": "DePaul University",
+        "schoolCn": "德保罗大学",
+        "aliases": [
+          "DePaul University",
+          "德保罗大学"
+        ]
+      },
+      {
+        "id": "San Jose State University",
+        "label": "San Jose State University",
+        "school": "San Jose State University",
+        "schoolCn": "圣何塞州立大学",
+        "aliases": [
+          "San Jose State University",
+          "圣何塞州立大学"
+        ]
+      },
+      {
+        "id": "Centre for Digital Media (UBC+SFU+ECUAD+BCIT)",
+        "label": "Centre for Digital Media (UBC+SFU+ECUAD+BCIT)",
+        "school": "Centre for Digital Media (UBC+SFU+ECUAD+BCIT)",
+        "schoolCn": "四校合办(CDM)",
+        "aliases": [
+          "Centre for Digital Media (UBC+SFU+ECUAD+BCIT)",
+          "四校合办(CDM)"
+        ]
+      },
+      {
+        "id": "Simon Fraser University (SFU)",
+        "label": "Simon Fraser University (SFU)",
+        "school": "Simon Fraser University (SFU)",
+        "schoolCn": "西蒙菲莎大学",
+        "aliases": [
+          "Simon Fraser University (SFU)",
+          "西蒙菲莎大学"
+        ]
+      },
+      {
+        "id": "University of Toronto",
+        "label": "University of Toronto",
+        "school": "University of Toronto",
+        "schoolCn": "多伦多大学",
+        "aliases": [
+          "University of Toronto",
+          "多伦多大学"
+        ]
+      },
+      {
+        "id": "McGill University",
+        "label": "McGill University",
+        "school": "McGill University",
+        "schoolCn": "麦吉尔大学",
+        "aliases": [
+          "McGill University",
+          "麦吉尔大学"
+        ]
+      },
+      {
+        "id": "University of Waterloo",
+        "label": "University of Waterloo",
+        "school": "University of Waterloo",
+        "schoolCn": "滑铁卢大学",
+        "aliases": [
+          "University of Waterloo",
+          "滑铁卢大学"
+        ]
+      },
+      {
+        "id": "University of Ottawa",
+        "label": "University of Ottawa",
+        "school": "University of Ottawa",
+        "schoolCn": "渥太华大学",
+        "aliases": [
+          "University of Ottawa",
+          "渥太华大学"
+        ]
+      },
+      {
+        "id": "Queen's University",
+        "label": "Queen's University",
+        "school": "Queen's University",
+        "schoolCn": "女王大学",
+        "aliases": [
+          "Queen's University",
+          "女王大学"
+        ]
+      },
+      {
+        "id": "Carleton University",
+        "label": "Carleton University",
+        "school": "Carleton University",
+        "schoolCn": "卡尔顿大学",
+        "aliases": [
+          "Carleton University",
+          "卡尔顿大学"
+        ]
+      },
+      {
+        "id": "York University",
+        "label": "York University",
+        "school": "York University",
+        "schoolCn": "约克大学",
+        "aliases": [
+          "York University",
+          "约克大学"
+        ]
+      },
+      {
+        "id": "Toronto Metropolitan University（原Ryerson）",
+        "label": "Toronto Metropolitan University（原Ryerson）",
+        "school": "Toronto Metropolitan University（原Ryerson）",
+        "schoolCn": "多伦多都会大学",
+        "aliases": [
+          "Toronto Metropolitan University（原Ryerson）",
+          "多伦多都会大学"
+        ]
+      },
+      {
+        "id": "McMaster University",
+        "label": "McMaster University",
+        "school": "McMaster University",
+        "schoolCn": "麦克马斯特大学",
+        "aliases": [
+          "McMaster University",
+          "麦克马斯特大学"
+        ]
+      },
+      {
+        "id": "Emily Carr University of Art + Design (ECUAD)",
+        "label": "Emily Carr University of Art + Design (ECUAD)",
+        "school": "Emily Carr University of Art + Design (ECUAD)",
+        "schoolCn": "艾米丽卡尔艺术与设计大学",
+        "aliases": [
+          "Emily Carr University of Art + Design (ECUAD)",
+          "艾米丽卡尔艺术与设计大学"
+        ]
+      },
+      {
+        "id": "OCAD University",
+        "label": "OCAD University",
+        "school": "OCAD University",
+        "schoolCn": "安大略艺术设计学院",
+        "aliases": [
+          "OCAD University",
+          "安大略艺术设计学院"
+        ]
+      },
+      {
+        "id": "Royal College of Art (RCA)",
+        "label": "Royal College of Art (RCA)",
+        "school": "Royal College of Art (RCA)",
+        "schoolCn": "皇家艺术学院",
+        "aliases": [
+          "Royal College of Art (RCA)",
+          "皇家艺术学院"
+        ]
+      },
+      {
+        "id": "UAL - London College of Communication (LCC)",
+        "label": "UAL - London College of Communication (LCC)",
+        "school": "UAL - London College of Communication (LCC)",
+        "schoolCn": "伦敦艺术大学-伦敦传媒学院",
+        "aliases": [
+          "UAL - London College of Communication (LCC)",
+          "伦敦艺术大学-伦敦传媒学院"
+        ]
+      },
+      {
+        "id": "The Glasgow School of Art (GSA)",
+        "label": "The Glasgow School of Art (GSA)",
+        "school": "The Glasgow School of Art (GSA)",
+        "schoolCn": "格拉斯哥艺术学院",
+        "aliases": [
+          "The Glasgow School of Art (GSA)",
+          "格拉斯哥艺术学院"
+        ]
+      },
+      {
+        "id": "University of Edinburgh",
+        "label": "University of Edinburgh",
+        "school": "University of Edinburgh",
+        "schoolCn": "爱丁堡大学",
+        "aliases": [
+          "University of Edinburgh",
+          "爱丁堡大学"
+        ]
+      },
+      {
+        "id": "Goldsmiths, University of London",
+        "label": "Goldsmiths, University of London",
+        "school": "Goldsmiths, University of London",
+        "schoolCn": "伦敦大学金史密斯学院",
+        "aliases": [
+          "Goldsmiths, University of London",
+          "伦敦大学金史密斯学院"
+        ]
+      },
+      {
+        "id": "Loughborough University",
+        "label": "Loughborough University",
+        "school": "Loughborough University",
+        "schoolCn": "拉夫堡大学",
+        "aliases": [
+          "Loughborough University",
+          "拉夫堡大学"
+        ]
+      },
+      {
+        "id": "Loughborough University London",
+        "label": "Loughborough University London",
+        "school": "Loughborough University London",
+        "schoolCn": "拉夫堡大学（伦敦校区）",
+        "aliases": [
+          "Loughborough University London",
+          "拉夫堡大学（伦敦校区）"
+        ]
+      },
+      {
+        "id": "University of Brighton",
+        "label": "University of Brighton",
+        "school": "University of Brighton",
+        "schoolCn": "布莱顿大学",
+        "aliases": [
+          "University of Brighton",
+          "布莱顿大学"
+        ]
+      },
+      {
+        "id": "Kingston University",
+        "label": "Kingston University",
+        "school": "Kingston University",
+        "schoolCn": "金斯顿大学",
+        "aliases": [
+          "Kingston University",
+          "金斯顿大学"
+        ]
+      },
+      {
+        "id": "University of Westminster",
+        "label": "University of Westminster",
+        "school": "University of Westminster",
+        "schoolCn": "威斯敏斯特大学",
+        "aliases": [
+          "University of Westminster",
+          "威斯敏斯特大学"
+        ]
+      },
+      {
+        "id": "University for the Creative Arts (UCA)",
+        "label": "University for the Creative Arts (UCA)",
+        "school": "University for the Creative Arts (UCA)",
+        "schoolCn": "创意艺术大学",
+        "aliases": [
+          "University for the Creative Arts (UCA)",
+          "创意艺术大学"
+        ]
+      },
+      {
+        "id": "Birmingham City University (BCU)",
+        "label": "Birmingham City University (BCU)",
+        "school": "Birmingham City University (BCU)",
+        "schoolCn": "伯明翰城市大学",
+        "aliases": [
+          "Birmingham City University (BCU)",
+          "伯明翰城市大学"
+        ]
+      },
+      {
+        "id": "Sheffield Hallam University (SHU)",
+        "label": "Sheffield Hallam University (SHU)",
+        "school": "Sheffield Hallam University (SHU)",
+        "schoolCn": "谢菲尔德哈勒姆大学",
+        "aliases": [
+          "Sheffield Hallam University (SHU)",
+          "谢菲尔德哈勒姆大学"
+        ]
+      },
+      {
+        "id": "University of Lancashire（原UCLan）",
+        "label": "University of Lancashire（原UCLan）",
+        "school": "University of Lancashire（原UCLan）",
+        "schoolCn": "兰开夏大学（原中央兰开夏大学）",
+        "aliases": [
+          "University of Lancashire（原UCLan）",
+          "兰开夏大学（原中央兰开夏大学）"
+        ]
+      },
+      {
+        "id": "City St George's, University of London",
+        "label": "City St George's, University of London",
+        "school": "City St George's, University of London",
+        "schoolCn": "伦敦大学城市圣乔治学院",
+        "aliases": [
+          "City St George's, University of London",
+          "伦敦大学城市圣乔治学院"
+        ]
+      },
+      {
+        "id": "Edinburgh Napier University",
+        "label": "Edinburgh Napier University",
+        "school": "Edinburgh Napier University",
+        "schoolCn": "爱丁堡纳皮尔大学",
+        "aliases": [
+          "Edinburgh Napier University",
+          "爱丁堡纳皮尔大学"
+        ]
+      },
+      {
+        "id": "University of Winchester",
+        "label": "University of Winchester",
+        "school": "University of Winchester",
+        "schoolCn": "温切斯特大学",
+        "aliases": [
+          "University of Winchester",
+          "温切斯特大学"
+        ]
+      },
+      {
+        "id": "University of St Andrews",
+        "label": "University of St Andrews",
+        "school": "University of St Andrews",
+        "schoolCn": "圣安德鲁斯大学",
+        "aliases": [
+          "University of St Andrews",
+          "圣安德鲁斯大学"
+        ]
+      },
+      {
+        "id": "University of Nottingham",
+        "label": "University of Nottingham",
+        "school": "University of Nottingham",
+        "schoolCn": "诺丁汉大学",
+        "aliases": [
+          "University of Nottingham",
+          "诺丁汉大学"
+        ]
+      },
+      {
+        "id": "University of Sydney",
+        "label": "University of Sydney",
+        "school": "University of Sydney",
+        "schoolCn": "悉尼大学",
+        "aliases": [
+          "University of Sydney",
+          "悉尼大学"
+        ]
+      },
+      {
+        "id": "University of New South Wales (UNSW)",
+        "label": "University of New South Wales (UNSW)",
+        "school": "University of New South Wales (UNSW)",
+        "schoolCn": "新南威尔士大学",
+        "aliases": [
+          "University of New South Wales (UNSW)",
+          "新南威尔士大学"
+        ]
+      },
+      {
+        "id": "Monash University",
+        "label": "Monash University",
+        "school": "Monash University",
+        "schoolCn": "莫纳什大学",
+        "aliases": [
+          "Monash University",
+          "莫纳什大学"
+        ]
+      },
+      {
+        "id": "University of Queensland (UQ)",
+        "label": "University of Queensland (UQ)",
+        "school": "University of Queensland (UQ)",
+        "schoolCn": "昆士兰大学",
+        "aliases": [
+          "University of Queensland (UQ)",
+          "昆士兰大学"
+        ]
+      },
+      {
+        "id": "University of Technology Sydney (UTS)",
+        "label": "University of Technology Sydney (UTS)",
+        "school": "University of Technology Sydney (UTS)",
+        "schoolCn": "悉尼科技大学",
+        "aliases": [
+          "University of Technology Sydney (UTS)",
+          "悉尼科技大学"
+        ]
+      },
+      {
+        "id": "RMIT University",
+        "label": "RMIT University",
+        "school": "RMIT University",
+        "schoolCn": "皇家墨尔本理工",
+        "aliases": [
+          "RMIT University",
+          "皇家墨尔本理工"
+        ]
+      },
+      {
+        "id": "Adelaide University（原UniSA合并）",
+        "label": "Adelaide University（原UniSA合并）",
+        "school": "Adelaide University（原UniSA合并）",
+        "schoolCn": "阿德莱德大学",
+        "aliases": [
+          "Adelaide University（原UniSA合并）",
+          "阿德莱德大学"
+        ]
+      },
+      {
+        "id": "Deakin University",
+        "label": "Deakin University",
+        "school": "Deakin University",
+        "schoolCn": "迪肯大学",
+        "aliases": [
+          "Deakin University",
+          "迪肯大学"
+        ]
+      },
+      {
+        "id": "Griffith University",
+        "label": "Griffith University",
+        "school": "Griffith University",
+        "schoolCn": "格里菲斯大学",
+        "aliases": [
+          "Griffith University",
+          "格里菲斯大学"
+        ]
+      },
+      {
+        "id": "University College Dublin (UCD)",
+        "label": "University College Dublin (UCD)",
+        "school": "University College Dublin (UCD)",
+        "schoolCn": "都柏林大学",
+        "aliases": [
+          "University College Dublin (UCD)",
+          "都柏林大学"
+        ]
+      },
+      {
+        "id": "Trinity College Dublin (TCD)",
+        "label": "Trinity College Dublin (TCD)",
+        "school": "Trinity College Dublin (TCD)",
+        "schoolCn": "圣三一大学",
+        "aliases": [
+          "Trinity College Dublin (TCD)",
+          "圣三一大学"
+        ]
+      },
+      {
+        "id": "South East Technological University (SETU)",
+        "label": "South East Technological University (SETU)",
+        "school": "South East Technological University (SETU)",
+        "schoolCn": "东南理工大学",
+        "aliases": [
+          "South East Technological University (SETU)",
+          "东南理工大学"
+        ]
+      },
+      {
+        "id": "University of Limerick (UL)",
+        "label": "University of Limerick (UL)",
+        "school": "University of Limerick (UL)",
+        "schoolCn": "利莫瑞克大学",
+        "aliases": [
+          "University of Limerick (UL)",
+          "利莫瑞克大学"
+        ]
+      },
+      {
+        "id": "Maynooth University",
+        "label": "Maynooth University",
+        "school": "Maynooth University",
+        "schoolCn": "梅努斯大学",
+        "aliases": [
+          "Maynooth University",
+          "梅努斯大学"
+        ]
+      },
+      {
+        "id": "Delft University of Technology (TU Delft)",
+        "label": "Delft University of Technology (TU Delft)",
+        "school": "Delft University of Technology (TU Delft)",
+        "schoolCn": "代尔夫特理工大学",
+        "aliases": [
+          "Delft University of Technology (TU Delft)",
+          "代尔夫特理工大学"
+        ]
+      },
+      {
+        "id": "Eindhoven University of Technology (TU/e)",
+        "label": "Eindhoven University of Technology (TU/e)",
+        "school": "Eindhoven University of Technology (TU/e)",
+        "schoolCn": "埃因霍温理工",
+        "aliases": [
+          "Eindhoven University of Technology (TU/e)",
+          "埃因霍温理工"
+        ]
+      },
+      {
+        "id": "University of Twente",
+        "label": "University of Twente",
+        "school": "University of Twente",
+        "schoolCn": "特温特大学",
+        "aliases": [
+          "University of Twente",
+          "特温特大学"
+        ]
+      },
+      {
+        "id": "Politecnico di Milano (PoliMi)",
+        "label": "Politecnico di Milano (PoliMi)",
+        "school": "Politecnico di Milano (PoliMi)",
+        "schoolCn": "米兰理工大学",
+        "aliases": [
+          "Politecnico di Milano (PoliMi)",
+          "米兰理工大学"
+        ]
+      },
+      {
+        "id": "Aalto University",
+        "label": "Aalto University",
+        "school": "Aalto University",
+        "schoolCn": "阿尔托大学",
+        "aliases": [
+          "Aalto University",
+          "阿尔托大学"
+        ]
+      },
+      {
+        "id": "University of Lapland",
+        "label": "University of Lapland",
+        "school": "University of Lapland",
+        "schoolCn": "拉普兰大学",
+        "aliases": [
+          "University of Lapland",
+          "拉普兰大学"
+        ]
+      },
+      {
+        "id": "Chalmers University of Technology",
+        "label": "Chalmers University of Technology",
+        "school": "Chalmers University of Technology",
+        "schoolCn": "查尔姆斯理工",
+        "aliases": [
+          "Chalmers University of Technology",
+          "查尔姆斯理工"
+        ]
+      },
+      {
+        "id": "KTH Royal Institute of Technology",
+        "label": "KTH Royal Institute of Technology",
+        "school": "KTH Royal Institute of Technology",
+        "schoolCn": "瑞典皇家理工",
+        "aliases": [
+          "KTH Royal Institute of Technology",
+          "瑞典皇家理工"
+        ]
+      },
+      {
+        "id": "Umeå University (UID)",
+        "label": "Umeå University (UID)",
+        "school": "Umeå University (UID)",
+        "schoolCn": "于默奥大学",
+        "aliases": [
+          "Umeå University (UID)",
+          "于默奥大学"
+        ]
+      },
+      {
+        "id": "Umeå University",
+        "label": "Umeå University",
+        "school": "Umeå University",
+        "schoolCn": "于默奥大学",
+        "aliases": [
+          "Umeå University",
+          "于默奥大学"
+        ]
+      },
+      {
+        "id": "Jönköping University",
+        "label": "Jönköping University",
+        "school": "Jönköping University",
+        "schoolCn": "延雪平大学",
+        "aliases": [
+          "Jönköping University",
+          "延雪平大学"
+        ]
+      },
+      {
+        "id": "Oslo School of Architecture and Design (AHO)",
+        "label": "Oslo School of Architecture and Design (AHO)",
+        "school": "Oslo School of Architecture and Design (AHO)",
+        "schoolCn": "奥斯陆建筑与设计学院",
+        "aliases": [
+          "Oslo School of Architecture and Design (AHO)",
+          "奥斯陆建筑与设计学院"
+        ]
+      },
+      {
+        "id": "University of Oslo (UiO)",
+        "label": "University of Oslo (UiO)",
+        "school": "University of Oslo (UiO)",
+        "schoolCn": "奥斯陆大学",
+        "aliases": [
+          "University of Oslo (UiO)",
+          "奥斯陆大学"
+        ]
+      },
+      {
+        "id": "NTNU",
+        "label": "NTNU",
+        "school": "NTNU",
+        "schoolCn": "挪威科技大学",
+        "aliases": [
+          "NTNU",
+          "挪威科技大学"
+        ]
+      },
+      {
+        "id": "Technical University of Denmark (DTU)",
+        "label": "Technical University of Denmark (DTU)",
+        "school": "Technical University of Denmark (DTU)",
+        "schoolCn": "丹麦科技大学",
+        "aliases": [
+          "Technical University of Denmark (DTU)",
+          "丹麦科技大学"
+        ]
+      },
+      {
+        "id": "Aalborg University",
+        "label": "Aalborg University",
+        "school": "Aalborg University",
+        "schoolCn": "奥尔堡大学",
+        "aliases": [
+          "Aalborg University",
+          "奥尔堡大学"
+        ]
+      },
+      {
+        "id": "Hong Kong Polytechnic University (PolyU)",
+        "label": "Hong Kong Polytechnic University (PolyU)",
+        "school": "Hong Kong Polytechnic University (PolyU)",
+        "schoolCn": "香港理工大学",
+        "aliases": [
+          "Hong Kong Polytechnic University (PolyU)",
+          "香港理工大学"
+        ]
+      },
+      {
+        "id": "University of Hong Kong (HKU)",
+        "label": "University of Hong Kong (HKU)",
+        "school": "University of Hong Kong (HKU)",
+        "schoolCn": "香港大学",
+        "aliases": [
+          "University of Hong Kong (HKU)",
+          "香港大学"
+        ]
+      },
+      {
+        "id": "City University of Hong Kong (CityU)",
+        "label": "City University of Hong Kong (CityU)",
+        "school": "City University of Hong Kong (CityU)",
+        "schoolCn": "香港城市大学",
+        "aliases": [
+          "City University of Hong Kong (CityU)",
+          "香港城市大学"
+        ]
+      },
+      {
+        "id": "HKUST",
+        "label": "HKUST",
+        "school": "HKUST",
+        "schoolCn": "香港科技大学",
+        "aliases": [
+          "HKUST",
+          "香港科技大学"
+        ]
+      },
+      {
+        "id": "Hong Kong Baptist University (HKBU)",
+        "label": "Hong Kong Baptist University (HKBU)",
+        "school": "Hong Kong Baptist University (HKBU)",
+        "schoolCn": "香港浸会大学",
+        "aliases": [
+          "Hong Kong Baptist University (HKBU)",
+          "香港浸会大学"
+        ]
+      },
+      {
+        "id": "Lingnan University",
+        "label": "Lingnan University",
+        "school": "Lingnan University",
+        "schoolCn": "岭南大学",
+        "aliases": [
+          "Lingnan University",
+          "岭南大学"
+        ]
+      },
+      {
+        "id": "National University of Singapore (NUS)",
+        "label": "National University of Singapore (NUS)",
+        "school": "National University of Singapore (NUS)",
+        "schoolCn": "新加坡国立大学",
+        "aliases": [
+          "National University of Singapore (NUS)",
+          "新加坡国立大学"
+        ]
+      },
+      {
+        "id": "Singapore Management University (SMU)",
+        "label": "Singapore Management University (SMU)",
+        "school": "Singapore Management University (SMU)",
+        "schoolCn": "新加坡管理大学",
+        "aliases": [
+          "Singapore Management University (SMU)",
+          "新加坡管理大学"
+        ]
+      },
+      {
+        "id": "Nanyang Technological University (NTU)",
+        "label": "Nanyang Technological University (NTU)",
+        "school": "Nanyang Technological University (NTU)",
+        "schoolCn": "南洋理工大学",
+        "aliases": [
+          "Nanyang Technological University (NTU)",
+          "南洋理工大学"
+        ]
+      },
+      {
+        "id": "LASALLE College of the Arts",
+        "label": "LASALLE College of the Arts",
+        "school": "LASALLE College of the Arts",
+        "schoolCn": "新加坡拉萨尔艺术学院",
+        "aliases": [
+          "LASALLE College of the Arts",
+          "新加坡拉萨尔艺术学院"
+        ]
+      },
+      {
+        "id": "Singapore University of Technology and Design (SUTD)",
+        "label": "Singapore University of Technology and Design (SUTD)",
+        "school": "Singapore University of Technology and Design (SUTD)",
+        "schoolCn": "新加坡科技与设计大学",
+        "aliases": [
+          "Singapore University of Technology and Design (SUTD)",
+          "新加坡科技与设计大学"
+        ]
+      },
+      {
+        "id": "University of Macau",
+        "label": "University of Macau",
+        "school": "University of Macau",
+        "schoolCn": "澳门大学",
+        "aliases": [
+          "University of Macau",
+          "澳门大学"
+        ]
+      },
+      {
+        "id": "Macau University of Science and Technology (MUST)",
+        "label": "Macau University of Science and Technology (MUST)",
+        "school": "Macau University of Science and Technology (MUST)",
+        "schoolCn": "澳门科技大学",
+        "aliases": [
+          "Macau University of Science and Technology (MUST)",
+          "澳门科技大学"
+        ]
+      },
+      {
+        "id": "City University of Macau",
+        "label": "City University of Macau",
+        "school": "City University of Macau",
+        "schoolCn": "澳门城市大学",
+        "aliases": [
+          "City University of Macau",
+          "澳门城市大学"
+        ]
+      },
+      {
+        "id": "Macao Polytechnic University (MPU)",
+        "label": "Macao Polytechnic University (MPU)",
+        "school": "Macao Polytechnic University (MPU)",
+        "schoolCn": "澳门理工大学",
+        "aliases": [
+          "Macao Polytechnic University (MPU)",
+          "澳门理工大学"
+        ]
+      },
+      {
+        "id": "University of Saint Joseph (USJ)",
+        "label": "University of Saint Joseph (USJ)",
+        "school": "University of Saint Joseph (USJ)",
+        "schoolCn": "圣若瑟大学",
+        "aliases": [
+          "University of Saint Joseph (USJ)",
+          "圣若瑟大学"
+        ]
+      },
+      {
+        "id": "Carnegie Mellon University",
+        "label": "CMU",
+        "school": "Carnegie Mellon University",
+        "schoolCn": "卡内基梅隆大学",
+        "aliases": [
+          "CMU",
+          "Carnegie Mellon University",
+          "卡内基梅隆大学",
+          "美国"
+        ]
+      },
+      {
+        "id": "Harvard Graduate School of Design",
+        "label": "GSD",
+        "school": "Harvard Graduate School of Design",
+        "schoolCn": "哈佛大学设计学院",
+        "aliases": [
+          "GSD",
+          "Harvard Graduate School of Design",
+          "哈佛大学设计学院",
+          "Harvard",
+          "哈佛大学",
+          "美国"
+        ]
+      },
+      {
+        "id": "Massachusetts Institute of Technology",
+        "label": "MIT",
+        "school": "Massachusetts Institute of Technology",
+        "schoolCn": "麻省理工学院",
+        "aliases": [
+          "MIT",
+          "Massachusetts Institute of Technology",
+          "麻省理工学院",
+          "美国"
+        ]
+      },
+      {
+        "id": "New York University",
+        "label": "NYU",
+        "school": "New York University",
+        "schoolCn": "纽约大学",
+        "aliases": [
+          "NYU",
+          "New York University",
+          "纽约大学",
+          "美国"
+        ]
+      },
+      {
+        "id": "Simon Fraser University",
+        "label": "SFU",
+        "school": "Simon Fraser University",
+        "schoolCn": "西蒙菲莎大学",
+        "aliases": [
+          "SFU",
+          "Simon Fraser University",
+          "西蒙菲莎大学",
+          "Canada",
+          "加拿大"
+        ]
+      },
+      {
+        "id": "University of British Columbia",
+        "label": "UBC",
+        "school": "University of British Columbia",
+        "schoolCn": "英属哥伦比亚大学",
+        "aliases": [
+          "UBC",
+          "University of British Columbia",
+          "英属哥伦比亚大学",
+          "Canada",
+          "加拿大"
+        ]
+      },
+      {
+        "id": "University of California, Berkeley",
+        "label": "UCB",
+        "school": "University of California, Berkeley",
+        "schoolCn": "加州大学伯克利分校",
+        "aliases": [
+          "UCB",
+          "University of California, Berkeley",
+          "加州大学伯克利分校",
+          "UC Berkeley",
+          "美国"
+        ]
+      },
+      {
+        "id": "University of Washington",
+        "label": "UW",
+        "school": "University of Washington",
+        "schoolCn": "华盛顿大学",
+        "aliases": [
+          "UW",
+          "University of Washington",
+          "华盛顿大学",
+          "美国"
+        ]
+      }
+    ],
+    "programs": [
+      {
+        "id": "us-001-massachusetts-institute-of-technology-mit-media-arts-and-sci",
+        "label": "MAS",
+        "program": "Media Arts and Sciences (MAS)",
+        "aliases": [
+          "MAS",
+          "Media Arts and Sciences (MAS)"
+        ]
+      },
+      {
+        "id": "us-002-stanford-university-m-s-in-design-design-impact",
+        "label": "MS Design",
+        "program": "M.S. in Design（原Design Impact已更名）",
+        "aliases": [
+          "MS Design",
+          "M.S. in Design（原Design Impact已更名）",
+          "MSDES"
+        ]
+      },
+      {
+        "id": "us-003-harvard-university-mdes-in-design-studies-mediums",
+        "label": "MDes",
+        "program": "MDes in Design Studies (Mediums)",
+        "aliases": [
+          "MDes",
+          "MDes in Design Studies (Mediums)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-004-carnegie-mellon-university-cmu-master-of-human-computer-inte",
+        "label": "MHCI",
+        "program": "Master of Human-Computer Interaction (MHCI)",
+        "aliases": [
+          "MHCI",
+          "Master of Human-Computer Interaction (MHCI)"
+        ]
+      },
+      {
+        "id": "us-005-carnegie-mellon-university-cmu-mdes-in-design-for-interactio",
+        "label": "MDes",
+        "program": "MDes in Design for Interactions",
+        "aliases": [
+          "MDes",
+          "MDes in Design for Interactions",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-006-carnegie-mellon-university-cmu-master-of-integrated-innovati",
+        "label": "MIIPS",
+        "program": "Master of Integrated Innovation for Products & Services",
+        "aliases": [
+          "MIIPS",
+          "Master of Integrated Innovation for Products & Services"
+        ]
+      },
+      {
+        "id": "us-007-carnegie-mellon-university-cmu-master-of-educational-technol",
+        "label": "METALS",
+        "program": "Master of Educational Technology and Applied Learning Science",
+        "aliases": [
+          "METALS",
+          "Master of Educational Technology and Applied Learning Science",
+          "METAL"
+        ]
+      },
+      {
+        "id": "us-008-carnegie-mellon-university-cmu-master-of-entertainment-techn",
+        "label": "MET",
+        "program": "Master of Entertainment Technology (ETC)",
+        "aliases": [
+          "MET",
+          "Master of Entertainment Technology (ETC)"
+        ]
+      },
+      {
+        "id": "us-009-university-of-washington-uw-master-of-human-computer-interac",
+        "label": "MHCID",
+        "program": "Master of Human-Computer Interaction and Design",
+        "aliases": [
+          "MHCID",
+          "Master of Human-Computer Interaction and Design"
+        ]
+      },
+      {
+        "id": "us-010-university-of-washington-uw-ms-in-human-centered-design-engi",
+        "label": "HCDE",
+        "program": "MS in Human Centered Design & Engineering",
+        "aliases": [
+          "HCDE",
+          "MS in Human Centered Design & Engineering"
+        ]
+      },
+      {
+        "id": "us-011-university-of-washington-uw-ms-in-technology-innovation",
+        "label": "MSTI",
+        "program": "MS in Technology Innovation",
+        "aliases": [
+          "MSTI",
+          "MS in Technology Innovation"
+        ]
+      },
+      {
+        "id": "us-012-university-of-washington-uw-mdes-interaction-design",
+        "label": "MDes",
+        "program": "MDes Interaction Design",
+        "aliases": [
+          "MDes",
+          "MDes Interaction Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-013-university-of-washington-uw-ms-in-information-management",
+        "label": "MSIM",
+        "program": "MS in Information Management",
+        "aliases": [
+          "MSIM",
+          "MS in Information Management"
+        ]
+      },
+      {
+        "id": "us-014-georgia-institute-of-technology-master-of-human-computer-int",
+        "label": "MSHCI",
+        "program": "Master of Human-Computer Interaction",
+        "aliases": [
+          "MSHCI",
+          "Master of Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-015-georgia-institute-of-technology-ms-in-digital-media",
+        "label": "MSDM",
+        "program": "MS in Digital Media",
+        "aliases": [
+          "MSDM",
+          "MS in Digital Media"
+        ]
+      },
+      {
+        "id": "us-016-university-of-pennsylvania-master-of-integrated-product-desi",
+        "label": "IPD",
+        "program": "Master of Integrated Product Design (M:IPD)",
+        "aliases": [
+          "IPD",
+          "Master of Integrated Product Design (M:IPD)"
+        ]
+      },
+      {
+        "id": "us-017-cornell-university-information-science-mps",
+        "label": "MPS",
+        "program": "Information Science MPS",
+        "aliases": [
+          "MPS",
+          "Information Science MPS"
+        ]
+      },
+      {
+        "id": "us-018-cornell-university-ms-design-technology",
+        "label": "MS DT",
+        "program": "MS Design Technology",
+        "aliases": [
+          "MS DT",
+          "MS Design Technology",
+          "MSDT"
+        ]
+      },
+      {
+        "id": "us-019-cornell-university-ms-connective-media-dual-is-cs",
+        "label": "CMC",
+        "program": "MS Connective Media ( dual IS+CS)",
+        "aliases": [
+          "CMC",
+          "MS Connective Media ( dual IS+CS)"
+        ]
+      },
+      {
+        "id": "us-020-uc-berkeley-master-of-information-management-and-systems",
+        "label": "MIMS",
+        "program": "Master of Information Management and Systems",
+        "aliases": [
+          "MIMS",
+          "Master of Information Management and Systems"
+        ]
+      },
+      {
+        "id": "us-021-uc-berkeley-master-of-design",
+        "label": "MDes",
+        "program": "Master of Design",
+        "aliases": [
+          "MDes",
+          "Master of Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-022-new-york-university-nyu-interactive-telecommunications-progr",
+        "label": "ITP",
+        "program": "Interactive Telecommunications Program (MPS)",
+        "aliases": [
+          "ITP",
+          "Interactive Telecommunications Program (MPS)"
+        ]
+      },
+      {
+        "id": "us-023-new-york-university-nyu-interactive-media-arts-ma-low-res",
+        "label": "IMA",
+        "program": "Interactive Media Arts (MA Low Res)",
+        "aliases": [
+          "IMA",
+          "Interactive Media Arts (MA Low Res)"
+        ]
+      },
+      {
+        "id": "us-024-new-york-university-nyu-integrated-digital-media-ms",
+        "label": "IDM",
+        "program": "Integrated Digital Media (MS)",
+        "aliases": [
+          "IDM",
+          "Integrated Digital Media (MS)"
+        ]
+      },
+      {
+        "id": "us-025-northwestern-university-m-s-in-engineering-design-innovation",
+        "label": "EDI",
+        "program": "M.S. in Engineering Design Innovation",
+        "aliases": [
+          "EDI",
+          "M.S. in Engineering Design Innovation"
+        ]
+      },
+      {
+        "id": "us-026-university-of-michigan-m-s-in-information",
+        "label": "MSI",
+        "program": "M.S. in Information",
+        "aliases": [
+          "MSI",
+          "M.S. in Information"
+        ]
+      },
+      {
+        "id": "us-027-university-of-texas-at-austin-m-s-in-information-studies-ux-",
+        "label": "MSIS",
+        "program": "M.S. in Information Studies (UX/HCI方向)",
+        "aliases": [
+          "MSIS",
+          "M.S. in Information Studies (UX/HCI方向)"
+        ]
+      },
+      {
+        "id": "us-028-indiana-university-bloomington-m-s-in-human-computer-interac",
+        "label": "HCID",
+        "program": "M.S. in Human-Computer Interaction",
+        "aliases": [
+          "HCID",
+          "M.S. in Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-029-purdue-university-m-s-in-computer-graphics-technology-hcdd",
+        "label": "CGT",
+        "program": "M.S. in Computer Graphics Technology (HCDD)",
+        "aliases": [
+          "CGT",
+          "M.S. in Computer Graphics Technology (HCDD)"
+        ]
+      },
+      {
+        "id": "us-030-university-of-maryland-m-s-in-human-computer-interaction",
+        "label": "HCIM",
+        "program": "M.S. in Human-Computer Interaction",
+        "aliases": [
+          "HCIM",
+          "M.S. in Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-031-rochester-institute-of-technology-rit-m-s-in-human-computer-",
+        "label": "MHCI",
+        "program": "M.S. in Human-Computer Interaction",
+        "aliases": [
+          "MHCI",
+          "M.S. in Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-032-arizona-state-university-asu-m-s-in-user-experience",
+        "label": "UX",
+        "program": "M.S. in User Experience",
+        "aliases": [
+          "UX",
+          "M.S. in User Experience"
+        ]
+      },
+      {
+        "id": "us-033-university-of-wisconsin-madison-m-s-in-design-innovation",
+        "label": "SDI",
+        "program": "M.S. in Design + Innovation",
+        "aliases": [
+          "SDI",
+          "M.S. in Design + Innovation"
+        ]
+      },
+      {
+        "id": "us-034-illinois-institute-of-technology-iit-master-of-design",
+        "label": "MDes",
+        "program": "Master of Design",
+        "aliases": [
+          "MDes",
+          "Master of Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-035-northeastern-university-m-s-in-experience-design",
+        "label": "ED",
+        "program": "M.S. in Experience Design",
+        "aliases": [
+          "ED",
+          "M.S. in Experience Design"
+        ]
+      },
+      {
+        "id": "us-036-university-of-colorado-boulder-ms-technology-media-society-c",
+        "label": "CTD",
+        "program": "MS Technology, Media & Society (CTD track)",
+        "aliases": [
+          "CTD",
+          "MS Technology, Media & Society (CTD track)"
+        ]
+      },
+      {
+        "id": "us-037-pennsylvania-state-university-m-s-in-informatics-hci-concent",
+        "label": "IST",
+        "program": "M.S. in Informatics (HCI concentration)",
+        "aliases": [
+          "IST",
+          "M.S. in Informatics (HCI concentration)"
+        ]
+      },
+      {
+        "id": "us-038-michigan-state-university-ma-in-media-and-information-hci-fo",
+        "label": "MI",
+        "program": "MA in Media and Information (HCI focus)",
+        "aliases": [
+          "MI",
+          "MA in Media and Information (HCI focus)"
+        ]
+      },
+      {
+        "id": "us-039-california-state-university-long-beach-m-a-in-human-experien",
+        "label": "HXDI",
+        "program": "M.A. in Human Experience Design Interactions",
+        "aliases": [
+          "HXDI",
+          "M.A. in Human Experience Design Interactions"
+        ]
+      },
+      {
+        "id": "us-040-california-state-university-east-bay-ma-in-interaction-desig",
+        "label": "MAIDIA",
+        "program": "MA in Interaction Design and Interactive Art",
+        "aliases": [
+          "MAIDIA",
+          "MA in Interaction Design and Interactive Art",
+          "MAIDI"
+        ]
+      },
+      {
+        "id": "us-041-iowa-state-university-m-s-in-human-computer-interaction",
+        "label": "HCI",
+        "program": "M.S. in Human Computer Interaction",
+        "aliases": [
+          "HCI",
+          "M.S. in Human Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-042-parsons-school-of-design-the-new-school-m-f-a-in-design-and-",
+        "label": "DT",
+        "program": "M.F.A. in Design and Technology",
+        "aliases": [
+          "DT",
+          "M.F.A. in Design and Technology"
+        ]
+      },
+      {
+        "id": "us-043-pratt-institute-m-s-in-information-experience-design",
+        "label": "IED",
+        "program": "M.S. in Information Experience Design",
+        "aliases": [
+          "IED",
+          "M.S. in Information Experience Design"
+        ]
+      },
+      {
+        "id": "us-044-california-college-of-the-arts-cca-mdes-in-interaction-desig",
+        "label": "MDes",
+        "program": "MDes in Interaction Design",
+        "aliases": [
+          "MDes",
+          "MDes in Interaction Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "us-045-school-of-visual-arts-sva-m-f-a-in-interaction-design",
+        "label": "MID",
+        "program": "M.F.A. in Interaction Design",
+        "aliases": [
+          "MID",
+          "M.F.A. in Interaction Design"
+        ]
+      },
+      {
+        "id": "us-046-savannah-college-of-art-and-design-scad-mfa-in-interactive-d",
+        "label": "MFA",
+        "program": "MFA in Interactive Design and Game Development",
+        "aliases": [
+          "MFA",
+          "MFA in Interactive Design and Game Development"
+        ]
+      },
+      {
+        "id": "us-047-savannah-college-of-art-and-design-scad-ma-in-interactive-de",
+        "label": "MA",
+        "program": "MA in Interactive Design and Game Development",
+        "aliases": [
+          "MA",
+          "MA in Interactive Design and Game Development"
+        ]
+      },
+      {
+        "id": "us-048-art-center-college-of-design-media-design-practices-mfa",
+        "label": "MDP",
+        "program": "Media Design Practices (MFA)",
+        "aliases": [
+          "MDP",
+          "Media Design Practices (MFA)"
+        ]
+      },
+      {
+        "id": "us-049-uc-irvine-master-of-human-computer-interaction-and-design",
+        "label": "MHCID",
+        "program": "Master of Human-Computer Interaction and Design",
+        "aliases": [
+          "MHCID",
+          "Master of Human-Computer Interaction and Design"
+        ]
+      },
+      {
+        "id": "us-050-depaul-university-ms-in-human-computer-interaction",
+        "label": "HCI",
+        "program": "MS in Human-Computer Interaction",
+        "aliases": [
+          "HCI",
+          "MS in Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "us-051-san-jose-state-university-mdes-experience-design",
+        "label": "MDes",
+        "program": "MDes Experience Design",
+        "aliases": [
+          "MDes",
+          "MDes Experience Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "can-001-centre-for-digital-media-ubc-sfu-ecuad-bcit-master-of-digita",
+        "label": "MDM",
+        "program": "Master of Digital Media",
+        "aliases": [
+          "MDM",
+          "Master of Digital Media"
+        ]
+      },
+      {
+        "id": "can-002-simon-fraser-university-sfu-ma-msc-interactive-arts-and-tech",
+        "label": "SIAT",
+        "program": "MA/MSc Interactive Arts and Technology",
+        "aliases": [
+          "SIAT",
+          "MA/MSc Interactive Arts and Technology"
+        ]
+      },
+      {
+        "id": "can-003-university-of-toronto-master-of-information-ux-design",
+        "label": "MI",
+        "program": "Master of Information (UX Design方向)",
+        "aliases": [
+          "MI",
+          "Master of Information (UX Design方向)"
+        ]
+      },
+      {
+        "id": "can-004-mcgill-university-master-of-information-studies-mist",
+        "label": "MISt",
+        "program": "Master of Information Studies (MISt)",
+        "aliases": [
+          "MISt",
+          "Master of Information Studies (MISt)",
+          "MIST"
+        ]
+      },
+      {
+        "id": "can-005-university-of-waterloo-master-of-digital-experience-innovati",
+        "label": "MDEI",
+        "program": "Master of Digital Experience Innovation",
+        "aliases": [
+          "MDEI",
+          "Master of Digital Experience Innovation"
+        ]
+      },
+      {
+        "id": "can-006-university-of-ottawa-master-of-digital-transformation-and-in",
+        "label": "MDTI",
+        "program": "Master of Digital Transformation and Innovation",
+        "aliases": [
+          "MDTI",
+          "Master of Digital Transformation and Innovation"
+        ]
+      },
+      {
+        "id": "can-007-queen-s-university-master-of-digital-product-management",
+        "label": "MDPM",
+        "program": "Master of Digital Product Management",
+        "aliases": [
+          "MDPM",
+          "Master of Digital Product Management"
+        ]
+      },
+      {
+        "id": "can-008-carleton-university-master-of-human-computer-interaction",
+        "label": "MHCI",
+        "program": "Master of Human-Computer Interaction",
+        "aliases": [
+          "MHCI",
+          "Master of Human-Computer Interaction"
+        ]
+      },
+      {
+        "id": "can-009-york-university-ma-msc-digital-media",
+        "label": "DM",
+        "program": "MA/MSc Digital Media",
+        "aliases": [
+          "DM",
+          "MA/MSc Digital Media"
+        ]
+      },
+      {
+        "id": "can-010-toronto-metropolitan-university-ryerson-master-of-digital-me",
+        "label": "MDM",
+        "program": "Master of Digital Media",
+        "aliases": [
+          "MDM",
+          "Master of Digital Media"
+        ]
+      },
+      {
+        "id": "can-011-mcmaster-university-ma-communication-and-new-media",
+        "label": "CNM",
+        "program": "MA Communication and New Media",
+        "aliases": [
+          "CNM",
+          "MA Communication and New Media"
+        ]
+      },
+      {
+        "id": "can-012-emily-carr-university-of-art-design-ecuad-master-of-design-i",
+        "label": "MDes",
+        "program": "Master of Design (Interaction Design)",
+        "aliases": [
+          "MDes",
+          "Master of Design (Interaction Design)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "can-013-ocad-university-digital-futures-ma-mdes-mfa",
+        "label": "DF",
+        "program": "Digital Futures (MA/MDes/MFA)",
+        "aliases": [
+          "DF",
+          "Digital Futures (MA/MDes/MFA)"
+        ]
+      },
+      {
+        "id": "can-014-ocad-university-interdisciplinary-ma-mdes-mfa-in-art-media-a",
+        "label": "IAMD",
+        "program": "Interdisciplinary MA/MDes/MFA in Art, Media and Design",
+        "aliases": [
+          "IAMD",
+          "Interdisciplinary MA/MDes/MFA in Art, Media and Design"
+        ]
+      },
+      {
+        "id": "can-015-ocad-university-mdes-inclusive-design",
+        "label": "MDes ID",
+        "program": "MDes Inclusive Design",
+        "aliases": [
+          "MDes ID",
+          "MDes Inclusive Design",
+          "MDESI"
+        ]
+      },
+      {
+        "id": "can-016-university-of-toronto-mi-concentration-human-centred-data-sc",
+        "label": "HCDS",
+        "program": "MI concentration: Human-Centred Data Science",
+        "aliases": [
+          "HCDS",
+          "MI concentration: Human-Centred Data Science"
+        ]
+      },
+      {
+        "id": "uk-001-royal-college-of-art-rca-service-design-ma",
+        "label": "服务设计",
+        "program": "Service Design MA",
+        "aliases": [
+          "服务设计",
+          "Service Design MA",
+          "RCOA"
+        ]
+      },
+      {
+        "id": "uk-002-royal-college-of-art-rca-innovation-design-engineering-ma-ms",
+        "label": "创新设计工程",
+        "program": "Innovation Design Engineering MA/MSc",
+        "aliases": [
+          "创新设计工程",
+          "Innovation Design Engineering MA/MSc",
+          "RCOA"
+        ]
+      },
+      {
+        "id": "uk-003-ual-london-college-of-communication-lcc-ma-service-design",
+        "label": "服务设计",
+        "program": "MA Service Design",
+        "aliases": [
+          "服务设计",
+          "MA Service Design",
+          "ULCO"
+        ]
+      },
+      {
+        "id": "uk-004-ual-london-college-of-communication-lcc-ma-interaction-desig",
+        "label": "交互设计",
+        "program": "MA Interaction Design",
+        "aliases": [
+          "交互设计",
+          "MA Interaction Design",
+          "ULCO"
+        ]
+      },
+      {
+        "id": "uk-005-ual-london-college-of-communication-lcc-ma-user-experience-d",
+        "label": "用户体验设计",
+        "program": "MA User Experience Design",
+        "aliases": [
+          "用户体验设计",
+          "MA User Experience Design",
+          "ULCO"
+        ]
+      },
+      {
+        "id": "uk-006-the-glasgow-school-of-art-gsa-mdes-design-innovation-service",
+        "label": "设计创新与服务设计",
+        "program": "MDes Design Innovation & Service Design",
+        "aliases": [
+          "设计创新与服务设计",
+          "MDes Design Innovation & Service Design",
+          "TGSO"
+        ]
+      },
+      {
+        "id": "uk-007-the-glasgow-school-of-art-gsa-mdes-design-innovation-interac",
+        "label": "设计创新与交互设计",
+        "program": "MDes Design Innovation & Interaction Design",
+        "aliases": [
+          "设计创新与交互设计",
+          "MDes Design Innovation & Interaction Design",
+          "TGSO"
+        ]
+      },
+      {
+        "id": "uk-008-university-of-edinburgh-design-informatics-ma",
+        "label": "设计信息学",
+        "program": "Design Informatics MA",
+        "aliases": [
+          "设计信息学",
+          "Design Informatics MA",
+          "UOE"
+        ]
+      },
+      {
+        "id": "uk-009-goldsmiths-university-of-london-ma-design-expanded-practice",
+        "label": "设计（扩展实践）",
+        "program": "MA Design: Expanded Practice",
+        "aliases": [
+          "设计（扩展实践）",
+          "MA Design: Expanded Practice",
+          "GUOL"
+        ]
+      },
+      {
+        "id": "uk-010-loughborough-university-ma-user-experience-and-service-desig",
+        "label": "用户体验与服务设计",
+        "program": "MA User Experience and Service Design",
+        "aliases": [
+          "用户体验与服务设计",
+          "MA User Experience and Service Design",
+          "LU"
+        ]
+      },
+      {
+        "id": "uk-011-loughborough-university-user-experience-design-msc",
+        "label": "用户体验设计",
+        "program": "User Experience Design MSc",
+        "aliases": [
+          "用户体验设计",
+          "User Experience Design MSc",
+          "LU"
+        ]
+      },
+      {
+        "id": "uk-012-loughborough-university-london-msc-user-experience-and-servi",
+        "label": "用户体验与服务设计",
+        "program": "MSc User Experience and Service Design（伦敦校区）",
+        "aliases": [
+          "用户体验与服务设计",
+          "MSc User Experience and Service Design（伦敦校区）",
+          "LUL"
+        ]
+      },
+      {
+        "id": "uk-013-university-of-brighton-user-experience-design-msc",
+        "label": "用户体验设计",
+        "program": "User Experience Design MSc",
+        "aliases": [
+          "用户体验设计",
+          "User Experience Design MSc",
+          "UOB"
+        ]
+      },
+      {
+        "id": "uk-014-kingston-university-user-experience-design-msc",
+        "label": "用户体验设计",
+        "program": "User Experience Design MSc",
+        "aliases": [
+          "用户体验设计",
+          "User Experience Design MSc",
+          "KU"
+        ]
+      },
+      {
+        "id": "uk-015-university-of-westminster-interactive-media-practice-ma",
+        "label": "互动媒体实践",
+        "program": "Interactive Media Practice MA",
+        "aliases": [
+          "互动媒体实践",
+          "Interactive Media Practice MA",
+          "UOW"
+        ]
+      },
+      {
+        "id": "uk-016-university-for-the-creative-arts-uca-ma-user-experience-desi",
+        "label": "用户体验设计",
+        "program": "MA User Experience Design ※替代已停办的Digital Media MA",
+        "aliases": [
+          "用户体验设计",
+          "MA User Experience Design ※替代已停办的Digital Media MA",
+          "UFTC"
+        ]
+      },
+      {
+        "id": "uk-017-birmingham-city-university-bcu-user-experience-design-msc",
+        "label": "用户体验设计",
+        "program": "User Experience Design MSc",
+        "aliases": [
+          "用户体验设计",
+          "User Experience Design MSc",
+          "BCUB"
+        ]
+      },
+      {
+        "id": "uk-018-sheffield-hallam-university-shu-design-interaction-ma",
+        "label": "交互设计",
+        "program": "Design (Interaction) MA",
+        "aliases": [
+          "交互设计",
+          "Design (Interaction) MA",
+          "SHUS"
+        ]
+      },
+      {
+        "id": "uk-019-university-of-lancashire-uclan-user-experience-ux-design-msc",
+        "label": "用户体验设计",
+        "program": "User Experience (UX) Design MSc",
+        "aliases": [
+          "用户体验设计",
+          "User Experience (UX) Design MSc",
+          "UOLU"
+        ]
+      },
+      {
+        "id": "uk-020-city-st-george-s-university-of-london-human-computer-interac",
+        "label": "人机交互设计",
+        "program": "Human-Computer Interaction Design MSc",
+        "aliases": [
+          "人机交互设计",
+          "Human-Computer Interaction Design MSc",
+          "CSGS"
+        ]
+      },
+      {
+        "id": "uk-021-edinburgh-napier-university-ma-design-for-interactive-experi",
+        "label": "交互体验设计",
+        "program": "MA Design for Interactive Experience",
+        "aliases": [
+          "交互体验设计",
+          "MA Design for Interactive Experience",
+          "ENU"
+        ]
+      },
+      {
+        "id": "uk-022-university-of-winchester-ma-digital-media-practice-interacti",
+        "label": "数字媒体实践（交互设计方向）",
+        "program": "MA Digital Media Practice（Interaction Design方向）",
+        "aliases": [
+          "数字媒体实践（交互设计方向）",
+          "MA Digital Media Practice（Interaction Design方向）",
+          "UOW"
+        ]
+      },
+      {
+        "id": "uk-023-university-of-st-andrews-human-computer-interaction-msc",
+        "label": "人机交互",
+        "program": "Human Computer Interaction MSc（偏计算机方向）",
+        "aliases": [
+          "人机交互",
+          "Human Computer Interaction MSc（偏计算机方向）",
+          "UOSA"
+        ]
+      },
+      {
+        "id": "uk-024-university-of-nottingham-human-computer-interaction-msc",
+        "label": "人机交互",
+        "program": "Human Computer Interaction MSc（偏计算机方向）",
+        "aliases": [
+          "人机交互",
+          "Human Computer Interaction MSc（偏计算机方向）",
+          "UON"
+        ]
+      },
+      {
+        "id": "aus-001-university-of-sydney-master-of-interaction-design-and-electr",
+        "label": "MIDEA",
+        "program": "Master of Interaction Design and Electronic Arts",
+        "aliases": [
+          "MIDEA",
+          "Master of Interaction Design and Electronic Arts"
+        ]
+      },
+      {
+        "id": "aus-002-university-of-new-south-wales-unsw-master-of-design-interact",
+        "label": "MDes",
+        "program": "Master of Design (Interaction Design)",
+        "aliases": [
+          "MDes",
+          "Master of Design (Interaction Design)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "aus-003-monash-university-master-of-design-interaction-design",
+        "label": "MDes",
+        "program": "Master of Design (Interaction Design)",
+        "aliases": [
+          "MDes",
+          "Master of Design (Interaction Design)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "aus-004-university-of-queensland-uq-master-of-interaction-design",
+        "label": "MID",
+        "program": "Master of Interaction Design",
+        "aliases": [
+          "MID",
+          "Master of Interaction Design"
+        ]
+      },
+      {
+        "id": "aus-005-university-of-technology-sydney-uts-master-of-interaction-de",
+        "label": "MID",
+        "program": "Master of Interaction Design",
+        "aliases": [
+          "MID",
+          "Master of Interaction Design"
+        ]
+      },
+      {
+        "id": "aus-006-rmit-university-master-of-animation-games-and-interactivity",
+        "label": "MAGI",
+        "program": "Master of Animation, Games and Interactivity",
+        "aliases": [
+          "MAGI",
+          "Master of Animation, Games and Interactivity"
+        ]
+      },
+      {
+        "id": "aus-007-rmit-university-master-of-communication-design",
+        "label": "MCD",
+        "program": "Master of Communication Design",
+        "aliases": [
+          "MCD",
+          "Master of Communication Design"
+        ]
+      },
+      {
+        "id": "aus-008-adelaide-university-unisa-master-of-design-graphic-communica",
+        "label": "MDes",
+        "program": "Master of Design (Graphic Communication Design)",
+        "aliases": [
+          "MDes",
+          "Master of Design (Graphic Communication Design)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "aus-009-deakin-university-master-of-creative-arts",
+        "label": "MCA",
+        "program": "Master of Creative Arts",
+        "aliases": [
+          "MCA",
+          "Master of Creative Arts"
+        ]
+      },
+      {
+        "id": "aus-010-griffith-university-master-of-design",
+        "label": "MDes",
+        "program": "Master of Design",
+        "aliases": [
+          "MDes",
+          "Master of Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "eu-001-university-college-dublin-ucd-msc-in-digital-innovation",
+        "label": "DI",
+        "program": "MSc in Digital Innovation",
+        "aliases": [
+          "DI",
+          "MSc in Digital Innovation"
+        ]
+      },
+      {
+        "id": "eu-002-university-college-dublin-ucd-msc-human-computer-interaction",
+        "label": "HCI",
+        "program": "MSc Human Computer Interaction",
+        "aliases": [
+          "HCI",
+          "MSc Human Computer Interaction"
+        ]
+      },
+      {
+        "id": "eu-003-trinity-college-dublin-tcd-msc-interactive-digital-media",
+        "label": "IDM",
+        "program": "MSc Interactive Digital Media",
+        "aliases": [
+          "IDM",
+          "MSc Interactive Digital Media"
+        ]
+      },
+      {
+        "id": "eu-004-south-east-technological-university-setu-ma-in-interaction-d",
+        "label": "ID",
+        "program": "MA in Interaction Design",
+        "aliases": [
+          "ID",
+          "MA in Interaction Design"
+        ]
+      },
+      {
+        "id": "eu-005-university-of-limerick-ul-ma-msc-interaction-and-experience-",
+        "label": "IED",
+        "program": "MA/MSc Interaction and Experience Design",
+        "aliases": [
+          "IED",
+          "MA/MSc Interaction and Experience Design"
+        ]
+      },
+      {
+        "id": "eu-006-maynooth-university-msc-design-for-user-experience-interacti",
+        "label": "UX&I",
+        "program": "MSc Design for User Experience & Interaction",
+        "aliases": [
+          "UX&I",
+          "MSc Design for User Experience & Interaction",
+          "UXI"
+        ]
+      },
+      {
+        "id": "eu-007-delft-university-of-technology-tu-delft-msc-design-for-inter",
+        "label": "DFI",
+        "program": "MSc Design for Interaction",
+        "aliases": [
+          "DFI",
+          "MSc Design for Interaction"
+        ]
+      },
+      {
+        "id": "eu-008-eindhoven-university-of-technology-tu-e-msc-human-technology",
+        "label": "HTI",
+        "program": "MSc Human-Technology Interaction",
+        "aliases": [
+          "HTI",
+          "MSc Human-Technology Interaction"
+        ]
+      },
+      {
+        "id": "eu-009-university-of-twente-msc-interaction-technology",
+        "label": "IT",
+        "program": "MSc Interaction Technology",
+        "aliases": [
+          "IT",
+          "MSc Interaction Technology"
+        ]
+      },
+      {
+        "id": "eu-010-politecnico-di-milano-polimi-digital-and-interaction-design-",
+        "label": "DID",
+        "program": "Digital and Interaction Design (MSc)",
+        "aliases": [
+          "DID",
+          "Digital and Interaction Design (MSc)"
+        ]
+      },
+      {
+        "id": "eu-011-politecnico-di-milano-polimi-product-service-system-design-m",
+        "label": "PSSD",
+        "program": "Product Service System Design (MSc)",
+        "aliases": [
+          "PSSD",
+          "Product Service System Design (MSc)"
+        ]
+      },
+      {
+        "id": "eu-012-politecnico-di-milano-polimi-design-engineering-msc",
+        "label": "DE",
+        "program": "Design & Engineering (MSc)",
+        "aliases": [
+          "DE",
+          "Design & Engineering (MSc)"
+        ]
+      },
+      {
+        "id": "eu-013-politecnico-di-milano-polimi-integrated-product-design-msc",
+        "label": "IPD",
+        "program": "Integrated Product Design (MSc)",
+        "aliases": [
+          "IPD",
+          "Integrated Product Design (MSc)"
+        ]
+      },
+      {
+        "id": "eu-014-aalto-university-msc-human-computer-interaction-and-design-e",
+        "label": "HCID",
+        "program": "MSc Human Computer Interaction and Design (EIT Digital)",
+        "aliases": [
+          "HCID",
+          "MSc Human Computer Interaction and Design (EIT Digital)"
+        ]
+      },
+      {
+        "id": "eu-015-aalto-university-collaborative-and-industrial-design-ma",
+        "label": "CID",
+        "program": "Collaborative and Industrial Design (MA)",
+        "aliases": [
+          "CID",
+          "Collaborative and Industrial Design (MA)"
+        ]
+      },
+      {
+        "id": "eu-016-aalto-university-creative-sustainability-ma-msc",
+        "label": "CS",
+        "program": "Creative Sustainability (MA/MSc)",
+        "aliases": [
+          "CS",
+          "Creative Sustainability (MA/MSc)"
+        ]
+      },
+      {
+        "id": "eu-017-university-of-lapland-master-in-sustainable-art-and-design-a",
+        "label": "AAD",
+        "program": "Master in Sustainable Art and Design（原Arctic Art & Design）",
+        "aliases": [
+          "AAD",
+          "Master in Sustainable Art and Design（原Arctic Art & Design）"
+        ]
+      },
+      {
+        "id": "eu-018-chalmers-university-of-technology-msc-interaction-design-and",
+        "label": "IDT",
+        "program": "MSc Interaction Design and Technologies",
+        "aliases": [
+          "IDT",
+          "MSc Interaction Design and Technologies"
+        ]
+      },
+      {
+        "id": "eu-019-kth-royal-institute-of-technology-msc-integrated-product-des",
+        "label": "IPD",
+        "program": "MSc Integrated Product Design",
+        "aliases": [
+          "IPD",
+          "MSc Integrated Product Design"
+        ]
+      },
+      {
+        "id": "eu-020-kth-royal-institute-of-technology-msc-interactive-media-tech",
+        "label": "IMT",
+        "program": "MSc Interactive Media Technology",
+        "aliases": [
+          "IMT",
+          "MSc Interactive Media Technology"
+        ]
+      },
+      {
+        "id": "eu-021-ume-university-uid-mfa-interaction-design-uid",
+        "label": "ID",
+        "program": "MFA Interaction Design (UID)",
+        "aliases": [
+          "ID",
+          "MFA Interaction Design (UID)"
+        ]
+      },
+      {
+        "id": "eu-022-ume-university-msc-human-computer-interaction-and-user-exper",
+        "label": "HCI/UX",
+        "program": "MSc Human Computer Interaction and User Experience（原HCISM）",
+        "aliases": [
+          "HCI/UX",
+          "MSc Human Computer Interaction and User Experience（原HCISM）",
+          "HCIUX"
+        ]
+      },
+      {
+        "id": "eu-023-ume-university-uid-mfa-advanced-product-design-uid",
+        "label": "APD",
+        "program": "MFA Advanced Product Design (UID)",
+        "aliases": [
+          "APD",
+          "MFA Advanced Product Design (UID)"
+        ]
+      },
+      {
+        "id": "eu-024-j-nk-ping-university-msc-user-experience-design",
+        "label": "UED",
+        "program": "MSc User Experience Design",
+        "aliases": [
+          "UED",
+          "MSc User Experience Design"
+        ]
+      },
+      {
+        "id": "eu-025-oslo-school-of-architecture-and-design-aho-master-of-design-",
+        "label": "MDes",
+        "program": "Master of Design（统一项目，含IxD/SD/ID方向）",
+        "aliases": [
+          "MDes",
+          "Master of Design（统一项目，含IxD/SD/ID方向）",
+          "MDES"
+        ]
+      },
+      {
+        "id": "eu-026-university-of-oslo-uio-msc-informatics-design-use-interactio",
+        "label": "DUI",
+        "program": "MSc Informatics: Design, Use, Interaction",
+        "aliases": [
+          "DUI",
+          "MSc Informatics: Design, Use, Interaction"
+        ]
+      },
+      {
+        "id": "eu-027-ntnu-msc-interaction-design",
+        "label": "ID",
+        "program": "MSc Interaction Design",
+        "aliases": [
+          "ID",
+          "MSc Interaction Design"
+        ]
+      },
+      {
+        "id": "eu-028-ntnu-msc-product-and-system-engineering-product-and-system-d",
+        "label": "PSE",
+        "program": "MSc Product and System Engineering（原Product and System Design）",
+        "aliases": [
+          "PSE",
+          "MSc Product and System Engineering（原Product and System Design）"
+        ]
+      },
+      {
+        "id": "eu-029-technical-university-of-denmark-dtu-msc-design-and-innovatio",
+        "label": "DI",
+        "program": "MSc Design and Innovation",
+        "aliases": [
+          "DI",
+          "MSc Design and Innovation"
+        ]
+      },
+      {
+        "id": "eu-030-aalborg-university-msc-service-systems-design",
+        "label": "SSD",
+        "program": "MSc Service Systems Design",
+        "aliases": [
+          "SSD",
+          "MSc Service Systems Design"
+        ]
+      },
+      {
+        "id": "eu-031-aalborg-university-msc-sustainable-design",
+        "label": "SD",
+        "program": "MSc Sustainable Design",
+        "aliases": [
+          "SD",
+          "MSc Sustainable Design"
+        ]
+      },
+      {
+        "id": "asia-001-hong-kong-polytechnic-university-polyu-msc-innovative-multim",
+        "label": "IMM",
+        "program": "MSc Innovative Multimedia Entertainment（原MET）",
+        "aliases": [
+          "IMM",
+          "MSc Innovative Multimedia Entertainment（原MET）"
+        ]
+      },
+      {
+        "id": "asia-002-hong-kong-polytechnic-university-polyu-mdes-intelligent-syst",
+        "label": "ISD",
+        "program": "MDes Intelligent Systems Design",
+        "aliases": [
+          "ISD",
+          "MDes Intelligent Systems Design"
+        ]
+      },
+      {
+        "id": "asia-003-hong-kong-polytechnic-university-polyu-mdes-smart-service-de",
+        "label": "SSD",
+        "program": "MDes Smart Service Design",
+        "aliases": [
+          "SSD",
+          "MDes Smart Service Design"
+        ]
+      },
+      {
+        "id": "asia-004-hong-kong-polytechnic-university-polyu-mdes-transitional-env",
+        "label": "TED",
+        "program": "MDes Transitional Environments Design",
+        "aliases": [
+          "TED",
+          "MDes Transitional Environments Design"
+        ]
+      },
+      {
+        "id": "asia-005-hong-kong-polytechnic-university-polyu-mdes-innovative-busin",
+        "label": "IBD",
+        "program": "MDes Innovative Business Design",
+        "aliases": [
+          "IBD",
+          "MDes Innovative Business Design"
+        ]
+      },
+      {
+        "id": "asia-006-hong-kong-polytechnic-university-polyu-master-of-design-in-i",
+        "label": "MDID",
+        "program": "Master of Design in Interaction Design",
+        "aliases": [
+          "MDID",
+          "Master of Design in Interaction Design"
+        ]
+      },
+      {
+        "id": "asia-007-university-of-hong-kong-hku-msc-in-innovative-design-and-tec",
+        "label": "IDT",
+        "program": "MSc in Innovative Design and Technology",
+        "aliases": [
+          "IDT",
+          "MSc in Innovative Design and Technology"
+        ]
+      },
+      {
+        "id": "asia-008-city-university-of-hong-kong-cityu-mfa-creative-media-intera",
+        "label": "MFA CM",
+        "program": "MFA Creative Media (含Interaction Design Stream)",
+        "aliases": [
+          "MFA CM",
+          "MFA Creative Media (含Interaction Design Stream)",
+          "MFACM"
+        ]
+      },
+      {
+        "id": "asia-009-hkust-msc-technology-leadership-and-entrepreneurship",
+        "label": "TLE",
+        "program": "MSc Technology, Leadership and Entrepreneurship",
+        "aliases": [
+          "TLE",
+          "MSc Technology, Leadership and Entrepreneurship"
+        ]
+      },
+      {
+        "id": "asia-010-hkust-mphil-computational-media-and-arts-hkust-gz",
+        "label": "MCMA",
+        "program": "MPhil Computational Media and Arts (HKUST-GZ)",
+        "aliases": [
+          "MCMA",
+          "MPhil Computational Media and Arts (HKUST-GZ)"
+        ]
+      },
+      {
+        "id": "asia-011-hong-kong-baptist-university-hkbu-msc-in-ai-and-digital-medi",
+        "label": "AIDM",
+        "program": "MSc in AI and Digital Media",
+        "aliases": [
+          "AIDM",
+          "MSc in AI and Digital Media"
+        ]
+      },
+      {
+        "id": "asia-012-lingnan-university-ma-creative-and-media-industries",
+        "label": "MACMI",
+        "program": "MA Creative and Media Industries",
+        "aliases": [
+          "MACMI",
+          "MA Creative and Media Industries"
+        ]
+      },
+      {
+        "id": "asia-013-national-university-of-singapore-nus-master-of-design-in-int",
+        "label": "MDes",
+        "program": "Master of Design in Integrated Design（原DID）",
+        "aliases": [
+          "MDes",
+          "Master of Design in Integrated Design（原DID）",
+          "MDES"
+        ]
+      },
+      {
+        "id": "asia-014-national-university-of-singapore-nus-msc-engineering-design-",
+        "label": "MSEDI",
+        "program": "MSc Engineering Design Innovation",
+        "aliases": [
+          "MSEDI",
+          "MSc Engineering Design Innovation"
+        ]
+      },
+      {
+        "id": "asia-015-singapore-management-university-smu-master-of-it-in-business",
+        "label": "MITB",
+        "program": "Master of IT in Business",
+        "aliases": [
+          "MITB",
+          "Master of IT in Business"
+        ]
+      },
+      {
+        "id": "asia-016-nanyang-technological-university-ntu-msc-information-systems",
+        "label": "MSIS",
+        "program": "MSc Information Systems",
+        "aliases": [
+          "MSIS",
+          "MSc Information Systems"
+        ]
+      },
+      {
+        "id": "asia-017-lasalle-college-of-the-arts-ma-design",
+        "label": "MA Design",
+        "program": "MA Design",
+        "aliases": [
+          "MA Design",
+          "MADES"
+        ]
+      },
+      {
+        "id": "asia-018-singapore-university-of-technology-and-design-sutd-msc-techn",
+        "label": "MTD HCD",
+        "program": "MSc Technology and Design (Human-Centred Design)",
+        "aliases": [
+          "MTD HCD",
+          "MSc Technology and Design (Human-Centred Design)",
+          "MTDHC"
+        ]
+      },
+      {
+        "id": "asia-019-university-of-macau-master-of-design-in-visual-communication",
+        "label": "MDes",
+        "program": "Master of Design in Visual Communication Design",
+        "aliases": [
+          "MDes",
+          "Master of Design in Visual Communication Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "asia-020-macau-university-of-science-and-technology-must-mfa-in-digit",
+        "label": "MFA DM",
+        "program": "MFA in Digital Media Art",
+        "aliases": [
+          "MFA DM",
+          "MFA in Digital Media Art",
+          "MFADM"
+        ]
+      },
+      {
+        "id": "asia-021-city-university-of-macau-master-of-design-innovation-design",
+        "label": "MDes",
+        "program": "Master of Design (Innovation Design方向)",
+        "aliases": [
+          "MDes",
+          "Master of Design (Innovation Design方向)",
+          "MDES"
+        ]
+      },
+      {
+        "id": "asia-022-macao-polytechnic-university-mpu-mfa-interdisciplinary-media",
+        "label": "MFA IDM",
+        "program": "MFA Interdisciplinary Media and Art",
+        "aliases": [
+          "MFA IDM",
+          "MFA Interdisciplinary Media and Art",
+          "MFAID"
+        ]
+      },
+      {
+        "id": "asia-023-university-of-saint-joseph-usj-master-of-design",
+        "label": "MDes",
+        "program": "Master of Design",
+        "aliases": [
+          "MDes",
+          "Master of Design",
+          "MDES"
+        ]
+      },
+      {
+        "id": "manual-mcdm",
+        "label": "MCDM",
+        "program": "Master of Communication in Digital Media",
+        "aliases": [
+          "MCDM",
+          "Master of Communication in Digital Media",
+          "Digital Media"
+        ]
+      },
+      {
+        "id": "manual-mdes",
+        "label": "MDes",
+        "program": "Master of Design",
+        "aliases": [
+          "MDes",
+          "Master of Design"
+        ]
+      },
+      {
+        "id": "manual-miips",
+        "label": "MIIPS",
+        "program": "Master of Integrated Innovation for Products & Services",
+        "aliases": [
+          "MIIPS",
+          "Master of Integrated Innovation for Products & Services",
+          "Integrated Innovation"
+        ]
+      },
+      {
+        "id": "manual-msi",
+        "label": "MSI",
+        "program": "M.S. in Information",
+        "aliases": [
+          "MSI",
+          "M.S. in Information",
+          "MS in Information",
+          "Information"
+        ]
+      },
+      {
+        "id": "manual-msim",
+        "label": "MSIM",
+        "program": "MS in Information Management",
+        "aliases": [
+          "MSIM",
+          "MS in Information Management",
+          "Information Management"
+        ]
+      },
+      {
+        "id": "manual-msti",
+        "label": "MSTI",
+        "program": "MS in Technology Innovation",
+        "aliases": [
+          "MSTI",
+          "MS in Technology Innovation",
+          "Technology Innovation",
+          "Innovation"
+        ]
+      }
+    ]
+  }
 };

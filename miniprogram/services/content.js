@@ -2,19 +2,37 @@ const config = require("../data/config");
 const localContent = require("./local-content");
 
 function useCloud() {
-  return config.contentMode === "cloud" && config.cloudEnvId && typeof wx !== "undefined" && wx.cloud;
+  return config.contentMode === "cloud" &&
+    config.cloudEnvId &&
+    typeof wx !== "undefined" &&
+    wx.cloud &&
+    typeof wx.cloud.callFunction === "function";
 }
 
 async function fromSource(action, payload, fallback) {
-  if (!useCloud()) return fallback();
+  if (!useCloud()) {
+    console.warn("[Top UX Schools] Cloud content is unavailable; using local content.", {
+      contentMode: config.contentMode,
+      cloudEnvId: config.cloudEnvId,
+      hasCloudApi: typeof wx !== "undefined" && Boolean(wx.cloud)
+    });
+    return fallback();
+  }
   try {
+    const accountInfo = wx.getAccountInfoSync ? wx.getAccountInfoSync() : null;
+    console.warn("[Top UX Schools] Runtime caller identity.", {
+      appId: accountInfo && accountInfo.miniProgram ? accountInfo.miniProgram.appId : "unavailable",
+      cloudEnvId: config.cloudEnvId
+    });
+    console.info(`[Top UX Schools] Calling cloud content: ${action}`);
     const response = await wx.cloud.callFunction({
       name: config.cloudFunctionName,
       data: { action, payload }
     });
+    console.info(`[Top UX Schools] Cloud content succeeded: ${action}`);
     return response.result;
   } catch (error) {
-    console.warn("Cloud content unavailable; using local content.", error);
+    console.warn("[Top UX Schools] Cloud content failed; using local content.", error);
     return fallback();
   }
 }

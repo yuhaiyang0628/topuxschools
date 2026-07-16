@@ -8,8 +8,9 @@ function escapeHtml(value) {
 }
 
 const noteFeed = document.querySelector("#noteFeed");
+const publishedArticles = window.ARTICLES.filter((article) => !article.status || article.status === "published");
 
-noteFeed.innerHTML = window.ARTICLES.map((article) => `
+noteFeed.innerHTML = publishedArticles.map((article) => `
   <article id="${escapeHtml(article.id)}" class="note-entry">
     <div class="note-entry-meta">
       <span>${escapeHtml(article.category)}</span>

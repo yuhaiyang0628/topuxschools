@@ -1,6 +1,6 @@
 module.exports = {
-  contentMode: "local",
-  cloudEnvId: "",
+  contentMode: "cloud",
+  cloudEnvId: "cloud1-d9gbnehs8875905e9",
   cloudFunctionName: "content",
   contactEmail: "hello@topuxschools.com",
   contactWechat: "",

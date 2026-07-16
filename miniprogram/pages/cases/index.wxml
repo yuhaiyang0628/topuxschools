@@ -1,10 +1,10 @@
 <view class="page-shell">
   <view class="eyebrow">Admit stories</view>
   <view class="page-title">案例分享</view>
-  <view class="page-intro">按学校、项目和背景检索申请路径。没有选择地区时，默认展示来自全世界的案例。</view>
+  <view class="page-intro">按拿到 Offer 的学校、国家和背景检索申请路径。没有选择地区时，默认展示来自全世界的案例。</view>
 
   <view class="search-box">
-    <input value="{{query}}" placeholder="搜索学校、项目、DIY 或转专业" confirm-type="search" bindinput="onSearchInput" bindconfirm="onSearchConfirm" />
+    <input value="{{query}}" placeholder="搜索学校、国家、DIY 或背景" confirm-type="search" bindinput="onSearchInput" bindconfirm="onSearchConfirm" />
     <text wx:if="{{query}}" class="search-clear" bindtap="onSearchClear">清除</text>
   </view>
 
@@ -17,19 +17,23 @@
   <view class="result-note">{{activeRegion || '全部区域'}} · 找到 {{total}} 个案例</view>
   <view class="case-list">
     <button class="case-card" wx:for="{{cases}}" wx:key="id" data-id="{{item.id}}" bindtap="openCase">
-      <view class="card-topline"><text>{{item.year}}</text><text>{{item.region}}</text></view>
-      <view class="case-result">{{item.result}}</view>
-      <view class="case-program">{{item.schoolCn}} · {{item.program}}</view>
+      <view class="card-topline"><text>{{item.year}}</text><text>{{item.regionLabel}}</text></view>
+      <view class="case-result">{{item.title}}</view>
+      <view class="outcome-tags">
+        <text class="outcome-tag {{outcome.status}}" wx:for="{{item.outcomes}}" wx:for-item="outcome" wx:key="label">{{outcome.label}}</text>
+      </view>
       <view class="case-facts">
         <view><text>背景</text><text>{{item.background}}</text></view>
-        <view><text>申请方式</text><text>{{item.diy ? 'DIY' : '协助申请'}}</text></view>
+        <view>
+          <text>申请方式</text>
+          <view class="method-tags"><text class="method-tag" wx:for="{{item.applicationMethods}}" wx:key="*this">{{item}}</text></view>
+        </view>
         <view><text>成绩</text><text>{{item.gpa}} · {{item.language}}</text></view>
       </view>
-      <view class="case-summary">{{item.summary}}</view>
-      <view class="read-link">查看完整复盘 →</view>
+      <view class="read-link">查看案例详情 →</view>
     </button>
   </view>
-  <view wx:if="{{!cases.length && !loading}}" class="empty-state">没有匹配的案例。试试 CMU、DIY 或转专业等关键词。</view>
+  <view wx:if="{{!cases.length && !loading}}" class="empty-state">没有匹配的案例。试试 CMU、加拿大、DIY 或背景等关键词。</view>
   <button wx:if="{{hasMore}}" class="load-more" bindtap="loadMore">加载更多案例</button>
   <view wx:if="{{loading}}" class="loading-note">正在更新案例…</view>
 </view>

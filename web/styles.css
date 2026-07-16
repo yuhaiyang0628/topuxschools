@@ -140,8 +140,14 @@ tbody tr:hover { background: #f1f8f7; }
 .case-facts dt { color: var(--muted); }
 .case-facts dd { margin: 0; font-weight: 700; }
 .card-summary { min-height: 63px; margin: 15px 0; color: #526369; font-size: 14px; line-height: 1.5; }
-.tag-list { display: flex; flex-wrap: wrap; gap: 7px; }
-.tag-list span, .admit-list span { display: inline-flex; align-items: center; min-height: 26px; padding: 0 9px; color: var(--teal-dark); background: #e7f3f4; border-radius: 999px; font-size: 12px; font-weight: 800; }
+.tag-list, .outcome-tags, .method-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.outcome-tag, .method-tag { display: inline-flex; align-items: center; min-height: 26px; padding: 0 9px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+.outcome-tag.selected { color: #ffffff; background: #0d7a4b; }
+.outcome-tag.offer { color: #17613d; background: #d9f5e1; }
+.outcome-tag.rejected { color: #9b3336; background: #fde1e0; }
+.outcome-tag.pending { color: #5e676b; background: #e6eaeb; }
+.method-tag { color: #334448; background: #eef1f0; }
+.case-facts .method-tags { gap: 5px; }
 .card-link { display: block; margin-top: 18px; color: var(--coral); font-size: 13px; font-weight: 850; }
 .empty-state { grid-column: 1 / -1; padding: 26px 0; color: var(--muted); }
 
@@ -201,7 +207,6 @@ tbody tr:hover { background: #f1f8f7; }
 .fact span, .req span { color: var(--muted); font-size: 13px; }
 .fact strong, .req strong { font-size: 14px; line-height: 1.5; }
 .insight { padding: 16px; color: #344e54; background: #f5f8f7; border: 1px solid var(--line); border-radius: 7px; line-height: 1.7; }
-.admit-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .reading-copy { color: #34464b; font-size: 16px; line-height: 1.8; }
 .reading-copy p { margin-bottom: 18px; }
 .reading-copy p:last-child { margin-bottom: 0; }
