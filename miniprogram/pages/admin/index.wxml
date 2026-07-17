@@ -7,7 +7,10 @@
 
   <block wx:elif="{{authorized}}">
     <view class="eyebrow">Content admin</view>
-    <view class="admin-title">内容后台</view>
+    <view class="admin-heading">
+      <view class="admin-title">内容后台</view>
+      <button class="new-record-action" bindtap="startNew">录入新{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
+    </view>
     <view class="admin-copy">保存后直接写入云数据库。网页同步配置完成后，会同时提交更新。</view>
 
     <scroll-view scroll-x class="collection-tabs">
@@ -16,7 +19,9 @@
       </view>
     </scroll-view>
 
-    <button class="primary-action" bindtap="startNew">新增{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
+    <view class="admin-search">
+      <input value="{{query}}" bindinput="onSearchInput" placeholder="搜索学校、项目、标题、地区或 ID" confirm-type="search" />
+    </view>
 
     <view wx:if="{{loading}}" class="admin-copy">正在读取内容…</view>
     <view wx:else class="record-list">
@@ -30,7 +35,7 @@
           <button wx:if="{{item.status !== 'archived'}}" class="icon-action muted" data-id="{{item._id}}" bindtap="archiveRecord">下架</button>
         </view>
       </view>
-      <view wx:if="{{!records.length}}" class="admin-copy">这里还没有内容。</view>
+      <view wx:if="{{!records.length}}" class="admin-copy">没有匹配的内容。</view>
     </view>
 
     <view wx:if="{{editing}}" class="editor-mask">
@@ -104,13 +109,20 @@
           </view>
           <view class="form-field"><view class="field-label">背景</view><textarea value="{{form.background}}" data-field="background" bindinput="onFieldInput" auto-height placeholder="例如：陆本 211 工业设计，1 年工作经验" /></view>
           <view class="form-field"><view class="field-label">语言成绩</view><input value="{{form.language}}" data-field="language" bindinput="onFieldInput" placeholder="IELTS 7.0" /></view>
-          <view class="form-field"><view class="field-label">最终选择学校 *</view><input value="{{form.selectedSchool}}" data-field="selectedSchool" bindinput="onFieldInput" placeholder="CMU、UW 或学校全称" /></view>
-          <view class="form-grid">
-            <view class="form-field"><view class="field-label">最终选择项目简称 *</view><input value="{{form.selectedProgram}}" data-field="selectedProgram" bindinput="onFieldInput" placeholder="MIIPS" /></view>
-            <view class="form-field"><view class="field-label">项目全称</view><input value="{{form.selectedProgramFull}}" data-field="selectedProgramFull" bindinput="onFieldInput" placeholder="可选，但建议填写" /></view>
+          <view class="school-editor">
+            <view class="school-editor-note">第一行是最终选择，输入“学校, 项目”即可，例如：CMU, MIIPS。其他行只需填写学校；Offer 关闭即表示拒信。</view>
+            <view class="school-editor-head"><view>School / program</view><view>Offer</view><view></view></view>
+            <view wx:for="{{form.schoolRows}}" wx:key="index" class="school-row {{item.isFinal ? 'final-row' : ''}}">
+              <view class="school-input-wrap">
+                <input value="{{item.value}}" data-index="{{index}}" bindinput="onSchoolRowInput" placeholder="{{item.isFinal ? 'Final decision, e.g. CMU, MIIPS' : 'School name or short name'}}" />
+                <view wx:if="{{item.isFinal}}" class="final-label">Final decision</view>
+              </view>
+              <switch checked="{{item.offer}}" data-index="{{index}}" bindchange="onSchoolOfferChange" disabled="{{item.isFinal}}" color="#0b8aa0" />
+              <button wx:if="{{!item.isFinal}}" class="remove-school" data-index="{{index}}" bindtap="removeSchoolRow">X</button>
+              <view wx:else class="locked-school">锁定</view>
+            </view>
+            <button class="add-school" bindtap="addSchoolRow">Add school</button>
           </view>
-          <view class="form-field"><view class="field-label">拿到 Offer 的学校</view><textarea value="{{form.offerSchools}}" data-field="offerSchools" bindinput="onFieldInput" auto-height placeholder="CMU, UW, UCL。最终选择会自动加入 Offer。" /></view>
-          <view class="form-field"><view class="field-label">拒信学校</view><textarea value="{{form.rejectedSchools}}" data-field="rejectedSchools" bindinput="onFieldInput" auto-height placeholder="用逗号分隔" /></view>
           <view class="form-field"><view class="field-label">申请方式</view><checkbox-group bindchange="onMethodsChange"><label wx:for="{{methodOptions}}" wx:key="value" class="method-option"><checkbox value="{{item.value}}" checked="{{item.checked}}" color="#0b6276" />{{item.value}}</label></checkbox-group></view>
           <view class="form-field"><view class="field-label">其他服务</view><input value="{{form.supportServices}}" data-field="supportServices" bindinput="onFieldInput" placeholder="例如：选校服务" /></view>
         </block>

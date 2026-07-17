@@ -22,13 +22,36 @@ function emptyForm(collection) {
   if (collection === "articles") {
     return { ...shared, category: "", title: "", excerpt: "", readTime: "", date: "", body: "" };
   }
-  return { ...shared, year: "2026 Fall", background: "", gpa: "", language: "", selectedSchool: "", selectedProgram: "", selectedProgramFull: "", offerSchools: "", rejectedSchools: "", applicationMethods: [], supportServices: "" };
+  return {
+    ...shared,
+    year: "2026 Fall",
+    background: "",
+    gpa: "",
+    language: "",
+    schoolRows: [{ value: "", offer: true, isFinal: true }],
+    applicationMethods: [],
+    supportServices: ""
+  };
 }
 
 function titleFor(collection, item) {
   if (collection === "programs") return `${item.school || "未命名学校"} · ${item.program || "未命名项目"}`;
   if (collection === "articles") return item.title || "未命名文章";
   return item.title || "未命名案例";
+}
+
+function decorateRecords(collection, records) {
+  return records.map((item) => ({
+    ...item,
+    displayTitle: titleFor(collection, item),
+    searchText: JSON.stringify(item).toLowerCase()
+  }));
+}
+
+function filterRecords(records, query) {
+  const keyword = String(query || "").trim().toLowerCase();
+  if (!keyword) return records;
+  return records.filter((item) => item.searchText.includes(keyword));
 }
 
 function formFromRecord(collection, item) {
@@ -43,11 +66,15 @@ function formFromRecord(collection, item) {
   return {
     ...emptyForm(collection),
     ...item,
-    selectedSchool: selected.school ? selected.school.label : "",
-    selectedProgram: selected.program ? selected.program.label : "",
-    selectedProgramFull: selected.program ? selected.program.program : "",
-    offerSchools: outcomes.filter((outcome) => outcome.status === "offer").map((outcome) => outcome.label).join(", "),
-    rejectedSchools: outcomes.filter((outcome) => outcome.status === "rejected").map((outcome) => outcome.label).join(", "),
+    schoolRows: [
+      {
+        value: `${selected.school ? selected.school.label : ""}, ${selected.program ? selected.program.label : ""}`.replace(/^, |, $/g, ""),
+        offer: true,
+        isFinal: true
+      },
+      ...outcomes.filter((outcome) => outcome.status === "offer").map((outcome) => ({ value: outcome.label, offer: true, isFinal: false })),
+      ...outcomes.filter((outcome) => outcome.status === "rejected").map((outcome) => ({ value: outcome.label, offer: false, isFinal: false }))
+    ],
     applicationMethods: item.applicationMethods || [],
     supportServices: (item.supportServices || []).join(", ")
   };
@@ -67,6 +94,8 @@ Page({
     authorized: null,
     collections: COLLECTIONS,
     activeCollection: "caseStudies",
+    query: "",
+    allRecords: [],
     records: [],
     loading: false,
     saving: false,
@@ -104,7 +133,8 @@ Page({
     this.setData({ loading: true });
     try {
       const records = await listAdminContent(this.data.activeCollection);
-      this.setData({ records: records.map((item) => ({ ...item, displayTitle: titleFor(this.data.activeCollection, item) })), loading: false });
+      const allRecords = decorateRecords(this.data.activeCollection, records);
+      this.setData({ allRecords, records: filterRecords(allRecords, this.data.query), loading: false });
     } catch (error) {
       this.setData({ loading: false });
       wx.showToast({ title: "读取失败", icon: "error" });
@@ -114,7 +144,12 @@ Page({
 
   switchCollection(event) {
     const collection = event.currentTarget.dataset.collection;
-    this.setData({ activeCollection: collection, editing: false, records: [], ...editorState(emptyForm(collection)) }, () => this.loadRecords());
+    this.setData({ activeCollection: collection, query: "", allRecords: [], editing: false, records: [], ...editorState(emptyForm(collection)) }, () => this.loadRecords());
+  },
+
+  onSearchInput(event) {
+    const query = event.detail.value;
+    this.setData({ query, records: filterRecords(this.data.allRecords, query) });
   },
 
   startNew() {
@@ -155,6 +190,37 @@ Page({
     this.setData({
       "form.applicationMethods": applicationMethods,
       methodOptions: METHODS.map((value) => ({ value, checked: applicationMethods.includes(value) }))
+    });
+  },
+
+  onSchoolRowInput(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    this.setData({ [`form.schoolRows[${index}].value`]: event.detail.value });
+  },
+
+  onSchoolOfferChange(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    if (this.data.form.schoolRows[index].isFinal) return;
+    this.setData({ [`form.schoolRows[${index}].offer`]: event.detail.value });
+  },
+
+  addSchoolRow() {
+    const schoolRows = this.data.form.schoolRows.concat({ value: "", offer: false, isFinal: false });
+    this.setData({ "form.schoolRows": schoolRows });
+  },
+
+  removeSchoolRow(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    const row = this.data.form.schoolRows[index];
+    if (!row || row.isFinal) return;
+    wx.showModal({
+      title: "删除这所学校？",
+      content: "删除后不会保留这行的学校和录取结果。",
+      success: (result) => {
+        if (!result.confirm) return;
+        const schoolRows = this.data.form.schoolRows.filter((_, rowIndex) => rowIndex !== index);
+        this.setData({ "form.schoolRows": schoolRows });
+      }
     });
   },
 

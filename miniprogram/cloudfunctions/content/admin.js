@@ -187,6 +187,28 @@ function findSchool(value, catalog) {
   return { label: clean(value), school: clean(value), schoolCn: "", region: "", country: "", countryCn: "", aliases: [clean(value)] };
 }
 
+function findProgram(value, programs) {
+  const query = clean(value).toLowerCase();
+  const match = programs.find((item) => unique([item.short, item.programShort, item.program])
+    .some((alias) => clean(alias).toLowerCase() === query));
+  if (match) {
+    return {
+      label: match.programShort || match.short || match.program,
+      program: match.program,
+      aliases: unique([match.short, match.programShort, match.program])
+    };
+  }
+  return { label: clean(value), program: clean(value), aliases: [clean(value)] };
+}
+
+function parseFinalDecision(value) {
+  const fields = cleanList(value);
+  return {
+    school: fields.shift() || "",
+    program: fields.join(", ")
+  };
+}
+
 function buildProgram(input, existing) {
   const id = existing ? existing.id : clean(input.id) || slug(`${input.region}-${input.school}-${input.program}`, `program-${Date.now()}`);
   return {
@@ -236,15 +258,19 @@ function buildArticle(input, existing) {
   };
 }
 
-function buildCase(input, existing, catalog) {
-  const selectedSchool = findSchool(input.selectedSchool, catalog);
-  const selectedProgram = {
-    label: clean(input.selectedProgram),
-    program: clean(input.selectedProgramFull) || clean(input.selectedProgram),
-    aliases: unique([input.selectedProgram, input.selectedProgramFull])
+function buildCase(input, existing, catalog, programs) {
+  const rows = Array.isArray(input.schoolRows) ? input.schoolRows.filter((row) => clean(row && row.value)) : [];
+  const finalRow = rows.find((row) => row.isFinal) || rows[0];
+  const finalInput = finalRow ? parseFinalDecision(finalRow.value) : {
+    school: clean(input.selectedSchool),
+    program: clean(input.selectedProgram)
   };
-  const offerLabels = unique([selectedSchool.label, ...cleanList(input.offerSchools)]);
-  const rejectedLabels = cleanList(input.rejectedSchools).filter((label) => !offerLabels.includes(label));
+  const selectedSchool = findSchool(finalInput.school, catalog);
+  const selectedProgram = findProgram(finalInput.program || input.selectedProgramFull, programs);
+  const offerRows = rows.filter((row) => !row.isFinal && row.offer).map((row) => clean(row.value));
+  const rejectedRows = rows.filter((row) => !row.isFinal && !row.offer).map((row) => clean(row.value));
+  const offerLabels = unique([selectedSchool.label, ...(rows.length ? offerRows : cleanList(input.offerSchools))]);
+  const rejectedLabels = (rows.length ? rejectedRows : cleanList(input.rejectedSchools)).filter((label) => !offerLabels.includes(label));
   const selectedOutcome = { ...selectedSchool, status: "selected" };
   const offers = offerLabels.filter((label) => label !== selectedSchool.label).map((label) => ({ ...findSchool(label, catalog), status: "offer" }));
   const rejected = rejectedLabels.map((label) => ({ ...findSchool(label, catalog), status: "rejected" }));
@@ -322,11 +348,14 @@ function createAdminApi({ cloud, db, getAll }) {
     if (collection === "articles") record = buildArticle(input || {}, existing);
     if (collection === "caseStudies") {
       const [programs, cases] = await Promise.all([getAll("programs"), getAll("caseStudies")]);
-      record = buildCase(input || {}, existing, buildCatalog(programs, cases));
+      record = buildCase(input || {}, existing, buildCatalog(programs, cases), programs);
     }
     if (!record.title && collection !== "programs") throw new Error("请填写标题或最终选择");
     if (collection === "programs" && (!record.school || !record.program || !record.region)) {
       throw new Error("请填写学校、项目和地区");
+    }
+    if (collection === "caseStudies" && (!record.selected.school.label || !record.selected.program.label)) {
+      throw new Error("第一行请按“学校, 项目”填写最终选择，例如：CMU, MIIPS");
     }
 
     const { _id, _openid, ...data } = record;
