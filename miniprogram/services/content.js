@@ -49,6 +49,10 @@ function getProgram(id) {
   return fromSource("getProgram", { id }, () => localContent.getProgram(id));
 }
 
+function getProgramRelations(id) {
+  return fromSource("getProgramRelations", { id }, () => localContent.getProgramRelations(id));
+}
+
 function getCaseStudy(id) {
   return fromSource("getCaseStudy", { id }, () => localContent.getCaseStudy(id));
 }
@@ -71,6 +75,7 @@ module.exports = {
   getCaseStudy,
   getHomeContent,
   getProgram,
+  getProgramRelations,
   queryCases,
   queryPrograms
 };

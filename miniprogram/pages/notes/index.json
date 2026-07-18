@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "干货笔记",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "help-entry": "/components/help-entry/index"
+  }
 }

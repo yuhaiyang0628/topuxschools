@@ -18,6 +18,11 @@ Page({
     this.loadCases(true);
   },
 
+  onShow() {
+    const tabBar = this.getTabBar && this.getTabBar();
+    if (tabBar) tabBar.setSelected(1);
+  },
+
   async onPullDownRefresh() {
     await this.loadCases(true);
     wx.stopPullDownRefresh();
@@ -65,6 +70,10 @@ Page({
 
   loadMore() {
     this.loadCases(false);
+  },
+
+  openSubmission() {
+    wx.navigateTo({ url: "/pages/case-submit/index" });
   },
 
   openCase(event) {

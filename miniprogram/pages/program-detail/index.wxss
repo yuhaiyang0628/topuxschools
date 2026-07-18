@@ -8,6 +8,9 @@
   background: #e5f2f2;
 }
 
+.detail-topline { display: flex; align-items: flex-start; justify-content: space-between; gap: 18rpx; }
+.detail-topline .eyebrow { margin-bottom: 0; }
+
 .detail-school {
   margin-top: 12rpx;
   font-size: 42rpx;
@@ -94,28 +97,102 @@
   line-height: 1.7;
 }
 
-.detail-actions {
-  display: grid;
-  gap: 16rpx;
-  margin-top: 52rpx;
-}
-
-.primary-action, .secondary-action {
+.report-entry {
+  display: block;
   width: 100%;
-  height: 86rpx;
-  border-radius: 8rpx;
-  font-size: 28rpx;
+  margin-top: 18rpx;
+  padding: 18rpx 0;
+  color: #0b6276;
+  text-align: left;
+  font-size: 24rpx;
   font-weight: 650;
-  line-height: 86rpx;
 }
 
-.primary-action {
-  color: #ffffff;
-  background: #0b6276;
+.report-mask { position: fixed; z-index: 30; top: 0; right: 0; bottom: 0; left: 0; background: rgba(23, 37, 43, 0.42); }
+.report-sheet { position: absolute; right: 0; bottom: 0; left: 0; display: flex; flex-direction: column; min-height: 68vh; box-sizing: border-box; padding: 40rpx 30rpx 62rpx; border-radius: 10rpx 10rpx 0 0; background: #f7faf9; }
+.report-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18rpx; }
+.report-title { color: #17252b; font-size: 40rpx; font-weight: 700; line-height: 1.25; }
+.report-close { margin: 0; padding: 0 16rpx; color: #0b6276; border: 1rpx solid #b8d3d7; border-radius: 6rpx; background: #ffffff; font-size: 23rpx; line-height: 58rpx; }
+.report-copy { margin-top: 24rpx; color: #63737a; font-size: 24rpx; line-height: 1.65; }
+.report-message, .report-contact { box-sizing: border-box; width: 100%; margin-top: 24rpx; padding: 20rpx; color: #17252b; border: 1rpx solid #cfdcda; border-radius: 6rpx; background: #ffffff; font-size: 27rpx; line-height: 1.55; }
+.report-message { min-height: 280rpx; }
+.report-contact { min-height: 88rpx; }
+.report-submit { display: block; width: 100%; height: 88rpx; margin-top: auto; color: #ffffff; border-radius: 6rpx; background: #0b6276; font-size: 28rpx; font-weight: 650; line-height: 88rpx; }
+
+.related-section {
+  margin-top: 54rpx;
 }
 
-.secondary-action {
-  color: #084d60;
+.related-tabs {
+  display: flex;
+  margin-top: 24rpx;
+  border-bottom: 1rpx solid #d9e4e2;
+}
+
+.related-tab {
+  flex: 1;
+  height: 74rpx;
+  margin: 0;
+  padding: 0;
+  color: #718086;
+  border-radius: 0;
+  background: transparent;
+  font-size: 25rpx;
+  font-weight: 650;
+  line-height: 74rpx;
+}
+
+.related-tab.active {
+  color: #0b6276;
+  box-shadow: inset 0 -4rpx 0 #0b6276;
+}
+
+.related-list {
+  margin-top: 20rpx;
+}
+
+.related-card {
+  width: 100%;
+  margin-top: 16rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1rpx solid #d7e2e0;
+  border-radius: 6rpx;
   background: #ffffff;
-  border: 1rpx solid #a6c9cf;
+}
+
+.related-meta {
+  color: #0b6276;
+  font-size: 21rpx;
+  font-weight: 650;
+}
+
+.related-title {
+  margin-top: 12rpx;
+  color: #17252b;
+  font-size: 29rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.related-copy {
+  margin-top: 10rpx;
+  color: #5d6f75;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.related-link {
+  margin-top: 18rpx;
+  color: #e36546;
+  font-size: 23rpx;
+  font-weight: 650;
+}
+
+.related-empty {
+  padding: 30rpx 0 10rpx;
+  color: #718086;
+  font-size: 25rpx;
+  line-height: 1.65;
 }

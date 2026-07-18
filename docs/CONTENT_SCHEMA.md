@@ -41,13 +41,16 @@
 3. 项目 Tag 仅用于最终选择标题，但应同时保存全称、缩写和常用关键词，以支持部分关键词搜索。
 4. 申请列表中未出现在 Offer 且未标记为 `pending` 的学校，才记录为 `rejected`。
 
-每个新投稿必须新增审核字段：
+### 公众提报 caseSubmissions
 
-- `status`：默认 `draft`，审核后才可 `published`；只有 `published` 会公开展示，`draft`、`reviewing`、`archived` 都会自动从两端隐藏。
-- `visibility`：`anonymous`、`schoolOnly`、`public`，决定可展示程度。
-- `consentPublic`：投稿者确认允许公开。
-- `contactPermission`：是否允许你回访或补充提问。
-- `submittedAt`、`updatedAt`：运营追踪。
+公众提交的案例不会直接写入 `caseStudies`，而是先进入独立的 `caseSubmissions` 集合：
+
+- `submissionStatus`：初始值为 `pending`，管理员处理后为 `approved` 或 `rejected`。
+- `case`：一份已规范化但尚未公开的案例草稿；审核通过后才复制为 `caseStudies` 的 `published` 记录。
+- `submittedAt`、`reviewedAt`、`publishedCaseId`：审核追踪字段。
+- `submitterOpenId`、`contact`：仅运营审核使用，永远不会同步到网页或公开案例集合。
+
+公众表单要求投稿者确认内容真实并同意匿名公开。管理员可直接通过、拒绝，或先打开“编辑发布”调整内容后再通过。
 
 避免保存身份证号、地址、私人联系方式、完整成绩单、未经允许的作品集链接等不必要的个人信息。
 
@@ -55,7 +58,7 @@
 
 必须保留：
 
-- `id`、`_id`、`category`、`title`、`excerpt`、`date`、`readTime`、`body`。文章的 `_id` 格式为 `article-<id>`。
+- `id`、`_id`、`category`、`title`、`excerpt`、`date`、`readTime`、`body`、`tags`。文章的 `_id` 格式为 `article-<id>`。
 
 建议新增：
 
@@ -64,9 +67,15 @@
 - `updatedAt`、`publishedAt`：排序与更新提示。
 - `relatedProgramIds`、`relatedCaseIds`：让文章可以关联回项目和案例。
 
+项目关联规则：
+
+1. 项目详情页的“录取案例”只显示最终选择同时匹配该学校与项目的案例；仅拿到同校其他项目 Offer 的案例不会出现。
+2. 项目详情页的“相关笔记”根据文章 `tags` 匹配项目。为避免同校不同项目混淆，文章至少应添加项目简称或项目全称 Tag，例如 `MIIPS`；学校 Tag（例如 `CMU`）可作为补充。
+3. 内容后台保存文章时可以直接维护这些 Tag，多个 Tag 用英文逗号、中文逗号或换行分隔。
+
 ## 更新规则
 
 1. `id` 与 `_id` 一经发布不再改动。
 2. 删除内容时优先改为 `archived`，不要直接物理删除；同步并以 Upsert 导入后，它会从两端隐藏。
-3. 云端集合对客户端关闭写入，所有发布动作经由后台或受限云函数完成。
+3. 云端集合对客户端关闭写入；公众只能调用受限云函数创建待审提报，所有公开发布动作只能经由管理员后台完成。
 4. 项目更新优先覆盖截止日期、语言要求、学费和官网链接；每次更新都刷新 `lastVerified`。

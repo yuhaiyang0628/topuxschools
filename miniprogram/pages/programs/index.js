@@ -18,9 +18,23 @@ const FILTERS = [
   { value: "no-gre", label: "免 GRE" }
 ];
 
+function programTitle(program) {
+  const short = String(program.programShort || program.short || "").trim();
+  let full = String(program.program || "").trim();
+
+  // Source data often repeats the abbreviation at the end of the full name.
+  [` (${short})`, `（${short}）`].forEach((suffix) => {
+    if (short && full.endsWith(suffix)) full = full.slice(0, -suffix.length).trim();
+  });
+
+  if (short && full) return `${short}(${full})`;
+  return short || full;
+}
+
 function decoratePrograms(programs) {
   return programs.map((program) => ({
     ...program,
+    displayTitle: programTitle(program),
     tagLabels: programTags(program),
     tuitionLabel: compactText(program.tuition, 26),
     deadlineLabel: compactText(program.deadline, 20)
@@ -43,6 +57,11 @@ Page({
 
   onLoad() {
     this.loadPrograms(true);
+  },
+
+  onShow() {
+    const tabBar = this.getTabBar && this.getTabBar();
+    if (tabBar) tabBar.setSelected(0);
   },
 
   async onPullDownRefresh() {

@@ -1,0 +1,9 @@
+.submit-page { padding-top: 44rpx; padding-bottom: 80rpx; }
+.form-grid { display: flex; gap: 18rpx; }
+.form-grid .form-field { min-width: 0; flex: 1; }
+.form-field { margin-top: 22rpx; padding: 22rpx; border: 1rpx solid #d9e2e0; background: #ffffff; border-radius: 6rpx; }
+.field-label { color: #52636a; font-size: 23rpx; font-weight: 650; }
+.form-field input, .form-field textarea { min-height: 52rpx; margin-top: 12rpx; color: #17252b; font-size: 28rpx; line-height: 1.5; }
+.form-field textarea { width: 100%; }
+.consent-row { display: block; margin-top: 30rpx; color: #52636a; font-size: 23rpx; line-height: 1.65; }
+.submit-button { display: block; width: 100%; height: 88rpx; margin-top: 28rpx; color: #ffffff; border-radius: 6rpx; background: #0b6276; font-size: 29rpx; font-weight: 650; line-height: 88rpx; }

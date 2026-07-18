@@ -8,6 +8,9 @@
   background: #edf6ef;
 }
 
+.detail-topline { display: flex; align-items: flex-start; justify-content: space-between; gap: 18rpx; }
+.detail-topline .eyebrow { margin-bottom: 0; }
+
 .detail-title {
   margin-top: 10rpx;
   font-size: 46rpx;

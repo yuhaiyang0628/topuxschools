@@ -1,6 +1,6 @@
 <view class="page-shell">
   <view class="eyebrow">School directory</view>
-  <view class="page-title">学校列表</view>
+  <view class="page-title-row"><view class="page-title">学校列表</view><help-entry /></view>
   <view class="page-intro">{{total}} 个已验证的 UX / HCI 硕士项目。移动端以信息卡呈现，查找和比较更轻松。</view>
 
   <view class="region-scroll">
@@ -24,9 +24,9 @@
   <view class="program-list">
     <button class="program-card" wx:for="{{programs}}" wx:key="id" data-id="{{item.id}}" bindtap="openProgram">
       <view class="card-topline"><text>{{item.region}} · {{item.country}}</text><text>{{item.location}}</text></view>
-      <view class="program-name">{{item.schoolCn}}</view>
-      <view class="program-school">{{item.school}}</view>
-      <view class="program-degree">{{item.program}}</view>
+      <view class="program-name">{{item.displayTitle}}</view>
+      <view class="program-school">{{item.schoolCn}}</view>
+      <view class="program-school-en">{{item.school}}</view>
       <view class="program-facts"><text>{{item.length}}</text><text>{{item.tuitionLabel}}</text><text>{{item.deadlineLabel}}</text></view>
       <view class="tag-row">
         <text class="tag" wx:for="{{item.tagLabels}}" wx:key="*this">{{item}}</text>

@@ -21,6 +21,36 @@ function matchesText(item, query, keys) {
     (item.tags || []).some((tag) => normalize(tag).includes(keyword));
 }
 
+function normalizedToken(value) {
+  return normalize(value).replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
+}
+
+function matchesAlias(left, right) {
+  const leftToken = normalizedToken(left);
+  const rightToken = normalizedToken(right);
+  return Boolean(leftToken && rightToken && (leftToken === rightToken || leftToken.includes(rightToken) || rightToken.includes(leftToken)));
+}
+
+function caseMatchesProgram(caseStudy, program) {
+  const selected = caseStudy.selected || {};
+  const selectedSchool = selected.school || {};
+  const selectedProgram = selected.program || {};
+  const schoolValues = [selectedSchool.label, selectedSchool.school, selectedSchool.schoolCn, ...(selectedSchool.aliases || [])];
+  const programSchoolValues = [program.school, program.schoolCn];
+  const schoolMatches = schoolValues.some((value) => programSchoolValues.some((programValue) => matchesAlias(value, programValue)));
+  const selectedProgramValues = [selectedProgram.label, selectedProgram.program, ...(selectedProgram.aliases || [])];
+  const programValues = [program.short, program.programShort, program.program];
+  const programMatches = selectedProgramValues.some((value) => programValues.some((programValue) => normalizedToken(value) === normalizedToken(programValue)));
+  return schoolMatches && programMatches;
+}
+
+function articleMatchesProgram(article, program) {
+  const programTags = [program.id, program.short, program.programShort, program.program]
+    .map(normalizedToken)
+    .filter(Boolean);
+  return (article.tags || []).some((tag) => programTags.includes(normalizedToken(tag)));
+}
+
 function paginate(items, page, pageSize) {
   const safePage = Math.max(1, Number(page) || 1);
   const start = (safePage - 1) * pageSize;
@@ -102,6 +132,19 @@ async function getPublishedOne(collectionName, id) {
   return item && isPublished(item) ? item : null;
 }
 
+async function getProgramRelations(id) {
+  const [program, caseStudies, articles] = await Promise.all([
+    getPublishedOne("programs", id),
+    getAll("caseStudies"),
+    getAll("articles")
+  ]);
+  if (!program) return { caseStudies: [], articles: [] };
+  return {
+    caseStudies: caseStudies.filter(isPublished).filter((caseStudy) => caseMatchesProgram(caseStudy, program)).map(stripSystemFields),
+    articles: articles.filter(isPublished).filter((article) => articleMatchesProgram(article, program)).map(stripSystemFields)
+  };
+}
+
 const admin = createAdminApi({ cloud, db, getAll });
 
 exports.main = async (event) => {
@@ -113,6 +156,8 @@ exports.main = async (event) => {
       return queryCases(payload);
     case "getProgram":
       return getPublishedOne("programs", payload.id);
+    case "getProgramRelations":
+      return getProgramRelations(payload.id);
     case "getCaseStudy":
       return getPublishedOne("caseStudies", payload.id);
     case "getArticle":
@@ -121,6 +166,12 @@ exports.main = async (event) => {
       return (await getAll("articles")).filter(isPublished).map(stripSystemFields);
     case "getHomeContent":
       return getHomeContent();
+    case "submitCaseStudy":
+      return admin.submitCase(payload.record);
+    case "submitArticle":
+      return admin.submitArticle(payload.record);
+    case "submitProgramReport":
+      return admin.submitProgramReport(payload.record);
     case "adminGetStatus":
       return admin.getStatus();
     case "adminListContent":
@@ -129,6 +180,22 @@ exports.main = async (event) => {
       return admin.save(payload.collection, payload.record);
     case "adminArchiveContent":
       return admin.archive(payload.collection, payload.id);
+    case "adminListCaseSubmissions":
+      return admin.listCaseSubmissions();
+    case "adminApproveCaseSubmission":
+      return admin.approveCaseSubmission(payload.id, payload.publishedCaseId);
+    case "adminRejectCaseSubmission":
+      return admin.rejectCaseSubmission(payload.id);
+    case "adminListReviewTasks":
+      return admin.listReviewTasks();
+    case "adminApproveArticleSubmission":
+      return admin.approveArticleSubmission(payload.id, payload.publishedArticleId);
+    case "adminRejectArticleSubmission":
+      return admin.rejectArticleSubmission(payload.id);
+    case "adminResolveProgramReport":
+      return admin.resolveProgramReport(payload.id);
+    case "adminRejectProgramReport":
+      return admin.rejectProgramReport(payload.id);
     default:
       throw new Error("Unsupported content action");
   }

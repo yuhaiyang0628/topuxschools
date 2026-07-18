@@ -1,7 +1,8 @@
 <view class="page-shell notes-page">
   <view class="eyebrow">Field notes</view>
-  <view class="page-title">干货笔记</view>
+  <view class="page-title-row"><view class="page-title">干货笔记</view><help-entry /></view>
   <view class="page-intro">关于文书、作品集、选校和常用工具的长期记录。不是标准答案，是帮助你形成判断的材料。</view>
+  <button class="submission-entry" bindtap="openSubmission"><text>把你的经验写下来，帮助后来者</text><text>投稿笔记 →</text></button>
 
   <view class="article-feed">
     <button class="article-entry" wx:for="{{articles}}" wx:key="id" data-id="{{item.id}}" bindtap="openArticle">

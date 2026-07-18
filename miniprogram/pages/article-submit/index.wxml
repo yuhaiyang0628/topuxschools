@@ -1,0 +1,18 @@
+<view class="page-shell submit-page">
+  <view class="eyebrow">Share a field note</view>
+  <view class="page-title">投稿笔记</view>
+  <view class="page-intro">把对申请、作品集、文书或工具的经验写下来。提交后会先由运营审核，通过后以署名外的公开笔记形式展示。</view>
+
+  <view class="form-grid">
+    <view class="form-field"><view class="field-label">分类</view><input value="{{form.category}}" data-field="category" bindinput="onFieldInput" placeholder="例如：作品集 / 文书" /></view>
+    <view class="form-field"><view class="field-label">阅读时间</view><input value="{{form.readTime}}" data-field="readTime" bindinput="onFieldInput" placeholder="例如：5 min" /></view>
+  </view>
+  <view class="form-field"><view class="field-label">标题 *</view><input value="{{form.title}}" data-field="title" bindinput="onFieldInput" placeholder="这篇笔记想分享什么？" /></view>
+  <view class="form-field"><view class="field-label">关联标签</view><input value="{{form.tags}}" data-field="tags" bindinput="onFieldInput" placeholder="例如：CMU, MIIPS, 录取经验" /></view>
+  <view class="form-field"><view class="field-label">摘要</view><textarea value="{{form.excerpt}}" data-field="excerpt" bindinput="onFieldInput" auto-height placeholder="用一两句话概括内容" /></view>
+  <view class="form-field"><view class="field-label">正文 *</view><textarea value="{{form.body}}" data-field="body" bindinput="onFieldInput" auto-height placeholder="段落之间空一行" /></view>
+  <view class="form-field"><view class="field-label">联系信息（选填，仅审核时使用）</view><input value="{{form.contact}}" data-field="contact" bindinput="onFieldInput" placeholder="微信号或邮箱" /></view>
+
+  <checkbox-group bindchange="onConsentChange"><label class="consent-row"><checkbox value="consent" checked="{{consent}}" color="#0b6276" />我确认内容真实，并同意审核通过后以公开笔记形式展示。</label></checkbox-group>
+  <button class="submit-button" loading="{{submitting}}" bindtap="submit">提交审核</button>
+</view>

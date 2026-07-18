@@ -1,4 +1,5 @@
-const { getProgram } = require("../../services/content");
+const { getProgram, getProgramRelations } = require("../../services/content");
+const { submitProgramReport } = require("../../services/submissions");
 const { programTags } = require("../../utils/format");
 
 function buildFacts(program) {
@@ -22,11 +23,21 @@ Page({
   data: {
     program: null,
     facts: [],
-    tagLabels: []
+    tagLabels: [],
+    activeRelatedTab: "cases",
+    relatedCases: [],
+    relatedArticles: [],
+    reporting: false,
+    reportMessage: "",
+    reportContact: "",
+    reportSubmitting: false
   },
 
   async onLoad(options) {
-    const program = await getProgram(options.id);
+    const [program, relations] = await Promise.all([
+      getProgram(options.id),
+      getProgramRelations(options.id)
+    ]);
     if (!program) {
       wx.showToast({ title: "未找到这个项目", icon: "none" });
       return;
@@ -35,19 +46,54 @@ Page({
     this.setData({
       program,
       facts: buildFacts(program),
-      tagLabels: programTags(program)
+      tagLabels: programTags(program),
+      relatedCases: relations.caseStudies || [],
+      relatedArticles: relations.articles || []
     });
   },
 
-  copyWebsite() {
-    wx.setClipboardData({
-      data: this.data.program.website,
-      success: () => wx.showToast({ title: "官网链接已复制", icon: "success" })
-    });
+  switchRelatedTab(event) {
+    this.setData({ activeRelatedTab: event.currentTarget.dataset.tab });
   },
 
-  goToContact() {
-    wx.switchTab({ url: "/pages/contact/index" });
+  openCase(event) {
+    wx.navigateTo({ url: `/pages/case-detail/index?id=${event.currentTarget.dataset.id}` });
+  },
+
+  openArticle(event) {
+    wx.navigateTo({ url: `/pages/note-detail/index?id=${event.currentTarget.dataset.id}` });
+  },
+
+  openReport() {
+    this.setData({ reporting: true, reportMessage: "", reportContact: "" });
+  },
+
+  closeReport() {
+    this.setData({ reporting: false });
+  },
+
+  onReportInput(event) {
+    this.setData({ [event.currentTarget.dataset.field]: event.detail.value });
+  },
+
+  async submitReport() {
+    if (!this.data.reportMessage.trim()) {
+      wx.showToast({ title: "请描述发现的信息问题", icon: "none" });
+      return;
+    }
+    this.setData({ reportSubmitting: true });
+    try {
+      await submitProgramReport({
+        programId: this.data.program.id,
+        message: this.data.reportMessage,
+        contact: this.data.reportContact
+      });
+      this.setData({ reportSubmitting: false, reporting: false });
+      wx.showToast({ title: "反馈已提交审核", icon: "success" });
+    } catch (error) {
+      this.setData({ reportSubmitting: false });
+      wx.showModal({ title: "提交失败", content: error.message || "请稍后再试。", showCancel: false });
+    }
   },
 
   onShareAppMessage() {

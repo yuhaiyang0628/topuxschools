@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "案例分享",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "help-entry": "/components/help-entry/index"
+  }
 }

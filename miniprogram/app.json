@@ -4,8 +4,10 @@
     "pages/program-detail/index",
     "pages/cases/index",
     "pages/case-detail/index",
+    "pages/case-submit/index",
     "pages/notes/index",
     "pages/note-detail/index",
+    "pages/article-submit/index",
     "pages/contact/index",
     "pages/admin/index"
   ],
@@ -17,10 +19,7 @@
     "navigationBarTitleText": "Top UX Schools"
   },
   "tabBar": {
-    "color": "#6b797e",
-    "selectedColor": "#0b6276",
-    "backgroundColor": "#ffffff",
-    "borderStyle": "white",
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/programs/index",
@@ -33,10 +32,6 @@
       {
         "pagePath": "pages/notes/index",
         "text": "笔记"
-      },
-      {
-        "pagePath": "pages/contact/index",
-        "text": "答疑"
       }
     ]
   },

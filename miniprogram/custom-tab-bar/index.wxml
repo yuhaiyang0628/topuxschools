@@ -1,0 +1,9 @@
+<view class="tab-bar">
+  <view class="tab-safe-area">
+    <button wx:for="{{tabs}}" wx:key="path" class="tab-item {{selected === index ? 'active' : ''}}" data-index="{{index}}" data-path="{{item.path}}" bindtap="switchTab">
+      <view class="active-mark"></view>
+      <image class="tab-icon" src="{{item.icon}}" mode="aspectFit" />
+      <text class="tab-label">{{item.text}}</text>
+    </button>
+  </view>
+</view>

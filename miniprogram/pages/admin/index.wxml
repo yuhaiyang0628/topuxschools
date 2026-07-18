@@ -9,7 +9,10 @@
     <view class="eyebrow">Content admin</view>
     <view class="admin-heading">
       <view class="admin-title">内容后台</view>
-      <button class="new-record-action" bindtap="startNew">录入新{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
+      <view class="header-actions">
+        <button class="review-action" bindtap="openReviewQueue">待审核 {{pendingCount}}</button>
+        <button class="new-record-action" bindtap="startNew">录入新{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
+      </view>
     </view>
     <view class="admin-copy">保存后直接写入云数据库。网页同步配置完成后，会同时提交更新。</view>
 
@@ -42,7 +45,7 @@
       <scroll-view scroll-y class="editor-sheet">
         <view class="editor-header">
           <view>
-            <view class="eyebrow">{{form._id ? 'Edit record' : 'New record'}}</view>
+            <view class="eyebrow">{{reviewingTaskId ? 'Review task' : form._id ? 'Edit record' : 'New record'}}</view>
             <view class="editor-title">{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}信息</view>
           </view>
           <button class="close-editor" bindtap="closeEditor">关闭</button>
@@ -98,6 +101,7 @@
           </view>
           <view class="form-field"><view class="field-label">标题 *</view><input value="{{form.title}}" data-field="title" bindinput="onFieldInput" /></view>
           <view class="form-field"><view class="field-label">日期</view><input value="{{form.date}}" data-field="date" bindinput="onFieldInput" placeholder="2026.07" /></view>
+          <view class="form-field"><view class="field-label">关联标签</view><input value="{{form.tags}}" data-field="tags" bindinput="onFieldInput" placeholder="例如：CMU, MIIPS, 录取经验" /></view>
           <view class="form-field"><view class="field-label">摘要</view><textarea value="{{form.excerpt}}" data-field="excerpt" bindinput="onFieldInput" auto-height /></view>
           <view class="form-field"><view class="field-label">正文</view><textarea value="{{form.body}}" data-field="body" bindinput="onFieldInput" auto-height placeholder="段落之间空一行" /></view>
         </block>
@@ -127,7 +131,34 @@
           <view class="form-field"><view class="field-label">其他服务</view><input value="{{form.supportServices}}" data-field="supportServices" bindinput="onFieldInput" placeholder="例如：选校服务" /></view>
         </block>
 
-        <button class="primary-action save-button" loading="{{saving}}" bindtap="saveRecord">保存内容</button>
+        <button class="primary-action save-button" loading="{{saving}}" bindtap="saveRecord">{{reviewingTaskId ? (reviewingTaskType === 'programReport' ? '保存项目并标记已处理' : '审核并发布') : '保存内容'}}</button>
+      </scroll-view>
+    </view>
+
+    <view wx:if="{{reviewing}}" class="review-mask">
+      <scroll-view scroll-y class="review-sheet">
+        <view class="editor-header">
+          <view>
+            <view class="eyebrow">Community review</view>
+            <view class="editor-title">待审核任务</view>
+          </view>
+          <button class="close-editor" bindtap="closeReviewQueue">关闭</button>
+        </view>
+        <view class="admin-copy review-copy">案例和笔记通过后才会公开；项目信息反馈需要你核验并手动修改资料后，再标记已处理。</view>
+        <view wx:for="{{reviewTasks}}" wx:key="id" class="submission-card">
+          <view class="submission-title">{{item.displayTitle}}</view>
+          <view class="submission-meta">{{item.typeLabel}} · {{item.submittedAt}}</view>
+          <view class="submission-background">{{item.displayCopy}}</view>
+          <view wx:if="{{item.type === 'case'}}" class="submission-outcomes"><text wx:for="{{item.content.outcomes}}" wx:for-item="outcome" wx:key="label" class="submission-tag {{outcome.status}}">{{outcome.label}}</text></view>
+          <view wx:elif="{{item.type === 'article'}}" class="submission-outcomes"><text wx:for="{{item.content.tags}}" wx:for-item="tag" wx:key="*this" class="submission-tag">{{tag}}</text></view>
+          <view wx:if="{{item.contact}}" class="submission-contact">联系信息：{{item.contact}}</view>
+          <view class="submission-actions">
+            <button class="icon-action" data-id="{{item.id}}" bindtap="editReviewTask">{{item.type === 'programReport' ? '查看项目' : '编辑发布'}}</button>
+            <button class="icon-action approve-action" data-id="{{item.id}}" data-type="{{item.type}}" bindtap="approveReviewTask">{{item.type === 'programReport' ? '标记已处理' : '直接通过'}}</button>
+            <button class="icon-action muted" data-id="{{item.id}}" data-type="{{item.type}}" bindtap="rejectReviewTask">拒绝</button>
+          </view>
+        </view>
+        <view wx:if="{{!reviewTasks.length}}" class="empty-state">当前没有待审核的任务。</view>
       </scroll-view>
     </view>
   </block>

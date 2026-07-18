@@ -15,6 +15,36 @@ function matchesText(item, query, keys) {
     (item.tags || []).some((tag) => normalize(tag).includes(keyword));
 }
 
+function normalizedToken(value) {
+  return normalize(value).replace(/[^a-z0-9\u4e00-\u9fff]/g, "");
+}
+
+function matchesAlias(left, right) {
+  const leftToken = normalizedToken(left);
+  const rightToken = normalizedToken(right);
+  return Boolean(leftToken && rightToken && (leftToken === rightToken || leftToken.includes(rightToken) || rightToken.includes(leftToken)));
+}
+
+function caseMatchesProgram(caseStudy, program) {
+  const selected = caseStudy.selected || {};
+  const selectedSchool = selected.school || {};
+  const selectedProgram = selected.program || {};
+  const schoolValues = [selectedSchool.label, selectedSchool.school, selectedSchool.schoolCn, ...(selectedSchool.aliases || [])];
+  const programSchoolValues = [program.school, program.schoolCn];
+  const schoolMatches = schoolValues.some((value) => programSchoolValues.some((programValue) => matchesAlias(value, programValue)));
+  const selectedProgramValues = [selectedProgram.label, selectedProgram.program, ...(selectedProgram.aliases || [])];
+  const programValues = [program.short, program.programShort, program.program];
+  const programMatches = selectedProgramValues.some((value) => programValues.some((programValue) => normalizedToken(value) === normalizedToken(programValue)));
+  return schoolMatches && programMatches;
+}
+
+function articleMatchesProgram(article, program) {
+  const programTags = [program.id, program.short, program.programShort, program.program]
+    .map(normalizedToken)
+    .filter(Boolean);
+  return (article.tags || []).some((tag) => programTags.includes(normalizedToken(tag)));
+}
+
 function paginate(items, page, pageSize) {
   const safePage = Math.max(1, Number(page) || 1);
   const start = (safePage - 1) * pageSize;
@@ -69,6 +99,15 @@ function getArticles() {
   return articles.filter(isPublished);
 }
 
+function getProgramRelations(id) {
+  const program = getProgram(id);
+  if (!program) return { caseStudies: [], articles: [] };
+  return {
+    caseStudies: caseStudies.filter(isPublished).filter((caseStudy) => caseMatchesProgram(caseStudy, program)),
+    articles: articles.filter(isPublished).filter((article) => articleMatchesProgram(article, program))
+  };
+}
+
 function getHomeContent() {
   const publishedPrograms = programs.filter(isPublished);
   const publishedCases = caseStudies.filter(isPublished);
@@ -89,6 +128,7 @@ module.exports = {
   getCaseStudy,
   getHomeContent,
   getProgram,
+  getProgramRelations,
   queryCases,
   queryPrograms
 };

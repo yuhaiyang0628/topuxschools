@@ -1,7 +1,8 @@
 <view class="page-shell">
   <view class="eyebrow">Admit stories</view>
-  <view class="page-title">案例分享</view>
+  <view class="page-title-row"><view class="page-title">案例分享</view><help-entry /></view>
   <view class="page-intro">按拿到 Offer 的学校、国家和背景检索申请路径。没有选择地区时，默认展示来自全世界的案例。</view>
+  <button class="submission-entry" bindtap="openSubmission"><text>分享你的录取结果</text><text>提交案例 →</text></button>
 
   <view class="search-box">
     <input value="{{query}}" placeholder="搜索学校、国家、DIY 或背景" confirm-type="search" bindinput="onSearchInput" bindconfirm="onSearchConfirm" />

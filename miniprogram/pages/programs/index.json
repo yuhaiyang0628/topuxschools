@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "学校列表",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "help-entry": "/components/help-entry/index"
+  }
 }

@@ -1,6 +1,6 @@
 <view wx:if="{{program}}" class="detail-page">
   <view class="detail-hero">
-    <view class="eyebrow">{{program.region}} · {{program.country}}</view>
+    <view class="detail-topline"><view class="eyebrow">{{program.region}} · {{program.country}}</view><help-entry /></view>
     <view class="detail-school">{{program.schoolCn}}</view>
     <view class="detail-school-en">{{program.school}}</view>
     <view class="detail-title">{{program.program}}</view>
@@ -20,10 +20,44 @@
 
     <view class="section-label section-space">核验说明</view>
     <view class="note-box">{{program.note}}</view>
+    <button class="report-entry" bindtap="openReport">发现信息更新或有误？提交反馈</button>
 
-    <view class="detail-actions">
-      <button class="primary-action" bindtap="copyWebsite">复制官网链接</button>
-      <button class="secondary-action" bindtap="goToContact">有问题，先聊聊</button>
+    <view class="related-section">
+      <view class="section-label">关联内容</view>
+      <view class="related-tabs">
+        <button class="related-tab {{activeRelatedTab === 'cases' ? 'active' : ''}}" data-tab="cases" bindtap="switchRelatedTab">录取案例 <text wx:if="{{relatedCases.length}}">{{relatedCases.length}}</text></button>
+        <button class="related-tab {{activeRelatedTab === 'articles' ? 'active' : ''}}" data-tab="articles" bindtap="switchRelatedTab">相关笔记 <text wx:if="{{relatedArticles.length}}">{{relatedArticles.length}}</text></button>
+      </view>
+
+      <view wx:if="{{activeRelatedTab === 'cases'}}" class="related-list">
+        <button wx:for="{{relatedCases}}" wx:key="id" class="related-card" data-id="{{item.id}}" bindtap="openCase">
+          <view class="related-meta">{{item.year}} · 最终选择</view>
+          <view class="related-title">{{item.title}}</view>
+          <view class="related-copy">{{item.background}}</view>
+          <view class="related-link">查看案例</view>
+        </button>
+        <view wx:if="{{!relatedCases.length}}" class="related-empty">暂时没有最终选择该项目的公开案例。</view>
+      </view>
+
+      <view wx:else class="related-list">
+        <button wx:for="{{relatedArticles}}" wx:key="id" class="related-card" data-id="{{item.id}}" bindtap="openArticle">
+          <view class="related-meta">{{item.category}} · {{item.readTime}}</view>
+          <view class="related-title">{{item.title}}</view>
+          <view class="related-copy">{{item.excerpt}}</view>
+          <view class="related-link">阅读笔记</view>
+        </button>
+        <view wx:if="{{!relatedArticles.length}}" class="related-empty">暂时没有添加该项目 Tag 的公开笔记。</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{reporting}}" class="report-mask">
+    <view class="report-sheet">
+      <view class="report-header"><view><view class="eyebrow">Program feedback</view><view class="report-title">反馈项目信息</view></view><button class="report-close" bindtap="closeReport">关闭</button></view>
+      <view class="report-copy">请描述你发现的变化或错误，例如“今年 TOEFL 要求从 100 提高到 110”。运营核验后会手动更新项目资料。</view>
+      <textarea class="report-message" value="{{reportMessage}}" data-field="reportMessage" bindinput="onReportInput" auto-height placeholder="写下具体信息、来源或链接（如有）" />
+      <input class="report-contact" value="{{reportContact}}" data-field="reportContact" bindinput="onReportInput" placeholder="联系信息（选填，仅核验时使用）" />
+      <button class="report-submit" loading="{{reportSubmitting}}" bindtap="submitReport">提交反馈</button>
     </view>
   </view>
 </view>

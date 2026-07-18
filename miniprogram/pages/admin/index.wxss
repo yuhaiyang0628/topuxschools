@@ -17,17 +17,20 @@
   gap: 20rpx;
 }
 
-.new-record-action {
+.header-actions { display: flex; align-items: center; gap: 12rpx; flex-shrink: 0; }
+
+.new-record-action, .review-action {
   flex-shrink: 0;
   margin: 0;
   padding: 0 18rpx;
-  color: #ffffff;
   border-radius: 6rpx;
-  background: #0b6276;
   font-size: 23rpx;
   font-weight: 650;
   line-height: 64rpx;
 }
+
+.new-record-action { color: #ffffff; background: #0b6276; }
+.review-action { color: #0b6276; border: 1rpx solid #a8cbca; background: #ffffff; }
 
 .admin-copy, .field-hint, .record-meta {
   margin-top: 20rpx;
@@ -115,7 +118,29 @@
   background: rgba(23, 37, 43, 0.38);
 }
 
+.review-mask {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(23, 37, 43, 0.38);
+}
+
 .editor-sheet {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 92vh;
+  box-sizing: border-box;
+  padding: 34rpx 32rpx 72rpx;
+  background: #f7faf9;
+  border-radius: 10rpx 10rpx 0 0;
+}
+
+.review-sheet {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -140,6 +165,19 @@
 .field-hint { margin-top: 6rpx; font-size: 20rpx; }
 .method-option { display: inline-block; margin: 18rpx 24rpx 0 0; color: #304349; font-size: 25rpx; }
 .save-button { margin-top: 42rpx; }
+
+.review-copy { margin-top: 0; }
+.submission-card { margin-top: 22rpx; padding: 24rpx; border: 1rpx solid #d8e3e0; border-radius: 6rpx; background: #ffffff; }
+.submission-title { color: #17252b; font-size: 31rpx; font-weight: 700; line-height: 1.4; }
+.submission-meta, .submission-contact { margin-top: 10rpx; color: #6b797e; font-size: 21rpx; line-height: 1.5; }
+.submission-background { margin-top: 18rpx; color: #304349; font-size: 25rpx; line-height: 1.6; }
+.submission-outcomes { display: flex; flex-wrap: wrap; gap: 8rpx; margin-top: 18rpx; }
+.submission-tag { padding: 5rpx 11rpx; border-radius: 999rpx; font-size: 20rpx; background: #eef1f0; color: #52636a; }
+.submission-tag.selected { color: #ffffff; background: #0d7a4b; }
+.submission-tag.offer { color: #17613d; background: #d9f5e1; }
+.submission-tag.rejected { color: #9b3336; background: #fde1e0; }
+.submission-actions { display: flex; flex-wrap: wrap; gap: 10rpx; margin-top: 22rpx; }
+.approve-action { color: #ffffff; border-color: #0b7a4c; background: #0b7a4c; }
 
 .school-editor {
   margin-top: 28rpx;

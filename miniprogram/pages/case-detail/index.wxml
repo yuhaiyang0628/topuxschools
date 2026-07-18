@@ -1,6 +1,6 @@
 <view wx:if="{{caseStudy}}" class="detail-page">
   <view class="detail-hero">
-    <view class="eyebrow">录取案例 · {{caseStudy.year}}</view>
+    <view class="detail-topline"><view class="eyebrow">录取案例 · {{caseStudy.year}}</view><help-entry /></view>
     <view class="detail-title">{{caseStudy.title}}</view>
     <view class="detail-school">{{caseStudy.selected.school.schoolCn}}</view>
     <view class="detail-school-en">{{caseStudy.selected.school.school}} · {{caseStudy.selected.program.program}}</view>

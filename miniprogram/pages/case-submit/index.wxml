@@ -1,0 +1,37 @@
+<view class="page-shell submit-page">
+  <view class="eyebrow">Share an admit story</view>
+  <view class="page-title">提交我的案例</view>
+  <view class="page-intro">分享一条真实申请路径，帮助后来者判断自己的可能性。提交后会先由运营审核，通过后以匿名案例形式公开。</view>
+
+  <view class="form-grid">
+    <view class="form-field"><view class="field-label">申请季</view><input value="{{form.year}}" data-field="year" bindinput="onFieldInput" placeholder="2026 Fall" /></view>
+    <view class="form-field"><view class="field-label">GPA</view><input value="{{form.gpa}}" data-field="gpa" bindinput="onFieldInput" placeholder="3.6 / 4.0" /></view>
+  </view>
+  <view class="form-field"><view class="field-label">申请背景 *</view><textarea value="{{form.background}}" data-field="background" bindinput="onFieldInput" auto-height placeholder="例如：陆本 211 工业设计，1 年工作经验" /></view>
+  <view class="form-field"><view class="field-label">语言成绩</view><input value="{{form.language}}" data-field="language" bindinput="onFieldInput" placeholder="IELTS 7.0 / TOEFL 100" /></view>
+
+  <view class="school-editor">
+    <view class="school-editor-note">第一行填写最终选择，格式为“学校, 项目”，例如：CMU, MIIPS。点击 Add school 可补充其他学校；Offer 关闭即表示拒信。</view>
+    <view class="school-editor-head"><view>School / program</view><view>Offer</view><view></view></view>
+    <view wx:for="{{form.schoolRows}}" wx:key="index" class="school-row {{item.isFinal ? 'final-row' : ''}}">
+      <view class="school-input-wrap">
+        <input value="{{item.value}}" data-index="{{index}}" bindinput="onSchoolRowInput" placeholder="{{item.isFinal ? 'Final decision, e.g. CMU, MIIPS' : 'School name or short name'}}" />
+        <view wx:if="{{item.isFinal}}" class="final-label">Final decision</view>
+      </view>
+      <switch checked="{{item.offer}}" data-index="{{index}}" bindchange="onSchoolOfferChange" disabled="{{item.isFinal}}" color="#0b8aa0" />
+      <button wx:if="{{!item.isFinal}}" class="remove-school" data-index="{{index}}" bindtap="removeSchoolRow">X</button>
+      <view wx:else class="locked-school">锁定</view>
+    </view>
+    <button class="add-school" bindtap="addSchoolRow">Add school</button>
+  </view>
+
+  <view class="form-field">
+    <view class="field-label">申请方式</view>
+    <checkbox-group bindchange="onMethodsChange"><label wx:for="{{methodOptions}}" wx:key="value" class="method-option"><checkbox value="{{item.value}}" checked="{{item.checked}}" color="#0b6276" />{{item.value}}</label></checkbox-group>
+  </view>
+  <view class="form-field"><view class="field-label">其他服务</view><input value="{{form.supportServices}}" data-field="supportServices" bindinput="onFieldInput" placeholder="例如：选校服务" /></view>
+  <view class="form-field"><view class="field-label">联系信息（选填，仅审核时使用）</view><input value="{{form.contact}}" data-field="contact" bindinput="onFieldInput" placeholder="微信号或邮箱" /></view>
+
+  <checkbox-group bindchange="onConsentChange"><label class="consent-row"><checkbox value="consent" checked="{{consent}}" color="#0b6276" />我确认以上内容真实，并同意审核通过后以匿名形式公开展示。</label></checkbox-group>
+  <button class="submit-button" loading="{{submitting}}" bindtap="submit">提交审核</button>
+</view>

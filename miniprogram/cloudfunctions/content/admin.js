@@ -254,6 +254,7 @@ function buildArticle(input, existing) {
     readTime: clean(input.readTime),
     date: clean(input.date),
     body: clean(input.body).split(/\n{2,}/).map(clean).filter(Boolean),
+    tags: unique(cleanList(input.tags)),
     status: clean(input.status) || "published"
   };
 }
@@ -336,6 +337,251 @@ function createAdminApi({ cloud, db, getAll }) {
     return (await getAll(collection)).map(stripSystemFields);
   }
 
+  async function submitCase(input) {
+    const identity = getIdentity();
+    if (!input || !input.consentPublic) throw new Error("请确认内容真实并同意匿名公开说明");
+    const now = new Date();
+    const submittedAt = now.toISOString();
+    const todayStart = now.getTime() - (24 * 60 * 60 * 1000);
+    const submissions = await getAll("caseSubmissions");
+    const recentCount = submissions.filter((item) => item.submitterOpenId === identity.openId &&
+      new Date(item.submittedAt || 0).getTime() >= todayStart).length;
+    if (recentCount >= 3) throw new Error("今天已提交 3 条案例，请明天再试或联系管理员。");
+
+    const [programs, cases] = await Promise.all([getAll("programs"), getAll("caseStudies")]);
+    const submissionId = `submission-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    const draft = buildCase({ ...(input || {}), id: `community-${submissionId}`, status: "reviewing" }, null, buildCatalog(programs, cases), programs);
+    if (!draft.selected.school.label || !draft.selected.program.label) {
+      throw new Error("请在第一行按“学校, 项目”填写最终选择，例如：CMU, MIIPS");
+    }
+    if (!draft.background) throw new Error("请填写申请背景，方便其他同学参考。");
+
+    await db.collection("caseSubmissions").doc(submissionId).set({
+      data: {
+        submissionStatus: "pending",
+        submittedAt,
+        submitterOpenId: identity.openId,
+        consentPublic: true,
+        contact: clean(input && input.contact),
+        case: draft
+      }
+    });
+    return { submissionId, status: "pending" };
+  }
+
+  async function submitArticle(input) {
+    const identity = getIdentity();
+    if (!input || !input.consentPublic) throw new Error("请确认内容真实并同意匿名公开说明");
+    const now = new Date();
+    const submittedAt = now.toISOString();
+    const todayStart = now.getTime() - (24 * 60 * 60 * 1000);
+    const submissions = await getAll("articleSubmissions");
+    const recentCount = submissions.filter((item) => item.submitterOpenId === identity.openId &&
+      new Date(item.submittedAt || 0).getTime() >= todayStart).length;
+    if (recentCount >= 3) throw new Error("今天已提交 3 篇笔记，请明天再试或联系管理员。");
+
+    const submissionId = `article-submission-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    const draft = buildArticle({
+      ...(input || {}),
+      id: `community-${submissionId}`,
+      category: clean(input.category) || "经验分享",
+      date: clean(input.date) || `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, "0")}`,
+      status: "reviewing"
+    }, null);
+    if (!draft.title || !draft.body.length) throw new Error("请填写笔记标题和正文。");
+
+    await db.collection("articleSubmissions").doc(submissionId).set({
+      data: {
+        submissionStatus: "pending",
+        submittedAt,
+        submitterOpenId: identity.openId,
+        consentPublic: true,
+        contact: clean(input.contact),
+        article: draft
+      }
+    });
+    return { submissionId, status: "pending" };
+  }
+
+  async function submitProgramReport(input) {
+    const identity = getIdentity();
+    const programId = clean(input && input.programId);
+    const message = clean(input && input.message);
+    if (!programId || !message) throw new Error("请填写具体的项目信息问题。");
+    const programs = await getAll("programs");
+    const program = programs.find((item) => item.id === programId);
+    if (!program) throw new Error("未找到对应项目，请返回详情页后重试。");
+
+    const now = new Date();
+    const submittedAt = now.toISOString();
+    const reports = await getAll("programReports");
+    const todayStart = now.getTime() - (24 * 60 * 60 * 1000);
+    const recentCount = reports.filter((item) => item.submitterOpenId === identity.openId &&
+      new Date(item.submittedAt || 0).getTime() >= todayStart).length;
+    if (recentCount >= 5) throw new Error("今天已提交 5 条项目信息反馈，请明天再试。");
+
+    const reportId = `program-report-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    await db.collection("programReports").doc(reportId).set({
+      data: {
+        reportStatus: "pending",
+        submittedAt,
+        submitterOpenId: identity.openId,
+        contact: clean(input && input.contact),
+        programId,
+        programLabel: `${program.schoolCn || program.school} · ${program.program}`,
+        message
+      }
+    });
+    return { reportId, status: "pending" };
+  }
+
+  async function listCaseSubmissions() {
+    requireAdmin();
+    return (await getAll("caseSubmissions"))
+      .sort((left, right) => String(right.submittedAt || "").localeCompare(String(left.submittedAt || "")));
+  }
+
+  async function listReviewTasks() {
+    requireAdmin();
+    const [caseSubmissions, articleSubmissions, programReports] = await Promise.all([
+      getAll("caseSubmissions"),
+      getAll("articleSubmissions"),
+      getAll("programReports")
+    ]);
+    return [
+      ...caseSubmissions.filter((item) => item.submissionStatus === "pending").map((item) => ({
+        id: item._id,
+        type: "case",
+        submittedAt: item.submittedAt,
+        contact: item.contact || "",
+        content: item.case
+      })),
+      ...articleSubmissions.filter((item) => item.submissionStatus === "pending").map((item) => ({
+        id: item._id,
+        type: "article",
+        submittedAt: item.submittedAt,
+        contact: item.contact || "",
+        content: item.article
+      })),
+      ...programReports.filter((item) => item.reportStatus === "pending").map((item) => ({
+        id: item._id,
+        type: "programReport",
+        submittedAt: item.submittedAt,
+        contact: item.contact || "",
+        programId: item.programId,
+        programLabel: item.programLabel,
+        message: item.message
+      }))
+    ].sort((left, right) => String(right.submittedAt || "").localeCompare(String(left.submittedAt || "")));
+  }
+
+  async function approveCaseSubmission(submissionId, publishedCaseId) {
+    requireAdmin();
+    const submissions = await getAll("caseSubmissions");
+    const submission = submissions.find((item) => item._id === submissionId);
+    if (!submission) throw new Error("找不到这条提报记录");
+    if (submission.submissionStatus !== "pending") throw new Error("这条提报已处理");
+
+    const currentCases = await getAll("caseStudies");
+    let caseRecord = publishedCaseId ? currentCases.find((item) => item._id === publishedCaseId) : null;
+    if (!caseRecord) caseRecord = submission.case;
+    if (!caseRecord || !caseRecord._id) throw new Error("案例内容不完整，请先编辑后再发布");
+
+    const { _id, _openid, ...data } = caseRecord;
+    const publicCase = { ...data, status: "published", communitySubmittedAt: submission.submittedAt || "" };
+    await db.collection("caseStudies").doc(_id).set({ data: publicCase });
+    await db.collection("caseSubmissions").doc(submissionId).update({
+      data: { submissionStatus: "approved", reviewedAt: new Date().toISOString(), publishedCaseId: _id }
+    });
+
+    const updated = currentCases.filter((item) => item._id !== _id).concat({ ...publicCase, _id });
+    let webSync;
+    try {
+      webSync = await syncCollectionToGithub("caseStudies", updated);
+    } catch (error) {
+      console.error("[Top UX Schools] Web sync failed after approving submission.", error);
+      webSync = { status: "failed", message: error.message };
+    }
+    return { record: stripSystemFields({ ...publicCase, _id }), webSync };
+  }
+
+  async function rejectCaseSubmission(submissionId) {
+    requireAdmin();
+    const submissions = await getAll("caseSubmissions");
+    const submission = submissions.find((item) => item._id === submissionId);
+    if (!submission) throw new Error("找不到这条提报记录");
+    if (submission.submissionStatus !== "pending") throw new Error("这条提报已处理");
+    await db.collection("caseSubmissions").doc(submissionId).update({
+      data: { submissionStatus: "rejected", reviewedAt: new Date().toISOString() }
+    });
+    return { status: "rejected" };
+  }
+
+  async function approveArticleSubmission(submissionId, publishedArticleId) {
+    requireAdmin();
+    const submissions = await getAll("articleSubmissions");
+    const submission = submissions.find((item) => item._id === submissionId);
+    if (!submission) throw new Error("找不到这篇笔记投稿");
+    if (submission.submissionStatus !== "pending") throw new Error("这篇笔记已处理");
+
+    const currentArticles = await getAll("articles");
+    let articleRecord = publishedArticleId ? currentArticles.find((item) => item._id === publishedArticleId) : null;
+    if (!articleRecord) articleRecord = submission.article;
+    if (!articleRecord || !articleRecord._id) throw new Error("笔记内容不完整，请先编辑后再发布");
+
+    const { _id, _openid, ...data } = articleRecord;
+    const publicArticle = { ...data, status: "published", communitySubmittedAt: submission.submittedAt || "" };
+    await db.collection("articles").doc(_id).set({ data: publicArticle });
+    await db.collection("articleSubmissions").doc(submissionId).update({
+      data: { submissionStatus: "approved", reviewedAt: new Date().toISOString(), publishedArticleId: _id }
+    });
+    const updated = currentArticles.filter((item) => item._id !== _id).concat({ ...publicArticle, _id });
+    let webSync;
+    try {
+      webSync = await syncCollectionToGithub("articles", updated);
+    } catch (error) {
+      console.error("[Top UX Schools] Web sync failed after approving article submission.", error);
+      webSync = { status: "failed", message: error.message };
+    }
+    return { record: stripSystemFields({ ...publicArticle, _id }), webSync };
+  }
+
+  async function rejectArticleSubmission(submissionId) {
+    requireAdmin();
+    const submissions = await getAll("articleSubmissions");
+    const submission = submissions.find((item) => item._id === submissionId);
+    if (!submission) throw new Error("找不到这篇笔记投稿");
+    if (submission.submissionStatus !== "pending") throw new Error("这篇笔记已处理");
+    await db.collection("articleSubmissions").doc(submissionId).update({
+      data: { submissionStatus: "rejected", reviewedAt: new Date().toISOString() }
+    });
+    return { status: "rejected" };
+  }
+
+  async function resolveProgramReport(reportId) {
+    requireAdmin();
+    const reports = await getAll("programReports");
+    const report = reports.find((item) => item._id === reportId);
+    if (!report) throw new Error("找不到这条项目信息反馈");
+    if (report.reportStatus !== "pending") throw new Error("这条反馈已处理");
+    await db.collection("programReports").doc(reportId).update({
+      data: { reportStatus: "resolved", reviewedAt: new Date().toISOString() }
+    });
+    return { status: "resolved" };
+  }
+
+  async function rejectProgramReport(reportId) {
+    requireAdmin();
+    const reports = await getAll("programReports");
+    const report = reports.find((item) => item._id === reportId);
+    if (!report) throw new Error("找不到这条项目信息反馈");
+    if (report.reportStatus !== "pending") throw new Error("这条反馈已处理");
+    await db.collection("programReports").doc(reportId).update({
+      data: { reportStatus: "rejected", reviewedAt: new Date().toISOString() }
+    });
+    return { status: "rejected" };
+  }
+
   async function save(collection, input) {
     requireAdmin();
     if (!COLLECTIONS.has(collection)) throw new Error("未知内容类型");
@@ -390,7 +636,23 @@ function createAdminApi({ cloud, db, getAll }) {
     return { webSync };
   }
 
-  return { archive, getStatus, list, save };
+  return {
+    approveArticleSubmission,
+    approveCaseSubmission,
+    archive,
+    getStatus,
+    list,
+    listCaseSubmissions,
+    listReviewTasks,
+    rejectArticleSubmission,
+    rejectCaseSubmission,
+    rejectProgramReport,
+    resolveProgramReport,
+    save,
+    submitArticle,
+    submitCase,
+    submitProgramReport
+  };
 }
 
 module.exports = { createAdminApi, isPublic, stripSystemFields };

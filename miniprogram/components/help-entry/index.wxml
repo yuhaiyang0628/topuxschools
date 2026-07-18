@@ -1,0 +1,1 @@
+<button class="help-entry" bindtap="openContact"><text class="help-mark">?</text><text>答疑</text></button>
