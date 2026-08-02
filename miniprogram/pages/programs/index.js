@@ -69,6 +69,10 @@ Page({
     wx.stopPullDownRefresh();
   },
 
+  onReachBottom() {
+    if (this.data.hasMore && !this.data.loading) this.loadMore();
+  },
+
   async loadPrograms(reset) {
     if (this.data.loading) return;
     const page = reset ? 1 : this.data.page + 1;
