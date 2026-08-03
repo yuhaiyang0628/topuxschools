@@ -40,7 +40,10 @@ const CASE_STUDIES = [
     "background": "陆本 建筑学，应届，做过用户调研和原型项目",
     "gpa": "均分 87/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -214,6 +217,8 @@ const CASE_STUDIES = [
       "均分 87/100",
       "雅思 7.5",
       "Cornell MSIS",
+      "作品集DIY",
+      "文书半DIY",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -282,7 +287,10 @@ const CASE_STUDIES = [
     "background": "陆本 机械工程，有5年咨询/运营经验",
     "gpa": "GPA 3.23/4.3",
     "language": "托福 106",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -458,6 +466,8 @@ const CASE_STUDIES = [
       "GPA 3.23/4.3",
       "托福 106",
       "IUB MHCID",
+      "作品集辅导",
+      "文书DIY",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -508,7 +518,10 @@ const CASE_STUDIES = [
     "background": "港本 Industrial Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 7.0（8.0/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -678,6 +691,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 7.0（8.0/8.0/7.0/7.0）",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -748,7 +763,10 @@ const CASE_STUDIES = [
     "background": "美本 Graphic Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.72/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -923,6 +941,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "Waive",
       "GT MSHCI",
+      "作品集半DIY",
+      "文书DIY",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -990,7 +1010,10 @@ const CASE_STUDIES = [
     "background": "陆本 艺术与科技，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 85/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -1181,6 +1204,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 7.0",
       "IUB MHCID",
+      "作品集辅导",
+      "文书辅导",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -1237,7 +1262,10 @@ const CASE_STUDIES = [
     "background": "陆本 动画，有3年内的空间/体验设计经验",
     "gpa": "GPA 3.62/4.3",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -1422,6 +1450,8 @@ const CASE_STUDIES = [
       "GPA 3.62/4.3",
       "雅思 8.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -1493,7 +1523,10 @@ const CASE_STUDIES = [
     "background": "陆本 摄影，一硕：英国院校 MA Design Management，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.87/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -1669,6 +1702,8 @@ const CASE_STUDIES = [
       "GPA 3.87/4.0",
       "雅思 7.0",
       "UCB Mdes",
+      "作品集辅导",
+      "文书辅导",
       "UCB",
       "University of California, Berkeley",
       "加州大学伯克利分校",
@@ -1740,7 +1775,10 @@ const CASE_STUDIES = [
     "background": "陆本 摄影，应届，作品集偏交互与服务设计",
     "gpa": "均分 88/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -1940,6 +1978,8 @@ const CASE_STUDIES = [
       "均分 88/100",
       "雅思 7.5",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -2020,7 +2060,10 @@ const CASE_STUDIES = [
     "background": "陆本 动画，一硕：新加坡院校 MA Design，应届，做过用户调研和原型项目",
     "gpa": "GPA 4.01/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -2210,6 +2253,8 @@ const CASE_STUDIES = [
       "GPA 4.01/4.3",
       "雅思 7.0",
       "CMU MIIPS",
+      "作品集辅导",
+      "文书辅导",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -2284,7 +2329,10 @@ const CASE_STUDIES = [
     "background": "陆本 视觉传达设计，应届，有两段设计相关实习",
     "gpa": "均分 87/100",
     "language": "托福105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -2506,6 +2554,8 @@ const CASE_STUDIES = [
       "均分 87/100",
       "托福105+",
       "CMU MIIPS",
+      "作品集DIY",
+      "文书半DIY",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -2583,7 +2633,10 @@ const CASE_STUDIES = [
     "background": "陆本 服装与服饰设计，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.94/4.3",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -2758,6 +2811,8 @@ const CASE_STUDIES = [
       "GPA 3.94/4.3",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "GT MSDM",
+      "作品集辅导",
+      "文书辅导",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -2832,7 +2887,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 视觉传达设计，一硕：港校 Master of Design，应届，有两段设计相关实习",
     "gpa": "均分 91/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -3001,6 +3059,8 @@ const CASE_STUDIES = [
       "均分 91/100",
       "雅思 8.0",
       "NUS MDes",
+      "作品集辅导",
+      "文书DIY",
       "NUS",
       "National University of Singapore",
       "新加坡国立大学",
@@ -3084,7 +3144,10 @@ const CASE_STUDIES = [
     "background": "美本 Fashion Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.66/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -3258,6 +3321,8 @@ const CASE_STUDIES = [
       "GPA 3.66/4.0",
       "Waive",
       "Parsons MFA",
+      "作品集DIY",
+      "文书半DIY",
       "Parsons",
       "Parsons School of Design",
       "帕森斯设计学院",
@@ -3321,7 +3386,10 @@ const CASE_STUDIES = [
     "background": "陆本 服装与服饰设计，应届，作品集偏交互与服务设计",
     "gpa": "均分 85/100",
     "language": "雅思 6.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -3511,6 +3579,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 6.5",
       "Umich MSI",
+      "作品集半DIY",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -3570,7 +3640,10 @@ const CASE_STUDIES = [
     "background": "陆本 计算机科学与技术，1-3年 data/BA 经验",
     "gpa": "GPA 3.56/4.3",
     "language": "托福 102",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -3771,6 +3844,8 @@ const CASE_STUDIES = [
       "GPA 3.56/4.3",
       "托福 102",
       "诺丁汉 MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "Nottingham",
       "University of Nottingham",
       "诺丁汉大学",
@@ -3831,7 +3906,10 @@ const CASE_STUDIES = [
     "background": "英本 Computer Science，工作2年，前端开发转产品方向",
     "gpa": "GPA 3.57/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -4019,6 +4097,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "雅思 8.0",
       "UAL MA",
+      "作品集辅导",
+      "文书辅导",
       "UAL",
       "University of the Arts London",
       "伦敦艺术大学",
@@ -4093,7 +4173,10 @@ const CASE_STUDIES = [
     "background": "陆本 环境设计，一硕：港校 Master of Design，应届，有两段设计相关实习",
     "gpa": "均分 90/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -4283,6 +4366,8 @@ const CASE_STUDIES = [
       "均分 90/100",
       "雅思 7.0",
       "GT MSHCI",
+      "作品集半DIY",
+      "文书半DIY",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -4359,7 +4444,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体艺术，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.83/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -4550,6 +4638,8 @@ const CASE_STUDIES = [
       "GPA 3.83/4.3",
       "雅思 7.5",
       "Cornell MSIS",
+      "作品集DIY",
+      "文书辅导",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -4620,7 +4710,10 @@ const CASE_STUDIES = [
     "background": "陆本 数据科学与大数据技术，工作2年，做产品与增长",
     "gpa": "均分 84/100",
     "language": "托福 95+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -4790,6 +4883,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "托福 95+",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -4809,21 +4904,35 @@ const CASE_STUDIES = [
   },
   {
     "id": "fall-case-103",
-    "status": "draft",
+    "status": "published",
     "displayOrder": 20,
     "year": "2025 Fall",
-    "title": "未明确最终选择",
+    "title": "UCD MSc-HCI",
     "selected": {
       "school": {
-        "label": "未明确",
-        "school": "未明确",
-        "schoolCn": "未明确",
-        "aliases": []
+        "label": "UCD",
+        "school": "University College Dublin",
+        "schoolCn": "都柏林大学",
+        "region": "EU",
+        "country": "Ireland",
+        "countryCn": "爱尔兰",
+        "aliases": [
+          "UCD",
+          "University College Dublin",
+          "都柏林大学",
+          "Ireland",
+          "爱尔兰"
+        ]
       },
       "program": {
-        "label": "项目未注明",
-        "program": "项目未注明",
-        "aliases": []
+        "label": "MHCI",
+        "program": "Master of Human-Computer Interaction (MHCI)",
+        "aliases": [
+          "UCD MSc-HCI",
+          "Human-Computer Interaction",
+          "MHCI",
+          "Master of Human-Computer Interaction (MHCI)"
+        ]
       }
     },
     "regions": [
@@ -4831,25 +4940,13 @@ const CASE_STUDIES = [
     ],
     "background": "2+2中外合作 软件工程，有2年软件开发经验，参与过用户研究",
     "gpa": "均分 83/100",
-    "language": "托福 112+",
-    "applicationMethods": [],
+    "language": "托福 110+",
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
-      {
-        "label": "HfG Schwäbisch Gmünd",
-        "school": "HfG Schwäbisch Gmünd",
-        "schoolCn": "施瓦本格明德设计学院",
-        "region": "EU",
-        "country": "Germany",
-        "countryCn": "德国",
-        "aliases": [
-          "HfG Schwäbisch Gmünd",
-          "施瓦本格明德设计学院",
-          "Germany",
-          "德国"
-        ],
-        "status": "offer"
-      },
       {
         "label": "UCD",
         "school": "University College Dublin",
@@ -4863,6 +4960,21 @@ const CASE_STUDIES = [
           "都柏林大学",
           "Ireland",
           "爱尔兰"
+        ],
+        "status": "selected"
+      },
+      {
+        "label": "HfG Schwäbisch Gmünd",
+        "school": "HfG Schwäbisch Gmünd",
+        "schoolCn": "施瓦本格明德设计学院",
+        "region": "EU",
+        "country": "Germany",
+        "countryCn": "德国",
+        "aliases": [
+          "HfG Schwäbisch Gmünd",
+          "施瓦本格明德设计学院",
+          "Germany",
+          "德国"
         ],
         "status": "offer"
       },
@@ -5036,17 +5148,22 @@ const CASE_STUDIES = [
       "陆本（2+2中外合作）",
       "2+2中外合作 软件工程，有2年软件开发经验，参与过用户研究",
       "均分 83/100",
-      "托福 112+",
-      "HfG Schwäbisch Gmünd",
-      "施瓦本格明德设计学院",
-      "Germany",
-      "德国",
+      "托福 110+",
+      "UCD MSc-HCI",
+      "作品集辅导",
+      "文书DIY",
       "UCD",
       "University College Dublin",
       "都柏林大学",
       "Ireland",
       "爱尔兰",
-      "项目未注明"
+      "HfG Schwäbisch Gmünd",
+      "施瓦本格明德设计学院",
+      "Germany",
+      "德国",
+      "MHCI",
+      "Master of Human-Computer Interaction (MHCI)",
+      "Human-Computer Interaction"
     ]
   },
   {
@@ -5090,7 +5207,10 @@ const CASE_STUDIES = [
     "background": "英本 Fashion Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -5276,6 +5396,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 8.0",
       "爱丁堡 DI",
+      "作品集半DIY",
+      "文书半DIY",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -5340,7 +5462,10 @@ const CASE_STUDIES = [
     "background": "陆本 市场营销，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.50/4.3",
     "language": "托福 105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -5509,6 +5634,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.3",
       "托福 105+",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -5557,7 +5684,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 动画，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.79/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -5743,6 +5873,8 @@ const CASE_STUDIES = [
       "GPA 3.79/4.3",
       "雅思 7.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -5819,7 +5951,10 @@ const CASE_STUDIES = [
     "background": "陆本 环境设计，应届，有两段设计相关实习",
     "gpa": "GPA 3.69/4.0",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -5991,6 +6126,8 @@ const CASE_STUDIES = [
       "GPA 3.69/4.0",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "RCA IDE",
+      "作品集辅导",
+      "文书辅导",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -6070,7 +6207,10 @@ const CASE_STUDIES = [
     "background": "英本 Graphic Design，一硕：英校 MA Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.93/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -6242,6 +6382,8 @@ const CASE_STUDIES = [
       "GPA 3.93/4.0",
       "雅思 8.0",
       "RCA 服务设计",
+      "作品集辅导",
+      "文书辅导",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -6321,7 +6463,10 @@ const CASE_STUDIES = [
     "background": "英本 Graphic Design，工作2年，负责品牌与网页设计",
     "gpa": "GPA 3.60/4.0",
     "language": "雅思 7.5（8.5/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -6523,6 +6668,8 @@ const CASE_STUDIES = [
       "GPA 3.60/4.0",
       "雅思 7.5（8.5/8.0/7.0/7.0）",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书辅导",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -6591,7 +6738,10 @@ const CASE_STUDIES = [
     "background": "陆本 动画，应届，做过用户调研和原型项目",
     "gpa": "均分 85/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -6761,6 +6911,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 7.5",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -6824,7 +6976,10 @@ const CASE_STUDIES = [
     "background": "陆本 绘画，应届，有两段设计相关实习",
     "gpa": "均分 87/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -7014,6 +7169,8 @@ const CASE_STUDIES = [
       "均分 87/100",
       "雅思 7.0",
       "UCB Mdes",
+      "作品集DIY",
+      "文书辅导",
       "UCB",
       "University of California, Berkeley",
       "加州大学伯克利分校",
@@ -7091,7 +7248,10 @@ const CASE_STUDIES = [
     "background": "澳本 Interaction Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -7260,6 +7420,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.5",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -7337,7 +7499,10 @@ const CASE_STUDIES = [
     "background": "陆本 产品设计，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.83/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -7526,6 +7691,8 @@ const CASE_STUDIES = [
       "GPA 3.83/4.3",
       "雅思 7.0",
       "AHO MDes",
+      "作品集半DIY",
+      "文书辅导",
       "AHO",
       "Oslo School of Architecture and Design",
       "奥斯陆建筑与设计学院",
@@ -7592,7 +7759,10 @@ const CASE_STUDIES = [
     "background": "陆本 视觉传达设计，工作2年，做 UX/UI",
     "gpa": "GPA 3.60/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -7793,6 +7963,8 @@ const CASE_STUDIES = [
       "GPA 3.60/4.0",
       "雅思 7.0",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -7861,7 +8033,10 @@ const CASE_STUDIES = [
     "background": "陆本 风景园林，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 87/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -8046,6 +8221,8 @@ const CASE_STUDIES = [
       "均分 87/100",
       "雅思 8.0",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -8124,7 +8301,10 @@ const CASE_STUDIES = [
     "background": "陆本 软件工程，有2年软件开发经验，参与过用户研究",
     "gpa": "均分 83/100",
     "language": "托福 105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -8293,6 +8473,8 @@ const CASE_STUDIES = [
       "均分 83/100",
       "托福 105+",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -8340,7 +8522,10 @@ const CASE_STUDIES = [
     "background": "陆本 建筑学，有3年内的空间/体验设计经验",
     "gpa": "GPA 3.71/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -8509,6 +8694,8 @@ const CASE_STUDIES = [
       "GPA 3.71/4.3",
       "雅思 7.0",
       "HKUST TLE",
+      "作品集辅导",
+      "文书半DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -8541,7 +8728,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 35,
     "year": "2024 Fall",
-    "title": "MSc in AI and Digital Media",
+    "title": "HKBU MSc in AI and Digital Media",
     "selected": {
       "school": {
         "label": "HKBU",
@@ -8561,9 +8748,10 @@ const CASE_STUDIES = [
         "label": "AIDM",
         "program": "MSc in AI and Digital Media",
         "aliases": [
-          "MSc in AI and Digital Media",
+          "HKBU MSc in AI and Digital Media",
           "AI and Digital Media",
-          "AIDM"
+          "AIDM",
+          "MSc in AI and Digital Media"
         ]
       }
     },
@@ -8573,7 +8761,10 @@ const CASE_STUDIES = [
     "background": "陆本 信息管理与信息系统，1-3年 data/BA 经验",
     "gpa": "均分 83/100",
     "language": "托福 100+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -8772,7 +8963,9 @@ const CASE_STUDIES = [
       "陆本 信息管理与信息系统，1-3年 data/BA 经验",
       "均分 83/100",
       "托福 100+",
-      "MSc in AI and Digital Media",
+      "HKBU MSc in AI and Digital Media",
+      "作品集辅导",
+      "文书辅导",
       "HKBU",
       "Hong Kong Baptist University",
       "香港浸会大学",
@@ -8789,6 +8982,7 @@ const CASE_STUDIES = [
       "Singapore University of Technology and Design",
       "新加坡科技设计大学",
       "AIDM",
+      "MSc in AI and Digital Media",
       "AI and Digital Media"
     ]
   },
@@ -8830,7 +9024,10 @@ const CASE_STUDIES = [
     "background": "陆本 心理学，工作4年，做研究与策略",
     "gpa": "均分 81/100",
     "language": "托福 102",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -9015,6 +9212,8 @@ const CASE_STUDIES = [
       "均分 81/100",
       "托福 102",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -9068,7 +9267,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 艺术与科技，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.88/4.3",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -9257,6 +9459,8 @@ const CASE_STUDIES = [
       "GPA 3.88/4.3",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "UW MSTI",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -9343,7 +9547,10 @@ const CASE_STUDIES = [
     "background": "澳本 Psychology，工作4年，做研究与策略",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 106",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -9532,6 +9739,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 106",
       "TU/e HTI",
+      "作品集辅导",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -9587,7 +9796,10 @@ const CASE_STUDIES = [
     "background": "陆本 绘画，应届，有两段设计相关实习",
     "gpa": "均分 86/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -9772,6 +9984,8 @@ const CASE_STUDIES = [
       "均分 86/100",
       "雅思 7.5",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -9844,7 +10058,10 @@ const CASE_STUDIES = [
     "background": "澳本 Sociology，有5年咨询/运营经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 103",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -10018,6 +10235,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 103",
       "UW MCDM",
+      "作品集半DIY",
+      "文书半DIY",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -10072,7 +10291,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 数字媒体技术，有5年工程经验，近两年参与产品定义",
     "gpa": "GPA 3.43/4.3",
     "language": "托福 100+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -10245,6 +10467,8 @@ const CASE_STUDIES = [
       "GPA 3.43/4.3",
       "托福 100+",
       "UCD MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -10300,7 +10524,10 @@ const CASE_STUDIES = [
     "background": "陆本 动画，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 6.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -10469,6 +10696,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 6.5",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -10542,7 +10771,10 @@ const CASE_STUDIES = [
     "background": "陆本 服装与服饰设计，1年半设计工作经验，偏数字产品",
     "gpa": "均分 84/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -10727,6 +10959,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 7.0",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -10781,7 +11015,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体技术，1-3年 data/BA 经验",
     "gpa": "GPA 3.54/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -10956,6 +11193,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "雅思 7.0",
       "Umich MSI",
+      "作品集半DIY",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -11005,7 +11244,10 @@ const CASE_STUDIES = [
     "background": "陆本 人工智能，工作2年，做产品与增长",
     "gpa": "均分 83/100",
     "language": "托福 106",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -11190,6 +11432,8 @@ const CASE_STUDIES = [
       "均分 83/100",
       "托福 106",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -11244,7 +11488,10 @@ const CASE_STUDIES = [
     "background": "港本 Interaction Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -11445,6 +11692,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.5",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -11532,7 +11781,10 @@ const CASE_STUDIES = [
     "background": "陆本 服装与服饰设计，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.69/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -11705,6 +11957,8 @@ const CASE_STUDIES = [
       "GPA 3.69/4.0",
       "雅思 7.0",
       "TU/e HTI",
+      "作品集半DIY",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -11767,7 +12021,10 @@ const CASE_STUDIES = [
     "background": "美本 Communication Design，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.87/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -11941,6 +12198,8 @@ const CASE_STUDIES = [
       "GPA 3.87/4.0",
       "Waive",
       "CMU MIIPS",
+      "作品集辅导",
+      "文书半DIY",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -12011,7 +12270,10 @@ const CASE_STUDIES = [
     "background": "陆本 视觉传达设计，应届，有两段设计相关实习",
     "gpa": "均分 89/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -12199,6 +12461,8 @@ const CASE_STUDIES = [
       "均分 89/100",
       "雅思 7.5",
       "Polimi PSSD",
+      "作品集辅导",
+      "文书辅导",
       "Polimi",
       "Politecnico di Milano",
       "米兰理工大学",
@@ -12284,7 +12548,10 @@ const CASE_STUDIES = [
     "background": "陆本 社会学，有5年咨询/运营经验",
     "gpa": "均分 82/100",
     "language": "托福 99",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -12457,6 +12724,8 @@ const CASE_STUDIES = [
       "均分 82/100",
       "托福 99",
       "TU/e HTI",
+      "作品集半DIY",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -12513,7 +12782,10 @@ const CASE_STUDIES = [
     "background": "陆本 风景园林，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 89/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -12719,6 +12991,8 @@ const CASE_STUDIES = [
       "均分 89/100",
       "雅思 7.5",
       "GT MSDM",
+      "作品集半DIY",
+      "文书辅导",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -12796,7 +13070,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 摄影，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -12965,6 +13242,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 7.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书半DIY",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -13030,7 +13309,10 @@ const CASE_STUDIES = [
     "background": "加本 Product Design，应届，做过user research和原型项目",
     "gpa": "GPA 3.72/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -13237,6 +13519,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "Waive",
       "CMU MIIPS",
+      "作品集辅导",
+      "文书辅导",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -13313,7 +13597,10 @@ const CASE_STUDIES = [
     "background": "美本 Graphic Design，工作2年，做 UX/UI",
     "gpa": "GPA 3.60/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -13503,6 +13790,8 @@ const CASE_STUDIES = [
       "GPA 3.60/4.0",
       "Waive",
       "NYU IDM",
+      "作品集DIY",
+      "文书辅导",
       "NYU",
       "New York University",
       "纽约大学",
@@ -13569,7 +13858,10 @@ const CASE_STUDIES = [
     "background": "陆本 产品设计，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -13757,6 +14049,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 7.0",
       "UAL MA",
+      "作品集辅导",
+      "文书辅导",
       "UAL",
       "University of the Arts London",
       "伦敦艺术大学",
@@ -13826,7 +14120,10 @@ const CASE_STUDIES = [
     "background": "加本 Architecture，1年半设计工作经验，偏数字产品",
     "gpa": "GPA 3.57/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -14015,6 +14312,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "Waive",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书辅导",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -14086,7 +14385,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 新闻传播学，工作4年，想转用户研究",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 107（30/29/25/23）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -14289,6 +14591,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 107（30/29/25/23）",
       "TU/e HTI",
+      "作品集辅导",
+      "文书DIY",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -14341,7 +14645,10 @@ const CASE_STUDIES = [
     "background": "美本 Digital Media Arts，应届，做过user research和原型项目",
     "gpa": "GPA 3.60/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -14547,6 +14854,8 @@ const CASE_STUDIES = [
       "GPA 3.60/4.0",
       "Waive",
       "Pratt MSIED",
+      "作品集半DIY",
+      "文书辅导",
       "Pratt",
       "Pratt Institute",
       "普瑞特艺术学院",
@@ -14581,7 +14890,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 59,
     "year": "2025 Fall",
-    "title": "HKBU MSc",
+    "title": "HKBU MSc in AI and Digital Media",
     "selected": {
       "school": {
         "label": "HKBU",
@@ -14601,7 +14910,7 @@ const CASE_STUDIES = [
         "label": "AIDM",
         "program": "MSc in AI and Digital Media",
         "aliases": [
-          "HKBU MSc",
+          "HKBU MSc in AI and Digital Media",
           "AI and Digital Media",
           "AIDM",
           "MSc in AI and Digital Media"
@@ -14614,7 +14923,10 @@ const CASE_STUDIES = [
     "background": "加本 Information Science，工作2年，做产品与增长",
     "gpa": "GPA 3.46/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -14797,7 +15109,9 @@ const CASE_STUDIES = [
       "加本 Information Science，工作2年，做产品与增长",
       "GPA 3.46/4.0",
       "Waive",
-      "HKBU MSc",
+      "HKBU MSc in AI and Digital Media",
+      "作品集辅导",
+      "文书辅导",
       "HKBU",
       "Hong Kong Baptist University",
       "香港浸会大学",
@@ -14853,7 +15167,10 @@ const CASE_STUDIES = [
     "background": "美本 Industrial Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.66/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -15045,6 +15362,8 @@ const CASE_STUDIES = [
       "GPA 3.66/4.0",
       "Waive",
       "NYU ITP",
+      "作品集辅导",
+      "文书辅导",
       "NYU",
       "New York University",
       "纽约大学",
@@ -15110,7 +15429,10 @@ const CASE_STUDIES = [
     "background": "陆本 艺术与科技，一硕：国内艺术院校 设计学硕士，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 4.09/4.3",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -15301,6 +15623,8 @@ const CASE_STUDIES = [
       "GPA 4.09/4.3",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "CMU MIIPS",
+      "作品集半DIY",
+      "文书半DIY",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -15375,7 +15699,10 @@ const CASE_STUDIES = [
     "background": "港本 Product Design，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -15561,6 +15888,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书半DIY",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -15646,7 +15975,10 @@ const CASE_STUDIES = [
     "background": "英本 Architecture，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -15815,6 +16147,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.5",
       "RCA 服务设计",
+      "作品集辅导",
+      "文书辅导",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -15895,7 +16229,10 @@ const CASE_STUDIES = [
     "background": "英本 Communication Design，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.87/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -16065,6 +16402,8 @@ const CASE_STUDIES = [
       "GPA 3.87/4.0",
       "雅思 7.5",
       "NUS EDI",
+      "作品集辅导",
+      "文书辅导",
       "NUS",
       "National University of Singapore",
       "新加坡国立大学",
@@ -16145,7 +16484,10 @@ const CASE_STUDIES = [
     "background": "英本 Information Science，有2年software engineering经验，参与过用户研究",
     "gpa": "GPA 3.50/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -16302,6 +16644,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "雅思 7.5",
       "格拉斯哥 MSc HCI",
+      "作品集半DIY",
+      "文书半DIY",
       "Glasgow",
       "University of Glasgow",
       "格拉斯哥大学",
@@ -16353,7 +16697,10 @@ const CASE_STUDIES = [
     "background": "港本 Sociology，有5年咨询/运营经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 103",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -16537,6 +16884,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 103",
       "HKUST ISD",
+      "作品集辅导",
+      "文书半DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -16590,7 +16939,10 @@ const CASE_STUDIES = [
     "background": "陆本 风景园林，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 86/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -16765,6 +17117,8 @@ const CASE_STUDIES = [
       "均分 86/100",
       "雅思 7.5",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -16826,7 +17180,10 @@ const CASE_STUDIES = [
     "background": "陆本 产品设计，工作2年，负责品牌与网页设计",
     "gpa": "均分 84/100",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -17027,6 +17384,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "UAL MA",
+      "作品集辅导",
+      "文书辅导",
       "UAL",
       "University of the Arts London",
       "伦敦艺术大学",
@@ -17106,7 +17465,10 @@ const CASE_STUDIES = [
     "background": "陆本 绘画，一硕：港校 Master of Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.82/4.0",
     "language": "托福 111",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -17314,6 +17676,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "托福 111",
       "UW HCDE",
+      "作品集DIY",
+      "文书半DIY",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -17389,7 +17753,10 @@ const CASE_STUDIES = [
     "background": "美本 Information Science，有2年software engineering经验，参与过用户研究",
     "gpa": "GPA 3.54/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -17564,6 +17931,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "Waive",
       "UMD HCIM",
+      "作品集辅导",
+      "文书DIY",
       "UMD",
       "University of Maryland",
       "马里兰大学",
@@ -17619,7 +17988,10 @@ const CASE_STUDIES = [
     "background": "加本 Psychology，工作4年，做研究与策略",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -17841,6 +18213,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 108",
       "UCD MSc-HCI",
+      "作品集辅导",
+      "文书DIY",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -17899,7 +18273,10 @@ const CASE_STUDIES = [
     "background": "陆本 环境设计，应届，有两段设计相关实习",
     "gpa": "GPA 3.94/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -18106,6 +18483,8 @@ const CASE_STUDIES = [
       "GPA 3.94/4.3",
       "雅思 7.0",
       "UW MSTI",
+      "作品集DIY",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -18191,7 +18570,10 @@ const CASE_STUDIES = [
     "background": "澳本 Product Design，应届，做过user research和原型项目",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -18390,6 +18772,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.0",
       "Polimi DID",
+      "作品集半DIY",
+      "文书DIY",
       "Polimi",
       "Politecnico di Milano",
       "米兰理工大学",
@@ -18482,7 +18866,10 @@ const CASE_STUDIES = [
     "background": "美本 Human-Computer Interaction，有2年software engineering经验，参与过用户研究",
     "gpa": "GPA 3.46/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -18674,6 +19061,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "Waive",
       "Austin MSIS",
+      "作品集辅导",
+      "文书辅导",
       "Austin",
       "University of Texas at Austin",
       "德州大学奥斯汀分校",
@@ -18733,7 +19122,10 @@ const CASE_STUDIES = [
     "background": "英本 Industrial Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -18934,6 +19326,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 8.0",
       "NUS MDes",
+      "作品集半DIY",
+      "文书半DIY",
       "NUS",
       "National University of Singapore",
       "新加坡国立大学",
@@ -19019,7 +19413,10 @@ const CASE_STUDIES = [
     "background": "陆本 自动化，工作4年，想转用户研究",
     "gpa": "GPA 3.41/4.0",
     "language": "托福 107（30/29/25/23）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -19204,6 +19601,8 @@ const CASE_STUDIES = [
       "GPA 3.41/4.0",
       "托福 107（30/29/25/23）",
       "goldsmiths",
+      "作品集辅导",
+      "文书DIY",
       "Goldsmiths",
       "Goldsmiths, University of London",
       "金史密斯学院",
@@ -19227,7 +19626,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 77,
     "year": "2025 Fall",
-    "title": "MSc in Digital Innovation",
+    "title": "UCD MSc in Digital Innovation",
     "selected": {
       "school": {
         "label": "UCD",
@@ -19248,9 +19647,10 @@ const CASE_STUDIES = [
         "label": "DI",
         "program": "MSc in Digital Innovation",
         "aliases": [
-          "MSc in Digital Innovation",
+          "UCD MSc in Digital Innovation",
           "Digital Innovation",
-          "DI"
+          "DI",
+          "MSc in Digital Innovation"
         ]
       }
     },
@@ -19260,7 +19660,10 @@ const CASE_STUDIES = [
     "background": "陆本 教育学，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 105",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -19449,7 +19852,9 @@ const CASE_STUDIES = [
       "陆本 教育学，有6年教育/公共服务相关经验",
       "GPA 3.34/4.0",
       "托福 105",
-      "MSc in Digital Innovation",
+      "UCD MSc in Digital Innovation",
+      "作品集辅导",
+      "文书辅导",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -19461,6 +19866,7 @@ const CASE_STUDIES = [
       "Denmark",
       "丹麦",
       "DI",
+      "MSc in Digital Innovation",
       "Digital Innovation"
     ]
   },
@@ -19500,7 +19906,10 @@ const CASE_STUDIES = [
     "background": "陆本 经济学，工作4年，做研究与策略",
     "gpa": "均分 81/100",
     "language": "托福 97",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -19684,6 +20093,8 @@ const CASE_STUDIES = [
       "均分 81/100",
       "托福 97",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -19735,7 +20146,10 @@ const CASE_STUDIES = [
     "background": "港本 Communication Design，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.82/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -19903,6 +20317,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "雅思 7.5",
       "TUD MSc Design for Interaction",
+      "作品集半DIY",
+      "文书辅导",
       "TU Delft",
       "Delft University of Technology",
       "代尔夫特理工大学",
@@ -19983,7 +20399,10 @@ const CASE_STUDIES = [
     "background": "美本 Communications，工作4年，想转用户研究",
     "gpa": "GPA 3.34/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -20173,6 +20592,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "Waive",
       "SCAD MFA",
+      "作品集DIY",
+      "文书半DIY",
       "SCAD",
       "Savannah College of Art and Design",
       "萨凡纳艺术与设计学院",
@@ -20236,7 +20657,10 @@ const CASE_STUDIES = [
     "background": "澳本 Computer Science，1-3年 data/BA 经验",
     "gpa": "GPA 3.54/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -20423,6 +20847,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "雅思 7.5",
       "悉尼大学 交互",
+      "作品集辅导",
+      "文书辅导",
       "USyd",
       "University of Sydney",
       "悉尼大学",
@@ -20482,7 +20908,10 @@ const CASE_STUDIES = [
     "background": "美本 Software Engineering，有5年工程经验，近两年参与产品定义",
     "gpa": "GPA 3.41/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -20689,6 +21118,8 @@ const CASE_STUDIES = [
       "GPA 3.41/4.0",
       "Waive",
       "CCA MDes",
+      "作品集DIY",
+      "文书半DIY",
       "CCA",
       "California College of the Arts",
       "加州艺术学院",
@@ -20746,7 +21177,10 @@ const CASE_STUDIES = [
     "background": "英本 Digital Media Arts，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -20916,6 +21350,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 7.5",
       "UAL MA",
+      "作品集辅导",
+      "文书辅导",
       "UAL",
       "University of the Arts London",
       "伦敦艺术大学",
@@ -20982,7 +21418,10 @@ const CASE_STUDIES = [
     "background": "美本 Interaction Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.87/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -21172,6 +21611,8 @@ const CASE_STUDIES = [
       "GPA 3.87/4.0",
       "Waive",
       "UCB Mdes",
+      "作品集半DIY",
+      "文书DIY",
       "UCB",
       "University of California, Berkeley",
       "加州大学伯克利分校",
@@ -21242,7 +21683,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 产品设计，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 89/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -21410,6 +21854,8 @@ const CASE_STUDIES = [
       "均分 89/100",
       "雅思 7.5",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -21489,7 +21935,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 工业设计，应届，做过用户调研和原型项目",
     "gpa": "均分 89/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -21688,6 +22137,8 @@ const CASE_STUDIES = [
       "均分 89/100",
       "雅思 7.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -21779,7 +22230,10 @@ const CASE_STUDIES = [
     "background": "美本 Information Science，工作2年，做产品与增长",
     "gpa": "GPA 3.46/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -21970,6 +22424,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "Waive",
       "Parsons MFA",
+      "作品集DIY",
+      "文书半DIY",
       "Parsons",
       "Parsons School of Design",
       "帕森斯设计学院",
@@ -22024,7 +22480,10 @@ const CASE_STUDIES = [
     "background": "陆本 数据科学与大数据技术，有2年软件开发经验，参与过用户研究",
     "gpa": "GPA 3.67/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -22198,6 +22657,8 @@ const CASE_STUDIES = [
       "GPA 3.67/4.3",
       "雅思 7.5",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -22252,7 +22713,10 @@ const CASE_STUDIES = [
     "background": "美本 Fine Arts，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.63/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -22458,6 +22922,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "Waive",
       "UMich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -22525,7 +22991,10 @@ const CASE_STUDIES = [
     "background": "陆本 摄影，应届，作品集偏交互与服务设计",
     "gpa": "均分 86/100",
     "language": "托福105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -22694,6 +23163,8 @@ const CASE_STUDIES = [
       "均分 86/100",
       "托福105+",
       "HKU IDT",
+      "作品集半DIY",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -22765,7 +23236,10 @@ const CASE_STUDIES = [
     "background": "美本 Product Design，应届，做过user research和原型项目",
     "gpa": "GPA 3.87/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -22972,6 +23446,8 @@ const CASE_STUDIES = [
       "GPA 3.87/4.0",
       "Waive",
       "Cornell MSIS",
+      "作品集DIY",
+      "文书半DIY",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -23054,7 +23530,10 @@ const CASE_STUDIES = [
     "background": "陆本 产品设计，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 88/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -23223,6 +23702,8 @@ const CASE_STUDIES = [
       "均分 88/100",
       "雅思 7.0",
       "RCA 服务设计",
+      "作品集辅导",
+      "文书辅导",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -23304,7 +23785,10 @@ const CASE_STUDIES = [
     "background": "陆本 新闻传播学，工作4年，想转用户研究",
     "gpa": "均分 82/100",
     "language": "托福 110+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -23510,6 +23994,8 @@ const CASE_STUDIES = [
       "均分 82/100",
       "托福 110+",
       "Umich MSI",
+      "作品集DIY",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -23572,7 +24058,10 @@ const CASE_STUDIES = [
     "background": "陆本 信息管理与信息系统，工作2年，前端开发转产品方向",
     "gpa": "GPA 3.62/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -23761,6 +24250,8 @@ const CASE_STUDIES = [
       "GPA 3.62/4.3",
       "雅思 7.5",
       "UCD MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -23819,7 +24310,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 计算机科学与技术，工作2年，前端开发转产品方向",
     "gpa": "均分 84/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -24004,6 +24498,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 7.5",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -24056,7 +24552,10 @@ const CASE_STUDIES = [
     "background": "陆本 摄影，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.75/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -24241,6 +24740,8 @@ const CASE_STUDIES = [
       "GPA 3.75/4.3",
       "雅思 7.5",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -24311,7 +24812,10 @@ const CASE_STUDIES = [
     "background": "美本 Industrial Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.82/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -24486,6 +24990,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "Waive",
       "Cornell MSIS",
+      "作品集DIY",
+      "文书辅导",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -24551,7 +25057,10 @@ const CASE_STUDIES = [
     "background": "美本 Data Science，工作2年，做产品与增长",
     "gpa": "GPA 3.54/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -24741,6 +25250,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "Waive",
       "UMD HCIM",
+      "作品集辅导",
+      "文书辅导",
       "UMD",
       "University of Maryland",
       "马里兰大学",
@@ -24765,21 +25276,34 @@ const CASE_STUDIES = [
   },
   {
     "id": "fall-case-101",
-    "status": "draft",
+    "status": "published",
     "displayOrder": 99,
     "year": "2025 Fall",
-    "title": "未明确最终选择",
+    "title": "Aalto HCID",
     "selected": {
       "school": {
-        "label": "未明确",
-        "school": "未明确",
-        "schoolCn": "未明确",
-        "aliases": []
+        "label": "Aalto",
+        "school": "Aalto University",
+        "schoolCn": "阿尔托大学",
+        "region": "EU",
+        "country": "Finland",
+        "countryCn": "芬兰",
+        "aliases": [
+          "Aalto",
+          "Aalto University",
+          "阿尔托大学",
+          "Finland",
+          "芬兰"
+        ]
       },
       "program": {
-        "label": "项目未注明",
-        "program": "项目未注明",
-        "aliases": []
+        "label": "HCID",
+        "program": "MSc Human Computer Interaction and Design (EIT Digital)",
+        "aliases": [
+          "Aalto HCID",
+          "HCID",
+          "MSc Human Computer Interaction and Design (EIT Digital)"
+        ]
       }
     },
     "regions": [
@@ -24788,9 +25312,28 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 风景园林，工作2年，负责品牌与网页设计",
     "gpa": "均分 85/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
+      {
+        "label": "Aalto",
+        "school": "Aalto University",
+        "schoolCn": "阿尔托大学",
+        "region": "EU",
+        "country": "Finland",
+        "countryCn": "芬兰",
+        "aliases": [
+          "Aalto",
+          "Aalto University",
+          "阿尔托大学",
+          "Finland",
+          "芬兰"
+        ],
+        "status": "selected"
+      },
       {
         "label": "HfG Schwäbisch Gmünd",
         "school": "HfG Schwäbisch Gmünd",
@@ -24819,22 +25362,6 @@ const CASE_STUDIES = [
           "查尔姆斯理工大学",
           "Sweden",
           "瑞典"
-        ],
-        "status": "offer"
-      },
-      {
-        "label": "Aalto",
-        "school": "Aalto University",
-        "schoolCn": "阿尔托大学",
-        "region": "EU",
-        "country": "Finland",
-        "countryCn": "芬兰",
-        "aliases": [
-          "Aalto",
-          "Aalto University",
-          "阿尔托大学",
-          "Finland",
-          "芬兰"
         ],
         "status": "offer"
       },
@@ -24975,6 +25502,14 @@ const CASE_STUDIES = [
       "2+2中外合作 风景园林，工作2年，负责品牌与网页设计",
       "均分 85/100",
       "雅思 7.5",
+      "Aalto HCID",
+      "作品集半DIY",
+      "文书半DIY",
+      "Aalto",
+      "Aalto University",
+      "阿尔托大学",
+      "Finland",
+      "芬兰",
       "HfG Schwäbisch Gmünd",
       "施瓦本格明德设计学院",
       "Germany",
@@ -24984,11 +25519,6 @@ const CASE_STUDIES = [
       "查尔姆斯理工大学",
       "Sweden",
       "瑞典",
-      "Aalto",
-      "Aalto University",
-      "阿尔托大学",
-      "Finland",
-      "芬兰",
       "NTNU",
       "Norwegian University of Science and Technology",
       "挪威科技大学",
@@ -24999,7 +25529,8 @@ const CASE_STUDIES = [
       "都柏林大学",
       "Ireland",
       "爱尔兰",
-      "项目未注明"
+      "HCID",
+      "MSc Human Computer Interaction and Design (EIT Digital)"
     ]
   },
   {
@@ -25040,7 +25571,10 @@ const CASE_STUDIES = [
     "background": "美本 Fashion Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.72/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -25231,6 +25765,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "Waive",
       "UW HCDE",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -25304,7 +25840,10 @@ const CASE_STUDIES = [
     "background": "加本 Sociology，有5年咨询/运营经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 104",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -25474,6 +26013,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 104",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -25529,7 +26070,10 @@ const CASE_STUDIES = [
     "background": "港本 Psychology，工作4年，做研究与策略",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 106",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -25699,6 +26243,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 106",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -25752,7 +26298,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 环境设计，应届，有两段设计相关实习",
     "gpa": "均分 87/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -25925,6 +26474,8 @@ const CASE_STUDIES = [
       "均分 87/100",
       "雅思 7.0",
       "UW MSTI",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -26008,7 +26559,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体技术，工作2年，前端开发转产品方向",
     "gpa": "均分 83/100",
     "language": "托福 107（30/29/25/23）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -26182,6 +26736,8 @@ const CASE_STUDIES = [
       "均分 83/100",
       "托福 107（30/29/25/23）",
       "Umich MSI",
+      "作品集辅导",
+      "文书DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -26242,7 +26798,10 @@ const CASE_STUDIES = [
     "background": "美本 Mechanical Engineering，工作4年，做研究与策略",
     "gpa": "GPA 3.41/4.0",
     "language": "托福 104",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -26418,6 +26977,8 @@ const CASE_STUDIES = [
       "GPA 3.41/4.0",
       "托福 104",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -26468,7 +27029,10 @@ const CASE_STUDIES = [
     "background": "美本 Sociology，有5年咨询/运营经验",
     "gpa": "GPA 3.46/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -26642,6 +27206,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "Waive",
       "CCA MDes",
+      "作品集DIY",
+      "文书DIY",
       "CCA",
       "California College of the Arts",
       "加州艺术学院",
@@ -26698,7 +27264,10 @@ const CASE_STUDIES = [
     "background": "英本 Economics，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 105",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -26883,6 +27452,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 105",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书辅导",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -26935,7 +27506,10 @@ const CASE_STUDIES = [
     "background": "加本 Interaction Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.72/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -27125,6 +27699,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "Waive",
       "CMU MIIPS",
+      "作品集辅导",
+      "文书辅导",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -27196,7 +27772,10 @@ const CASE_STUDIES = [
     "background": "陆本 艺术与科技，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 86/100",
     "language": "雅思 6.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -27372,6 +27951,8 @@ const CASE_STUDIES = [
       "均分 86/100",
       "雅思 6.5",
       "IUB MHCID",
+      "作品集辅导",
+      "文书辅导",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -27429,7 +28010,10 @@ const CASE_STUDIES = [
     "background": "陆本 工业设计，应届，做过用户调研和原型项目",
     "gpa": "GPA 4.01/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -27588,6 +28172,8 @@ const CASE_STUDIES = [
       "GPA 4.01/4.3",
       "雅思 7.0",
       "GT MSHCI",
+      "作品集半DIY",
+      "文书辅导",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -27653,7 +28239,10 @@ const CASE_STUDIES = [
     "background": "陆本 新闻传播学，工作4年，想转用户研究",
     "gpa": "均分 81/100",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -27852,6 +28441,8 @@ const CASE_STUDIES = [
       "均分 81/100",
       "托福 108",
       "HKUST ISD",
+      "作品集辅导",
+      "文书半DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -27903,7 +28494,10 @@ const CASE_STUDIES = [
     "background": "澳本 Information Science，工作2年，做产品与增长",
     "gpa": "GPA 3.46/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -28109,6 +28703,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "雅思 7.5",
       "UCD MSc-HCI",
+      "作品集辅导",
+      "文书半DIY",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -28161,7 +28757,10 @@ const CASE_STUDIES = [
     "background": "美本 Landscape Architecture，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -28335,6 +28934,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "Waive",
       "IUB MHCID",
+      "作品集半DIY",
+      "文书辅导",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -28395,7 +28996,10 @@ const CASE_STUDIES = [
     "background": "陆本 软件工程，工作4年，做数据与产品策略",
     "gpa": "均分 82/100",
     "language": "托福 100",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -28618,6 +29222,8 @@ const CASE_STUDIES = [
       "均分 82/100",
       "托福 100",
       "CCA MDes",
+      "作品集辅导",
+      "文书辅导",
       "CCA",
       "California College of the Arts",
       "加州艺术学院",
@@ -28677,7 +29283,10 @@ const CASE_STUDIES = [
     "background": "陆本 机械工程，有5年咨询/运营经验",
     "gpa": "GPA 3.43/4.3",
     "language": "托福 95+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -28850,6 +29459,8 @@ const CASE_STUDIES = [
       "GPA 3.43/4.3",
       "托福 95+",
       "TU/e HTI",
+      "作品集DIY",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -28904,7 +29515,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体艺术，一硕：英国院校 MA Design Management，应届，作品集偏交互与服务设计",
     "gpa": "均分 90/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -29080,6 +29694,8 @@ const CASE_STUDIES = [
       "均分 90/100",
       "雅思 7.5",
       "UW MSTI",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -29144,7 +29760,10 @@ const CASE_STUDIES = [
     "background": "美本 Product Design，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.69/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -29351,6 +29970,8 @@ const CASE_STUDIES = [
       "GPA 3.69/4.0",
       "Waive",
       "Austin MSIS",
+      "作品集辅导",
+      "文书DIY",
       "Austin",
       "University of Texas at Austin",
       "德州大学奥斯汀分校",
@@ -29386,7 +30007,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 118,
     "year": "2026 Fall",
-    "title": "RMIT",
+    "title": "RMIT MCD",
     "selected": {
       "school": {
         "label": "RMIT",
@@ -29404,12 +30025,12 @@ const CASE_STUDIES = [
         ]
       },
       "program": {
-        "label": "MHCID",
-        "program": "Master of Human-Computer Interaction and Design",
+        "label": "MCD",
+        "program": "Master of Communication Design",
         "aliases": [
-          "RMIT",
-          "MHCID",
-          "Master of Human-Computer Interaction and Design"
+          "RMIT MCD",
+          "MCD",
+          "Master of Communication Design"
         ]
       }
     },
@@ -29420,7 +30041,10 @@ const CASE_STUDIES = [
     "background": "澳本 Architecture，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.57/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -29588,6 +30212,9 @@ const CASE_STUDIES = [
       "澳本 Architecture，应届，作品集偏interaction and service design",
       "GPA 3.57/4.0",
       "雅思 8.0",
+      "RMIT MCD",
+      "作品集辅导",
+      "文书辅导",
       "RMIT",
       "RMIT University",
       "皇家墨尔本理工大学",
@@ -29619,8 +30246,8 @@ const CASE_STUDIES = [
       "HKU",
       "University of Hong Kong",
       "香港大学",
-      "MHCID",
-      "Master of Human-Computer Interaction and Design"
+      "MCD",
+      "Master of Communication Design"
     ]
   },
   {
@@ -29663,7 +30290,10 @@ const CASE_STUDIES = [
     "background": "港本 Landscape Architecture，工作2年，负责品牌与网页设计",
     "gpa": "GPA 3.54/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -29849,6 +30479,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "雅思 7.5",
       "IC Design Engineering",
+      "作品集半DIY",
+      "文书辅导",
       "Imperial",
       "Imperial College London",
       "帝国理工学院",
@@ -29902,7 +30534,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 数据科学与大数据技术，工作2年，做产品与增长",
     "gpa": "GPA 3.56/4.3",
     "language": "托福 105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -30071,6 +30706,8 @@ const CASE_STUDIES = [
       "GPA 3.56/4.3",
       "托福 105+",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -30120,7 +30757,10 @@ const CASE_STUDIES = [
     "background": "美本 Economics，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -30295,6 +30935,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 108",
       "Parsons MFA",
+      "作品集DIY",
+      "文书半DIY",
       "Parsons",
       "Parsons School of Design",
       "帕森斯设计学院",
@@ -30349,7 +30991,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体艺术，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.75/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -30524,6 +31169,8 @@ const CASE_STUDIES = [
       "GPA 3.75/4.3",
       "雅思 7.0",
       "Umich MSI",
+      "作品集半DIY",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -30576,7 +31223,10 @@ const CASE_STUDIES = [
     "background": "美本 Communication Design，1年半设计工作经验，偏数字产品",
     "gpa": "GPA 3.60/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -30767,6 +31417,8 @@ const CASE_STUDIES = [
       "GPA 3.60/4.0",
       "Waive",
       "UMich MSI",
+      "作品集辅导",
+      "文书DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -30832,7 +31484,10 @@ const CASE_STUDIES = [
     "background": "英本 Communication Design，有3年内的空间/体验设计经验",
     "gpa": "GPA 3.57/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -31033,6 +31688,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "雅思 7.0",
       "诺丁汉 MSc-HCI",
+      "作品集辅导",
+      "文书半DIY",
       "Nottingham",
       "University of Nottingham",
       "诺丁汉大学",
@@ -31087,7 +31744,10 @@ const CASE_STUDIES = [
     "background": "英本 Product Design，应届，做过user research和原型项目",
     "gpa": "GPA 3.82/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -31272,6 +31932,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "雅思 7.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -31349,7 +32011,10 @@ const CASE_STUDIES = [
     "background": "陆本 市场营销，有6年教育/公共服务相关经验",
     "gpa": "均分 81/100",
     "language": "托福 101（29/28/24/23）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -31519,6 +32184,8 @@ const CASE_STUDIES = [
       "均分 81/100",
       "托福 101（29/28/24/23）",
       "HKUST TLE",
+      "作品集DIY",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -31571,7 +32238,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 绘画，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 6.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -31778,6 +32448,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 6.5",
       "TU/e HTI",
+      "作品集辅导",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -31854,7 +32526,10 @@ const CASE_STUDIES = [
     "background": "美本 Graphic Design，一硕：英校 MSc HCI，应届，有两段设计相关实习",
     "gpa": "GPA 3.93/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -32029,6 +32704,8 @@ const CASE_STUDIES = [
       "GPA 3.93/4.0",
       "Waive",
       "UCB Mdes",
+      "作品集DIY",
+      "文书辅导",
       "UCB",
       "University of California, Berkeley",
       "加州大学伯克利分校",
@@ -32101,7 +32778,10 @@ const CASE_STUDIES = [
     "background": "美本 Communication Design，应届，做过user research和原型项目",
     "gpa": "GPA 3.69/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -32291,6 +32971,8 @@ const CASE_STUDIES = [
       "GPA 3.69/4.0",
       "Waive",
       "GT MSHCI",
+      "作品集DIY",
+      "文书辅导",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -32362,7 +33044,10 @@ const CASE_STUDIES = [
     "background": "陆本 环境设计，工作2年，做 UX/UI",
     "gpa": "均分 84/100",
     "language": "雅思 6.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -32564,6 +33249,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 6.5",
       "Goldsmiths",
+      "作品集半DIY",
+      "文书半DIY",
       "Goldsmiths, University of London",
       "金史密斯学院",
       "United Kingdom",
@@ -32583,7 +33270,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 131,
     "year": "2026 Fall",
-    "title": "goldsmiths",
+    "title": "Goldsmiths",
     "selected": {
       "school": {
         "label": "Goldsmiths",
@@ -32604,7 +33291,7 @@ const CASE_STUDIES = [
         "label": "MHCID",
         "program": "Master of Human-Computer Interaction and Design",
         "aliases": [
-          "goldsmiths",
+          "Goldsmiths",
           "MHCID",
           "Master of Human-Computer Interaction and Design"
         ]
@@ -32616,7 +33303,10 @@ const CASE_STUDIES = [
     "background": "加本 Computer Science，1-3年 data/BA 经验",
     "gpa": "GPA 3.54/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -32785,8 +33475,9 @@ const CASE_STUDIES = [
       "加本 Computer Science，1-3年 data/BA 经验",
       "GPA 3.54/4.0",
       "Waive",
-      "goldsmiths",
       "Goldsmiths",
+      "作品集辅导",
+      "文书DIY",
       "Goldsmiths, University of London",
       "金史密斯学院",
       "United Kingdom",
@@ -32836,7 +33527,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 服装与服饰设计，应届，作品集偏交互与服务设计",
     "gpa": "GPA 3.88/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -33009,6 +33703,8 @@ const CASE_STUDIES = [
       "GPA 3.88/4.3",
       "雅思 7.0",
       "UW MCDM",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -33088,7 +33784,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 信息管理与信息系统，1-3年 data/BA 经验",
     "gpa": "均分 83/100",
     "language": "托福 110+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -33242,6 +33941,8 @@ const CASE_STUDIES = [
       "均分 83/100",
       "托福 110+",
       "HKUST TLE",
+      "作品集半DIY",
+      "文书DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -33293,7 +33994,10 @@ const CASE_STUDIES = [
     "background": "英本 Fine Arts，应届，做过user research和原型项目",
     "gpa": "GPA 3.66/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -33462,6 +34166,8 @@ const CASE_STUDIES = [
       "GPA 3.66/4.0",
       "雅思 7.0",
       "HKUST ISD",
+      "作品集半DIY",
+      "文书半DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -33525,7 +34231,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体艺术，应届，作品集偏交互与服务设计",
     "gpa": "均分 88/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -33695,6 +34404,8 @@ const CASE_STUDIES = [
       "均分 88/100",
       "雅思 7.5",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -33776,7 +34487,10 @@ const CASE_STUDIES = [
     "background": "美本 Interaction Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.72/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -33950,6 +34664,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "Waive",
       "GT MSDM",
+      "作品集辅导",
+      "文书辅导",
       "GaTech",
       "Georgia Institute of Technology",
       "佐治亚理工学院",
@@ -34021,7 +34737,10 @@ const CASE_STUDIES = [
     "background": "陆本 建筑学，应届，做过用户调研和原型项目",
     "gpa": "均分 89/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -34204,6 +34923,8 @@ const CASE_STUDIES = [
       "均分 89/100",
       "雅思 8.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书DIY",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -34286,8 +35007,11 @@ const CASE_STUDIES = [
     ],
     "background": "陆本 教育学，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.34/4.3",
-    "language": "托福 112+",
-    "applicationMethods": [],
+    "language": "托福 102",
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -34455,8 +35179,10 @@ const CASE_STUDIES = [
       "陆本",
       "陆本 教育学，有6年教育/公共服务相关经验",
       "GPA 3.34/4.3",
-      "托福 112+",
+      "托福 102",
       "HKUST ISD",
+      "作品集辅导",
+      "文书DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -34511,7 +35237,10 @@ const CASE_STUDIES = [
     "background": "英本 Software Engineering，1-3年 data/BA 经验",
     "gpa": "GPA 3.46/4.0",
     "language": "雅思 7.5（8.5/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -34680,6 +35409,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "雅思 7.5（8.5/8.0/7.0/7.0）",
       "谢菲尔德 MA",
+      "作品集辅导",
+      "文书辅导",
       "Sheffield",
       "Sheffield Hallam University",
       "谢菲尔德哈勒姆大学",
@@ -34732,7 +35463,10 @@ const CASE_STUDIES = [
     "background": "陆本 心理学，工作4年，做研究与策略",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 110+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -34917,6 +35651,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 110+",
       "HKUST ISD",
+      "作品集DIY",
+      "文书半DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -34972,7 +35708,10 @@ const CASE_STUDIES = [
     "background": "美本 Architecture，应届，做过user research和原型项目",
     "gpa": "GPA 3.69/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -35148,6 +35887,8 @@ const CASE_STUDIES = [
       "GPA 3.69/4.0",
       "Waive",
       "CDA MDM",
+      "作品集半DIY",
+      "文书DIY",
       "CDA",
       "Concordia University",
       "康考迪亚大学",
@@ -35200,7 +35941,10 @@ const CASE_STUDIES = [
     "background": "澳本 Communication Design，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.82/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -35385,6 +36129,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "雅思 7.5",
       "UCL MSc-HCI",
+      "作品集半DIY",
+      "文书半DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -35465,7 +36211,10 @@ const CASE_STUDIES = [
     "background": "陆本 动画，应届，做过用户调研和原型项目",
     "gpa": "均分 86/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -35666,6 +36415,8 @@ const CASE_STUDIES = [
       "均分 86/100",
       "雅思 7.0",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -35742,7 +36493,10 @@ const CASE_STUDIES = [
     "background": "加本 Graphic Design，一硕：美校 MS Information Science，应届，有两段设计相关实习",
     "gpa": "GPA 3.93/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -35917,6 +36671,8 @@ const CASE_STUDIES = [
       "GPA 3.93/4.0",
       "Waive",
       "UW HCDE",
+      "作品集半DIY",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -35990,7 +36746,10 @@ const CASE_STUDIES = [
     "background": "陆本 社会学，有5年咨询/运营经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 105+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -36164,6 +36923,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 105+",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -36220,7 +36981,10 @@ const CASE_STUDIES = [
     "background": "陆本 产品设计，一硕：国内艺术院校 设计学硕士，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "均分 90/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -36427,6 +37191,8 @@ const CASE_STUDIES = [
       "均分 90/100",
       "雅思 7.5",
       "UCB Mdes",
+      "作品集辅导",
+      "文书辅导",
       "UCB",
       "University of California, Berkeley",
       "加州大学伯克利分校",
@@ -36503,7 +37269,10 @@ const CASE_STUDIES = [
     "background": "陆本 艺术与科技，工作2年，负责品牌与网页设计",
     "gpa": "均分 84/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -36676,6 +37445,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 7.5",
       "TU/e HTI",
+      "作品集DIY",
+      "文书辅导",
       "Eindhoven",
       "Eindhoven University of Technology",
       "埃因霍温理工大学",
@@ -36732,7 +37503,10 @@ const CASE_STUDIES = [
     "background": "澳本 Graphic Design，一硕：澳洲大学 Master of Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.93/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -36904,6 +37678,8 @@ const CASE_STUDIES = [
       "GPA 3.93/4.0",
       "雅思 8.0",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书半DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -36976,7 +37752,10 @@ const CASE_STUDIES = [
     "background": "港本 Information Science，工作2年，做产品与增长",
     "gpa": "GPA 3.46/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -37177,6 +37956,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "雅思 7.5",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -37231,7 +38012,10 @@ const CASE_STUDIES = [
     "background": "美本 Fine Arts，应届，做过user research和原型项目",
     "gpa": "GPA 3.76/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -37454,6 +38238,8 @@ const CASE_STUDIES = [
       "GPA 3.76/4.0",
       "Waive",
       "Parsons MFA",
+      "作品集DIY",
+      "文书半DIY",
       "Parsons",
       "Parsons School of Design",
       "帕森斯设计学院",
@@ -37524,7 +38310,10 @@ const CASE_STUDIES = [
     "background": "美本 Software Engineering，1-3年 data/BA 经验",
     "gpa": "GPA 3.50/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -37715,6 +38504,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "Waive",
       "IUB MHCID",
+      "作品集辅导",
+      "文书辅导",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -37765,7 +38556,10 @@ const CASE_STUDIES = [
     "background": "加本 Communication Design，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.82/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -37940,6 +38734,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "Waive",
       "Upenn IPD",
+      "作品集半DIY",
+      "文书DIY",
       "UPenn",
       "University of Pennsylvania",
       "宾夕法尼亚大学",
@@ -38003,7 +38799,10 @@ const CASE_STUDIES = [
     "background": "港本 Architecture，1年半设计工作经验，偏数字产品",
     "gpa": "GPA 3.57/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -38155,6 +38954,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "雅思 8.0",
       "City U MFA",
+      "作品集辅导",
+      "文书DIY",
       "CityU",
       "City University of Hong Kong",
       "香港城市大学",
@@ -38215,7 +39016,10 @@ const CASE_STUDIES = [
     "background": "英本 Communications，工作4年，想转用户研究",
     "gpa": "GPA 3.34/4.0",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -38423,6 +39227,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "托福 108",
       "UCD MSc-HCI",
+      "作品集辅导",
+      "文书半DIY",
       "UCD",
       "University College Dublin",
       "都柏林大学",
@@ -38478,7 +39284,10 @@ const CASE_STUDIES = [
     "background": "陆本 自动化，工作4年，想转用户研究",
     "gpa": "GPA 3.23/4.3",
     "language": "托福 100",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -38701,6 +39510,8 @@ const CASE_STUDIES = [
       "GPA 3.23/4.3",
       "托福 100",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -38729,7 +39540,7 @@ const CASE_STUDIES = [
     "status": "published",
     "displayOrder": 156,
     "year": "2024 Fall",
-    "title": "MSc in AI and Digital Media",
+    "title": "HKBU MSc in AI and Digital Media",
     "selected": {
       "school": {
         "label": "HKBU",
@@ -38749,9 +39560,10 @@ const CASE_STUDIES = [
         "label": "AIDM",
         "program": "MSc in AI and Digital Media",
         "aliases": [
-          "MSc in AI and Digital Media",
+          "HKBU MSc in AI and Digital Media",
           "AI and Digital Media",
-          "AIDM"
+          "AIDM",
+          "MSc in AI and Digital Media"
         ]
       }
     },
@@ -38761,7 +39573,10 @@ const CASE_STUDIES = [
     "background": "陆本 计算机科学与技术，有5年工程经验，近两年参与产品定义",
     "gpa": "均分 83/100",
     "language": "托福 100",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -38944,7 +39759,9 @@ const CASE_STUDIES = [
       "陆本 计算机科学与技术，有5年工程经验，近两年参与产品定义",
       "均分 83/100",
       "托福 100",
-      "MSc in AI and Digital Media",
+      "HKBU MSc in AI and Digital Media",
+      "作品集辅导",
+      "文书辅导",
       "HKBU",
       "Hong Kong Baptist University",
       "香港浸会大学",
@@ -38953,6 +39770,7 @@ const CASE_STUDIES = [
       "Chinese University of Hong Kong",
       "香港中文大学",
       "AIDM",
+      "MSc in AI and Digital Media",
       "AI and Digital Media"
     ]
   },
@@ -38992,7 +39810,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 社会学，有5年咨询/运营经验",
     "gpa": "GPA 3.34/4.3",
     "language": "托福 95+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -39177,6 +39998,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.3",
       "托福 95+",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -39226,7 +40049,10 @@ const CASE_STUDIES = [
     "background": "美本 Business，工作4年，想转用户研究",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 106",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -39417,6 +40243,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 106",
       "UW MCDM",
+      "作品集半DIY",
+      "文书DIY",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -39473,7 +40301,10 @@ const CASE_STUDIES = [
     "background": "英本 Landscape Architecture，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.72/4.0",
     "language": "雅思 7.5（8.5/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -39645,6 +40476,8 @@ const CASE_STUDIES = [
       "GPA 3.72/4.0",
       "雅思 7.5（8.5/8.0/7.0/7.0）",
       "RCA IDE",
+      "作品集辅导",
+      "文书DIY",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -39724,7 +40557,10 @@ const CASE_STUDIES = [
     "background": "美本 Digital Media Arts，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.76/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -39898,6 +40734,8 @@ const CASE_STUDIES = [
       "GPA 3.76/4.0",
       "Waive",
       "UW MSTI",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -39966,7 +40804,10 @@ const CASE_STUDIES = [
     "background": "陆本 视觉传达设计，一硕：港校 Master of Design，应届，有两段设计相关实习",
     "gpa": "均分 91/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -40141,6 +40982,8 @@ const CASE_STUDIES = [
       "均分 91/100",
       "雅思 8.0",
       "Cornell MSDT",
+      "作品集辅导",
+      "文书辅导",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -40212,7 +41055,10 @@ const CASE_STUDIES = [
     "background": "陆本 经济学，工作4年，做研究与策略",
     "gpa": "GPA 3.43/4.3",
     "language": "托福 100+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -40400,6 +41246,8 @@ const CASE_STUDIES = [
       "GPA 3.43/4.3",
       "托福 100+",
       "诺丁汉 MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "Nottingham",
       "University of Nottingham",
       "诺丁汉大学",
@@ -40454,7 +41302,10 @@ const CASE_STUDIES = [
     "background": "美本 Industrial Design，工作2年，做 UX/UI",
     "gpa": "GPA 3.57/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -40644,6 +41495,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "Waive",
       "UMD HCIM",
+      "作品集半DIY",
+      "文书半DIY",
       "UMD",
       "University of Maryland",
       "马里兰大学",
@@ -40703,7 +41556,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体技术，1-3年 data/BA 经验",
     "gpa": "均分 83/100",
     "language": "托福 97",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -40872,6 +41728,8 @@ const CASE_STUDIES = [
       "均分 83/100",
       "托福 97",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -40929,7 +41787,10 @@ const CASE_STUDIES = [
     "background": "陆本 环境设计，应届，有两段设计相关实习",
     "gpa": "均分 85/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -41088,6 +41949,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 7.0",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -41146,7 +42009,10 @@ const CASE_STUDIES = [
     "background": "美本 Education，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -41320,6 +42186,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 108",
       "UW MSTI",
+      "作品集辅导",
+      "文书半DIY",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -41376,7 +42244,10 @@ const CASE_STUDIES = [
     "background": "陆本 人工智能，有2年软件开发经验，参与过用户研究",
     "gpa": "GPA 3.56/4.3",
     "language": "托福 105",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -41561,6 +42432,8 @@ const CASE_STUDIES = [
       "GPA 3.56/4.3",
       "托福 105",
       "SUTD MSCTD",
+      "作品集辅导",
+      "文书辅导",
       "SUTD",
       "Singapore University of Technology and Design",
       "新加坡科技设计大学",
@@ -41619,7 +42492,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 数字媒体艺术，一硕：英国院校 MA Design Management，应届，作品集偏交互与服务设计",
     "gpa": "均分 90/100",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -41804,6 +42680,8 @@ const CASE_STUDIES = [
       "均分 90/100",
       "雅思 7.5",
       "NUS EDI",
+      "作品集辅导",
+      "文书辅导",
       "NUS",
       "National University of Singapore",
       "新加坡国立大学",
@@ -41887,7 +42765,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 建筑学，有3年内的空间/体验设计经验",
     "gpa": "均分 84/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -42057,6 +42938,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "雅思 8.0",
       "HKU IDT",
+      "作品集辅导",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -42121,7 +43004,10 @@ const CASE_STUDIES = [
     "background": "陆本 信息管理与信息系统，工作2年，前端开发转产品方向",
     "gpa": "GPA 3.46/4.0",
     "language": "托福 108",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -42277,6 +43163,8 @@ const CASE_STUDIES = [
       "GPA 3.46/4.0",
       "托福 108",
       "诺丁汉 MSc-HCI",
+      "作品集辅导",
+      "文书辅导",
       "Nottingham",
       "University of Nottingham",
       "诺丁汉大学",
@@ -42326,7 +43214,10 @@ const CASE_STUDIES = [
     "background": "英本 Data Science，工作2年，做产品与增长",
     "gpa": "GPA 3.50/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -42495,6 +43386,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "雅思 7.0",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -42547,7 +43440,10 @@ const CASE_STUDIES = [
     "background": "陆本 工业设计，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.66/4.0",
     "language": "雅思 7.0（8.0/7.5/6.5/6.5）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -42738,6 +43634,8 @@ const CASE_STUDIES = [
       "GPA 3.66/4.0",
       "雅思 7.0（8.0/7.5/6.5/6.5）",
       "Umich MSI",
+      "作品集辅导",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -42796,7 +43694,10 @@ const CASE_STUDIES = [
     "background": "加本 Industrial Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -42971,6 +43872,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "Waive",
       "IUB MHCID",
+      "作品集半DIY",
+      "文书半DIY",
       "IUB",
       "Indiana University Bloomington",
       "印第安纳大学布鲁明顿分校",
@@ -43033,7 +43936,10 @@ const CASE_STUDIES = [
     "background": "陆本 工业设计，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.88/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -43202,6 +44108,8 @@ const CASE_STUDIES = [
       "GPA 3.88/4.3",
       "雅思 7.0",
       "NUS EDI",
+      "作品集半DIY",
+      "文书辅导",
       "NUS",
       "National University of Singapore",
       "新加坡国立大学",
@@ -43283,7 +44191,10 @@ const CASE_STUDIES = [
     "background": "美本 Architecture，应届，作品集偏interaction and service design",
     "gpa": "GPA 3.82/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -43475,6 +44386,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "Waive",
       "Harvard MDes",
+      "作品集辅导",
+      "文书半DIY",
       "Harvard",
       "Harvard University",
       "哈佛大学",
@@ -43551,7 +44464,10 @@ const CASE_STUDIES = [
     "background": "陆本 艺术与科技，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.76/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -43736,6 +44652,8 @@ const CASE_STUDIES = [
       "GPA 3.76/4.0",
       "雅思 7.0",
       "RCA IDE",
+      "作品集辅导",
+      "文书辅导",
       "RCA",
       "Royal College of Art",
       "皇家艺术学院",
@@ -43818,7 +44736,10 @@ const CASE_STUDIES = [
     "background": "2+2中外合作 市场营销，有6年教育/公共服务相关经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 105",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -44003,6 +44924,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 105",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -44055,7 +44978,10 @@ const CASE_STUDIES = [
     "background": "英本 Sociology，有5年咨询/运营经验",
     "gpa": "GPA 3.34/4.0",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -44242,6 +45168,8 @@ const CASE_STUDIES = [
       "GPA 3.34/4.0",
       "雅思 7.5",
       "HKUST ISD",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -44299,7 +45227,10 @@ const CASE_STUDIES = [
     "background": "美本 Interaction Design，工作2年，负责品牌与网页设计",
     "gpa": "GPA 3.57/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -44473,6 +45404,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "Waive",
       "UMich MSI",
+      "作品集辅导",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -44533,7 +45466,10 @@ const CASE_STUDIES = [
     "background": "美本 Information Systems，工作2年，前端开发转产品方向",
     "gpa": "GPA 3.50/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -44723,6 +45659,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "Waive",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -44790,7 +45728,10 @@ const CASE_STUDIES = [
     "background": "陆本 人工智能，工作2年，做产品与增长",
     "gpa": "GPA 3.54/4.0",
     "language": "托福 112",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -44965,6 +45906,8 @@ const CASE_STUDIES = [
       "GPA 3.54/4.0",
       "托福 112",
       "Umich MSI",
+      "作品集半DIY",
+      "文书半DIY",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -45026,7 +45969,10 @@ const CASE_STUDIES = [
     "background": "陆本 工业设计，有3年内的空间/体验设计经验",
     "gpa": "均分 85/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -45197,6 +46143,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 7.0",
       "HKUST ISD",
+      "作品集半DIY",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -45251,7 +46199,10 @@ const CASE_STUDIES = [
     "background": "英本 Interaction Design，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.82/4.0",
     "language": "雅思 7.5（8.5/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -45437,6 +46388,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "雅思 7.5（8.5/8.0/7.0/7.0）",
       "UCL MSc-HCI",
+      "作品集辅导",
+      "文书半DIY",
       "UCL",
       "University College London",
       "伦敦大学学院",
@@ -45520,7 +46473,10 @@ const CASE_STUDIES = [
     "background": "陆本 工业设计，一硕：新加坡院校 MA Design，应届，做过用户调研和原型项目",
     "gpa": "均分 91/100",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -45695,6 +46651,8 @@ const CASE_STUDIES = [
       "均分 91/100",
       "雅思 7.0",
       "CMU Metals",
+      "作品集辅导",
+      "文书辅导",
       "CMU",
       "Carnegie Mellon University",
       "卡内基梅隆大学",
@@ -45768,7 +46726,10 @@ const CASE_STUDIES = [
     "background": "陆本 服装与服饰设计，一硕：英国院校 MA Design Management，应届，作品集偏交互与服务设计",
     "gpa": "GPA 4.09/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -45943,6 +46904,8 @@ const CASE_STUDIES = [
       "GPA 4.09/4.3",
       "雅思 7.0",
       "Cornell MSDT",
+      "作品集DIY",
+      "文书辅导",
       "Cornell",
       "Cornell University",
       "康奈尔大学",
@@ -46013,7 +46976,10 @@ const CASE_STUDIES = [
     "background": "英本 Psychology，工作4年，做研究与策略",
     "gpa": "GPA 3.41/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -46199,6 +47165,8 @@ const CASE_STUDIES = [
       "GPA 3.41/4.0",
       "雅思 8.0",
       "谢菲尔德 MA",
+      "作品集半DIY",
+      "文书辅导",
       "Sheffield",
       "Sheffield Hallam University",
       "谢菲尔德哈勒姆大学",
@@ -46250,7 +47218,10 @@ const CASE_STUDIES = [
     "background": "陆本 风景园林，工作2年，负责品牌与网页设计",
     "gpa": "GPA 3.71/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -46452,6 +47423,8 @@ const CASE_STUDIES = [
       "GPA 3.71/4.3",
       "雅思 7.5",
       "HKUST TLE",
+      "作品集辅导",
+      "文书辅导",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -46520,7 +47493,10 @@ const CASE_STUDIES = [
     "background": "美本 Product Design，有3年内的空间/体验设计经验",
     "gpa": "GPA 3.57/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -46710,6 +47686,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "Waive",
       "Umich MSI",
+      "作品集辅导",
+      "文书辅导",
       "UMich",
       "University of Michigan",
       "密歇根大学",
@@ -46777,7 +47755,10 @@ const CASE_STUDIES = [
     "background": "陆本 视觉传达设计，应届，有两段设计相关实习",
     "gpa": "GPA 3.79/4.3",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -46963,6 +47944,8 @@ const CASE_STUDIES = [
       "GPA 3.79/4.3",
       "雅思 7.0",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书辅导",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -47031,7 +48014,10 @@ const CASE_STUDIES = [
     "background": "美本 Cognitive Science，有5年咨询/运营经验",
     "gpa": "GPA 3.27/4.0",
     "language": "托福 110",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -47254,6 +48240,8 @@ const CASE_STUDIES = [
       "GPA 3.27/4.0",
       "托福 110",
       "UW MSIM",
+      "作品集辅导",
+      "文书辅导",
       "UW",
       "University of Washington",
       "华盛顿大学",
@@ -47314,7 +48302,10 @@ const CASE_STUDIES = [
     "background": "陆本 建筑学，应届，做过用户调研和原型项目",
     "gpa": "GPA 3.79/4.3",
     "language": "雅思 7.5",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -47484,6 +48475,8 @@ const CASE_STUDIES = [
       "GPA 3.79/4.3",
       "雅思 7.5",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书半DIY",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -47550,7 +48543,10 @@ const CASE_STUDIES = [
     "background": "美本 Landscape Architecture，应届，校内项目为主，有一段品牌设计实习",
     "gpa": "GPA 3.82/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -47725,6 +48721,8 @@ const CASE_STUDIES = [
       "GPA 3.82/4.0",
       "Waive",
       "Harvard MDes",
+      "作品集辅导",
+      "文书半DIY",
       "Harvard",
       "Harvard University",
       "哈佛大学",
@@ -47783,7 +48781,10 @@ const CASE_STUDIES = [
     "background": "陆本 计算机科学与技术，工作2年，前端开发转产品方向",
     "gpa": "均分 84/100",
     "language": "托福 110+",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -47968,6 +48969,8 @@ const CASE_STUDIES = [
       "均分 84/100",
       "托福 110+",
       "HKUST ISD",
+      "作品集辅导",
+      "文书DIY",
       "HKUST",
       "Hong Kong University of Science and Technology",
       "香港科技大学",
@@ -48019,7 +49022,10 @@ const CASE_STUDIES = [
     "background": "美本 Computer Science，1-3年 data/BA 经验",
     "gpa": "GPA 3.50/4.0",
     "language": "Waive",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -48226,6 +49232,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "Waive",
       "Pratt MSIED",
+      "作品集辅导",
+      "文书辅导",
       "Pratt",
       "Pratt Institute",
       "普瑞特艺术学院",
@@ -48280,7 +49288,10 @@ const CASE_STUDIES = [
     "background": "陆本 绘画，应届，有两段设计相关实习",
     "gpa": "均分 85/100",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -48449,6 +49460,8 @@ const CASE_STUDIES = [
       "均分 85/100",
       "雅思 8.0",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书DIY",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -48517,7 +49530,10 @@ const CASE_STUDIES = [
     "background": "澳本 Industrial Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.63/4.0",
     "language": "雅思 7.0（8.0/8.0/7.0/7.0）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -48702,6 +49718,8 @@ const CASE_STUDIES = [
       "GPA 3.63/4.0",
       "雅思 7.0（8.0/8.0/7.0/7.0）",
       "HKU IDT",
+      "作品集半DIY",
+      "文书辅导",
       "HKU",
       "University of Hong Kong",
       "香港大学",
@@ -48776,7 +49794,10 @@ const CASE_STUDIES = [
     "background": "港本 Graphic Design，应届，有两段设计相关实习",
     "gpa": "GPA 3.93/4.0",
     "language": "雅思 8.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -48961,6 +49982,8 @@ const CASE_STUDIES = [
       "GPA 3.93/4.0",
       "雅思 8.0",
       "悉尼大学 交互",
+      "作品集辅导",
+      "文书辅导",
       "USyd",
       "University of Sydney",
       "悉尼大学",
@@ -49046,7 +50069,10 @@ const CASE_STUDIES = [
     "background": "陆本 数字媒体艺术，1年半设计工作经验，偏数字产品",
     "gpa": "GPA 3.57/4.0",
     "language": "雅思 7.0",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -49215,6 +50241,8 @@ const CASE_STUDIES = [
       "GPA 3.57/4.0",
       "雅思 7.0",
       "爱丁堡 DI",
+      "作品集辅导",
+      "文书辅导",
       "Edinburgh",
       "The University of Edinburgh",
       "爱丁堡大学",
@@ -49289,7 +50317,10 @@ const CASE_STUDIES = [
     "background": "陆本 数据科学与大数据技术，有2年软件开发经验，参与过用户研究",
     "gpa": "GPA 3.50/4.0",
     "language": "托福 101（29/28/24/23）",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集半DIY",
+      "文书辅导"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -49491,6 +50522,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.0",
       "托福 101（29/28/24/23）",
       "SUTD MSCTD",
+      "作品集半DIY",
+      "文书辅导",
       "SUTD",
       "Singapore University of Technology and Design",
       "新加坡科技设计大学",
@@ -49548,7 +50581,10 @@ const CASE_STUDIES = [
     "background": "陆本 软件工程，工作2年，做产品与增长",
     "gpa": "GPA 3.50/4.3",
     "language": "托福 99",
-    "applicationMethods": [],
+    "applicationMethods": [
+      "作品集辅导",
+      "文书半DIY"
+    ],
     "supportServices": [],
     "outcomes": [
       {
@@ -49717,6 +50753,8 @@ const CASE_STUDIES = [
       "GPA 3.50/4.3",
       "托福 99",
       "格拉斯哥",
+      "作品集辅导",
+      "文书半DIY",
       "Glasgow",
       "University of Glasgow",
       "格拉斯哥大学",
