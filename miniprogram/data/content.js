@@ -4544,6 +4544,36 @@ module.exports = {
       "status": "published"
     },
     {
+      "id": "asia-024-hkust-mphil-integrative-systems-and-design",
+      "rank": 141.1,
+      "region": "Asia",
+      "country": "中国香港",
+      "school": "Hong Kong University of Science and Technology (HKUST)",
+      "schoolCn": "香港科技大学",
+      "short": "MPhil(ISD)",
+      "program": "Master of Philosophy in Integrative Systems and Design",
+      "programShort": "MPhil(ISD)",
+      "length": "全日制2年（兼读4年）",
+      "tuition": "HK$47,000/年（2026/27）",
+      "location": "清水湾，中国香港",
+      "ielts": "IELTS 6.5（单项5.5）",
+      "toefl": "TOEFL iBT 80（2026.1.21前考试）/ 4.5（之后）",
+      "gre": "不需要",
+      "portfolio": "未明确要求",
+      "deadline": "早申8.15（2027秋）；常规待公布",
+      "academic": "认可院校学士学位；研究型项目",
+      "stem": false,
+      "stemNote": "不适用（中国香港研究型学位）",
+      "website": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mphil-phd-isd",
+      "note": "【新增详情】研究型MPhil，聚焦人本设计、设计方法与功能驱动设计；2027秋早申截止8.15，常规轮尚待官方公布；全日制研究生通常可获学生助学金，具体以录取及学校安排为准。",
+      "lastVerified": "2026-08-03",
+      "tags": [
+        "rolling"
+      ],
+      "_id": "program-asia-024-hkust-mphil-integrative-systems-and-design",
+      "status": "published"
+    },
+    {
       "id": "asia-010-hkust-mphil-computational-media-and-arts-hkust-gz",
       "rank": 142,
       "region": "Asia",
@@ -6517,14 +6547,38 @@ module.exports = {
     {
       "id": "sop-writing",
       "category": "文书",
-      "title": "文书不是履历翻译：先写清楚你在往哪里走",
-      "excerpt": "读者需要理解你过去的经历怎样推向现在的选择，以及为什么这个项目恰好是下一步。",
-      "readTime": "5 min",
-      "date": "2026.07",
+      "title": "写了五年HCI文书，这是我给你的文书DIY指南",
+      "excerpt": "SOP 不是把简历翻译成段落。它要让招生老师看见：你的职业方向怎样被一段段经历塑造，而这个项目为什么正好是你的下一步。",
+      "readTime": "8 min",
+      "date": "2026.08",
+      "tags": [
+        "文书",
+        "SOP",
+        "DIY",
+        "申请方法"
+      ],
       "body": [
-        "文书最常见的问题不是写得不够多，而是每一段都在重复简历。",
-        "先用一句话写出你的申请主线，再选择能够支撑它的经历。经历的作用不是证明你做过很多事，而是说明你的判断如何逐渐形成。",
-        "写到学校匹配时，避免堆课程名称。解释课程、实验室或项目方式如何解决你正在面对的具体问题。"
+        "先说结论：一篇好的 SOP 不是履历的文字版，也不是把所有项目各讲一遍。它更像一条清晰的成长线，让招生老师理解你为什么走到今天、下一步准备去哪里。",
+        "一｜招生老师想通过 SOP 了解什么？",
+        "1. 你的职业目标。毕业后想从事什么岗位？对哪些方向有兴趣？不需要把目标写得过细，但要让人看见你正在走向 UX、产品、服务设计、AR/VR、教育科技或其他合理的细分领域。",
+        "2. 你的成长路径。重点不是从小到大的家庭故事，而是学业和职业上的变化：你原来学什么、为什么这样选择、如何接触到新的领域、又是什么促使你决定转向。",
+        "3. 你为什么选择这个项目。不要只说“贵校排名高”。你要说明自己对项目方法、课程、实验室或行业连接的理解，以及你能带着什么经验参与其中。",
+        "二｜SOP 需要传达的三件事",
+        "1. 我有清晰的职业规划。它不是临时起意，而是被接下来讲到的一连串经历慢慢塑造出来的。",
+        "2. 我与这个项目有关联。你不只是现在才对这个方向感兴趣，而是已经做过一些尝试，并从中感到好奇、兴奋、有挑战或有成就感。",
+        "3. 我在不断升级。越靠近现在的经历，越应该展示更复杂的判断和能力：从基础方法与工具，到系统性思考和团队协作，再到理解行业标准、跨职能协作或真正推动结果。",
+        "三｜先搭人物成长线，再开始写",
+        "整体建议以记述为主、论述为辅，大约 70% 讲故事，30% 讲你的感悟和观点。1000 词上限的文书，写到 600 至 800 词往往已经足够。",
+        "先从全部经历里挑出 3 至 4 个最能体现认知成长的故事。它们不必都是“大项目”，但放在一起后，应该能让人看见一个连续的过程：你如何发现问题、扩展能力、改变判断，最终走向申请的方向。",
+        "四｜每个故事，用 Situation + Goal + Action + Result + Takeaway 展开",
+        "Situation：我在什么契机下参与这段经历？可以是学校课题、工作项目、主动报名的挑战，或一段自发探索。",
+        "Goal：这个项目要解决什么问题？目标是什么？你具体承担了什么任务？",
+        "Action：为了达成目标，你做了哪些事，又处理了什么困难？这里要写清你的判断和行动，而不只是团队做了什么。",
+        "Result：项目最后带来了什么结果或影响？可以是上线、数据、反馈、一次改变，或一个被验证的方向。",
+        "Takeaway：最重要的是，你从中学到了什么？可以是一个技能，也可以是对研究、设计、协作或行业的新的认识。",
+        "五｜下一次头脑风暴前，先做这张故事清单",
+        "请按照 Situation + Goal + Action + Result + Takeaway，把你能想到的经历都简单记下来。每一项只需要写初步想法：发生了什么、你做了什么、它改变了你什么。",
+        "下一步不是急着把每个故事写得漂亮，而是判断哪些故事能彼此连接，哪些最能说明你的成长。把这份清单带来，我们再一起挑出最有力量的 3 至 4 段，搭成属于你的申请主线。"
       ],
       "_id": "article-sop-writing",
       "status": "published"
@@ -7619,6 +7673,16 @@ module.exports = {
         "schoolCn": "香港科技大学",
         "aliases": [
           "HKUST",
+          "香港科技大学"
+        ]
+      },
+      {
+        "id": "Hong Kong University of Science and Technology (HKUST)",
+        "label": "Hong Kong University of Science and Technology (HKUST)",
+        "school": "Hong Kong University of Science and Technology (HKUST)",
+        "schoolCn": "香港科技大学",
+        "aliases": [
+          "Hong Kong University of Science and Technology (HKUST)",
           "香港科技大学"
         ]
       },
@@ -9268,6 +9332,15 @@ module.exports = {
         "aliases": [
           "TLE",
           "MSc Technology, Leadership and Entrepreneurship"
+        ]
+      },
+      {
+        "id": "asia-024-hkust-mphil-integrative-systems-and-design",
+        "label": "MPhil(ISD)",
+        "program": "Master of Philosophy in Integrative Systems and Design",
+        "aliases": [
+          "MPhil(ISD)",
+          "Master of Philosophy in Integrative Systems and Design"
         ]
       },
       {

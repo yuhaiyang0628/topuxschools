@@ -14,7 +14,7 @@ const articleGrid = document.querySelector("#articleGrid");
 const tabs = Array.from(document.querySelectorAll(".tab"));
 const filters = Array.from(document.querySelectorAll(".filter"));
 
-let activeRegion = "US";
+let activeRegion = "";
 let activeFilter = "all";
 let activeProgramPage = 1;
 let activeCaseRegion = null;
@@ -54,7 +54,7 @@ function matchesFilter(program) {
 }
 
 function matchesRegion(program) {
-  return program.region === activeRegion;
+  return !activeRegion || program.region === activeRegion;
 }
 
 function matchesSearch(program) {

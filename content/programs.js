@@ -4238,6 +4238,34 @@ window.PROGRAMS = [
     "tags": []
   },
   {
+    "id": "asia-024-hkust-mphil-integrative-systems-and-design",
+    "rank": 141.1,
+    "region": "Asia",
+    "country": "中国香港",
+    "school": "Hong Kong University of Science and Technology (HKUST)",
+    "schoolCn": "香港科技大学",
+    "short": "MPhil(ISD)",
+    "program": "Master of Philosophy in Integrative Systems and Design",
+    "programShort": "MPhil(ISD)",
+    "length": "全日制2年（兼读4年）",
+    "tuition": "HK$47,000/年（2026/27）",
+    "location": "清水湾，中国香港",
+    "ielts": "IELTS 6.5（单项5.5）",
+    "toefl": "TOEFL iBT 80（2026.1.21前考试）/ 4.5（之后）",
+    "gre": "不需要",
+    "portfolio": "未明确要求",
+    "deadline": "早申8.15（2027秋）；常规待公布",
+    "academic": "认可院校学士学位；研究型项目",
+    "stem": false,
+    "stemNote": "不适用（中国香港研究型学位）",
+    "website": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mphil-phd-isd",
+    "note": "【新增详情】研究型MPhil，聚焦人本设计、设计方法与功能驱动设计；2027秋早申截止8.15，常规轮尚待官方公布；全日制研究生通常可获学生助学金，具体以录取及学校安排为准。",
+    "lastVerified": "2026-08-03",
+    "tags": [
+      "rolling"
+    ]
+  },
+  {
     "id": "asia-010-hkust-mphil-computational-media-and-arts-hkust-gz",
     "rank": 142,
     "region": "Asia",

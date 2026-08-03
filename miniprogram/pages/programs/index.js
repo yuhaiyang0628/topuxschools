@@ -2,6 +2,7 @@ const { queryPrograms } = require("../../services/content");
 const { compactText, programTags } = require("../../utils/format");
 
 const REGIONS = [
+  { value: "", label: "Global" },
   { value: "US", label: "US" },
   { value: "CAN", label: "CAN" },
   { value: "UK", label: "UK" },
@@ -45,7 +46,7 @@ Page({
   data: {
     regions: REGIONS,
     filters: FILTERS,
-    activeRegion: "US",
+    activeRegion: "",
     activeFilter: "all",
     query: "",
     programs: [],
