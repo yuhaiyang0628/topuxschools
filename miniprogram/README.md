@@ -14,7 +14,7 @@
 - `seed/programs.json`：云数据库项目种子数据（JSON Lines 格式）。
 - `seed/caseStudies.json`：云数据库案例种子数据（JSON Lines 格式）。
 - `seed/articles.json`：云数据库笔记种子数据（JSON Lines 格式）。
-- `seed/programs/<_id>.json`、`seed/caseStudies/<_id>.json`、`seed/articles/<_id>.json`：每条内容各自的增量更新文件。
+- 内容更新默认使用一个集合级 JSON Lines 批次，并在云开发控制台选择 `Upsert`；避免逐条导入记录。
 
 ## 日常内容更新
 

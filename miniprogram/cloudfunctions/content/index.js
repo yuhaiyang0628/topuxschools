@@ -104,7 +104,8 @@ async function queryCases(options) {
   const filtered = caseStudies
     .filter(isPublished)
     .filter((caseStudy) => !region || (caseStudy.regions || []).includes(region))
-    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)));
+    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)))
+    .sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
   return paginate(filtered.map(stripSystemFields), page, pageSize);
 }
 
@@ -115,7 +116,9 @@ async function getHomeContent() {
     getAll("articles")
   ]);
   const publishedPrograms = programs.filter(isPublished);
-  const publishedCases = caseStudies.filter(isPublished);
+  const publishedCases = caseStudies
+    .filter(isPublished)
+    .sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
   const publishedArticles = articles.filter(isPublished);
   return {
     programCount: publishedPrograms.length,

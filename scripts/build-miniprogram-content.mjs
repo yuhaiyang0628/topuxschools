@@ -74,13 +74,6 @@ function prepareCollection(records, prefix) {
   }));
 }
 
-async function writeIndividualRecords(collectionName, records) {
-  await Promise.all(records.map((record) => writeJsonLines(
-    resolve(seedDir, collectionName, `${record._id}.json`),
-    [record]
-  )));
-}
-
 async function main() {
   const content = await loadContent();
   const programs = prepareCollection(content.programs, "program");
@@ -98,13 +91,10 @@ async function main() {
   await Promise.all([
     writeJsonLines(resolve(seedDir, "programs.json"), programs),
     writeJsonLines(resolve(seedDir, "caseStudies.json"), caseStudies),
-    writeJsonLines(resolve(seedDir, "articles.json"), articles),
-    writeIndividualRecords("programs", programs),
-    writeIndividualRecords("caseStudies", caseStudies),
-    writeIndividualRecords("articles", articles)
+    writeJsonLines(resolve(seedDir, "articles.json"), articles)
   ]);
 
-  console.log(`Synced ${programs.length} programs, ${caseStudies.length} cases, and ${articles.length} articles with full and individual seed files.`);
+  console.log(`Synced ${programs.length} programs, ${caseStudies.length} cases, and ${articles.length} articles with collection seed files.`);
 }
 
 main().catch((error) => {

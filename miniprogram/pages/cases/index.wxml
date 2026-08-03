@@ -25,7 +25,7 @@
       </view>
       <view class="case-facts">
         <view><text>背景</text><text>{{item.background}}</text></view>
-        <view>
+        <view wx:if="{{item.applicationMethods && item.applicationMethods.length}}">
           <text>申请方式</text>
           <view class="method-tags"><text class="method-tag" wx:for="{{item.applicationMethods}}" wx:key="*this">{{item}}</text></view>
         </view>

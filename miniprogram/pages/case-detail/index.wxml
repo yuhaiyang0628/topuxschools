@@ -18,10 +18,12 @@
       </view>
     </view>
 
-    <view class="section-label section-space">申请方式</view>
-    <view class="method-tags detail-method-tags">
-      <text class="method-tag" wx:for="{{caseStudy.applicationMethods}}" wx:key="*this">{{item}}</text>
-    </view>
+    <block wx:if="{{caseStudy.applicationMethods && caseStudy.applicationMethods.length}}">
+      <view class="section-label section-space">申请方式</view>
+      <view class="method-tags detail-method-tags">
+        <text class="method-tag" wx:for="{{caseStudy.applicationMethods}}" wx:key="*this">{{item}}</text>
+      </view>
+    </block>
 
     <view class="section-label section-space">申请结果</view>
     <view class="outcome-tags detail-outcome-tags">

@@ -213,7 +213,8 @@ function renderCases() {
   const caseStudies = window.CASE_STUDIES
     .filter(isPublished)
     .filter(caseMatchesRegion)
-    .filter(caseMatchesSearch);
+    .filter(caseMatchesSearch)
+    .sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
   const totalPages = Math.max(1, Math.ceil(caseStudies.length / CASES_PER_PAGE));
   activeCasePage = Math.min(activeCasePage, totalPages);
   const start = (activeCasePage - 1) * CASES_PER_PAGE;
@@ -228,7 +229,7 @@ function renderCases() {
         <div class="outcome-tags">${renderOutcomeTags(caseStudy.outcomes)}</div>
         <dl class="case-facts">
           <div><dt>背景</dt><dd>${escapeHtml(caseStudy.background)}</dd></div>
-          <div><dt>申请方式</dt><dd class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</dd></div>
+          ${caseStudy.applicationMethods.length ? `<div><dt>申请方式</dt><dd class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</dd></div>` : ""}
           <div><dt>成绩</dt><dd>${escapeHtml(caseStudy.gpa)} · ${escapeHtml(caseStudy.language)}</dd></div>
         </dl>
         <span class="card-link">查看案例详情 <span aria-hidden="true">→</span></span>
@@ -282,10 +283,7 @@ function renderCasePanel(caseStudy) {
           <div class="fact"><span>语言成绩</span><strong>${escapeHtml(caseStudy.language)}</strong></div>
         </div>
       </section>
-      <section class="panel-section">
-        <div class="rule-title">申请方式</div>
-        <div class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</div>
-      </section>
+      ${caseStudy.applicationMethods.length ? `<section class="panel-section"><div class="rule-title">申请方式</div><div class="method-tags">${renderMethodTags(caseStudy.applicationMethods)}</div></section>` : ""}
       <section class="panel-section">
         <div class="rule-title">申请结果</div>
         <div class="outcome-tags">${renderOutcomeTags(caseStudy.outcomes)}</div>

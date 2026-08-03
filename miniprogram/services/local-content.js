@@ -79,7 +79,8 @@ function queryCases({ region = "", query = "", page = 1, pageSize = 6 } = {}) {
   const filtered = caseStudies
     .filter(isPublished)
     .filter((caseStudy) => !region || (caseStudy.regions || []).includes(region))
-    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)));
+    .filter((caseStudy) => normalize((caseStudy.searchTerms || []).join(" ")).includes(normalize(query)))
+    .sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
   return paginate(filtered, page, pageSize);
 }
 
@@ -103,7 +104,7 @@ function getProgramRelations(id) {
   const program = getProgram(id);
   if (!program) return { caseStudies: [], articles: [] };
   return {
-    caseStudies: caseStudies.filter(isPublished).filter((caseStudy) => caseMatchesProgram(caseStudy, program)),
+    caseStudies: caseStudies.filter(isPublished).filter((caseStudy) => caseMatchesProgram(caseStudy, program)).sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER)),
     articles: articles.filter(isPublished).filter((article) => articleMatchesProgram(article, program))
   };
 }
@@ -111,13 +112,14 @@ function getProgramRelations(id) {
 function getHomeContent() {
   const publishedPrograms = programs.filter(isPublished);
   const publishedCases = caseStudies.filter(isPublished);
+  const sortedCases = [...publishedCases].sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
   const publishedArticles = articles.filter(isPublished);
   return {
     programCount: publishedPrograms.length,
     caseCount: publishedCases.length,
     articleCount: publishedArticles.length,
     featuredPrograms: publishedPrograms.slice(0, 3),
-    featuredCases: publishedCases.slice(0, 3),
+    featuredCases: sortedCases.slice(0, 3),
     featuredArticles: publishedArticles.slice(0, 3)
   };
 }
