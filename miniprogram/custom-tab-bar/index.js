@@ -2,9 +2,9 @@ Component({
   data: {
     selected: 0,
     tabs: [
-      { path: "/pages/programs/index", text: "项目", icon: "/assets/tab-icons/program.svg" },
-      { path: "/pages/cases/index", text: "案例", icon: "/assets/tab-icons/cases.svg" },
-      { path: "/pages/notes/index", text: "笔记", icon: "/assets/tab-icons/notes.svg" }
+      { path: "/pages/programs/index", text: "项目", icon: "/assets/tab-icons/program.svg", activeIcon: "/assets/tab-icons/program-active.svg" },
+      { path: "/pages/cases/index", text: "案例", icon: "/assets/tab-icons/cases.svg", activeIcon: "/assets/tab-icons/cases-active.svg" },
+      { path: "/pages/notes/index", text: "笔记", icon: "/assets/tab-icons/notes.svg", activeIcon: "/assets/tab-icons/notes-active.svg" }
     ]
   },
 
