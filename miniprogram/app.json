@@ -25,7 +25,6 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Top UX Schools"
   },
-  "requiredPrivateInfos": ["chooseMedia"],
   "tabBar": {
     "custom": true,
     "list": [
