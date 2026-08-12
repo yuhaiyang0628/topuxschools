@@ -19,8 +19,10 @@ let activeFilter = "all";
 let activeProgramPage = 1;
 let activeCaseRegion = null;
 let activeCasePage = 1;
-const PROGRAMS_PER_PAGE = 20;
-const CASES_PER_PAGE = 6;
+let programPageSize = 20;
+let casePageSize = 6;
+const PROGRAM_PAGE_SIZES = [20, 40, 60];
+const CASE_PAGE_SIZES = [6, 9, 12];
 
 function valueOrDash(value) {
   return value || "-";
@@ -38,6 +40,61 @@ function escapeHtml(value) {
 function safeUrl(value) {
   const url = String(valueOrDash(value));
   return /^https?:\/\//i.test(url) ? url : "#";
+}
+
+function escapeText(value) {
+  return String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function renderSegments(segments) {
+  return (segments || []).map((segment) => {
+    const text = escapeText(segment.text);
+    return segment.strong ? `<strong>${text}</strong>` : text;
+  }).join("");
+}
+
+function getArticleBlocks(article) {
+  if (Array.isArray(article.content) && article.content.length) return article.content;
+  const imagesByPosition = (article.images || []).reduce((groups, image) => {
+    const position = Number(image.after) || 0;
+    const block = { type: "image", src: image.web || image.src, alt: image.alt || "文章配图" };
+    groups[position] = [...(groups[position] || []), block];
+    return groups;
+  }, {});
+  const blocks = [];
+  (imagesByPosition[0] || []).forEach((image) => blocks.push(image));
+  (article.body || []).forEach((text, index) => {
+    blocks.push({ type: "paragraph", segments: [{ text }] });
+    (imagesByPosition[index + 1] || []).forEach((image) => blocks.push(image));
+  });
+  return blocks;
+}
+
+function renderArticleBlocks(article) {
+  return getArticleBlocks(article).map((block) => {
+    if (block.type === "heading") {
+      const level = block.level === 3 ? 3 : 2;
+      return `<h${level} class="article-subheading">${escapeText(block.text)}</h${level}>`;
+    }
+    if (block.type === "image") {
+      const src = escapeText(block.webSrc || block.src);
+      return `<figure class="article-image-wrap"><img class="article-image" src="${src}" alt="${escapeText(block.alt)}" loading="lazy"><figcaption>${escapeText(block.alt)}</figcaption></figure>`;
+    }
+    if (block.type === "list") {
+      return `<ul class="article-list">${(block.items || []).map((item) => `<li>${renderSegments(item)}</li>`).join("")}</ul>`;
+    }
+    if (block.type === "quote") return `<blockquote class="article-quote">${renderSegments(block.segments)}</blockquote>`;
+    if (block.type === "table") {
+      const [head, ...rows] = block.rows || [];
+      return `<div class="article-table-wrap"><table class="article-table"><thead><tr>${(head || []).map((cell) => `<th>${escapeText(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeText(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    }
+    return `<p>${renderSegments(block.segments)}</p>`;
+  }).join("");
 }
 
 function isPublished(item) {
@@ -78,10 +135,10 @@ function renderRows() {
     .filter(matchesRegion)
     .filter(matchesFilter)
     .filter(matchesSearch);
-  const totalPages = Math.max(1, Math.ceil(programs.length / PROGRAMS_PER_PAGE));
+  const totalPages = Math.max(1, Math.ceil(programs.length / programPageSize));
   activeProgramPage = Math.min(activeProgramPage, totalPages);
-  const start = (activeProgramPage - 1) * PROGRAMS_PER_PAGE;
-  const pagePrograms = programs.slice(start, start + PROGRAMS_PER_PAGE);
+  const start = (activeProgramPage - 1) * programPageSize;
+  const pagePrograms = programs.slice(start, start + programPageSize);
 
   rowsEl.innerHTML = pagePrograms.map((program, index) => `
     <tr data-id="${program.id}" tabindex="0">
@@ -114,27 +171,57 @@ function renderRows() {
   renderProgramPagination(programs.length, totalPages);
 }
 
+function getVisiblePageItems(currentPage, totalPages) {
+  if (totalPages <= 7) return Array.from({ length: totalPages }, (_, index) => index + 1);
+
+  const pages = new Set([1, totalPages]);
+  if (currentPage <= 4) {
+    [2, 3, 4, 5].forEach((page) => pages.add(page));
+  } else if (currentPage >= totalPages - 3) {
+    [totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1].forEach((page) => pages.add(page));
+  } else {
+    [currentPage - 1, currentPage, currentPage + 1].forEach((page) => pages.add(page));
+  }
+
+  const sortedPages = [...pages].sort((left, right) => left - right);
+  return sortedPages.reduce((items, page, index) => {
+    if (index && page - sortedPages[index - 1] > 1) items.push("ellipsis");
+    items.push(page);
+    return items;
+  }, []);
+}
+
+function renderPagination({ currentPage, totalPages, pageAttribute, pageSize, pageSizeAttribute, pageSizes, pageSizeLabel }) {
+  const pageButtons = getVisiblePageItems(currentPage, totalPages).map((item) => {
+    if (item === "ellipsis") return '<span class="page-ellipsis" aria-hidden="true">…</span>';
+    return `<button class="page-number ${item === currentPage ? "active" : ""}" type="button" ${pageAttribute}="${item}" ${item === currentPage ? "aria-current=\"page\"" : ""}>${item}</button>`;
+  }).join("");
+  const pageSizeOptions = pageSizes.map((size) => `<option value="${size}" ${size === pageSize ? "selected" : ""}>${size} 条/页</option>`).join("");
+
+  return `
+    <div class="page-controls">
+      <button class="page-arrow" type="button" ${pageAttribute}="${currentPage - 1}" aria-label="上一页" ${currentPage === 1 ? "disabled" : ""}>‹</button>
+      ${pageButtons}
+      <button class="page-arrow" type="button" ${pageAttribute}="${currentPage + 1}" aria-label="下一页" ${currentPage === totalPages ? "disabled" : ""}>›</button>
+      <select class="page-size-select" ${pageSizeAttribute} aria-label="${pageSizeLabel}">${pageSizeOptions}</select>
+    </div>
+  `;
+}
+
 function renderProgramPagination(totalPrograms, totalPages) {
   if (!totalPrograms) {
     programPagination.innerHTML = "";
     return;
   }
-
-  const pageButtons = Array.from({ length: totalPages }, (_, index) => {
-    const page = index + 1;
-    return `<button class="page-number ${page === activeProgramPage ? "active" : ""}" type="button" data-page="${page}" ${page === activeProgramPage ? "aria-current=\"page\"" : ""}>${page}</button>`;
-  }).join("");
-
-  const from = (activeProgramPage - 1) * PROGRAMS_PER_PAGE + 1;
-  const to = Math.min(activeProgramPage * PROGRAMS_PER_PAGE, totalPrograms);
-  programPagination.innerHTML = `
-    <p class="page-status">显示 ${from}-${to} / ${totalPrograms} 个项目</p>
-    <div class="page-controls">
-      <button class="page-arrow" type="button" data-page="${activeProgramPage - 1}" aria-label="上一页" ${activeProgramPage === 1 ? "disabled" : ""}>←</button>
-      ${pageButtons}
-      <button class="page-arrow" type="button" data-page="${activeProgramPage + 1}" aria-label="下一页" ${activeProgramPage === totalPages ? "disabled" : ""}>→</button>
-    </div>
-  `;
+  programPagination.innerHTML = renderPagination({
+    currentPage: activeProgramPage,
+    totalPages,
+    pageAttribute: "data-page",
+    pageSize: programPageSize,
+    pageSizeAttribute: "data-program-page-size",
+    pageSizes: PROGRAM_PAGE_SIZES,
+    pageSizeLabel: "每页显示项目数量"
+  });
 }
 
 function renderProgramPanel(program) {
@@ -215,10 +302,10 @@ function renderCases() {
     .filter(caseMatchesRegion)
     .filter(caseMatchesSearch)
     .sort((left, right) => (left.displayOrder || Number.MAX_SAFE_INTEGER) - (right.displayOrder || Number.MAX_SAFE_INTEGER));
-  const totalPages = Math.max(1, Math.ceil(caseStudies.length / CASES_PER_PAGE));
+  const totalPages = Math.max(1, Math.ceil(caseStudies.length / casePageSize));
   activeCasePage = Math.min(activeCasePage, totalPages);
-  const start = (activeCasePage - 1) * CASES_PER_PAGE;
-  const pageCases = caseStudies.slice(start, start + CASES_PER_PAGE);
+  const start = (activeCasePage - 1) * casePageSize;
+  const pageCases = caseStudies.slice(start, start + casePageSize);
   const regionLabel = activeCaseRegion || "全部区域";
   caseResults.textContent = `${regionLabel} · 找到 ${caseStudies.length} 个案例`;
   caseGrid.innerHTML = pageCases.map((caseStudy) => `
@@ -249,21 +336,15 @@ function renderCasePagination(totalCases, totalPages) {
     casePagination.innerHTML = "";
     return;
   }
-
-  const pageButtons = Array.from({ length: totalPages }, (_, index) => {
-    const page = index + 1;
-    return `<button class="page-number ${page === activeCasePage ? "active" : ""}" type="button" data-case-page="${page}" ${page === activeCasePage ? "aria-current=\"page\"" : ""}>${page}</button>`;
-  }).join("");
-  const from = (activeCasePage - 1) * CASES_PER_PAGE + 1;
-  const to = Math.min(activeCasePage * CASES_PER_PAGE, totalCases);
-  casePagination.innerHTML = `
-    <p class="page-status">显示 ${from}-${to} / ${totalCases} 个案例</p>
-    <div class="page-controls">
-      <button class="page-arrow" type="button" data-case-page="${activeCasePage - 1}" aria-label="上一页" ${activeCasePage === 1 ? "disabled" : ""}>←</button>
-      ${pageButtons}
-      <button class="page-arrow" type="button" data-case-page="${activeCasePage + 1}" aria-label="下一页" ${activeCasePage === totalPages ? "disabled" : ""}>→</button>
-    </div>
-  `;
+  casePagination.innerHTML = renderPagination({
+    currentPage: activeCasePage,
+    totalPages,
+    pageAttribute: "data-case-page",
+    pageSize: casePageSize,
+    pageSizeAttribute: "data-case-page-size",
+    pageSizes: CASE_PAGE_SIZES,
+    pageSizeLabel: "每页显示案例数量"
+  });
 }
 
 function renderCasePanel(caseStudy) {
@@ -299,7 +380,7 @@ function renderArticles() {
         <div class="article-meta"><span>${escapeHtml(article.category)}</span><span>${escapeHtml(article.readTime)}</span></div>
         <h3>${escapeHtml(article.title)}</h3>
         <p>${escapeHtml(article.excerpt)}</p>
-        <div class="article-footer"><span>${escapeHtml(article.date)}</span><span>阅读笔记 <span aria-hidden="true">→</span></span></div>
+        <div class="article-footer"><span>阅读笔记 <span aria-hidden="true">→</span></span></div>
       </button>
     </article>
   `).join("");
@@ -309,12 +390,12 @@ function renderArticlePanel(article) {
   panelContent.innerHTML = `
     <article class="content-detail article-detail">
       <div class="panel-head">
-        <p class="panel-kicker">${escapeHtml(article.category)} · ${escapeHtml(article.date)}</p>
+        <p class="panel-kicker">${escapeHtml(article.category)}</p>
         <h2 class="panel-title">${escapeHtml(article.title)}</h2>
         <p class="detail-lead">${escapeHtml(article.excerpt)}</p>
       </div>
       <section class="panel-section">
-        <div class="reading-copy">${article.body.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>
+        <div class="reading-copy">${renderArticleBlocks(article)}</div>
       </section>
     </article>
   `;
@@ -393,6 +474,14 @@ casePagination.addEventListener("click", (event) => {
   document.querySelector("#cases").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
+casePagination.addEventListener("change", (event) => {
+  const select = event.target.closest("select[data-case-page-size]");
+  if (!select) return;
+  casePageSize = Number(select.value);
+  activeCasePage = 1;
+  renderCases();
+});
+
 articleGrid.addEventListener("click", (event) => {
   const card = event.target.closest("[data-article-id]");
   if (card) openArticle(card.dataset.articleId);
@@ -430,6 +519,14 @@ programPagination.addEventListener("click", (event) => {
   activeProgramPage = Number(button.dataset.page);
   renderRows();
   document.querySelector("#programs").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+programPagination.addEventListener("change", (event) => {
+  const select = event.target.closest("select[data-program-page-size]");
+  if (!select) return;
+  programPageSize = Number(select.value);
+  activeProgramPage = 1;
+  renderRows();
 });
 
 searchInput.addEventListener("input", () => {

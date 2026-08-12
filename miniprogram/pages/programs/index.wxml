@@ -1,6 +1,6 @@
 <view class="page-shell">
   <view class="eyebrow">School directory</view>
-  <view class="page-title-row"><view class="page-title">学校列表</view><help-entry /></view>
+  <view class="page-title-row"><view class="page-title">学校列表</view><view class="title-actions"><button class="workspace-entry" bindtap="openWorkspace">选校单 {{savedCount}}</button><help-entry /></view></view>
   <view class="page-intro">{{total}} 个已验证的 UX / HCI 硕士项目。移动端以信息卡呈现，查找和比较更轻松。</view>
 
   <view class="region-scroll">

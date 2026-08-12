@@ -6,7 +6,9 @@ Page({
     contactEmail: config.contactEmail,
     contactWechat: config.contactWechat,
     contactNote: config.contactNote,
-    isAdmin: false
+    isAdmin: false,
+    contactOpen: false,
+    contactOpening: "你好，我在 Top UX Schools 看了一些内容，想带着一个具体问题和你聊聊。"
   },
 
   async onLoad() {
@@ -36,6 +38,14 @@ Page({
 
   openAdmin() {
     wx.navigateTo({ url: "/pages/admin/index" });
+  },
+
+  openContact() {
+    this.setData({ contactOpen: true });
+  },
+
+  closeContact() {
+    this.setData({ contactOpen: false });
   },
 
   onShareAppMessage() {

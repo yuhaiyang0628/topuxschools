@@ -114,6 +114,8 @@
 
 .page-title-row { display: flex; align-items: center; justify-content: space-between; gap: 18rpx; }
 .page-title-row .page-title { min-width: 0; flex: 1; }
+.title-actions { display: flex; align-items: center; gap: 10rpx; flex-shrink: 0; }
+.workspace-entry { padding: 0 16rpx; color: #0b6276; border: 1rpx solid #acd0d2; border-radius: 6rpx; background: #fff; font-size: 22rpx; font-weight: 650; line-height: 58rpx; }
 
 .card-topline text:first-child {
   color: #0b6276;

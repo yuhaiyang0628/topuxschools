@@ -1,0 +1,31 @@
+.workspace-page { padding-top: 54rpx; }
+.workspace-tabs { display: flex; margin-top: 36rpx; border-bottom: 1rpx solid #d9e4e2; }
+.workspace-tab { flex: 1; height: 76rpx; color: #718086; font-size: 25rpx; font-weight: 650; line-height: 76rpx; }
+.workspace-tab.active { color: #0b6276; box-shadow: inset 0 -4rpx 0 #0b6276; }
+.workspace-tools { display: flex; align-items: center; justify-content: space-between; gap: 18rpx; margin-top: 28rpx; }
+.tool-copy { color: #68777c; font-size: 23rpx; }
+.tool-actions { display: flex; gap: 10rpx; }
+.tool-actions button, .workspace-card-actions button, .remove-link { padding: 0 16rpx; color: #0b6276; border: 1rpx solid #b8d3d7; border-radius: 6rpx; background: #fff; font-size: 22rpx; line-height: 58rpx; }
+.workspace-list { display: grid; gap: 16rpx; margin-top: 24rpx; }
+.workspace-card { display: flex; align-items: center; gap: 18rpx; padding: 24rpx; border: 1rpx solid #d5e2df; border-radius: 8rpx; background: #fff; }
+.workspace-card-main { min-width: 0; flex: 1; }
+.workspace-meta { color: #0b6276; font-size: 21rpx; font-weight: 650; }
+.workspace-title { margin-top: 9rpx; color: #17252b; font-size: 29rpx; font-weight: 700; line-height: 1.4; }
+.workspace-copy { margin-top: 8rpx; color: #607178; font-size: 23rpx; line-height: 1.55; }
+.workspace-card-actions { display: flex; align-items: center; gap: 12rpx; flex-shrink: 0; }
+.remove-link { flex-shrink: 0; color: #7a5350; border-color: #e4c8c4; }
+.comparison-section { margin-top: 42rpx; }
+.comparison-scroll { width: 100%; margin-top: 22rpx; }
+.comparison-table { min-width: 1180rpx; border: 1rpx solid #d8e4e2; background: #fff; }
+.comparison-row { display: flex; border-bottom: 1rpx solid #d8e4e2; }
+.comparison-row:last-child { border-bottom: 0; }
+.comparison-label, .comparison-value { box-sizing: border-box; flex: 0 0 250rpx; padding: 18rpx; border-right: 1rpx solid #d8e4e2; color: #304349; font-size: 23rpx; line-height: 1.5; }
+.comparison-label { flex-basis: 160rpx; }
+.comparison-label { color: #607178; background: #f5f8f7; }
+.comparison-head { background: #e9f4f3; }
+.comparison-head .comparison-value { color: #17373d; font-weight: 700; }
+.review-cta { margin-top: 34rpx; padding: 30rpx 0; border-top: 6rpx solid #e36546; border-bottom: 1rpx solid #dbe5e3; }
+.review-title { color: #17252b; font-size: 28rpx; font-weight: 700; }
+.review-copy { margin-top: 12rpx; color: #607178; font-size: 23rpx; line-height: 1.65; }
+.review-cta button { width: 100%; height: 82rpx; margin-top: 24rpx; color: #fff; border-radius: 6rpx; background: #0b6276; font-size: 25rpx; font-weight: 700; line-height: 82rpx; }
+.loading-note { margin-top: 30rpx; color: #68777c; text-align: center; font-size: 24rpx; }

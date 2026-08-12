@@ -30,6 +30,8 @@
       <text class="outcome-tag {{item.status}}" wx:for="{{caseStudy.outcomes}}" wx:key="label">{{item.label}}</text>
     </view>
 
-    <button class="secondary-action" bindtap="goToContact">有类似问题，先聊聊</button>
+    <view class="detail-actions"><button class="favorite-action {{saved ? 'saved' : ''}}" loading="{{savingFavorite}}" bindtap="toggleFavorite">{{saved ? '★ 已收藏' : '☆ 收藏案例'}}</button><button class="share-action" open-type="share">分享案例</button></view>
+    <view class="context-cta"><view class="context-kicker">背景对照</view><view class="context-title">想结合自己的背景问问？</view><view class="context-copy">把这个案例发给我，再说一个你最拿不准的问题。我本人回复，不需要先填表。</view><button bindtap="openContact">加微信，把这个案例发给我 →</button></view>
   </view>
+  <contact-sheet visible="{{contactOpen}}" source-type="case" source-id="{{caseStudy.id}}" source-title="{{caseStudy.title}}" opening-text="{{contactOpening}}" share-label="把这个案例发给我" bindclose="closeContact" />
 </view>

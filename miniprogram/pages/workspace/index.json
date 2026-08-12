@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的收藏",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "contact-sheet": "/components/contact-sheet/index"
+  }
+}

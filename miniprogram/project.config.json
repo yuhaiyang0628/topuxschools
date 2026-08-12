@@ -1,7 +1,20 @@
 {
   "description": "Top UX Schools 微信小程序",
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "assets/articles"
+      },
+      {
+        "type": "folder",
+        "value": "images/articles"
+      },
+      {
+        "type": "folder",
+        "value": "seed"
+      }
+    ],
     "include": []
   },
   "setting": {

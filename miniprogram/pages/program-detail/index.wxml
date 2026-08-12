@@ -49,6 +49,19 @@
         <view wx:if="{{!relatedArticles.length}}" class="related-empty">暂时没有添加该项目 Tag 的公开笔记。</view>
       </view>
     </view>
+
+    <view class="detail-actions">
+      <button class="save-action {{saved ? 'saved' : ''}}" loading="{{savingFavorite}}" bindtap="toggleFavorite">{{saved ? '✓ 已在选校单' : '+ 加入选校单'}}</button>
+      <button class="share-action" open-type="share">分享项目</button>
+      <button class="workspace-link" bindtap="openWorkspace">打开我的选校单 →</button>
+    </view>
+
+    <view class="context-cta">
+      <view class="context-kicker">项目判断</view>
+      <view class="context-title">对这个项目拿不准？</view>
+      <view class="context-copy">可以带着本页和一个具体问题来找我。我本人回复，不需要先填表。</view>
+      <button bindtap="openContact">加微信，带着这个项目来聊聊 →</button>
+    </view>
   </view>
 
   <view wx:if="{{reporting}}" class="report-mask">
@@ -60,4 +73,5 @@
       <button class="report-submit" loading="{{reportSubmitting}}" bindtap="submitReport">提交反馈</button>
     </view>
   </view>
+  <contact-sheet visible="{{contactOpen}}" source-type="program" source-id="{{program.id}}" source-title="{{program.program}}" opening-text="{{contactOpening}}" share-label="把这个项目发给我" bindclose="closeContact" />
 </view>

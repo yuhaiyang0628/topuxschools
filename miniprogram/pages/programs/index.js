@@ -1,5 +1,7 @@
 const { queryPrograms } = require("../../services/content");
 const { compactText, programTags } = require("../../utils/format");
+const { getUserWorkspace } = require("../../services/workspace");
+const { track } = require("../../services/analytics");
 
 const REGIONS = [
   { value: "", label: "Global" },
@@ -53,7 +55,8 @@ Page({
     total: 0,
     page: 1,
     hasMore: false,
-    loading: false
+    loading: false,
+    savedCount: 0
   },
 
   onLoad() {
@@ -63,6 +66,16 @@ Page({
   onShow() {
     const tabBar = this.getTabBar && this.getTabBar();
     if (tabBar) tabBar.setSelected(0);
+    this.loadSavedCount();
+  },
+
+  async loadSavedCount() {
+    try {
+      const workspace = await getUserWorkspace();
+      this.setData({ savedCount: (workspace.favoritePrograms || []).length });
+    } catch (error) {
+      console.info("[Top UX Schools] Workspace count unavailable.", error);
+    }
   },
 
   async onPullDownRefresh() {
@@ -107,6 +120,7 @@ Page({
   },
 
   onSearchConfirm() {
+    track("search", { type: "program", query: this.data.query, region: this.data.activeRegion, filter: this.data.activeFilter });
     this.loadPrograms(true);
   },
 
@@ -122,7 +136,12 @@ Page({
     wx.navigateTo({ url: `/pages/program-detail/index?id=${event.currentTarget.dataset.id}` });
   },
 
+  openWorkspace() {
+    wx.navigateTo({ url: "/pages/workspace/index" });
+  },
+
   onShareAppMessage() {
+    track("share", { type: "program_list", region: this.data.activeRegion });
     return {
       title: "Top UX Schools｜学校列表",
       path: "/pages/programs/index"

@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "干货笔记",
-  "usingComponents": {
-    "help-entry": "/components/help-entry/index"
-  }
-}

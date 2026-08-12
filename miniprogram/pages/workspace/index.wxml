@@ -1,0 +1,58 @@
+<view class="page-shell workspace-page">
+  <view class="eyebrow">Personal workspace</view>
+  <view class="page-title">{{shared ? '朋友分享的选校单' : '我的收藏'}}</view>
+  <view class="page-intro">{{shared ? '这是一份只读选校单。你可以打开项目继续查看。' : '把项目放进选校单，集中比较；案例和笔记则留作申请阶段的参考。'}}</view>
+
+  <view wx:if="{{!shared}}" class="workspace-tabs">
+    <button class="workspace-tab {{activeTab === 'programs' ? 'active' : ''}}" data-tab="programs" bindtap="switchTab">选校单 {{programs.length}}</button>
+    <button class="workspace-tab {{activeTab === 'cases' ? 'active' : ''}}" data-tab="cases" bindtap="switchTab">案例 {{caseStudies.length}}</button>
+    <button class="workspace-tab {{activeTab === 'articles' ? 'active' : ''}}" data-tab="articles" bindtap="switchTab">笔记 {{articles.length}}</button>
+  </view>
+
+  <block wx:if="{{activeTab === 'programs' || shared}}">
+    <view wx:if="{{programs.length && !shared}}" class="workspace-tools">
+      <view class="tool-copy">勾选 2–4 个项目进行并排比较</view>
+      <view class="tool-actions"><button bindtap="comparePrograms">比较</button><button open-type="share">分享</button></view>
+    </view>
+    <view class="workspace-list">
+      <view wx:for="{{programs}}" wx:key="id" class="workspace-card">
+        <view class="workspace-card-main" data-type="program" data-id="{{item.id}}" bindtap="openItem">
+          <view class="workspace-meta">{{item.region}} · {{item.location}}</view>
+          <view class="workspace-title">{{item.programShort || item.short || item.program}}</view>
+          <view class="workspace-copy">{{item.schoolCn}} · {{item.school}}</view>
+        </view>
+        <view wx:if="{{!shared}}" class="workspace-card-actions">
+          <checkbox checked="{{item.compareSelected}}" color="#0b6276" data-id="{{item.id}}" bindtap="toggleCompare" />
+          <button data-type="program" data-id="{{item.id}}" bindtap="removeItem">移除</button>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{comparing}}" class="comparison-section">
+      <view class="section-title">项目比较</view>
+      <scroll-view scroll-x class="comparison-scroll">
+        <view class="comparison-table">
+          <view class="comparison-row comparison-head"><view class="comparison-label">维度</view><view wx:for="{{comparisonPrograms}}" wx:key="id" class="comparison-value">{{item.programShort || item.short || item.program}}</view></view>
+          <view wx:for="{{comparisonRows}}" wx:key="label" class="comparison-row"><view class="comparison-label">{{item.label}}</view><view wx:for="{{item.values}}" wx:for-item="value" wx:key="index" class="comparison-value">{{value}}</view></view>
+        </view>
+      </scroll-view>
+    </view>
+    <view wx:if="{{programs.length && !shared}}" class="review-cta">
+      <view class="review-title">想听听我会怎么取舍？</view>
+      <view class="review-copy">如果你拿不准冲刺、匹配和保底怎么安排，可以把这份选校单发给我。我本人会看，不需要先填表，也不会有人主动联系你。</view>
+      <button bindtap="openContact">加微信，把选校单发给我</button>
+    </view>
+    <view wx:if="{{!programs.length && !loading}}" class="empty-state">还没有项目。打开项目详情，点击“加入选校单”。</view>
+  </block>
+
+  <view wx:elif="{{activeTab === 'cases'}}" class="workspace-list">
+    <view wx:for="{{caseStudies}}" wx:key="id" class="workspace-card"><view class="workspace-card-main" data-type="case" data-id="{{item.id}}" bindtap="openItem"><view class="workspace-meta">{{item.year}}</view><view class="workspace-title">{{item.title}}</view><view class="workspace-copy">{{item.background}}</view></view><button class="remove-link" data-type="case" data-id="{{item.id}}" bindtap="removeItem">移除</button></view>
+    <view wx:if="{{!caseStudies.length && !loading}}" class="empty-state">暂时没有收藏案例。</view>
+  </view>
+
+  <view wx:else class="workspace-list">
+    <view wx:for="{{articles}}" wx:key="id" class="workspace-card"><view class="workspace-card-main" data-type="article" data-id="{{item.id}}" bindtap="openItem"><view class="workspace-meta">{{item.category}} · {{item.readTime}}</view><view class="workspace-title">{{item.title}}</view><view class="workspace-copy">{{item.excerpt}}</view></view><button class="remove-link" data-type="article" data-id="{{item.id}}" bindtap="removeItem">移除</button></view>
+    <view wx:if="{{!articles.length && !loading}}" class="empty-state">暂时没有收藏笔记。</view>
+  </view>
+  <view wx:if="{{loading}}" class="loading-note">正在读取…</view>
+  <contact-sheet visible="{{contactOpen}}" source-type="shortlist" source-title="我的 UX / HCI 选校单" opening-text="{{contactOpening}}" share-label="把这份选校单发给我" bindclose="closeContact" />
+</view>

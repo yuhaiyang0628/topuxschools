@@ -1,12 +1,12 @@
 <view class="page-shell notes-page">
   <view class="eyebrow">Field notes</view>
-  <view class="page-title-row"><view class="page-title">干货笔记</view><help-entry /></view>
+  <view class="page-title-row"><view class="page-title">干货笔记</view><view class="title-actions"><button class="workspace-entry" bindtap="openWorkspace">收藏</button><help-entry /></view></view>
   <view class="page-intro">关于文书、作品集、选校和常用工具的长期记录。不是标准答案，是帮助你形成判断的材料。</view>
   <button class="submission-entry" bindtap="openSubmission"><text>把你的经验写下来，帮助后来者</text><text>投稿笔记 →</text></button>
 
   <view class="article-feed">
     <button class="article-entry" wx:for="{{articles}}" wx:key="id" data-id="{{item.id}}" bindtap="openArticle">
-      <view class="entry-meta"><text>{{item.category}}</text><text>{{item.date}} · {{item.readTime}}</text></view>
+      <view class="entry-meta"><text>{{item.category}}</text><text>{{item.readTime}}</text></view>
       <view class="entry-title">{{item.title}}</view>
       <view class="entry-excerpt">{{item.excerpt}}</view>
       <view class="entry-link">阅读笔记 →</view>

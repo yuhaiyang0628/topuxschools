@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "干货笔记",
+  "enableShareTimeline": true,
+  "usingComponents": {
+    "help-entry": "/components/help-entry/index",
+    "contact-sheet": "/components/contact-sheet/index"
+  }
+}

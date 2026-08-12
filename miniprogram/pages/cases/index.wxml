@@ -1,6 +1,6 @@
 <view class="page-shell">
   <view class="eyebrow">Admit stories</view>
-  <view class="page-title-row"><view class="page-title">案例分享</view><help-entry /></view>
+  <view class="page-title-row"><view class="page-title">案例分享</view><view class="title-actions"><button class="workspace-entry" bindtap="openWorkspace">收藏</button><help-entry /></view></view>
   <view class="page-intro">按拿到 Offer 的学校、国家和背景检索申请路径。没有选择地区时，默认展示来自全世界的案例。</view>
   <button class="submission-entry" bindtap="openSubmission"><text>分享你的录取结果</text><text>提交案例 →</text></button>
 
@@ -15,7 +15,15 @@
     </view>
   </scroll-view>
 
-  <view class="result-note">{{activeRegion || '全部区域'}} · 找到 {{total}} 个案例</view>
+  <view class="case-summary">
+    <view class="result-note">{{activeRegion || '全部区域'}} · 找到 {{total}} 个案例</view>
+    <view class="outcome-legend">
+      <view class="legend-item"><view class="legend-swatch selected"></view><text>最终选择</text></view>
+      <view class="legend-item"><view class="legend-swatch offer"></view><text>拿到 Offer</text></view>
+      <view class="legend-item"><view class="legend-swatch rejected"></view><text>拒信</text></view>
+      <view class="legend-item"><view class="legend-swatch pending"></view><text>等待结果</text></view>
+    </view>
+  </view>
   <view class="case-list">
     <button class="case-card" wx:for="{{cases}}" wx:key="id" data-id="{{item.id}}" bindtap="openCase">
       <view class="card-topline"><text>{{item.year}}</text><text>{{item.regionLabel}}</text></view>

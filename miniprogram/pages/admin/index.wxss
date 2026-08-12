@@ -12,14 +12,14 @@
 
 .admin-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20rpx;
 }
 
-.header-actions { display: flex; align-items: center; gap: 12rpx; flex-shrink: 0; }
+.header-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 10rpx; flex-shrink: 0; max-width: 430rpx; }
 
-.new-record-action, .review-action {
+.new-record-action, .review-action, .lead-action, .analytics-action {
   flex-shrink: 0;
   margin: 0;
   padding: 0 18rpx;
@@ -31,6 +31,8 @@
 
 .new-record-action { color: #ffffff; background: #0b6276; }
 .review-action { color: #0b6276; border: 1rpx solid #a8cbca; background: #ffffff; }
+.lead-action { color: #9c4b36; border: 1rpx solid #e5bbae; background: #fff7f3; }
+.analytics-action { color: #52636a; border: 1rpx solid #cdd9d7; background: #f4f7f6; }
 
 .admin-copy, .field-hint, .record-meta {
   margin-top: 20rpx;
@@ -166,6 +168,18 @@
 .method-option { display: inline-block; margin: 18rpx 24rpx 0 0; color: #304349; font-size: 25rpx; }
 .save-button { margin-top: 42rpx; }
 
+.article-media-editor { margin-top: 22rpx; padding: 22rpx; border: 1rpx solid #d9e2e0; border-radius: 6rpx; background: #fff; }
+.article-media-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20rpx; }
+.article-media-head > view { min-width: 0; flex: 1; }
+.add-media-action { flex-shrink: 0; margin: 0; padding: 0 18rpx; color: #fff; border-radius: 5rpx; background: #0b6276; font-size: 22rpx; line-height: 58rpx; }
+.article-media-row { display: flex; align-items: center; gap: 16rpx; margin-top: 20rpx; padding-top: 20rpx; border-top: 1rpx solid #e3e9e7; }
+.article-media-preview { width: 112rpx; height: 84rpx; flex-shrink: 0; border-radius: 4rpx; background: #edf2f1; }
+.article-media-fields { min-width: 0; flex: 1; }
+.article-media-fields input { height: 54rpx; padding: 0 12rpx; border: 1rpx solid #d4dfdc; border-radius: 4rpx; color: #25373d; font-size: 22rpx; }
+.article-media-fields input + input { margin-top: 8rpx; }
+.remove-media-action { flex-shrink: 0; margin: 0; padding: 0 12rpx; color: #9b3336; border: 1rpx solid #e6b6b3; border-radius: 4rpx; background: #fff; font-size: 20rpx; line-height: 50rpx; }
+.article-media-empty { margin-top: 20rpx; }
+
 .review-copy { margin-top: 0; }
 .submission-card { margin-top: 22rpx; padding: 24rpx; border: 1rpx solid #d8e3e0; border-radius: 6rpx; background: #ffffff; }
 .submission-title { color: #17252b; font-size: 31rpx; font-weight: 700; line-height: 1.4; }
@@ -178,6 +192,21 @@
 .submission-tag.rejected { color: #9b3336; background: #fde1e0; }
 .submission-actions { display: flex; flex-wrap: wrap; gap: 10rpx; margin-top: 22rpx; }
 .approve-action { color: #ffffff; border-color: #0b7a4c; background: #0b7a4c; }
+.lead-status { display: inline-block; margin-bottom: 12rpx; padding: 5rpx 10rpx; color: #0b6276; border: 1rpx solid #afd0d3; border-radius: 4rpx; font-size: 20rpx; }
+.lead-status.qualified { color: #17613d; border-color: #a6d4b5; background: #edf8f0; }
+.lead-status.closed { color: #6b797e; border-color: #d5dddb; background: #f2f5f4; }
+.lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18rpx; margin-top: 22rpx; }
+.lead-grid view { display: flex; flex-direction: column; gap: 6rpx; min-width: 0; }
+.lead-grid text:first-child { color: #718086; font-size: 20rpx; }
+.lead-grid text:last-child { color: #23353b; font-size: 23rpx; line-height: 1.45; word-break: break-all; }
+.analytics-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 14rpx; margin-top: 8rpx; }
+.analytics-overview view { display: flex; flex-direction: column; gap: 8rpx; padding: 24rpx; border: 1rpx solid #d8e3e0; border-radius: 6rpx; background: #fff; }
+.analytics-overview text:first-child { color: #0b6276; font-size: 42rpx; font-weight: 700; }
+.analytics-overview text:last-child { color: #718086; font-size: 21rpx; }
+.analytics-heading { margin-top: 34rpx; color: #17252b; font-size: 29rpx; font-weight: 700; }
+.funnel-list, .search-list { margin-top: 16rpx; border-top: 1rpx solid #d8e3e0; }
+.funnel-row, .search-row { display: flex; align-items: center; justify-content: space-between; gap: 20rpx; padding: 20rpx 4rpx; border-bottom: 1rpx solid #d8e3e0; color: #304349; font-size: 24rpx; }
+.funnel-row text:last-child, .search-row text:last-child { color: #0b6276; font-weight: 700; }
 
 .school-editor {
   margin-top: 28rpx;

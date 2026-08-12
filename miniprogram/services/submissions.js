@@ -1,4 +1,5 @@
 const config = require("../data/config");
+const { track } = require("./analytics");
 
 function cloudAvailable() {
   return config.contentMode === "cloud" &&
@@ -14,6 +15,7 @@ async function submitCaseStudy(record) {
     name: config.cloudFunctionName,
     data: { action: "submitCaseStudy", payload: { record } }
   });
+  track("community_submit", { type: "case" });
   return response.result;
 }
 
@@ -23,6 +25,7 @@ async function submitArticle(record) {
     name: config.cloudFunctionName,
     data: { action: "submitArticle", payload: { record } }
   });
+  track("community_submit", { type: "article" });
   return response.result;
 }
 
@@ -32,7 +35,17 @@ async function submitProgramReport(record) {
     name: config.cloudFunctionName,
     data: { action: "submitProgramReport", payload: { record } }
   });
+  track("community_submit", { type: "program_report", programId: record && record.programId ? record.programId : "" });
   return response.result;
 }
 
-module.exports = { submitArticle, submitCaseStudy, submitProgramReport };
+async function submitConsultation(record) {
+  if (!cloudAvailable()) throw new Error("咨询表单需要已连接的云开发环境");
+  const response = await wx.cloud.callFunction({
+    name: config.cloudFunctionName,
+    data: { action: "submitConsultation", payload: { record } }
+  });
+  return response.result;
+}
+
+module.exports = { submitArticle, submitCaseStudy, submitConsultation, submitProgramReport };

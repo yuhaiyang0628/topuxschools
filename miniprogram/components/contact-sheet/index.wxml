@@ -1,0 +1,44 @@
+<view wx:if="{{visible}}" class="contact-mask" bindtap="close" catchtouchmove="keepOpen">
+  <view class="contact-sheet" catchtap="keepOpen">
+    <view class="sheet-handle"></view>
+    <view class="sheet-header">
+      <view>
+        <view class="sheet-eyebrow">Talk to me directly</view>
+        <view class="sheet-title">带着具体问题来聊聊</view>
+      </view>
+      <button class="sheet-close" bindtap="close">关闭</button>
+    </view>
+
+    <view class="identity-block">
+      <view class="identity-mark">T</view>
+      <view class="identity-copy">
+        <view class="identity-name">{{contactName}}</view>
+        <view class="identity-bio">{{contactBio}}</view>
+      </view>
+    </view>
+
+    <view class="sheet-note">你不添加，就不会有人联系你。可以先问一个具体问题，是否需要进一步合作之后再决定。</view>
+
+    <view class="wechat-block">
+      <view class="qr-box {{hasQr ? '' : 'pending'}}" bindtap="previewQr">
+        <image wx:if="{{hasQr}}" class="qr-image" src="{{qrImage}}" mode="aspectFit" show-menu-by-longpress />
+        <view wx:else class="qr-placeholder"><view class="qr-grid">▦</view><view>微信二维码即将补充</view></view>
+      </view>
+      <view class="wechat-copy">
+        <view class="field-label">微信号</view>
+        <view class="wechat-value">{{hasWechat ? wechat : '即将补充'}}</view>
+        <button class="copy-wechat {{hasWechat ? '' : 'disabled'}}" bindtap="copyWechat">{{hasWechat ? '复制微信号' : '微信号即将补充'}}</button>
+        <view class="qr-help">{{hasQr ? '点击放大，或长按二维码识别' : '添加二维码后，这里会支持查看和长按识别'}}</view>
+      </view>
+    </view>
+
+    <view class="opening-block">
+      <view class="field-label">可以这样开口</view>
+      <view class="opening-text">{{openingText}}</view>
+      <button class="copy-opening" bindtap="copyOpening">复制这段话</button>
+    </view>
+
+    <button class="share-current" open-type="share" bindtap="onShareTap">{{shareLabel}}</button>
+    <view class="share-help">添加后点击上方按钮，在好友列表中选择我；我收到的会是你正在看的内容。</view>
+  </view>
+</view>

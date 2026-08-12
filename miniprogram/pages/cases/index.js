@@ -1,4 +1,5 @@
 const { queryCases } = require("../../services/content");
+const { track } = require("../../services/analytics");
 
 const REGIONS = ["US", "CAN", "UK", "AUS", "EU", "Asia"];
 
@@ -65,6 +66,7 @@ Page({
   },
 
   onSearchConfirm() {
+    track("search", { type: "case", query: this.data.query, region: this.data.activeRegion });
     this.loadCases(true);
   },
 
@@ -84,7 +86,12 @@ Page({
     wx.navigateTo({ url: `/pages/case-detail/index?id=${event.currentTarget.dataset.id}` });
   },
 
+  openWorkspace() {
+    wx.navigateTo({ url: "/pages/workspace/index" });
+  },
+
   onShareAppMessage() {
+    track("share", { type: "case_list", region: this.data.activeRegion });
     return {
       title: "Top UX Schools｜真实录取案例",
       path: "/pages/cases/index"

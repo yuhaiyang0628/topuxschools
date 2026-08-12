@@ -69,6 +69,10 @@ function getHomeContent() {
   return fromSource("getHomeContent", {}, () => localContent.getHomeContent());
 }
 
+function getProgramsByIds(ids) {
+  return fromSource("getProgramsByIds", { ids }, () => Promise.resolve([]));
+}
+
 module.exports = {
   getArticle,
   getArticles,
@@ -76,6 +80,7 @@ module.exports = {
   getHomeContent,
   getProgram,
   getProgramRelations,
+  getProgramsByIds,
   queryCases,
   queryPrograms
 };

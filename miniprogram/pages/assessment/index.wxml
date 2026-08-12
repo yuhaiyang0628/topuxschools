@@ -1,0 +1,36 @@
+<view class="page-shell assessment-page">
+  <view class="eyebrow">Application assessment</view>
+  <view class="assessment-title">{{title}}</view>
+  <view class="page-intro">{{intro}}</view>
+
+  <view class="form-section">
+    <view class="section-number">01</view><view class="section-heading">申请背景</view>
+    <view class="form-grid">
+      <picker range="{{fallYears}}" value="{{fallIndex}}" data-key="fallIndex" data-field="fallYear" data-options="fall" bindchange="onPickerChange"><view class="field"><view class="field-label">申请季</view><view class="picker-value">{{form.fallYear}} ›</view></view></picker>
+      <picker range="{{backgrounds}}" value="{{backgroundIndex}}" data-key="backgroundIndex" data-field="backgroundType" data-options="background" bindchange="onPickerChange"><view class="field"><view class="field-label">背景类型</view><view class="picker-value">{{form.backgroundType}} ›</view></view></picker>
+    </view>
+    <view class="field"><view class="field-label">本科专业 / 当前职业 *</view><input value="{{form.major}}" data-field="major" bindinput="onTextInput" placeholder="例如：工业设计本科，1 年 UX 工作经验" /></view>
+    <view class="form-grid"><view class="field"><view class="field-label">GPA</view><input value="{{form.gpa}}" data-field="gpa" bindinput="onTextInput" placeholder="例如 3.6/4.0" /></view><view class="field"><view class="field-label">语言成绩</view><input value="{{form.language}}" data-field="language" bindinput="onTextInput" placeholder="例如 IELTS 7.0" /></view></view>
+  </view>
+
+  <view class="form-section">
+    <view class="section-number">02</view><view class="section-heading">目标与进度</view>
+    <view class="field"><view class="field-label">目标地区 *</view><checkbox-group class="region-options" bindchange="onRegionChange"><label wx:for="{{regionOptions}}" wx:key="value"><checkbox value="{{item.value}}" checked="{{item.checked}}" color="#0b6276" />{{item.value}}</label></checkbox-group></view>
+    <picker range="{{progressOptions}}" value="{{progressIndex}}" data-key="progressIndex" data-field="progress" data-options="progress" bindchange="onPickerChange"><view class="field"><view class="field-label">当前进度</view><view class="picker-value">{{form.progress}} ›</view></view></picker>
+    <view class="field"><view class="field-label">最想解决的问题</view><textarea value="{{form.concerns}}" data-field="concerns" bindinput="onTextInput" placeholder="例如：项目太多，不确定选校梯度；作品集叙事不够完整" /></view>
+    <button class="outline-action" bindtap="generateResult">生成初步判断</button>
+    <view wx:if="{{result}}" class="assessment-result"><view class="result-label">初步判断</view><view>{{result}}</view></view>
+  </view>
+
+  <view class="form-section consultation-section">
+    <view class="section-number">03</view><view class="section-heading">需要进一步聊什么</view>
+    <view class="form-grid">
+      <picker range="{{serviceOptions}}" value="{{serviceIndex}}" data-key="serviceIndex" data-field="serviceInterest" data-options="service" bindchange="onPickerChange"><view class="field"><view class="field-label">感兴趣的支持</view><view class="picker-value">{{form.serviceInterest}} ›</view></view></picker>
+      <picker range="{{budgetOptions}}" value="{{budgetIndex}}" data-key="budgetIndex" data-field="budget" data-options="budget" bindchange="onPickerChange"><view class="field"><view class="field-label">可接受预算</view><view class="picker-value">{{form.budget}} ›</view></view></picker>
+    </view>
+    <view class="field"><view class="field-label">微信号或邮箱 *</view><input value="{{form.contact}}" data-field="contact" bindinput="onTextInput" placeholder="仅用于回复这次咨询" /></view>
+    <checkbox-group bindchange="onConsentChange"><label class="consent"><checkbox value="yes" checked="{{form.consentContact}}" color="#0b6276" />我同意仅为本次咨询和后续沟通使用以上信息。</label></checkbox-group>
+    <button class="primary-submit" loading="{{submitting}}" bindtap="submit">{{actionLabel}}</button>
+    <view class="privacy-note">不会公开个人信息，也不会根据这张表承诺录取结果。</view>
+  </view>
+</view>

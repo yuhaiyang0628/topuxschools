@@ -50,7 +50,7 @@ Page({
   },
 
   openArticle(event) {
-    wx.navigateTo({ url: `/pages/note-detail/index?id=${event.currentTarget.dataset.id}` });
+    wx.navigateTo({ url: `/article-package/note-detail/index?id=${event.currentTarget.dataset.id}` });
   },
 
   onShareAppMessage() {

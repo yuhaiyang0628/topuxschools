@@ -29,6 +29,10 @@ function saveAdminContent(collection, record) {
   return callAdmin("adminSaveContent", { collection, record });
 }
 
+function publishArticleImage(fileID, articleId, fileName) {
+  return callAdmin("adminPublishArticleImage", { fileID, articleId, fileName });
+}
+
 function archiveAdminContent(collection, id) {
   return callAdmin("adminArchiveContent", { collection, id });
 }
@@ -65,17 +69,33 @@ function rejectProgramReport(id) {
   return callAdmin("adminRejectProgramReport", { id });
 }
 
+function listConsultations() {
+  return callAdmin("adminListConsultations");
+}
+
+function updateConsultation(id, status) {
+  return callAdmin("adminUpdateConsultation", { id, status });
+}
+
+function getAnalyticsSummary() {
+  return callAdmin("adminGetAnalyticsSummary");
+}
+
 module.exports = {
   approveArticleSubmission,
   approveCaseSubmission,
   archiveAdminContent,
   getAdminStatus,
+  getAnalyticsSummary,
   listCaseSubmissions,
   listAdminContent,
+  listConsultations,
   listReviewTasks,
+  publishArticleImage,
   rejectArticleSubmission,
   rejectCaseSubmission,
   rejectProgramReport,
   resolveProgramReport,
-  saveAdminContent
+  saveAdminContent,
+  updateConsultation
 };

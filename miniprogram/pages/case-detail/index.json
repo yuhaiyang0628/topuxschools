@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "案例详情",
+  "enableShareTimeline": true,
   "usingComponents": {
-    "help-entry": "/components/help-entry/index"
+    "help-entry": "/components/help-entry/index",
+    "contact-sheet": "/components/contact-sheet/index"
   }
 }

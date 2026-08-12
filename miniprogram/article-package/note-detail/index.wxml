@@ -1,0 +1,39 @@
+<view wx:if="{{article}}" class="article-page">
+  <view class="article-header">
+    <view class="article-topline"><view class="eyebrow">{{article.category}}</view><help-entry /></view>
+    <view class="article-title">{{article.title}}</view>
+    <view class="article-excerpt">{{article.excerpt}}</view>
+    <view class="article-read-time">预计阅读 {{article.readTime}}</view>
+  </view>
+  <view class="article-body">
+    <block wx:for="{{articleBlocks}}" wx:for-item="contentBlock" wx:key="index">
+      <view wx:if="{{contentBlock.type === 'heading'}}" class="article-subheading article-subheading-{{contentBlock.level}}">{{contentBlock.text}}</view>
+      <view wx:elif="{{contentBlock.type === 'image'}}" class="article-image-wrap">
+        <image class="article-image" src="{{contentBlock.miniSrc || contentBlock.src}}" mode="widthFix" />
+        <view wx:if="{{contentBlock.alt}}" class="article-image-caption">{{contentBlock.alt}}</view>
+      </view>
+      <view wx:elif="{{contentBlock.type === 'list'}}" class="article-list">
+        <view wx:for="{{contentBlock.items}}" wx:for-item="listItem" wx:key="index" class="article-list-item">
+          <text class="article-list-bullet">•</text>
+          <text wx:for="{{listItem}}" wx:for-item="segment" wx:key="index" class="{{segment.strong ? 'article-strong' : ''}}">{{segment.text}}</text>
+        </view>
+      </view>
+      <scroll-view wx:elif="{{contentBlock.type === 'table'}}" class="article-table-scroll" scroll-x="true">
+        <view class="article-table">
+          <view wx:for="{{contentBlock.rows}}" wx:for-item="tableRow" wx:key="index" class="article-table-row {{index === 0 ? 'article-table-head' : ''}}">
+            <text wx:for="{{tableRow}}" wx:for-item="tableCell" wx:key="index" class="article-table-cell">{{tableCell}}</text>
+          </view>
+        </view>
+      </scroll-view>
+      <view wx:elif="{{contentBlock.type === 'quote'}}" class="article-quote">
+        <text wx:for="{{contentBlock.segments}}" wx:for-item="segment" wx:key="index" class="{{segment.strong ? 'article-strong' : ''}}">{{segment.text}}</text>
+      </view>
+      <view wx:else class="article-paragraph">
+        <text wx:for="{{contentBlock.segments}}" wx:for-item="segment" wx:key="index" class="{{segment.strong ? 'article-strong' : ''}}">{{segment.text}}</text>
+      </view>
+    </block>
+    <view class="article-actions"><button class="favorite-action {{saved ? 'saved' : ''}}" loading="{{savingFavorite}}" bindtap="toggleFavorite">{{saved ? '★ 已收藏' : '☆ 收藏笔记'}}</button><button class="share-action" open-type="share">分享笔记</button></view>
+    <view class="context-cta"><view class="context-kicker">从阅读到行动</view><view class="context-title">卡在自己的具体问题上？</view><view class="context-copy">可以带着这篇笔记和一个具体问题来找我。我本人回复，不需要先填表。</view><button bindtap="openContact">加微信，带着问题来聊聊 →</button></view>
+  </view>
+  <contact-sheet visible="{{contactOpen}}" source-type="article" source-id="{{article.id}}" source-title="{{article.title}}" opening-text="{{contactOpening}}" share-label="把这篇笔记发给我" bindclose="closeContact" />
+</view>

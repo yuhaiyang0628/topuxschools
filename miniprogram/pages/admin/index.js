@@ -3,14 +3,19 @@ const {
   approveCaseSubmission,
   archiveAdminContent,
   getAdminStatus,
+  getAnalyticsSummary,
   listAdminContent,
+  listConsultations,
   listReviewTasks,
+  publishArticleImage,
   rejectArticleSubmission,
   rejectCaseSubmission,
   rejectProgramReport,
   resolveProgramReport,
-  saveAdminContent
+  saveAdminContent,
+  updateConsultation
 } = require("../../services/admin");
+const { resolveCloudImages } = require("../../services/media");
 
 const COLLECTIONS = [
   { value: "caseStudies", label: "案例" },
@@ -27,7 +32,7 @@ function emptyForm(collection) {
     return { ...shared, rank: "", region: "US", country: "United States", school: "", schoolCn: "", short: "", program: "", programShort: "", length: "", tuition: "", location: "", ielts: "", toefl: "", gre: "", portfolio: "", deadline: "", academic: "", stem: false, stemNote: "", website: "", note: "", lastVerified: "", tags: "" };
   }
   if (collection === "articles") {
-    return { ...shared, category: "", title: "", excerpt: "", readTime: "", date: "", body: "", tags: "" };
+    return { ...shared, category: "", title: "", excerpt: "", readTime: "", date: "", body: "", tags: "", images: [] };
   }
   return {
     ...shared,
@@ -110,6 +115,11 @@ Page({
     saving: false,
     editing: false,
     reviewing: false,
+    leadsOpen: false,
+    leads: [],
+    leadCount: 0,
+    analyticsOpen: false,
+    analytics: { days: 30, eventTotal: 0, visitorTotal: 0, funnel: [], topSearches: [] },
     reviewingTaskId: "",
     reviewingTaskType: "",
     form: emptyForm("caseStudies"),
@@ -125,7 +135,7 @@ Page({
   },
 
   async onPullDownRefresh() {
-    await Promise.all([this.loadRecords(), this.loadReviewTasks()]);
+    await Promise.all([this.loadRecords(), this.loadReviewTasks(), this.loadAnalytics()]);
     wx.stopPullDownRefresh();
   },
 
@@ -133,7 +143,7 @@ Page({
     try {
       const status = await getAdminStatus();
       this.setData({ authorized: Boolean(status.isAdmin) });
-      if (status.isAdmin) await Promise.all([this.loadRecords(), this.loadReviewTasks()]);
+      if (status.isAdmin) await Promise.all([this.loadRecords(), this.loadReviewTasks(), this.loadAnalytics()]);
     } catch (error) {
       this.setData({ authorized: false });
       console.error("[Top UX Schools] Admin authorization failed.", error);
@@ -178,6 +188,58 @@ Page({
     }
   },
 
+  async loadConsultations() {
+    if (!this.data.authorized) return;
+    try {
+      const leads = (await listConsultations()).map((item) => ({
+        ...item,
+        displayTitle: item.source && item.source.title ? item.source.title : "主动背景咨询",
+        statusLabel: { new: "新线索", contacted: "已联系", qualified: "有效线索", closed: "已关闭" }[item.consultationStatus] || item.consultationStatus,
+        regionLabel: ((item.profile && item.profile.targetRegions) || []).join(" · ")
+      }));
+      this.setData({ leads, leadCount: leads.filter((item) => item.consultationStatus === "new").length });
+    } catch (error) {
+      console.error("[Top UX Schools] Consultation leads failed to load.", error);
+    }
+  },
+
+  async loadAnalytics() {
+    if (!this.data.authorized) return;
+    try {
+      this.setData({ analytics: await getAnalyticsSummary() });
+    } catch (error) {
+      console.error("[Top UX Schools] Analytics summary failed to load.", error);
+    }
+  },
+
+  openAnalytics() {
+    this.setData({ analyticsOpen: true }, () => this.loadAnalytics());
+  },
+
+  closeAnalytics() {
+    this.setData({ analyticsOpen: false });
+  },
+
+  openLeadQueue() {
+    this.setData({ leadsOpen: true }, () => this.loadConsultations());
+  },
+
+  closeLeadQueue() {
+    this.setData({ leadsOpen: false });
+  },
+
+  async updateLead(event) {
+    const id = event.currentTarget.dataset.id;
+    const status = event.currentTarget.dataset.status;
+    try {
+      await updateConsultation(id, status);
+      wx.showToast({ title: "线索状态已更新", icon: "success" });
+      await this.loadConsultations();
+    } catch (error) {
+      wx.showModal({ title: "更新失败", content: error.message || "请稍后再试。", showCancel: false });
+    }
+  },
+
   switchCollection(event) {
     const collection = event.currentTarget.dataset.collection;
     this.setData({ activeCollection: collection, query: "", allRecords: [], editing: false, reviewingTaskId: "", reviewingTaskType: "", records: [], ...editorState(emptyForm(collection)) }, () => this.loadRecords());
@@ -192,10 +254,12 @@ Page({
     this.setData({ editing: true, reviewingTaskId: "", reviewingTaskType: "", ...editorState(emptyForm(this.data.activeCollection)) });
   },
 
-  editRecord(event) {
+  async editRecord(event) {
     const record = this.data.records.find((item) => item._id === event.currentTarget.dataset.id);
     if (!record) return;
-    this.setData({ editing: true, ...editorState(formFromRecord(this.data.activeCollection, record)) });
+    const form = formFromRecord(this.data.activeCollection, record);
+    if (this.data.activeCollection === "articles") form.images = await resolveCloudImages(form.images || []);
+    this.setData({ editing: true, ...editorState(form) });
   },
 
   closeEditor() {
@@ -304,6 +368,65 @@ Page({
     this.setData({ "form.stem": event.detail.value });
   },
 
+  async addArticleImages() {
+    const articleId = String(this.data.form.id || this.data.form.title || "draft")
+      .trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "draft";
+    try {
+      const selection = await wx.chooseMedia({
+        count: Math.max(1, 9 - (this.data.form.images || []).length),
+        mediaType: ["image"],
+        sourceType: ["album", "camera"],
+        sizeType: ["compressed"]
+      });
+      wx.showLoading({ title: "上传配图中" });
+      const uploaded = [];
+      for (let index = 0; index < selection.tempFiles.length; index += 1) {
+        const file = selection.tempFiles[index];
+        const extension = /\.(png|jpe?g|webp)$/i.exec(file.tempFilePath);
+        const fileName = `${Date.now()}-${index}.${extension ? extension[1].toLowerCase().replace("jpeg", "jpg") : "jpg"}`;
+        const result = await wx.cloud.uploadFile({
+          cloudPath: `articles/${articleId}/${fileName}`,
+          filePath: file.tempFilePath
+        });
+        const webSync = await publishArticleImage(result.fileID, articleId, fileName);
+        uploaded.push({
+          fileID: result.fileID,
+          mini: result.fileID,
+          web: webSync.webPath || "",
+          previewUrl: file.tempFilePath,
+          alt: "",
+          after: (this.data.form.body || "").split(/\n{2,}/).filter(Boolean).length
+        });
+      }
+      this.setData({ "form.images": (this.data.form.images || []).concat(uploaded) });
+      wx.hideLoading();
+      wx.showToast({ title: "配图已上传", icon: "success" });
+    } catch (error) {
+      wx.hideLoading();
+      if (String(error.errMsg || error.message || "").includes("cancel")) return;
+      wx.showModal({ title: "图片上传失败", content: error.message || error.errMsg || "请检查云存储和网页同步配置。", showCancel: false });
+    }
+  },
+
+  onArticleImageInput(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    const field = event.currentTarget.dataset.field;
+    this.setData({ [`form.images[${index}].${field}`]: event.detail.value });
+  },
+
+  removeArticleImage(event) {
+    const index = Number(event.currentTarget.dataset.index);
+    wx.showModal({
+      title: "移除这张配图？",
+      content: "保存文章后，这张图片将不再显示。云存储原文件暂时保留，避免误删影响历史版本。",
+      confirmColor: "#b34d45",
+      success: (result) => {
+        if (!result.confirm) return;
+        this.setData({ "form.images": this.data.form.images.filter((_, imageIndex) => imageIndex !== index) });
+      }
+    });
+  },
+
   onMethodsChange(event) {
     const applicationMethods = event.detail.value;
     this.setData({
@@ -354,7 +477,7 @@ Page({
       if (reviewingTaskType === "programReport") await resolveProgramReport(reviewingTaskId);
       this.setData({ saving: false, editing: false, reviewingTaskId: "", reviewingTaskType: "", ...editorState(emptyForm(this.data.activeCollection)) });
       wx.showToast({ title: reviewingTaskId ? "已审核并发布" : result.webSync && result.webSync.status === "queued" ? "已保存并同步网页" : "已保存到云端", icon: "success" });
-      await Promise.all([this.loadRecords(), this.loadReviewTasks()]);
+      await Promise.all([this.loadRecords(), this.loadReviewTasks(), this.loadConsultations()]);
     } catch (error) {
       this.setData({ saving: false });
       wx.showModal({ title: "保存失败", content: error.message || "请检查填写内容和管理员配置。", showCancel: false });

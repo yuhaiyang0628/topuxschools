@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "答疑解惑"
+  "navigationBarTitleText": "答疑解惑",
+  "usingComponents": {
+    "contact-sheet": "/components/contact-sheet/index"
+  }
 }

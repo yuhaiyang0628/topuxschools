@@ -10,6 +10,7 @@
     <view class="admin-heading">
       <view class="admin-title">内容后台</view>
       <view class="header-actions">
+        <button class="analytics-action" bindtap="openAnalytics">数据</button>
         <button class="review-action" bindtap="openReviewQueue">待审核 {{pendingCount}}</button>
         <button class="new-record-action" bindtap="startNew">录入新{{activeCollection === 'programs' ? '项目' : activeCollection === 'articles' ? '文章' : '案例'}}</button>
       </view>
@@ -104,6 +105,18 @@
           <view class="form-field"><view class="field-label">关联标签</view><input value="{{form.tags}}" data-field="tags" bindinput="onFieldInput" placeholder="例如：CMU, MIIPS, 录取经验" /></view>
           <view class="form-field"><view class="field-label">摘要</view><textarea value="{{form.excerpt}}" data-field="excerpt" bindinput="onFieldInput" auto-height /></view>
           <view class="form-field"><view class="field-label">正文</view><textarea value="{{form.body}}" data-field="body" bindinput="onFieldInput" auto-height placeholder="段落之间空一行" /></view>
+          <view class="article-media-editor">
+            <view class="article-media-head"><view><view class="field-label">文章配图</view><view class="field-hint">图片上传到云存储，不占用小程序安装包。插入位置 0 表示正文之前，1 表示第一段之后。</view></view><button class="add-media-action" bindtap="addArticleImages">添加配图</button></view>
+            <view wx:for="{{form.images}}" wx:key="fileID" class="article-media-row">
+              <image class="article-media-preview" src="{{item.previewUrl || item.fileID || item.mini}}" mode="aspectFill" />
+              <view class="article-media-fields">
+                <input value="{{item.alt}}" data-index="{{index}}" data-field="alt" bindinput="onArticleImageInput" placeholder="图片说明" />
+                <input value="{{item.after}}" data-index="{{index}}" data-field="after" bindinput="onArticleImageInput" type="number" placeholder="插入在第几段之后" />
+              </view>
+              <button class="remove-media-action" data-index="{{index}}" bindtap="removeArticleImage">删除</button>
+            </view>
+            <view wx:if="{{!form.images.length}}" class="field-hint article-media-empty">还没有配图。</view>
+          </view>
         </block>
 
         <block wx:else>
@@ -159,6 +172,17 @@
           </view>
         </view>
         <view wx:if="{{!reviewTasks.length}}" class="empty-state">当前没有待审核的任务。</view>
+      </scroll-view>
+    </view>
+
+    <view wx:if="{{analyticsOpen}}" class="review-mask">
+      <scroll-view scroll-y class="review-sheet">
+        <view class="editor-header"><view><view class="eyebrow">Product analytics</view><view class="editor-title">近 {{analytics.days}} 天数据</view></view><button class="close-editor" bindtap="closeAnalytics">关闭</button></view>
+        <view class="analytics-overview"><view><text>{{analytics.visitorTotal}}</text><text>活跃用户</text></view><view><text>{{analytics.eventTotal}}</text><text>关键行为</text></view></view>
+        <view class="analytics-heading">转化漏斗</view>
+        <view class="funnel-list"><view wx:for="{{analytics.funnel}}" wx:key="label" class="funnel-row"><text>{{item.label}}</text><text>{{item.value}}</text></view></view>
+        <view class="analytics-heading">热门搜索</view>
+        <view class="search-list"><view wx:for="{{analytics.topSearches}}" wx:key="query" class="search-row"><text>{{index + 1}}. {{item.query}}</text><text>{{item.count}}</text></view><view wx:if="{{!analytics.topSearches.length}}" class="admin-copy">暂时没有搜索数据。</view></view>
       </scroll-view>
     </view>
   </block>

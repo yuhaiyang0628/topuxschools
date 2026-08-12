@@ -21,6 +21,9 @@
   padding: 30rpx 0 0;
   border-top: 8rpx solid #e36546;
 }
+.direct-entry { margin-top: 46rpx; padding: 30rpx 0; border-top: 7rpx solid #0b6276; border-bottom: 1rpx solid #d8e3e0; }
+.direct-entry-title { margin-top: 10rpx; color: #17252b; font-size: 32rpx; font-weight: 700; line-height: 1.5; }
+.direct-entry-copy { margin-top: 12rpx; color: #607178; font-size: 24rpx; line-height: 1.65; }
 
 .contact-panel-secondary {
   margin-top: 38rpx;
