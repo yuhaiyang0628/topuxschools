@@ -2825,7 +2825,7 @@ window.ARTICLES = [
         "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/sop-writing/1786935247597-0.png",
         "web": "assets/articles/cloud/sop-writing/1786935247597-0.png",
         "alt": "",
-        "after": 13
+        "after": 3
       }
     ],
     "_id": "article-sop-writing"
