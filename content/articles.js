@@ -16,36 +16,6 @@ window.ARTICLES = [
     ]
   },
   {
-    "_id": "article-sop-writing",
-    "id": "sop-writing",
-    "category": "文书",
-    "title": "写了五年HCI文书，这是我给你的文书DIY指南",
-    "excerpt": "SOP 不是把简历翻译成段落。它要让招生老师看见：你的职业方向怎样被一段段经历塑造，而这个项目为什么正好是你的下一步。",
-    "readTime": "8 min",
-    "date": "2026.08",
-    "tags": [
-      "文书",
-      "SOP",
-      "DIY",
-      "申请方法"
-    ],
-    "body": [
-      "写 SOP 最容易卡在第一句：我到底该从哪一段经历讲起？我的建议是，先别急着写开头。先把它当作一条路线图：它要让招生老师看见你从哪里出发、为什么转向，以及下一步想去哪里。",
-      "01｜先把职业目标说清楚",
-      "职业目标不需要写成五年规划，也不必急着报出某个具体岗位。只要让人理解你想进入怎样的工作场景：更偏产品、体验、服务、沉浸式媒体，还是教育科技？你现在的经历为什么会把你推到这个方向？",
-      "02｜挑 3 到 4 段真正改变过你的经历",
-      "不要按年份把简历再讲一遍。优先挑那些让你增加了新能力、改变了判断，或让你第一次真正接触目标领域的经历。它们未必都是最大的项目，但放在一起后，应该能看见一条连续的成长线。",
-      "03｜项目匹配要落到你实际研究过的东西",
-      "写“贵校排名高、课程丰富”没有信息量。更有用的写法是：你看过哪些课程、工作室、研究方法或行业连接；它们解决了你现阶段的哪个问题；而你已经带着什么经验可以参与进去。",
-      "有一个常见误区，是把文书写成一篇观点作文。价值观和兴趣当然可以出现，但读者需要先认识你做过什么、当时怎么判断、后来为什么改变。故事是主体，感悟跟在故事后面，篇幅自然会稳下来。",
-      "另一个极端是流水账。每段经历都交代了“我参加了什么”，却没有说明这件事为什么重要。写每个故事前，先补齐五件事：Situation，发生在什么情境；Goal，要解决什么；Action，你具体做了什么；Result，结果或反馈是什么；Takeaway，它改变了你什么。",
-      "这套框架不是让你把五个小标题塞进文书。它只是帮你检查：你的叙述里有没有前因后果，有没有自己的行动，有没有一个能把下一段经历接起来的收获。",
-      "一篇 1000 词上限的 SOP，通常不需要把字数写满。600 到 800 词足够讲清三四个故事。删掉重复的形容词，把空间留给具体动作、选择和转折，读者会更容易相信这条成长线。",
-      "动笔前，可以先写一份故事清单：每段经历只用几行记录当时发生了什么、你做了什么、它改变了你什么。下一步不是润色，而是挑出最能互相支撑的三四段，排出一条你自己读起来也成立的顺序。"
-    ],
-    "status": "published"
-  },
-  {
     "_id": "article-school-list-method",
     "id": "school-list-method",
     "status": "archived",
@@ -73,6 +43,47 @@ window.ARTICLES = [
       "申请是一个持续数月的信息工程，但并不需要复杂的系统。",
       "用表格管理截止日期和要求，用一个文档保存研究与写作素材，用日历固定每周的深度工作时间。工具的目标是让你不再反复找信息。",
       "当你开始觉得工具本身比申请材料更重要时，就该删掉一些了。"
+    ]
+  },
+  {
+    "_id": "article-cmu-miips",
+    "id": "cmu-miips",
+    "category": "作品集",
+    "title": "CMU MIIPS：把跨学科经历整理成一条清晰的申请主线",
+    "excerpt": "示例摘要",
+    "readTime": "3 min",
+    "date": "",
+    "body": [
+      "示例正文仅供参考"
+    ],
+    "tags": [
+      "CMU",
+      "MIIPS",
+      "录取经验"
+    ],
+    "status": "published",
+    "images": [
+      {
+        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786934890131-0.jpg",
+        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786934890131-0.jpg",
+        "web": "assets/articles/cloud/cmu-miips/1786934890131-0.jpg",
+        "alt": "",
+        "after": 1
+      },
+      {
+        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935055168-0.jpg",
+        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935055168-0.jpg",
+        "web": "assets/articles/cloud/cmu-miips/1786935055168-0.jpg",
+        "alt": "",
+        "after": 2
+      },
+      {
+        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935083635-0.webp",
+        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935083635-0.webp",
+        "web": "assets/articles/cloud/cmu-miips/1786935083635-0.webp",
+        "alt": "",
+        "after": 3
+      }
     ]
   },
   {
@@ -2774,45 +2785,50 @@ window.ARTICLES = [
     ]
   },
   {
-    "id": "cmu-miips",
-    "category": "作品集",
-    "title": "CMU MIIPS：把跨学科经历整理成一条清晰的申请主线",
-    "excerpt": "示例摘要",
-    "readTime": "3 min",
-    "date": "",
-    "body": [
-      "示例正文仅供参考"
-    ],
+    "id": "sop-writing",
+    "category": "文书",
+    "title": "写了五年HCI文书，这是我给你的文书DIY指南",
+    "excerpt": "SOP 不是把简历翻译成段落。它要让招生老师看见：你的职业方向怎样被一段段经历塑造，而这个项目为什么正好是你的下一步。",
+    "readTime": "8 min",
+    "date": "2026.08",
     "tags": [
-      "CMU",
-      "MIIPS",
-      "录取经验"
+      "文书",
+      "SOP",
+      "DIY",
+      "申请方法"
+    ],
+    "body": [
+      "写 SOP 最容易卡在第一句：我到底该从哪一段经历讲起？我的建议是，先别急着写开头。先把它当作一条路线图：它要让招生老师看见你从哪里出发、为什么转向，以及下一步想去哪里。",
+      "01｜先把职业目标说清楚",
+      "职业目标不需要写成五年规划，也不必急着报出某个具体岗位。只要让人理解你想进入怎样的工作场景：更偏产品、体验、服务、沉浸式媒体，还是教育科技？你现在的经历为什么会把你推到这个方向？",
+      "02｜挑 3 到 4 段真正改变过你的经历",
+      "不要按年份把简历再讲一遍。优先挑那些让你增加了新能力、改变了判断，或让你第一次真正接触目标领域的经历。它们未必都是最大的项目，但放在一起后，应该能看见一条连续的成长线。",
+      "03｜项目匹配要落到你实际研究过的东西",
+      "写“贵校排名高、课程丰富”没有信息量。更有用的写法是：你看过哪些课程、工作室、研究方法或行业连接；它们解决了你现阶段的哪个问题；而你已经带着什么经验可以参与进去。",
+      "有一个常见误区，是把文书写成一篇观点作文。价值观和兴趣当然可以出现，但读者需要先认识你做过什么、当时怎么判断、后来为什么改变。故事是主体，感悟跟在故事后面，篇幅自然会稳下来。",
+      "另一个极端是流水账。每段经历都交代了“我参加了什么”，却没有说明这件事为什么重要。写每个故事前，先补齐五件事：Situation，发生在什么情境；Goal，要解决什么；Action，你具体做了什么；Result，结果或反馈是什么；Takeaway，它改变了你什么。",
+      "这套框架不是让你把五个小标题塞进文书。它只是帮你检查：你的叙述里有没有前因后果，有没有自己的行动，有没有一个能把下一段经历接起来的收获。",
+      "一篇 1000 词上限的 SOP，通常不需要把字数写满。600 到 800 词足够讲清三四个故事。删掉重复的形容词，把空间留给具体动作、选择和转折，读者会更容易相信这条成长线。",
+      "动笔前，可以先写一份故事清单：每段经历只用几行记录当时发生了什么、你做了什么、它改变了你什么。下一步不是润色，而是挑出最能互相支撑的三四段，排出一条你自己读起来也成立的顺序。"
     ],
     "status": "published",
     "images": [
       {
-        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786934890131-0.jpg",
-        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786934890131-0.jpg",
-        "web": "assets/articles/cloud/cmu-miips/1786934890131-0.jpg",
+        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/sop-writing/1786935236822-0.webp",
+        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/sop-writing/1786935236822-0.webp",
+        "web": "assets/articles/cloud/sop-writing/1786935236822-0.webp",
         "alt": "",
         "after": 1
       },
       {
-        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935055168-0.jpg",
-        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935055168-0.jpg",
-        "web": "assets/articles/cloud/cmu-miips/1786935055168-0.jpg",
+        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/sop-writing/1786935247597-0.png",
+        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/sop-writing/1786935247597-0.png",
+        "web": "assets/articles/cloud/sop-writing/1786935247597-0.png",
         "alt": "",
-        "after": 2
-      },
-      {
-        "fileID": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935083635-0.webp",
-        "mini": "cloud://cloud1-d9gbnehs8875905e9.636c-cloud1-d9gbnehs8875905e9-1454418571/articles/cmu-miips/1786935083635-0.webp",
-        "web": "assets/articles/cloud/cmu-miips/1786935083635-0.webp",
-        "alt": "",
-        "after": 3
+        "after": 13
       }
     ],
-    "_id": "article-cmu-miips"
+    "_id": "article-sop-writing"
   }
 ];
 
