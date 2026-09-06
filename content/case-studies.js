@@ -52559,6 +52559,7 @@ window.CASE_STUDIES = [
     ]
   },
   {
+    "_id": "case-community-submission-1788662578421-ud2r7a",
     "id": "community-submission-1788662578421-ud2r7a",
     "year": "2026 Fall",
     "title": "CMU MIIPS",
@@ -52625,8 +52626,7 @@ window.CASE_STUDIES = [
       "Carnegie Mellon University",
       "卡内基梅隆大学"
     ],
-    "status": "published",
-    "communitySubmittedAt": "2026-09-06T02:42:57.867Z",
-    "_id": "case-community-submission-1788662578421-ud2r7a"
+    "status": "archived",
+    "communitySubmittedAt": "2026-09-06T02:42:57.867Z"
   }
 ];
